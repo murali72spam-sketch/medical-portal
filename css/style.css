@@ -47,6 +47,34 @@
     --color-border: #444441;
     --color-border-light: #3C3C38;
   }
+
+  .red-flags {
+    background-color: #3D1A1A;
+    color: #F5F5F3;
+  }
+
+  .red-flags h3 { color: #F28B82; }
+  .red-flags ul, .red-flags p { color: #F5F5F3; }
+  .red-flags li { color: #F5F5F3; }
+
+  .key-takeaways {
+    background-color: #1A2D10;
+    color: #F5F5F3;
+  }
+
+  .key-takeaways h3 { color: #A8D878; }
+  .key-takeaways ul, .key-takeaways p { color: #F5F5F3; }
+  .key-takeaways li { color: #F5F5F3; }
+
+  .disclaimer {
+    background-color: #3D1A1A;
+    color: #F5C4C4;
+  }
+
+  .fever-range {
+    background-color: #2C2C2A;
+    color: #F5F5F3;
+  }
 }
 
 /* Global Reset & Base Styles */
