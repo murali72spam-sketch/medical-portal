@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Symptom Guide: [CONDITION] - Dr Murali Gopal's Paediatric Health Portal">
+  <title>Smart Symptom Guide: [CONDITION] - Dr Murali Gopal's Portal</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .symptom-checker { background: var(--color-bg-secondary); padding: 2rem; border-radius: var(--border-radius-lg); margin: 2rem 0; }
+    .symptom-item { margin-bottom: 1rem; }
+    .symptom-item label { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+    .symptom-item input[type="checkbox"] { width: 20px; height: 20px; cursor: pointer; }
+    .assessment-box { background: var(--color-primary); color: white; padding: 1.5rem; border-radius: var(--border-radius-lg); margin-top: 2rem; }
+    .assessment-box h3 { margin-bottom: 1rem; }
+    .assessment-list { margin-left: 1.5rem; }
+    .assessment-list li { margin-bottom: 0.5rem; }
+    .next-steps { background: var(--color-secondary); color: white; padding: 1.5rem; border-radius: var(--border-radius-lg); margin-top: 1rem; }
+    .risk-level { font-size: 18px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <i class="ti ti-heart-handshake"></i>
+        <div>
+          <div class="logo-text">Dr Murali Gopal</div>
+          <div class="logo-subtext">Paediatric Health Portal</div>
+        </div>
+      </div>
+      <button class="hamburger" id="menu-btn" aria-label="Toggle navigation menu">
+        <i class="ti ti-menu-2"></i>
+      </button>
+      <nav id="nav-menu">
+        <a href="/">Home</a>
+        <a href="/#symptoms">Symptoms</a>
+        <a href="/#education">Education</a>
+        <a href="/#tools">Tools</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="content">
+    
+    <div class="article-header">
+      <div class="breadcrumb">
+        <a href="/">Home</a> > <a href="/#symptoms">Smart Symptom Guide</a> > [CONDITION]
+      </div>
+      <h1>Smart Symptom Guide: [CONDITION]</h1>
+      <p style="color: var(--color-text-secondary);">
+        Answer a few quick questions to understand if your child needs medical care.
+      </p>
+    </div>
+
+    <!-- Introduction -->
+    <section>
+      <h2>What is [CONDITION]?</h2>
+      <p>
+        [Brief, parent-friendly explanation of the condition.
+        What causes it? How common is it? Why should parents care?]
+      </p>
+      <p>
+        This guide will help you understand your child's symptoms and decide whether 
+        to contact your doctor. <strong>Remember: This is for information only, not a diagnosis.</strong>
+      </p>
+    </section>
+
+    <!-- Symptom Checker -->
+    <section class="symptom-checker">
+      <h2>Check Your Child's Symptoms</h2>
+      <p style="margin-bottom: 1.5rem; color: var(--color-text-secondary);">
+        Select all symptoms your child currently has:
+      </p>
+
+      <div class="symptom-item">
+        <label>
+          <input type="checkbox" class="symptom" value="symptom-1">
+          <span>[Symptom 1] - [brief description]</span>
+        </label>
+      </div>
+
+      <div class="symptom-item">
+        <label>
+          <input type="checkbox" class="symptom" value="symptom-2">
+          <span>[Symptom 2] - [brief description]</span>
+        </label>
+      </div>
+
+      <div class="symptom-item">
+        <label>
+          <input type="checkbox" class="symptom" value="symptom-3">
+          <span>[Symptom 3] - [brief description]</span>
+        </label>
+      </div>
+
+      <div class="symptom-item">
+        <label>
+          <input type="checkbox" class="symptom" value="symptom-4">
+          <span>[Symptom 4] - [brief description]</span>
+        </label>
+      </div>
+
+      <button class="btn btn-primary" onclick="assessSymptoms()" style="margin-top: 1rem;">
+        <i class="ti ti-check"></i> Check Assessment
+      </button>
+    </section>
+
+    <!-- Assessment Result -->
+    <div id="assessment-result" style="display: none;">
+      
+      <!-- Green (Monitor at home) -->
+      <div class="assessment-box" style="background-color: var(--color-success);">
+        <h3><i class="ti ti-mood-smile"></i> Likely Manageable at Home</h3>
+        <p>Based on the symptoms, your child's condition may be manageable with home care.</p>
+        <ul class="assessment-list">
+          <li>[Home care tip 1]</li>
+          <li>[Home care tip 2]</li>
+          <li>[Home care tip 3]</li>
+        </ul>
+      </div>
+
+      <!-- Yellow (Consult doctor soon) -->
+      <div class="assessment-box" style="background-color: var(--color-warning); display: none;" id="yellow-result">
+        <h3><i class="ti ti-alert-circle"></i> Consult Your Doctor Soon</h3>
+        <p>Your child should be evaluated by a doctor within the next 24-48 hours.</p>
+        <ul class="assessment-list">
+          <li>Contact your paediatrician</li>
+          <li>Schedule an appointment</li>
+          <li>Provide all symptom information</li>
+        </ul>
+      </div>
+
+      <!-- Red (Seek immediate care) -->
+      <div class="assessment-box" style="background-color: var(--color-danger); display: none;" id="red-result">
+        <h3><i class="ti ti-alert-triangle"></i> Seek Immediate Medical Care</h3>
+        <p><strong>Your child needs urgent evaluation. Please:</strong></p>
+        <ul class="assessment-list">
+          <li>Contact your paediatrician immediately</li>
+          <li>Go to the nearest emergency room</li>
+          <li>Call emergency services if needed</li>
+        </ul>
+      </div>
+
+      <div class="next-steps">
+        <h3><i class="ti ti-clipboard-check"></i> Next Steps</h3>
+        <ul class="assessment-list">
+          <li>Monitor your child's symptoms regularly</li>
+          <li>Keep a symptom log (date, time, symptoms)</li>
+          <li>Note when symptoms worsen or improve</li>
+          <li>Share this information with your doctor</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Red Flags (Always show) -->
+    <section>
+      <div class="red-flags">
+        <h3><i class="ti ti-alert-triangle"></i> Warning Signs: Seek Immediate Care</h3>
+        <p><strong>Go to the emergency room or call emergency services if your child has:</strong></p>
+        <ul>
+          <li>[Red flag 1]</li>
+          <li>[Red flag 2]</li>
+          <li>[Red flag 3]</li>
+          <li>[Red flag 4]</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="margin-top: 3rem;">
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>Q: When should I see a doctor?</h3>
+      <p>[Answer with specific guidance]</p>
+
+      <h3>Q: How is [CONDITION] diagnosed?</h3>
+      <p>[Explain common diagnostic tests/procedures]</p>
+
+      <h3>Q: How is [CONDITION] treated?</h3>
+      <p>[Explain treatment options]</p>
+
+      <h3>Q: How long does it take to recover?</h3>
+      <p>[Provide recovery timeline]</p>
+
+    </section>
+
+    <!-- Related Resources -->
+    <section class="highlight-section">
+      <h2>Related Resources</h2>
+      <ul>
+        <li><a href="#">Related Article: [Topic 1]</a></li>
+        <li><a href="#">Related Article: [Topic 2]</a></li>
+        <li><a href="#">Printable Parent Guide: [Topic]</a></li>
+      </ul>
+    </section>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer" style="margin-top: 3rem;">
+      <strong>⚠️ Important Disclaimer:</strong> This symptom guide is for educational purposes only. 
+      It is NOT a substitute for professional medical diagnosis or treatment. 
+      Always consult a qualified paediatrician for proper diagnosis and treatment recommendations.
+      The assessment provided here is based on general medical knowledge and should never replace 
+      a doctor's clinical judgment.
+    </div>
+
+    <div style="margin-top: 2rem; text-align: center; padding-top: 2rem; border-top: 1px solid var(--color-border-light);">
+      <button class="btn btn-small" onclick="printPage()">
+        <i class="ti ti-printer"></i> Print Results
+      </button>
+      <button class="btn btn-small" onclick="location.reload()">
+        <i class="ti ti-refresh"></i> Start Over
+      </button>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="/pages/about.html">About Us</a>
+        <a href="/pages/privacy.html">Privacy Policy</a>
+        <a href="/pages/terms.html">Terms of Use</a>
+        <a href="/pages/disclaimer.html">Medical Disclaimer</a>
+      </div>
+      <div class="footer-info">
+        <p style="margin-top: 12px; color: var(--color-text-tertiary);">© 2026 Dr Murali Gopal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function assessSymptoms() {
+      const checked = document.querySelectorAll('.symptom:checked').length;
+      const resultDiv = document.getElementById('assessment-result');
+      resultDiv.style.display = 'block';
+
+      // Simple logic: 0-1 symptoms = green, 2 symptoms = yellow, 3+ = red
+      if (checked === 0) {
+        // No symptoms, show general advice
+        resultDiv.innerHTML = '<div class="assessment-box" style="background-color: var(--color-success);"><h3><i class="ti ti-mood-smile"></i> No Symptoms Found</h3><p>Your child appears to be healthy. Continue regular check-ups.</p></div>';
+      } else if (checked <= 2) {
+        document.getElementById('yellow-result').style.display = 'block';
+      } else {
+        document.getElementById('red-result').style.display = 'block';
+      }
+
+      resultDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
+
+<!-- 
+INSTRUCTIONS FOR USING THIS TEMPLATE:
+1. Copy this file and rename to your condition (e.g., "fever.html")
+2. Replace all [BRACKETED SECTIONS] with your content
+3. Update the condition name throughout
+4. Customize the symptom checkboxes for your condition
+5. Update red flags and FAQ sections
+6. Adjust assessment logic (currently basic symptom counting)
+7. Always keep the medical disclaimer prominent
+8. Test the checkbox logic before publishing
+-->
