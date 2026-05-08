@@ -3,14 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dr Murali Gopal's Paediatric Health Portal - Patient-friendly child health information from Apollo Cradle & Children's Hospital">
-  <meta name="author" content="Dr Murali Gopal">
-  <meta name="theme-color" content="#185FA5">
-  <title>Dr Murali Gopal's Paediatric Health Portal</title>
-  
+  <meta name="description" content="Health Articles - Dr Murali Gopal's Paediatric Health Portal">
+  <title>Articles - Dr Murali Gopal's Portal</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/tabler-icons.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <header>
@@ -26,107 +22,73 @@
         <i class="ti ti-menu-2"></i>
       </button>
       <nav id="nav-menu">
-        <a href="#education">Education</a>
-        <a href="#symptoms">Symptoms</a>
-        <a href="#tools">Tools</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/education/">Articles</a>
+        <a href="/#symptoms">Symptoms</a>
+        <a href="/#tools">Tools</a>
+        <a href="/#about">About</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Your Child's Health, Simplified</h1>
-      <p class="hero-subtitle">Patient-friendly child health information from Apollo Cradle & Children's Hospital, Karapakkam</p>
-      <div class="hero-buttons">
-        <a href="#education" class="btn btn-primary">
-          <i class="ti ti-book"></i>Explore Articles
-        </a>
-        <a href="#symptoms" class="btn">
-          <i class="ti ti-stethoscope"></i>Check Symptoms
-        </a>
-      </div>
-    </div>
-  </section>
-
   <main id="main-content" class="content">
-    <section id="education" class="cards-grid" style="margin-top: 3rem;">
-      
+
+    <div class="article-header">
+      <div class="breadcrumb">
+        <a href="/">Home</a> &gt; Articles
+      </div>
+      <h1>Health Articles</h1>
+      <p style="color: var(--color-text-secondary); font-size: 16px;">
+        Evidence-based health information for parents. Written in simple language without medical jargon.
+      </p>
+    </div>
+
+    <section class="cards-grid">
+
       <div class="card">
-        <div class="card-icon"><i class="ti ti-book-2"></i></div>
-        <h3>Health Articles</h3>
-        <p>Learn about nutrition, child development, common conditions, and wellness tips for your child.</p>
-        <a href="education/" class="card-link">Read Articles <i class="ti ti-arrow-right"></i></a>
+        <div class="card-icon"><i class="ti ti-thermometer"></i></div>
+        <h3>Fever in Children</h3>
+        <p>Age-specific guidance for managing fever in newborns, infants, toddlers, preschoolers, and older children.</p>
+        <p style="font-size: 12px; color: var(--color-text-tertiary); margin-top: 8px;">
+          <strong>Covers:</strong> 0-3 months | 3-12 months | 1-3 years | 3-6 years | 6+ years
+        </p>
+        <a href="fever.html" class="card-link">Read Article <i class="ti ti-arrow-right"></i></a>
       </div>
 
       <div class="card">
-        <div class="card-icon"><i class="ti ti-shield-check"></i></div>
-        <h3>Vaccination Schedules</h3>
-        <p>Complete vaccination timeline and catch-up guides following IAP ACVIP 2023 standards.</p>
-        <a href="vaccination/" class="card-link">View Schedule <i class="ti ti-arrow-right"></i></a>
+        <div class="card-icon"><i class="ti ti-clock"></i></div>
+        <h3>More Articles Coming Soon</h3>
+        <p>We're adding more articles regularly. Planned topics: cough, diarrhea, rashes, nutrition, development milestones.</p>
+        <a href="/" class="card-link">Back to Home <i class="ti ti-arrow-right"></i></a>
       </div>
 
-      <div class="card">
-        <div class="card-icon"><i class="ti ti-stethoscope"></i></div>
-        <h3>Smart Symptom Guide</h3>
-        <p>Interactive guidance for understanding symptoms, red flags, and when to seek medical care.</p>
-        <a href="symptoms/" class="card-link">Start Guide <i class="ti ti-arrow-right"></i></a>
-      </div>
-
-      <div class="card">
-        <div class="card-icon"><i class="ti ti-apple"></i></div>
-        <h3>Nutrition Guides</h3>
-        <p>Feeding guidance for infants, toddlers, and school-age children with practical tips.</p>
-        <a href="nutrition/" class="card-link">Explore Guides <i class="ti ti-arrow-right"></i></a>
-      </div>
-
-      <div class="card">
-        <div class="card-icon"><i class="ti ti-calculator"></i></div>
-        <h3>Clinical Tools</h3>
-        <p>Interactive calculators for dosing, growth tracking, and developmental milestones.</p>
-        <a href="tools/" class="card-link">Use Tools <i class="ti ti-arrow-right"></i></a>
-      </div>
-
-      <div class="card">
-        <div class="card-icon"><i class="ti ti-download"></i></div>
-        <h3>Printable Handouts</h3>
-        <p>Parent-friendly PDF guides for home care and health management.</p>
-        <a href="downloads/" class="card-link">Download Now <i class="ti ti-arrow-right"></i></a>
-      </div>
-      
     </section>
 
-    <section class="highlight-section">
-      <h2>Why Use This Portal?</h2>
-      <p><strong>Evidence-based:</strong> Content aligned with IAP, WHO, and international paediatric guidelines.</p>
-      <p><strong>Parent-friendly:</strong> Simple language, no medical jargon—easy to understand and share.</p>
-      <p><strong>Safe & Secure:</strong> Your privacy is protected. We never store personal health data.</p>
-      <p><strong>Always Updated:</strong> Regular reviews to keep information current and accurate.</p>
-    </section>
+    <div class="disclaimer" style="margin-top: 2rem;">
+      <strong>⚠️ Disclaimer:</strong> These articles provide general health information only.
+      Always consult your paediatrician for diagnosis and treatment.
+    </div>
+
+    <div style="margin-top: 2rem; text-align: center;">
+      <a href="/" class="btn btn-primary">
+        <i class="ti ti-home"></i> Back to Home
+      </a>
+    </div>
 
   </main>
 
   <footer>
     <div class="footer-content">
       <div class="footer-links">
-        <a href="pages/about.html">About Us</a>
-        <a href="pages/privacy.html">Privacy Policy</a>
-        <a href="pages/terms.html">Terms of Use</a>
-        <a href="pages/contact.html">Contact</a>
-        <a href="pages/disclaimer.html">Medical Disclaimer</a>
+        <a href="/pages/about.html">About Us</a>
+        <a href="/pages/disclaimer.html">Medical Disclaimer</a>
       </div>
       <div class="footer-info">
-        <p><strong>Apollo Cradle & Children's Hospital</strong></p>
-        <p>Karapakkam, Chennai, India</p>
-        <p style="margin-top: 12px; color: var(--color-text-tertiary);">© 2026 Dr Murali Gopal. All rights reserved. | Last updated: May 2026</p>
-      </div>
-      <div class="disclaimer">
-        ⚠️ <strong>Medical Disclaimer:</strong> This portal provides general health information. It is not a substitute for professional medical advice. Always consult a qualified paediatrician for diagnosis and treatment.
+        <p style="margin-top: 12px; color: var(--color-text-tertiary);">© 2026 Dr Murali Gopal. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
