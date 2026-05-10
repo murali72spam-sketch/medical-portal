@@ -1,0 +1,10 @@
+{
+  "name": "clinical-portal-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static paediatric clinical education portal for Dr. Murali Gopal.",
+  "scripts": {
+    "build": "node auto-index-generator.js",
+    "generate:index": "node auto-index-generator.js"
+  }
+}
