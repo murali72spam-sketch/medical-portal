@@ -12,6 +12,7 @@
     "Nutrition & Feeding",
     "Vaccination",
     "Fever & Infections",
+    "Skin & Allergy",
     "Growth & Development",
     "Medication Information",
     "Parent Education"
