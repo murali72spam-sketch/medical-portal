@@ -1,132 +1,359 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dr Murali Gopal's Paediatric Health Portal - Patient-friendly child health information from Apollo Cradle & Children's Hospital">
-  <meta name="author" content="Dr Murali Gopal">
-  <meta name="theme-color" content="#185FA5">
-  <title>Dr Murali Gopal's Paediatric Health Portal</title>
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/tabler-icons.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>">
+
+  <meta name="description" content="Clinical Portal 2026 by Dr. Murali Gopal: verified paediatric parent guides, patient education resources, and interactive clinical tools.">
+  <meta name="author" content="Dr. Murali Gopal">
+  <meta name="theme-color" content="#0f6b78">
+
+  <title>Clinical Portal 2026 | Dr. Murali Gopal</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <div class="header-content">
-      <div class="logo">
-        <i class="ti ti-heart-handshake"></i>
-        <div>
-          <div class="logo-text">Dr Murali Gopal</div>
-          <div class="logo-subtext">Paediatric Health Portal</div>
-        </div>
-      </div>
-      <button class="hamburger" id="menu-btn" aria-label="Toggle navigation menu">
-        <i class="ti ti-menu-2"></i>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Clinical Portal 2026 home">
+        <span class="brand-mark" aria-hidden="true">✚</span>
+        <span class="brand-copy">
+          <span class="brand-name">Clinical Portal 2026</span>
+          <span class="brand-subtitle">Dr. Murali Gopal</span>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        data-nav-toggle
+      >
+        ☰
       </button>
-      <nav id="nav-menu">
-        <a href="education/">Articles</a>
-        <a href="#symptoms">Symptoms</a>
-        <a href="#tools">Tools</a>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
+        <a href="#resources">Resources</a>
+        <a href="#categories">Categories</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="legal/disclaimer.html">Disclaimer</a>
+        <a href="legal/privacy-policy.html">Privacy</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Your Child's Health, Simplified</h1>
-      <p class="hero-subtitle">Patient-friendly child health information from Apollo Cradle & Children's Hospital, Karapakkam</p>
-      <div class="hero-buttons">
-        <a href="education/" class="btn btn-primary">
-          <i class="ti ti-book"></i>Explore Articles
-        </a>
-        <a href="#symptoms" class="btn">
-          <i class="ti ti-stethoscope"></i>Check Symptoms
-        </a>
-      </div>
-    </div>
-  </section>
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Paediatric patient education portal</span>
 
-  <main id="main-content" class="content">
-    <section id="education" class="cards-grid" style="margin-top: 3rem;">
-      
-      <div class="card">
-        <div class="card-icon"><i class="ti ti-book-2"></i></div>
-        <h3>Health Articles</h3>
-        <p>Learn about nutrition, child development, common conditions, and wellness tips for your child.</p>
-        <a href="education/" class="card-link">Read Articles <i class="ti ti-arrow-right"></i></a>
-      </div>
+          <h1>Trusted child-health guidance for parents and caregivers.</h1>
 
-      <div class="card">
-        <div class="card-icon"><i class="ti ti-shield-check"></i></div>
-        <h3>Vaccination Schedules</h3>
-        <p>Complete vaccination timeline and catch-up guides following IAP ACVIP 2023 standards.</p>
-        <a href="vaccination/" class="card-link">View Schedule <i class="ti ti-arrow-right"></i></a>
-      </div>
+          <p class="lead">
+            Clinical Portal 2026 provides verified paediatric education resources,
+            printable parent guides, and carefully governed interactive tools in a
+            clear, parent-friendly format.
+          </p>
 
-      <div class="card">
-        <div class="card-icon"><i class="ti ti-stethoscope"></i></div>
-        <h3>Smart Symptom Guide</h3>
-        <p>Interactive guidance for understanding symptoms, red flags, and when to seek medical care.</p>
-        <a href="symptoms/" class="card-link">Start Guide <i class="ti ti-arrow-right"></i></a>
-      </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#resources">Browse resources</a>
+            <a class="button button-secondary" href="#about">About this portal</a>
+          </div>
+        </div>
 
-      <div class="card">
-        <div class="card-icon"><i class="ti ti-apple"></i></div>
-        <h3>Nutrition Guides</h3>
-        <p>Feeding guidance for infants, toddlers, and school-age children with practical tips.</p>
-        <a href="nutrition/" class="card-link">Explore Guides <i class="ti ti-arrow-right"></i></a>
-      </div>
+        <aside class="hero-card" aria-label="Portal overview">
+          <div class="stack-md">
+            <div>
+              <span class="eyebrow">Medical lead</span>
+              <h2>Dr. Murali Gopal</h2>
+              <p class="text-muted">
+                Senior Paediatrician &amp; Paediatric Pulmonologist
+              </p>
+            </div>
 
-      <div class="card">
-        <div class="card-icon"><i class="ti ti-calculator"></i></div>
-        <h3>Clinical Tools</h3>
-        <p>Interactive calculators for dosing, growth tracking, and developmental milestones.</p>
-        <a href="tools/" class="card-link">Use Tools <i class="ti ti-arrow-right"></i></a>
-      </div>
+            <div class="hero-stat-grid">
+              <div class="hero-stat">
+                <strong>Read-only</strong>
+                <span>Public education portal</span>
+              </div>
 
-      <div class="card">
-        <div class="card-icon"><i class="ti ti-download"></i></div>
-        <h3>Printable Handouts</h3>
-        <p>Parent-friendly PDF guides for home care and health management.</p>
-        <a href="downloads/" class="card-link">Download Now <i class="ti ti-arrow-right"></i></a>
+              <div class="hero-stat">
+                <strong>Verified</strong>
+                <span>Reviewed resources only</span>
+              </div>
+
+              <div class="hero-stat">
+                <strong>Private</strong>
+                <span>No patient data stored initially</span>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
-      
     </section>
 
-    <section class="highlight-section">
-      <h2>Why Use This Portal?</h2>
-      <p><strong>Evidence-based:</strong> Content aligned with IAP, WHO, and international paediatric guidelines.</p>
-      <p><strong>Parent-friendly:</strong> Simple language, no medical jargon—easy to understand and share.</p>
-      <p><strong>Safe & Secure:</strong> Your privacy is protected. We never store personal health data.</p>
-      <p><strong>Always Updated:</strong> Regular reviews to keep information current and accurate.</p>
+    <section class="section-compact">
+      <div class="container">
+        <div class="notice notice-disclaimer">
+          <strong>Important medical notice</strong>
+          This portal provides general educational resources only. It does not replace
+          medical consultation, diagnosis, or individualized treatment. No
+          patient-specific medical data is collected or stored in the initial version.
+        </div>
+      </div>
     </section>
 
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Browse by topic</span>
+          <h2>Clinical resource categories</h2>
+          <p class="lead">
+            Resources will be organised by common parent needs and paediatric care themes.
+          </p>
+        </div>
+
+        <div class="category-grid">
+          <article class="card category-card">
+            <div class="category-icon" aria-hidden="true">🫁</div>
+            <div>
+              <h3>Respiratory</h3>
+              <p>Cough, asthma, bronchiolitis, croup, and related guidance.</p>
+            </div>
+            <p class="text-small text-muted">
+              <span data-category-count="Respiratory">0</span> published resources
+            </p>
+          </article>
+
+          <article class="card category-card">
+            <div class="category-icon" aria-hidden="true">🥣</div>
+            <div>
+              <h3>Gastrointestinal</h3>
+              <p>Diarrhoea, constipation, reflux, and abdominal symptoms.</p>
+            </div>
+            <p class="text-small text-muted">
+              <span data-category-count="Gastrointestinal">0</span> published resources
+            </p>
+          </article>
+
+          <article class="card category-card">
+            <div class="category-icon" aria-hidden="true">🍎</div>
+            <div>
+              <h3>Nutrition &amp; Feeding</h3>
+              <p>Weaning, picky eating, feeding guidance, and nutrition charts.</p>
+            </div>
+            <p class="text-small text-muted">
+              <span data-category-count="Nutrition &amp; Feeding">0</span> published resources
+            </p>
+          </article>
+
+          <article class="card category-card">
+            <div class="category-icon" aria-hidden="true">💉</div>
+            <div>
+              <h3>Vaccination</h3>
+              <p>Routine guidance, vaccine FAQs, and future reference tools.</p>
+            </div>
+            <p class="text-small text-muted">
+              <span data-category-count="Vaccination">0</span> published resources
+            </p>
+          </article>
+
+          <article class="card category-card">
+            <div class="category-icon" aria-hidden="true">🌡️</div>
+            <div>
+              <h3>Fever &amp; Infections</h3>
+              <p>Fever, common infections, red flags, and when to seek care.</p>
+            </div>
+            <p class="text-small text-muted">
+              <span data-category-count="Fever &amp; Infections">0</span> published resources
+            </p>
+          </article>
+
+          <article class="card category-card">
+            <div class="category-icon" aria-hidden="true">📈</div>
+            <div>
+              <h3>Growth &amp; Development</h3>
+              <p>Milestones, sleep, bedwetting, and growth references.</p>
+            </div>
+            <p class="text-small text-muted">
+              <span data-category-count="Growth &amp; Development">0</span> published resources
+            </p>
+          </article>
+
+          <article class="card category-card">
+            <div class="category-icon" aria-hidden="true">💊</div>
+            <div>
+              <h3>Medication Information</h3>
+              <p>High-safety educational references and device-use guides.</p>
+            </div>
+            <p class="text-small text-muted">
+              <span data-category-count="Medication Information">0</span> published resources
+            </p>
+          </article>
+
+          <article class="card category-card">
+            <div class="category-icon" aria-hidden="true">📘</div>
+            <div>
+              <h3>Parent Education</h3>
+              <p>Urgent-care signs, common myths, and practical home guidance.</p>
+            </div>
+            <p class="text-small text-muted">
+              <span data-category-count="Parent Education">0</span> published resources
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Resource library</span>
+          <h2>Published parent resources</h2>
+          <p class="lead" data-resource-count>0 published resources</p>
+        </div>
+
+        <div class="portal-toolbar" aria-label="Resource search and filters">
+          <label class="search-field">
+            <span class="visually-hidden">Search resources</span>
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+              type="search"
+              placeholder="Search by condition, keyword, or category"
+              data-resource-search
+            >
+          </label>
+
+          <div class="filter-row" role="group" aria-label="Filter by category">
+            <button class="filter-button is-active" type="button" aria-pressed="true" data-category-filter="All">
+              All
+            </button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Respiratory">
+              Respiratory
+            </button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Gastrointestinal">
+              Gastrointestinal
+            </button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Nutrition &amp; Feeding">
+              Nutrition &amp; Feeding
+            </button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Vaccination">
+              Vaccination
+            </button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Fever &amp; Infections">
+              Fever &amp; Infections
+            </button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Growth &amp; Development">
+              Growth &amp; Development
+            </button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Medication Information">
+              Medication Information
+            </button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Parent Education">
+              Parent Education
+            </button>
+          </div>
+        </div>
+
+        <div class="empty-state" data-empty-state>
+          No published resources match the current search or filter yet.
+        </div>
+
+        <div class="resource-grid" data-resource-grid></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-column-grid">
+        <div>
+          <div class="section-heading">
+            <span class="eyebrow">Selected content</span>
+            <h2>Featured resources</h2>
+          </div>
+
+          <div class="resource-grid" data-featured-grid></div>
+        </div>
+
+        <div>
+          <div class="section-heading">
+            <span class="eyebrow">Review history</span>
+            <h2>Recent updates</h2>
+          </div>
+
+          <div class="card info-card">
+            <ul class="clean-list" data-recent-updates>
+              <li>Reviewed resources will appear here as the portal grows.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">About the portal</span>
+          <h2>Built for safe, clear paediatric education</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="card feature-card">
+            <div class="feature-icon" aria-hidden="true">✓</div>
+            <h3>Clinically cautious</h3>
+            <p>
+              Public resources require references, last-reviewed dates, and clear
+              non-substitution wording before publication.
+            </p>
+          </article>
+
+          <article class="card feature-card">
+            <div class="feature-icon" aria-hidden="true">⌘</div>
+            <h3>Static and lightweight</h3>
+            <p>
+              The portal is designed as a fast, public, read-only website using HTML,
+              CSS, and vanilla JavaScript.
+            </p>
+          </article>
+
+          <article class="card feature-card">
+            <div class="feature-icon" aria-hidden="true">▣</div>
+            <h3>Printable by design</h3>
+            <p>
+              Parent guides and future PDFs are planned for A4-friendly printing and
+              clinic distribution.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="footer-content">
+  <footer class="site-footer">
+    <div class="container footer-inner">
       <div class="footer-links">
-        <a href="pages/about.html">About Us</a>
-        <a href="pages/privacy.html">Privacy Policy</a>
-        <a href="pages/terms.html">Terms of Use</a>
-        <a href="pages/contact.html">Contact</a>
-        <a href="pages/disclaimer.html">Medical Disclaimer</a>
+        <a href="legal/disclaimer.html">Disclaimer</a>
+        <a href="legal/privacy-policy.html">Privacy Policy</a>
+        <a href="legal/terms-of-use.html">Terms of Use</a>
+        <a href="legal/copyright.html">Copyright</a>
       </div>
-      <div class="footer-info">
-        <p><strong>Apollo Cradle & Children's Hospital</strong></p>
-        <p>Karapakkam, Chennai, India</p>
-        <p style="margin-top: 12px; color: var(--color-text-tertiary);">© 2026 Dr Murali Gopal. All rights reserved. | Last updated: May 2026</p>
-      </div>
-      <div class="disclaimer">
-        ⚠️ <strong>Medical Disclaimer:</strong> This portal provides general health information. It is not a substitute for professional medical advice. Always consult a qualified paediatrician for diagnosis and treatment.
+
+      <div class="footer-note">
+        <p>
+          This portal provides general educational resources only. It is not a
+          substitute for medical consultation, diagnosis, or individualized treatment.
+        </p>
+        <p>
+          © <span data-current-year></span> Dr. Murali Gopal. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
