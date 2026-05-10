@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "title": "Fever in Children",
+    "slug": "fever-in-children",
+    "category": "Fever & Infections",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to fever in children, including home care, warning signs, and when to seek medical help.",
+    "keywords": "fever, child fever, temperature, axillary thermometer, red flags, dehydration, febrile seizure, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-10",
+    "medical_review_status": "needs-review",
+    "references": "IAP Guidelines for Fever; IAP STG 146 Management of Fever without Focus in Office Practice; ICMR STW Fever in Children; RCH Australia Fever in children; NICE NG143 Fever in under 5s; American Academy of Pediatrics fever and thermometer guidance",
+    "featured": true,
+    "status": "draft",
+    "url": "html-conditions/fever-in-children.html"
+  }
+]
