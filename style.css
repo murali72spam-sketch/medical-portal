@@ -643,6 +643,10 @@ button.button:hover {
   background: rgba(255, 255, 255, 0.72);
 }
 
+.two-column-grid [data-featured-grid] {
+  grid-template-columns: 1fr;
+}
+
 /* ---------- Badges ---------- */
 
 .badge {
@@ -1036,6 +1040,10 @@ tr:last-child td {
   .search-field input,
   .filter-button {
     background: rgba(16, 32, 40, 0.92);
+  }
+
+  .empty-state {
+    background: rgba(16, 32, 40, 0.72);
   }
 
   .button-secondary {
