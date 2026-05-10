@@ -28,6 +28,18 @@ const metadataFields = [
   "status"
 ];
 
+const approvedCategories = [
+  "Respiratory",
+  "Gastrointestinal",
+  "Nutrition & Feeding",
+  "Vaccination",
+  "Fever & Infections",
+  "Skin & Allergy",
+  "Growth & Development",
+  "Medication Information",
+  "Parent Education"
+];
+
 function ensureDirectoryExists(directoryPath) {
   if (!fs.existsSync(directoryPath)) {
     fs.mkdirSync(directoryPath, { recursive: true });
@@ -126,6 +138,12 @@ function validateMetadata(resource, fileName) {
   if (missingFields.length > 0) {
     console.warn(
       `Warning: ${fileName} is missing metadata field(s): ${missingFields.join(", ")}`
+    );
+  }
+
+  if (!approvedCategories.includes(resource.category)) {
+    console.warn(
+      `Warning: ${fileName} uses unsupported category "${resource.category}". Approved categories: ${approvedCategories.join(", ")}`
     );
   }
 }
