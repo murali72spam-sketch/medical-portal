@@ -13,6 +13,18 @@ const conditionsDirectory = path.join(projectRoot, "html-conditions");
 const dataDirectory = path.join(projectRoot, "data");
 const outputFile = path.join(dataDirectory, "conditions-index.json");
 
+const approvedCategories = [
+  "Respiratory",
+  "Gastrointestinal",
+  "Nutrition & Feeding",
+  "Vaccination",
+  "Fever & Infections",
+  "Skin & Allergy",
+  "Growth & Development",
+  "Medication Information",
+  "Parent Education"
+];
+
 const metadataFields = [
   "title",
   "slug",
@@ -128,6 +140,18 @@ function validateMetadata(resource, fileName) {
       `Warning: ${fileName} is missing metadata field(s): ${missingFields.join(", ")}`
     );
   }
+  validateCategory(resource.category, fileName);
+}
+
+function validateCategory(category, fileName) {
+  if (!category || approvedCategories.includes(category)) {
+    return;
+  }
+
+  console.warn(
+    `Warning: ${fileName} uses unsupported category "${category}". Approved categories: ${approvedCategories.join(", ")}`
+  );
+
 }
 
 function buildIndex() {
