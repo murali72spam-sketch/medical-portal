@@ -800,6 +800,14 @@ button.button:hover {
   padding-block: clamp(2rem, 5vw, 3.3rem);
 }
 
+.resource-page-hero {
+  padding-bottom: clamp(0.75rem, 2vw, 1.15rem);
+}
+
+.resource-page-section {
+  padding-top: 0;
+}
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -1060,7 +1068,7 @@ tr:last-child td {
 
 @page {
   size: A4;
-  margin: 14mm;
+  margin: 12mm;
 }
 
 @media print {
@@ -1075,8 +1083,10 @@ tr:last-child td {
   }
 
   body {
-    font-size: 11pt;
-    line-height: 1.45;
+    font-size: 10pt;
+    line-height: 1.35;
+    orphans: 2;
+    widows: 2;
   }
 
   .site-header,
@@ -1085,13 +1095,20 @@ tr:last-child td {
   .hero-actions,
   .portal-toolbar,
   .button,
-  .skip-link {
+  .skip-link,
+  .breadcrumb,
+  .resource-meta {
     display: none !important;
   }
 
   .section,
+  .section-compact,
   .page-hero {
     padding-block: 0;
+  }
+
+  .page-hero {
+    margin-bottom: 0.55rem;
   }
 
   .container,
@@ -1102,6 +1119,70 @@ tr:last-child td {
     max-width: none;
   }
 
+  h1 {
+    margin-bottom: 0.35rem;
+    font-size: 22pt;
+    line-height: 1.08;
+  }
+
+  h2 {
+    font-size: 14pt;
+  }
+
+  h3 {
+    font-size: 12pt;
+  }
+
+  p {
+    margin-bottom: 0.45rem;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 0.45rem;
+    padding-left: 1.15rem;
+  }
+
+  li + li {
+    margin-top: 0.12rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 0.3rem;
+    font-size: 8pt;
+  }
+
+  .lead {
+    margin-bottom: 0.45rem;
+    font-size: 10.5pt;
+  }
+
+  .resource-content > * + * {
+    margin-top: 0.6rem;
+  }
+
+  .resource-content section + section {
+    margin-top: 0.8rem;
+  }
+
+  .resource-content h2 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .info-card {
+    padding: 0.65rem 0.8rem;
+  }
+
+  .info-card h2 {
+    margin-bottom: 0.25rem;
+  }
+
+  .notice,
+  .callout {
+    padding: 0.6rem 0.75rem;
+  }
+
   .card,
   .hero-card,
   .notice,
@@ -1109,6 +1190,20 @@ tr:last-child td {
   .legal-card,
   .table-wrap {
     box-shadow: none !important;
+  }
+
+  .resource-content section,
+  .resource-content p,
+  .resource-content ul,
+  .resource-content ol,
+  .red-flags {
+    break-inside: auto;
+  }
+
+  .info-card,
+  .notice,
+  .callout-reassurance,
+  .key-points {
     break-inside: avoid;
   }
 
@@ -1123,11 +1218,11 @@ tr:last-child td {
     text-decoration: none;
   }
 
-  .resource-content section,
-  .notice,
-  .callout,
-  .red-flags,
-  .key-points {
-    break-inside: avoid;
+  .reference-list {
+    font-size: 9pt;
+  }
+
+  .text-small {
+    font-size: 8.5pt;
   }
 }
