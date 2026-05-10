@@ -1,388 +1,275 @@
-# Dr Murali Gopal's Paediatric Health Portal
+﻿# Clinical Portal 2026
 
-**A professional, patient-friendly educational portal for child health information.**
-
-Hosted on Netlify | Built with HTML/CSS/JS | No backend required | Completely offline-friendly
-
----
-
-## Overview
-
-This portal provides evidence-based paediatric health information for parents and caregivers. It includes:
-
-- **Health Articles** - Evidence-based guides on nutrition, development, common conditions
-- **Smart Symptom Guide** - Interactive symptom checker with assessment guidance
-- **Vaccination Schedules** - IAP ACVIP 2023 compliant vaccination timeline
-- **Nutrition Guides** - Feeding guidance for infants, toddlers, school-age children
-- **Clinical Tools** - Dosage calculators, growth tracking, developmental assessments
-- **Printable Handouts** - Parent-friendly PDF guides for home reference
+**Project Code:** `CLINICAL-PORTAL-2026`  
+**Owner:** Dr. Murali Gopal  
+**Status:** Active build project  
+**Primary Deployment:** Vercel  
+**Frontend Stack:** HTML5 + CSS3 + Vanilla JavaScript  
 
 ---
 
-## Features
+## Project Purpose
 
-✅ **Professional Design** - Modern, responsive, hospital-grade interface  
-✅ **Mobile-First** - Works perfectly on phones, tablets, desktops  
-✅ **Dark Mode** - Automatic light/dark mode support  
-✅ **No Data Collection** - Completely private, no cookies or tracking  
-✅ **Fast & Lightweight** - Pure HTML/CSS/JS, no heavy frameworks  
-✅ **Accessible** - WCAG compliant, keyboard navigation, screen reader friendly  
-✅ **Printable** - Articles and checklists format beautifully when printed  
-✅ **Easy to Update** - Simple template system, no coding required for new content  
+Clinical Portal 2026 is a professional, public, read-only paediatric clinical education portal for parents and patients.
+
+The portal will provide:
+- verified parent guides,
+- PDF patient leaflets,
+- weaning and nutrition resources,
+- vaccination resources,
+- legal information pages,
+- and carefully governed interactive paediatric HTML tools.
+
+The portal is for **general educational use only**. It is **not a substitute for medical consultation, diagnosis, or individualized treatment**.
 
 ---
 
-## Folder Structure
+## Core Project Decisions
 
-```
-medical-portal/
-├── index.html                 # Landing page
-├── README.md                  # This file
+| Area | Final Decision |
+|---|---|
+| Project name | Clinical Portal 2026 |
+| Target repository name | `clinical-portal` |
+| Version control | GitHub |
+| Primary deployment | Vercel |
+| Frontend stack | HTML5 + CSS3 + Vanilla JavaScript |
+| Site type | Static, public, read-only, mobile-responsive |
+| Patient data | No patient-specific data collected or stored in the initial version |
+| Initial content types | Parent guides, PDF leaflets, interactive tools, reference charts |
+| Medical verification | All public clinical content must be verified before publication |
+| Vaccination content | Use the latest available IAP/ACVIP guidance at the time of creation; do not hard-code an outdated schedule year |
+
+---
+
+## Planned Repository Structure
+
+~~~text
+clinical-portal/
 │
-├── css/
-│   └── style.css             # Main stylesheet (responsive, dark mode)
-│
-├── js/
-│   └── main.js               # Navigation, utilities, interactivity
+├── index.html
+├── style.css
+├── script.js
+├── auto-index-generator.js
+├── vercel.json
+├── package.json
+├── .gitignore
+├── README.md
 │
 ├── assets/
-│   ├── images/               # Photos, diagrams
-│   ├── icons/                # SVG icons (future)
-│   └── fonts/                # Custom fonts (if needed)
 │
-├── pages/
-│   ├── about.html            # About the clinic
-│   ├── privacy.html          # Privacy policy
-│   ├── terms.html            # Terms of use
-│   ├── disclaimer.html       # Medical disclaimer
-│   └── contact.html          # Contact information
+├── data/
+│   └── conditions-index.json
 │
-├── education/                # Health articles
-│   ├── index.html            # Articles index
-│   ├── template-article.html # Template (copy for new articles)
-│   ├── fever.html
-│   ├── cough.html
-│   └── ...
+├── html-conditions/
 │
-├── symptoms/                 # Smart Symptom Guide
-│   ├── index.html            # Symptom guides index
-│   ├── template-symptom-guide.html # Template
-│   ├── fever.html
-│   ├── cough.html
-│   └── ...
+├── legal/
+│   ├── disclaimer.html
+│   ├── privacy-policy.html
+│   ├── terms-of-use.html
+│   └── copyright.html
 │
-├── nutrition/                # Nutrition guides
-│   ├── index.html
-│   ├── infant-feeding.html
-│   ├── toddler-nutrition.html
-│   └── ...
-│
-├── tools/                    # Interactive tools & calculators
-│   ├── index.html
-│   ├── dose-calculator.html
-│   ├── bmi-calculator.html
-│   └── ...
-│
-├── vaccination/              # Vaccination schedules
-│   ├── index.html
-│   ├── routine-schedule.html
-│   └── catch-up-guide.html
-│
-├── downloads/                # Printable PDFs & handouts
-│   ├── parent-guide-newborn.pdf
-│   ├── vaccination-checklist.pdf
-│   └── ...
-│
-└── .github/workflows/        # (Optional) GitHub Actions for deployment
-    └── deploy.yml
-```
+└── pdfs/
+~~~
+
+### Folder Purpose
+
+| Folder | Purpose |
+|---|---|
+| `/assets` | Shared images, icons, and other global assets |
+| `/data` | Auto-generated and hand-curated metadata files |
+| `/html-conditions` | Parent guides, interactive tools, and reference HTML resources |
+| `/legal` | Disclaimer, privacy policy, terms of use, and copyright pages |
+| `/pdfs` | Printable patient education PDF leaflets |
 
 ---
 
-## Quick Start: How to Add Content
+## Resource Metadata Standard
 
-### Adding a New Article
+Every HTML resource inside `/html-conditions/` should include a machine-readable metadata block in the `<head>` section.
 
-1. **Copy the template:**
-   ```
-   cp education/template-article.html education/my-new-article.html
-   ```
+### Required Metadata Fields
 
-2. **Edit the file:**
-   - Replace `[ARTICLE TITLE]` with your title
-   - Replace `[ARTICLE DESCRIPTION]` with a brief summary
-   - Fill in the article sections (Introduction, Key Points, Tips, FAQ)
-   - Add red flags and key takeaways
+~~~html
+<meta name="title" content="">
+<meta name="slug" content="">
+<meta name="category" content="">
+<meta name="resource_type" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="audience" content="">
+<meta name="last_reviewed" content="">
+<meta name="medical_review_status" content="">
+<meta name="featured" content="">
+<meta name="status" content="">
+~~~
 
-3. **Add it to the index:**
-   - Open `education/index.html`
-   - Add a link to your new article
+### Recommended Values
 
-4. **Test locally:**
-   ```bash
-   python -m http.server 8000
-   # Visit http://localhost:8000/education/my-new-article.html
-   ```
+| Field | Example Values |
+|---|---|
+| `resource_type` | `parent-guide`, `interactive-tool`, `reference-chart`, `calculator` |
+| `audience` | `parents` |
+| `medical_review_status` | `draft`, `reviewed` |
+| `featured` | `true`, `false` |
+| `status` | `draft`, `reviewed`, `published` |
 
-5. **Push to GitHub:**
-   ```bash
-   git add education/my-new-article.html
-   git commit -m "Add article: My New Article"
-   git push origin main
-   ```
-
-### Adding a Smart Symptom Guide
-
-1. **Copy the symptom template:**
-   ```
-   cp symptoms/template-symptom-guide.html symptoms/fever-guide.html
-   ```
-
-2. **Customize:**
-   - Replace `[CONDITION]` with the symptom/condition
-   - Add 4-6 key symptoms with checkboxes
-   - Update red flags (symptoms requiring immediate care)
-   - Modify home care tips
-
-3. **Test the checkboxes locally** before pushing
-
-4. **Add to symptoms index** and push to GitHub
-
-### Adding a Nutrition Guide
-
-1. **Copy nutrition template** (create if doesn't exist):
-   ```
-   cp nutrition/template-nutrition.html nutrition/infant-feeding.html
-   ```
-
-2. **Include:**
-   - Age-appropriate feeding recommendations
-   - Food introduction timeline
-   - Practical feeding tips
-   - Allergy information
-   - When to consult doctor
-
-3. **Push to GitHub**
+This metadata allows the auto-index generator to scan `/html-conditions/`, build `/data/conditions-index.json`, and render resources dynamically on the homepage.
 
 ---
 
-## Adding Pages to Index
+## Initial Content Taxonomy
 
-Each section has an `index.html` that lists articles. To add your new article:
-
-**Example: education/index.html**
-
-```html
-<section class="cards-grid">
-  <div class="card">
-    <h3>My New Article</h3>
-    <p>Brief description of what the article covers.</p>
-    <a href="my-new-article.html">Read Article →</a>
-  </div>
-</section>
-```
+1. Respiratory  
+2. Gastrointestinal  
+3. Nutrition & Feeding  
+4. Vaccination  
+5. Fever & Infections  
+6. Growth & Development  
+7. Medication Information  
+8. Parent Education  
 
 ---
 
-## Testing Locally
+## Initial Priority Content
 
-Before pushing to GitHub, test your site locally:
+The first content batch should prioritize high-value parent resources:
 
-```bash
-# Navigate to project folder
-cd medical-portal
-
-# Start local server (Python 3)
-python -m http.server 8000
-
-# Open browser
-http://localhost:8000
-
-# Test:
-# - All links work
-# - Images load
-# - Mobile responsive (resize browser or use DevTools)
-# - Forms/calculators work (if any)
-# - Print preview looks good
-```
+1. Fever in Children  
+2. Cough in Children  
+3. Constipation  
+4. Gastroenteritis / Diarrhoea  
+5. Weaning Guide  
+6. Asthma in Children  
+7. Hand, Foot & Mouth Disease  
+8. Picky Eating  
+9. Vaccination FAQ  
+10. Red Flags: When to Seek Urgent Medical Care  
 
 ---
 
-## Deploying to Netlify
+## Recommended Build Order
 
-### Option 1: Connect GitHub to Netlify (Recommended)
-
-1. **Push your project to GitHub:**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Medical portal MVP"
-   git push origin main
-   ```
-
-2. **Go to Netlify:**
-   - Visit [netlify.com](https://netlify.com)
-   - Click "New site from Git"
-   - Connect your GitHub account
-   - Select your `medical-portal` repository
-
-3. **Configure:**
-   - Build command: (leave empty - it's a static site)
-   - Publish directory: `.` (root folder)
-
-4. **Deploy!** Netlify will automatically deploy and give you a live URL
-
-5. **Auto-Updates:** Every time you push to GitHub, Netlify automatically redeploys
-
-### Option 2: GitHub Pages
-
-1. **Push to GitHub** (as above)
-
-2. **Settings > Pages:**
-   - Go to your repo settings
-   - Under "Pages", select "Deploy from branch"
-   - Select `main` branch
-   - Save
-
-3. **Site will be live at:**
-   ```
-   https://yourusername.github.io/medical-portal/
-   ```
+1. Portal shell and visual system  
+2. Metadata convention  
+3. Legal pages  
+4. Auto-index generator  
+5. First batch of parent guides  
+6. Lower-risk interactive tools  
+7. Higher-governance tools such as dosing calculators  
 
 ---
 
-## Updating Content After Launch
+## Medical Content Governance
 
-### Monthly Maintenance
+### Approved Reference Sources
 
-- Review 1-2 articles for accuracy
-- Update vaccine schedules if changed
-- Add 1-2 new articles based on common queries
+Use current, appropriate, established sources such as:
+- IAP / ACVIP
+- AAP
+- RCH Australia / Raising Children Network
+- NICE
+- GINA
+- WHO
+- other appropriate specialty-society guidance where relevant
 
-### Quarterly Review
+### Mandatory Clinical Rules
 
-- Check mobile responsiveness (new phone sizes)
-- Verify all links work
-- Update medical facts if guidelines change
-
-### Yearly Audit
-
-- Full content review
-- Update outdated articles
-- Add seasonal topics (monsoon health, summer safety, etc.)
-- Redesign if needed
-
----
-
-## Content Guidelines
-
-### Medical Accuracy
-
-- ✅ Link to authoritative sources (IAP, WHO, CDC)
-- ✅ Use evidence-based information
-- ✅ Include disclaimers
-- ✅ Never invent medical facts
-- ✅ Update when guidelines change
-
-### Parent-Friendly Language
-
-- ✅ Simple, clear explanations
-- ✅ Avoid medical jargon
-- ✅ Use practical examples
-- ✅ Include "when to see doctor" clearly
-- ❌ Don't oversimplify complex topics
-
-### Disclaimer & Safety
-
-Every page must include:
-```html
-<div class="disclaimer">
-  <strong>⚠️ Medical Disclaimer:</strong> This portal provides general health information. 
-  It is NOT a substitute for professional medical advice. Always consult a qualified 
-  paediatrician for diagnosis and treatment.
-</div>
-```
+- Never invent dosages, schedules, red flags, diagnostic criteria, contraindications, or guideline claims.
+- Never publish unverified clinical content.
+- If uncertain, mark the item as `UNSURE` or `needs verification` until checked.
+- Every public medical resource must include:
+  - a disclaimer,
+  - references,
+  - last-reviewed date,
+  - and clear wording that it does not replace medical consultation.
+- Vaccination content must be checked against the latest available IAP/ACVIP guidance at the time of creation.
+- Dosing calculators are higher-governance tools and must not be published casually.
 
 ---
 
-## Customization Tips
+## Dosing Calculator Governance
 
-### Change Colors
+Any future dosing calculator must use only verified formulary data and must clearly document:
+- source version,
+- age limits,
+- weight limits,
+- concentration,
+- maximum doses,
+- clinical exclusions,
+- review date,
+- and medical disclaimer wording.
 
-Edit `css/style.css`, `:root` section:
-```css
---color-primary: #185FA5;        /* Main blue - change this */
---color-secondary: #639922;      /* Green accent */
---color-accent: #D85A30;         /* Orange accent */
-```
-
-### Change Logo/Clinic Name
-
-Edit `index.html` header:
-```html
-<div class="logo-text">Dr Murali Gopal</div>
-<div class="logo-subtext">Paediatric Health Portal</div>
-```
-
-### Add New Navigation Items
-
-Edit nav in `index.html`:
-```html
-<nav id="nav-menu">
-  <a href="#education">Education</a>
-  <a href="#your-new-section">New Section</a>  <!-- Add here -->
-</nav>
-```
+No dose, concentration, or limit may be inferred.
 
 ---
 
-## Troubleshooting
+## Privacy and Legal Framing
 
-**Q: Links aren't working locally**
-- Use `python -m http.server` (not just opening the file)
-- Links should work once deployed to Netlify
+Use accurate wording:
 
-**Q: CSS/images not loading**
-- Check file paths (use relative paths: `../css/style.css`)
-- Clear browser cache (Ctrl+Shift+Delete / Cmd+Shift+Delete)
+> This portal provides general educational resources only. No patient-specific medical data is collected or stored in the initial version.
 
-**Q: Mobile menu not working**
-- Ensure `js/main.js` is loaded
-- Check browser console for JavaScript errors
-
-**Q: How do I add a calculator?**
-- See `tools/template-tool.html` (create if needed)
-- Add JavaScript function for calculations
-- Include form inputs and result display
+Do not claim HIPAA, GDPR, or other formal compliance unless the portal has undergone the required legal and technical review.
 
 ---
 
-## Resources
+## Deployment Workflow
 
-- **Icon Library:** [Tabler Icons](https://tabler.io/icons) - 5800+ free icons
-- **Responsive Design:** [MDN Guide](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-- **HTML Best Practices:** [W3C](https://www.w3.org/)
-- **Medical Guidelines:** [IAP](https://www.iapindia.org/), [WHO](https://www.who.int/), [CDC](https://www.cdc.gov/)
+### Local Development
 
----
+~~~bash
+git status
+git add .
+git commit -m "Describe the change"
+git push origin branch-name
+~~~
 
-## License & Attribution
+### Deployment
 
-© 2026 Dr Murali Gopal. All rights reserved.
-
-Content created for Apollo Cradle & Children's Hospital, Karapakkam, Chennai, India.
-
----
-
-## Support
-
-For questions about adding content or deploying:
-- Contact: [Your email]
-- GitHub Issues: [Link to your repo issues]
+- GitHub is the canonical source repository.
+- Vercel is the primary deployment platform.
+- Once connected, pushes to the deployment branch trigger automatic Vercel deployments.
+- The auto-index generator will be run as part of the build process once implemented.
 
 ---
 
-**Last Updated:** May 2026  
-**Version:** 1.0 (MVP)
- 
- 
+## Current Transition Note
+
+This project began as an earlier prototype under the repository name `medical-portal`.
+
+The project is now being professionally refactored into **Clinical Portal 2026**, with the final target repository name:
+
+~~~text
+clinical-portal
+~~~
+
+The earlier prototype has been preserved in a backup branch before refactoring.
+
+---
+
+## Success Criteria
+
+The MVP is successful when:
+
+1. The portal is publicly accessible on Vercel.
+2. The homepage is professional, mobile-responsive, and easy to navigate.
+3. Search and category filtering work.
+4. The auto-index system works without manual index editing.
+5. Every public resource includes disclaimer, references, and last-reviewed date.
+6. PDFs include watermark and disclaimer.
+7. No patient-specific data is collected or stored.
+8. The site is fast, accessible, and easy to maintain through GitHub.
+
+---
+
+## Maintainer
+
+**Dr. Murali Gopal**  
+Senior Paediatrician & Paediatric Pulmonologist  
+India  
+
+---
+
+## Copyright
+
+© 2026 Dr. Murali Gopal. All rights reserved.
