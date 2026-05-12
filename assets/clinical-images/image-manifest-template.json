@@ -1,0 +1,59 @@
+{
+  "_template_notes": {
+    "purpose": "Template only: this file is governance scaffolding and not a list of approved images.",
+    "required_review": "Every real image requires source, licence, attribution, watermark, and patient identity-risk review before use.",
+    "separate_permissions": "Evidence-source permission and image reuse permission are separate checks and both must be verified.",
+    "publication_gate": "No image should be published unless licensing status and identity-risk review are acceptable."
+  },
+  "manifest_version": "1.0",
+  "images": [
+    {
+      "image_id": "example-eczema-001",
+      "condition": "eczema",
+      "guide_slug": "18-eczema-parent-guide",
+      "intended_use": "Parent education visual reference in condition overview section.",
+      "source_name": "Example Clinical Source",
+      "source_url": "https://example.org/clinical-image-page",
+      "licence_name": "Example Licence (replace with verified real licence)",
+      "licence_url": "https://example.org/licence",
+      "attribution_text": "Image credit: Example Clinical Source (replace after verification).",
+      "watermark_status": "unknown",
+      "derivative_allowed": false,
+      "educational_non_commercial_allowed": false,
+      "patient_identity_risk": "pending-review",
+      "child_image_present": "unknown",
+      "consent_or_publication_status": "pending-verification",
+      "local_repository_path": "assets/clinical-images/example-eczema-001.jpg",
+      "alt_text": "Placeholder alt text describing a non-identifying eczema presentation.",
+      "caption": "Placeholder caption for governance template only.",
+      "licence_check_date": "YYYY-MM-DD",
+      "clinical_review_status": "pending",
+      "reviewed_by": "TBD",
+      "notes": "Placeholder entry only. Do not treat as approved or imported."
+    },
+    {
+      "image_id": "example-ringworm-002",
+      "condition": "ringworm",
+      "guide_slug": "19-ringworm-parent-guide",
+      "intended_use": "Educational comparison image for common appearance.",
+      "source_name": "Example Dermatology Library",
+      "source_url": "https://example.net/dermatology/reference",
+      "licence_name": "Example Permission Basis",
+      "licence_url": "https://example.net/terms",
+      "attribution_text": "Image credit: Example Dermatology Library (replace after verification).",
+      "watermark_status": "retained-required",
+      "derivative_allowed": false,
+      "educational_non_commercial_allowed": false,
+      "patient_identity_risk": "pending-review",
+      "child_image_present": "unknown",
+      "consent_or_publication_status": "pending-verification",
+      "local_repository_path": "assets/clinical-images/example-ringworm-002.jpg",
+      "alt_text": "Placeholder alt text for a ring-shaped rash educational image.",
+      "caption": "Template example caption only; not approved for publication.",
+      "licence_check_date": "YYYY-MM-DD",
+      "clinical_review_status": "pending",
+      "reviewed_by": "TBD",
+      "notes": "Demonstrates required metadata fields with non-production placeholders."
+    }
+  ]
+}
