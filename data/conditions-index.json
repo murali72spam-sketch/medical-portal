@@ -13,5 +13,20 @@
     "featured": true,
     "status": "published",
     "url": "html-conditions/fever-in-children.html"
+  },
+  {
+    "title": "Cough in Children",
+    "slug": "cough-in-children",
+    "category": "Respiratory",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to cough in children, common causes, home care, warning signs, and when to seek medical help.",
+    "keywords": "cough, child cough, cold, wheeze, breathing difficulty, croup, asthma, parent guide",
+    "audience": "parents and caregivers",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "needs-clinical-review",
+    "references": "RCH Australia Kids Health Info; American Academy of Pediatrics / HealthyChildren.org; NICE respiratory infection guidance; NHS cough advice; WHO child danger-sign principles.",
+    "featured": true,
+    "status": "published",
+    "url": "html-conditions/cough-in-children.html"
   }
 ]
