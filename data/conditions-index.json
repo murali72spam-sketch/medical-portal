@@ -315,6 +315,21 @@
     "url": "html-conditions/adolescent-mental-health-warning-signs.html"
   },
   {
+    "title": "Back Pain and Posture in Children",
+    "slug": "back-pain-and-posture-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to back pain and posture in children, with cautious advice and red flags needing medical review.",
+    "keywords": "back pain, posture, child back pain, school bag, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "AAP HealthyChildren: back pain in children and teens; Royal Children's Hospital Melbourne Orthopaedics: back pain; NICE CKS back pain red flags.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/back-pain-and-posture-parent-guide.html"
+  },
+  {
     "title": "Bedwetting",
     "slug": "bedwetting-parent-guide",
     "category": "Growth & Development",
@@ -328,6 +343,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/bedwetting-parent-guide.html"
+  },
+  {
+    "title": "Clubfoot / CTEV Parent Overview",
+    "slug": "clubfoot-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent overview of clubfoot / CTEV, early specialist care, follow-up, and warning signs during treatment.",
+    "keywords": "clubfoot, CTEV, congenital talipes equinovarus, Ponseti, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Indian Journal of Paediatric Orthopaedics: Ponseti-treated clubfoot walking-age and parent concerns; POSI paediatric orthopaedic guidance; orthopaedic literature on clubfoot and Ponseti method.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/clubfoot-parent-guide.html"
   },
   {
     "title": "Daytime Wetting in Children",
@@ -345,6 +375,21 @@
     "url": "html-conditions/daytime-wetting-parent-guide.html"
   },
   {
+    "title": "Developmental Dysplasia of the Hip (DDH)",
+    "slug": "developmental-dysplasia-of-hip-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to developmental dysplasia of the hip, early hip checks, and when parents should seek review.",
+    "keywords": "developmental dysplasia of hip, DDH, hip click, baby hip, limp, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Indian Pediatrics / POSI / IAP consensus on DDH surveillance in India; IAP Standard Treatment Guidelines: developmental dysplasia of the hip; Royal Children's Hospital Melbourne and NHS orthopaedic parent resources.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/developmental-dysplasia-of-hip-parent-guide.html"
+  },
+  {
     "title": "Exam Stress and Performance Pressure",
     "slug": "exam-stress-parent-guide",
     "category": "Growth & Development",
@@ -360,6 +405,51 @@
     "url": "html-conditions/exam-stress-parent-guide.html"
   },
   {
+    "title": "Flat Feet in Children",
+    "slug": "flat-feet-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to flexible flat feet in children, avoiding overmedicalisation while explaining when review is needed.",
+    "keywords": "flat feet, flexible flat foot, child foot arch, foot pain, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "NHS flat feet guidance; Royal Children's Hospital Melbourne orthopaedic guidance; NHS Greater Glasgow flat feet in children parent resources.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/flat-feet-parent-guide.html"
+  },
+  {
+    "title": "Growing Pains in Children",
+    "slug": "growing-pains-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to growing pains in children, including safe home support and warning signs that need medical review.",
+    "keywords": "growing pains, child leg pain, night leg pain, limb pain, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "IAP Standard Treatment Guidelines: Growing Pains; Indian Pediatrics review on growing pains; NICE CKS musculoskeletal presentations in children.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/growing-pains-parent-guide.html"
+  },
+  {
+    "title": "Intoeing / Feet Turning Inwards",
+    "slug": "intoeing-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to intoeing in children, including reassurance, safe observation, and when medical review is needed.",
+    "keywords": "intoeing, feet turning inwards, child gait, metatarsus adductus, tibial torsion, femoral anteversion",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Royal Children's Hospital Melbourne Orthopaedics: in-toeing; Royal Children's Hospital Melbourne Kids Health Info parent resources; NHS parent resources on intoeing.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/intoeing-parent-guide.html"
+  },
+  {
     "title": "Menstrual Health for Adolescents",
     "slug": "menstrual-health-parent-guide",
     "category": "Growth & Development",
@@ -373,6 +463,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/menstrual-health-parent-guide.html"
+  },
+  {
+    "title": "Osgood-Schlatter Disease",
+    "slug": "osgood-schlatter-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to Osgood-Schlatter disease, activity-related front-knee pain during growth, and warning signs needing review.",
+    "keywords": "Osgood-Schlatter, knee pain, tibial tubercle, sports knee pain, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Royal Children's Hospital Melbourne Orthopaedics: Osgood-Schlatter disease; AAP HealthyChildren knee pain resources; Royal Children's Hospital Melbourne orthopaedic fact sheets.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/osgood-schlatter-parent-guide.html"
   },
   {
     "title": "Puberty: Early and Late Changes",
@@ -405,6 +510,21 @@
     "url": "html-conditions/school-refusal-parent-guide.html"
   },
   {
+    "title": "Scoliosis in Children",
+    "slug": "scoliosis-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to scoliosis in children, including visible signs, monitoring, and warning symptoms requiring review.",
+    "keywords": "scoliosis, spinal curve, uneven shoulders, child back, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Royal Children's Hospital Melbourne Orthopaedics: scoliosis; NHS scoliosis guidance; KidsHealth NZ scoliosis in children.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/scoliosis-parent-guide.html"
+  },
+  {
     "title": "Screen Time and Digital Wellness",
     "slug": "screen-time-parent-guide",
     "category": "Growth & Development",
@@ -418,6 +538,36 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/screen-time-parent-guide.html"
+  },
+  {
+    "title": "Sever's Disease / Heel Pain",
+    "slug": "severs-disease-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to Sever's disease and heel pain in active children, with safe home support and warning signs.",
+    "keywords": "Sever's disease, heel pain, calcaneal apophysitis, child sports pain, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "AAP HealthyChildren heel pain and Sever's disease resources; AAOS OrthoInfo: Sever's Disease; Nemours KidsHealth: Sever's disease.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/severs-disease-parent-guide.html"
+  },
+  {
+    "title": "Slipped Upper Femoral Epiphysis (SCFE/SUFE)",
+    "slug": "slipped-upper-femoral-epiphysis-scfe-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to SCFE/SUFE, a serious adolescent hip condition that may present as limp or knee pain and needs urgent review.",
+    "keywords": "SCFE, SUFE, slipped upper femoral epiphysis, adolescent limp, hip pain, knee pain, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Royal Children's Hospital Melbourne Kids Health Info: slipped upper femoral epiphysis; Royal Children's Hospital Melbourne clinical guidance on SUFE; Nemours KidsHealth: SCFE.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/slipped-upper-femoral-epiphysis-scfe-parent-guide.html"
   },
   {
     "title": "Stuttering and Stammering",
