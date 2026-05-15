@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "title": "Fever in Children",
+    "slug": "fever-in-children",
+    "category": "Fever & Infections",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to fever in children, home care, warning signs, and when to seek urgent medical help.",
+    "keywords": "fever, child fever, high temperature, red flags, paediatric fever, parent guide",
+    "audience": "parents and caregivers",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "needs-clinical-review",
+    "references": "RCH Australia Kids Health Info: Fever in children; American Academy of Pediatrics / HealthyChildren.org: Fever and your child; NICE NG143: Fever in under 5s; WHO IMCI danger signs.",
+    "featured": true,
+    "status": "published",
+    "url": "html-conditions/fever-in-children.html"
+  }
+]
