@@ -465,6 +465,21 @@
     "url": "html-conditions/menstrual-health-parent-guide.html"
   },
   {
+    "title": "Newborn Weight Loss and Gain",
+    "slug": "newborn-weight-loss-and-gain",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to newborn weight checks, feeding and urine clues, jaundice concerns, and when poor gain needs review.",
+    "keywords": "newborn weight loss, newborn weight gain, baby weight check, poor feeding, jaundice, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "WHO maternal and newborn care recommendations; World Health Organization newborn care resources; Royal Children's Hospital Melbourne Kids Health Info Breastfeeding; Indian Pediatrics / IAP Infant and Young Child Feeding Guidelines 2016; National Health Mission Government of India Home Based Newborn Care resources.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/newborn-weight-loss-and-gain.html"
+  },
+  {
     "title": "Osgood-Schlatter Disease",
     "slug": "osgood-schlatter-parent-guide",
     "category": "Growth & Development",
@@ -645,6 +660,21 @@
     "url": "html-conditions/breastfeeding-parent-guide.html"
   },
   {
+    "title": "Breastfeeding Basics",
+    "slug": "breastfeeding-basics",
+    "category": "Nutrition & Feeding",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to breastfeeding basics, including latch, milk transfer, home support, and urgent newborn feeding warning signs.",
+    "keywords": "breastfeeding basics, latch, milk transfer, newborn feeding, wet nappies, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Indian Pediatrics / IAP Infant and Young Child Feeding Guidelines 2016; AAP HealthyChildren.org breastfeeding guidance; Royal Children's Hospital Melbourne Kids Health Info Breastfeeding; World Health Organization newborn care resources; Indian Academy of Pediatrics Action Plan 2026.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/breastfeeding-basics.html"
+  },
+  {
     "title": "Childhood Overweight and Obesity",
     "slug": "childhood-overweight-and-obesity",
     "category": "Nutrition & Feeding",
@@ -673,6 +703,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/complementary-feeding-after-6-months.html"
+  },
+  {
+    "title": "Formula Feeding Guidance",
+    "slug": "formula-feeding-guidance",
+    "category": "Nutrition & Feeding",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to safe formula feeding, responsive bottle feeding, preparation safety, and newborn feeding warning signs.",
+    "keywords": "formula feeding, bottle feeding, infant formula, responsive bottle feeding, newborn feeding, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Royal Children's Hospital Melbourne Kids Health Info Bottle feeding; Raising Children Network infant formula and bottle-feeding; Royal Children's Hospital Melbourne nutrition babies and toddlers resources; World Health Organization newborn care resources; Indian Academy of Pediatrics Guidelines for Parents.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/formula-feeding-guidance.html"
   },
   {
     "title": "Growth Faltering / Poor Weight Gain",
@@ -765,6 +810,21 @@
     "url": "html-conditions/vitamins-and-minerals-parent-guide.html"
   },
   {
+    "title": "Baby Crying: What is Normal?",
+    "slug": "baby-crying-what-is-normal",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to normal baby crying, safe soothing, caregiver coping, and warning signs that need medical review.",
+    "keywords": "baby crying, newborn crying, unsettled baby, infant cues, safe soothing, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Royal Children's Hospital Melbourne Kids Health Info Crying and unsettled babies; WHO maternal and newborn care recommendations; Indian Academy of Pediatrics Guidelines for Parents; AAP HealthyChildren.org safe sleep guidance.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/baby-crying-what-is-normal.html"
+  },
+  {
     "title": "Child Travel Health",
     "slug": "child-travel-health",
     "category": "Parent Education",
@@ -778,6 +838,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/child-travel-health.html"
+  },
+  {
+    "title": "Colic in Babies",
+    "slug": "colic-in-babies",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to colic-like crying, safe soothing, parent coping support, and red flags that need medical review.",
+    "keywords": "colic, crying baby, unsettled baby, infant crying, never shake baby, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Royal Children's Hospital Melbourne Kids Health Info Crying and unsettled babies; Indian Academy of Pediatrics Guidelines for Parents; World Health Organization newborn care resources; Royal Children's Hospital Melbourne Kids Health Info Breastfeeding; AAP HealthyChildren.org safe sleep guidance.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/colic-in-babies.html"
   },
   {
     "title": "Hand Hygiene and Cough Etiquette",
@@ -840,6 +915,51 @@
     "url": "html-conditions/mosquito-bite-prevention.html"
   },
   {
+    "title": "Neonatal Danger Signs",
+    "slug": "neonatal-danger-signs",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to newborn danger signs that need urgent medical review, including feeding, breathing, temperature, jaundice, and activity concerns.",
+    "keywords": "neonatal danger signs, newborn warning signs, newborn fever, poor feeding, breathing difficulty, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "WHO maternal and newborn care recommendations; World Health Organization newborn care resources; Indian Academy of Pediatrics Guidelines for Parents; National Health Mission Government of India Home Based Newborn Care resources; Indian Academy of Pediatrics Action Plan 2026.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/neonatal-danger-signs.html"
+  },
+  {
+    "title": "Normal Newborn Care",
+    "slug": "normal-newborn-care",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to everyday newborn care, including feeding, warmth, safe sleep, hygiene, follow-up, and urgent warning signs.",
+    "keywords": "normal newborn care, newborn safety, newborn warning signs, safe sleep, cord care, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "World Health Organization newborn care resources; WHO maternal and newborn care recommendations; Indian Academy of Pediatrics Guidelines for Parents; National Health Mission Government of India Home Based Newborn Care resources; AAP HealthyChildren.org safe sleep guidance.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/normal-newborn-care.html"
+  },
+  {
+    "title": "Premature Baby Care at Home",
+    "slug": "premature-baby-care-at-home",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to caring for a premature baby at home after discharge, including feeding, warmth, follow-up, safe sleep, and warning signs.",
+    "keywords": "premature baby care, preterm baby, NICU discharge, corrected age, newborn warning signs, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "AAP HealthyChildren.org Going Home With Your Preemie; Raising Children Network going home from hospital for premature babies; Indian Academy of Pediatrics Action Plan 2026; World Health Organization newborn care resources; National Health Mission Government of India Home Based Newborn Care resources.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/premature-baby-care-at-home.html"
+  },
+  {
     "title": "Safe Food, Water and Deworming",
     "slug": "safe-food-water-and-deworming",
     "category": "Parent Education",
@@ -853,6 +973,36 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/safe-food-water-and-deworming.html"
+  },
+  {
+    "title": "Safe Sleep for Infants",
+    "slug": "safe-sleep-for-infants",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to safer infant sleep, including back sleeping, clear cot, room-sharing, and urgent breathing warning signs.",
+    "keywords": "safe sleep, infant sleep, newborn sleep, back to sleep, clear cot, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "AAP HealthyChildren.org safe sleep guidance; Royal Children's Hospital Melbourne safe sleeping clinical guideline; World Health Organization newborn care resources; Indian Academy of Pediatrics Guidelines for Parents.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/safe-sleep-for-infants.html"
+  },
+  {
+    "title": "Umbilical Cord Care",
+    "slug": "umbilical-cord-care",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to clean and dry umbilical cord care, expected changes, and signs of cord infection needing review.",
+    "keywords": "umbilical cord care, newborn belly button, cord stump, omphalitis warning signs, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-15",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Royal Children's Hospital Melbourne Kids Health Info skincare and cord care; AAP HealthyChildren.org Umbilical Cord Care; Raising Children Network umbilical care; World Health Organization newborn care resources; National Health Mission Government of India Home Based Newborn Care resources.",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/umbilical-cord-care.html"
   },
   {
     "title": "Vulvovaginitis in Children",
