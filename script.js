@@ -32,12 +32,84 @@
   };
 
   document.addEventListener("DOMContentLoaded", () => {
+    setupDraftResourceNotice();
     setupNavigation();
     setCurrentYear();
     setupSearch();
     setupFilters();
     loadResources();
   });
+
+  function setupDraftResourceNotice() {
+    const status = getMetaContent("status").toLowerCase();
+    const medicalReviewStatus = getMetaContent("medical_review_status").toLowerCase();
+    const title = getMetaContent("title");
+
+    if (!status && !medicalReviewStatus && !title) return;
+
+    const isDraftResource =
+      status === "draft" ||
+      medicalReviewStatus === "pending-clinician-review" ||
+      medicalReviewStatus === "needs-verification";
+
+    if (!isDraftResource) return;
+
+    ensureDraftNoindex();
+    document.body.classList.add("resource-is-draft");
+
+    if (document.querySelector("[data-draft-resource-notice]")) return;
+
+    const notice = document.createElement("aside");
+    const container = document.createElement("div");
+    const lead = document.createElement("p");
+    const followup = document.createElement("p");
+
+    notice.className = "draft-resource-notice";
+    notice.setAttribute("role", "note");
+    notice.setAttribute("aria-label", "Draft resource notice");
+    notice.setAttribute("data-draft-resource-notice", "");
+
+    container.className = "draft-resource-notice-inner";
+
+    lead.textContent =
+      "Draft resource — clinician review pending. This page is under development for Dr. Murali Gopal’s Clinical Portal 2026. It is provided for internal review only and should not be used as final medical advice.";
+    followup.textContent =
+      "Please confirm all medical decisions with a qualified clinician.";
+
+    container.append(lead, followup);
+    notice.appendChild(container);
+
+    const main = document.querySelector("main");
+    if (main) {
+      main.prepend(notice);
+      return;
+    }
+
+    const header = document.querySelector(".site-header, header");
+    if (header && header.parentNode) {
+      header.insertAdjacentElement("afterend", notice);
+      return;
+    }
+
+    document.body.prepend(notice);
+  }
+
+  function getMetaContent(name) {
+    const meta = document.querySelector(`meta[name="${name}"]`);
+    return meta ? (meta.getAttribute("content") || "").trim() : "";
+  }
+
+  function ensureDraftNoindex() {
+    let robots = document.querySelector('meta[name="robots"]');
+
+    if (!robots) {
+      robots = document.createElement("meta");
+      robots.setAttribute("name", "robots");
+      document.head.appendChild(robots);
+    }
+
+    robots.setAttribute("content", "noindex, nofollow");
+  }
 
   function setupNavigation() {
     const toggle = document.querySelector("[data-nav-toggle]");
