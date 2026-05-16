@@ -375,6 +375,21 @@
     "url": "html-conditions/daytime-wetting-parent-guide.html"
   },
   {
+    "title": "Delayed Puberty in Children",
+    "slug": "delayed-puberty-in-children",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Reassuring parent guide to delayed puberty, normal variation, broad causes, growth pattern, and when assessment is needed.",
+    "keywords": "delayed puberty, late puberty, constitutional delay, adolescent growth, endocrine causes, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-16",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Indian Society for Pediatric and Adolescent Endocrinology. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; HealthyChildren.org. https://www.healthychildren.org/; Pediatric Endocrine Society patient resources. https://pedsendo.org/patient-resource/",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/delayed-puberty-in-children.html"
+  },
+  {
     "title": "Developmental Dysplasia of the Hip (DDH)",
     "slug": "developmental-dysplasia-of-hip-parent-guide",
     "category": "Growth & Development",
@@ -388,6 +403,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/developmental-dysplasia-of-hip-parent-guide.html"
+  },
+  {
+    "title": "Early Puberty in Children",
+    "slug": "early-puberty-in-children",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to early puberty signs, progressive puberty, reasons for assessment, and red flags needing medical review.",
+    "keywords": "early puberty, precocious puberty, breast development, pubic hair, rapid growth, bone age, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-16",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Indian Society for Pediatric and Adolescent Endocrinology. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; HealthyChildren.org. https://www.healthychildren.org/; Pediatric Endocrine Society patient resources. https://pedsendo.org/patient-resource/",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/early-puberty-in-children.html"
   },
   {
     "title": "Exam Stress and Performance Pressure",
@@ -433,6 +463,36 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/growing-pains-parent-guide.html"
+  },
+  {
+    "title": "Hyperthyroidism in Children",
+    "slug": "hyperthyroidism-in-children",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to hyperthyroidism in children, including symptoms, effects on growth and school performance, prompt evaluation, and red flags.",
+    "keywords": "hyperthyroidism, overactive thyroid, Graves disease, fast heartbeat, tremor, weight loss, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-16",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Indian Society for Pediatric and Adolescent Endocrinology. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; NICE. https://www.nice.org.uk/; Pediatric Endocrine Society patient resources. https://pedsendo.org/patient-resource/; HealthyChildren.org. https://www.healthychildren.org/",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/hyperthyroidism-in-children.html"
+  },
+  {
+    "title": "Hypothyroidism in Children",
+    "slug": "hypothyroidism-in-children",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to hypothyroidism in children, including congenital and acquired causes, symptoms, growth impact, newborn screening, and follow-up.",
+    "keywords": "hypothyroidism, congenital hypothyroidism, acquired hypothyroidism, thyroid, slow growth, newborn screening, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-16",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Indian Society for Pediatric and Adolescent Endocrinology. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; NICE. https://www.nice.org.uk/; Pediatric Endocrine Society patient resources. https://pedsendo.org/patient-resource/; HealthyChildren.org. https://www.healthychildren.org/",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/hypothyroidism-in-children.html"
   },
   {
     "title": "Intoeing / Feet Turning Inwards",
@@ -570,6 +630,21 @@
     "url": "html-conditions/severs-disease-parent-guide.html"
   },
   {
+    "title": "Short Stature in Children",
+    "slug": "short-stature-in-children",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to short stature in children, including growth-chart patterns, common causes, and when medical assessment is needed.",
+    "keywords": "short stature, child height, growth chart, growth velocity, delayed puberty, endocrine, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-16",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Indian Society for Pediatric and Adolescent Endocrinology parent resources. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; Royal Children",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/short-stature-in-children.html"
+  },
+  {
     "title": "Slipped Upper Femoral Epiphysis (SCFE/SUFE)",
     "slug": "slipped-upper-femoral-epiphysis-scfe-parent-guide",
     "category": "Growth & Development",
@@ -615,6 +690,21 @@
     "url": "html-conditions/thumb-sucking-parent-guide.html"
   },
   {
+    "title": "Thyroid Disorders in Children",
+    "slug": "thyroid-disorders-in-children",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to thyroid disorders in children, including hypothyroidism, hyperthyroidism, goitre awareness, symptoms, and need for medical evaluation.",
+    "keywords": "thyroid disorders, hypothyroidism, hyperthyroidism, goitre, child growth, thyroid blood tests, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-16",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Indian Society for Pediatric and Adolescent Endocrinology. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; NICE. https://www.nice.org.uk/; Pediatric Endocrine Society patient resources. https://pedsendo.org/patient-resource/; Royal Children",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/thyroid-disorders-in-children.html"
+  },
+  {
     "title": "Tics in Children",
     "slug": "tics-parent-guide",
     "category": "Growth & Development",
@@ -628,6 +718,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/tics-parent-guide.html"
+  },
+  {
+    "title": "Types of Short Stature",
+    "slug": "types-of-short-stature",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent-friendly overview of different types of short stature and how doctors assess child growth patterns.",
+    "keywords": "types of short stature, familial short stature, constitutional delay, endocrine short stature, skeletal dysplasia, growth chart",
+    "audience": "parents",
+    "last_reviewed": "2026-05-16",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Indian Society for Pediatric and Adolescent Endocrinology. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; Pediatric Endocrine Society patient resources. https://pedsendo.org/patient-resource/; Royal Children",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/types-of-short-stature.html"
   },
   {
     "title": "Adolescent Nutrition 10 to 19 Years",
