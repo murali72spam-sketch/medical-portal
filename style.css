@@ -273,6 +273,59 @@ small,
   top: 1rem;
 }
 
+/* ---------- Draft Resource Notice ---------- */
+
+.draft-resource-notice {
+  margin: 0;
+  padding: 1rem clamp(1rem, 3vw, 1.5rem);
+  color: #4a3410;
+  background: linear-gradient(180deg, #fff7e6, var(--color-warning-soft));
+  border-bottom: 1px solid #e8c878;
+}
+
+.draft-resource-notice-inner {
+  width: min(100%, var(--reading-width));
+  margin: 0 auto;
+  padding: 0.9rem 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(154, 101, 0, 0.26);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+}
+
+.draft-resource-notice p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.draft-resource-notice p:first-child {
+  font-weight: 700;
+}
+
+.draft-resource-notice p + p {
+  margin-top: 0.25rem;
+  color: #5f4618;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .draft-resource-notice {
+    color: #ffe8b6;
+    background: linear-gradient(180deg, #3a2a0f, #2a220f);
+    border-bottom-color: #77581c;
+  }
+
+  .draft-resource-notice-inner {
+    background: rgba(255, 243, 217, 0.08);
+    border-color: rgba(255, 218, 148, 0.3);
+  }
+
+  .draft-resource-notice p + p {
+    color: #f7d895;
+  }
+}
+
 /* ---------- Header and Navigation ---------- */
 
 .site-header {
@@ -1117,6 +1170,32 @@ tr:last-child td {
   .resource-content {
     width: 100%;
     max-width: none;
+  }
+
+  .draft-resource-notice {
+    display: block !important;
+    margin: 0 0 0.7rem;
+    padding: 0;
+    color: #000000 !important;
+    background: #ffffff !important;
+    border: 1px solid #9a6500;
+  }
+
+  .draft-resource-notice-inner {
+    width: 100%;
+    max-width: none;
+    padding: 0.55rem 0.7rem;
+    background: #fff8e8 !important;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .draft-resource-notice p,
+  .draft-resource-notice p + p {
+    color: #000000 !important;
+    font-size: 9pt;
+    line-height: 1.3;
   }
 
   h1 {
