@@ -877,6 +877,27 @@ button.button:hover {
   margin-bottom: 0;
 }
 
+.topic-hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.15rem;
+}
+
+.topic-hero-chips span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(191, 211, 219, 0.82);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink-soft);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow-xs);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
 .topic-hero-visual {
   position: relative;
   margin: 0;
@@ -1206,6 +1227,7 @@ tr:last-child td {
   .skip-link,
   .breadcrumb,
   .resource-meta,
+  .topic-hero-chips,
   .topic-hero-visual {
     display: none !important;
   }

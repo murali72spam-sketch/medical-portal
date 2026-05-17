@@ -42,6 +42,9 @@
     "references": "Indian Academy of Pediatrics. Standard Treatment Guidelines. https://iapindia.org/standard-treatment-guidelines/; National Centre for Vector Borne Diseases Control, MoHFW. National Guidelines for Clinical Management of Dengue Fever 2023. https://ncvbdc.mohfw.gov.in/; World Health Organization disease fact sheets and public-health guidance. https://www.who.int/",
     "featured": false,
     "status": "draft",
+    "hero_image": "../assets/condition-visuals/dengue-fever.png",
+    "hero_alt": "Indian mother caring for a child at home with dengue prevention and hydration context, with an Aedes aegypti mosquito shown as an educational cue",
+    "visual_context": "infection-prevention-home-care",
     "url": "html-conditions/dengue-fever.html"
   },
   {
