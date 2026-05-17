@@ -26,6 +26,12 @@ const requiredMetaFields = [
   "status"
 ];
 
+const optionalVisualMetaFields = [
+  "hero_image",
+  "hero_alt",
+  "visual_context"
+];
+
 const approvedCategories = [
   "Respiratory",
   "Gastrointestinal",
@@ -187,7 +193,7 @@ function readMetaContent(html, fieldName) {
 
 function extractMetadata(html) {
   const metadata = {};
-  requiredMetaFields.forEach((field) => {
+  [...requiredMetaFields, ...optionalVisualMetaFields].forEach((field) => {
     metadata[field] = readMetaContent(html, field);
   });
   return metadata;
@@ -339,6 +345,21 @@ htmlFiles.forEach((fileName) => {
     !approvedReviewStatuses.includes(metadata.medical_review_status)
   ) {
     warn(`${fileName} uses unusual medical_review_status: ${metadata.medical_review_status}.`);
+  }
+
+  if (metadata.hero_image && !metadata.hero_alt) {
+    warn(`${fileName} has hero_image metadata but is missing hero_alt metadata.`);
+  }
+
+  if (metadata.hero_alt && !metadata.hero_image) {
+    warn(`${fileName} has hero_alt metadata but is missing hero_image metadata.`);
+  }
+
+  if (
+    metadata.visual_context &&
+    !/^[a-z0-9-]+$/.test(metadata.visual_context)
+  ) {
+    warn(`${fileName} uses unusual visual_context format: ${metadata.visual_context}. Use lowercase kebab-case such as mother-child-home-care.`);
   }
 });
 

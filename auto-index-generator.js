@@ -25,7 +25,7 @@ const approvedCategories = [
   "Parent Education"
 ];
 
-const metadataFields = [
+const requiredMetadataFields = [
   "title",
   "slug",
   "category",
@@ -38,6 +38,12 @@ const metadataFields = [
   "references",
   "featured",
   "status"
+];
+
+const optionalVisualMetadataFields = [
+  "hero_image",
+  "hero_alt",
+  "visual_context"
 ];
 
 function ensureDirectoryExists(directoryPath) {
@@ -90,8 +96,15 @@ function extractMetadata(fileName) {
 
   const metadata = {};
 
-  metadataFields.forEach((field) => {
+  requiredMetadataFields.forEach((field) => {
     metadata[field] = readMetaContent(html, field);
+  });
+
+  optionalVisualMetadataFields.forEach((field) => {
+    const value = readMetaContent(html, field);
+    if (value) {
+      metadata[field] = value;
+    }
   });
 
   metadata.featured = normalizeBoolean(metadata.featured);
@@ -127,7 +140,7 @@ function compareResources(a, b) {
 }
 
 function validateMetadata(resource, fileName) {
-  const missingFields = metadataFields.filter((field) => {
+  const missingFields = requiredMetadataFields.filter((field) => {
     if (field === "featured") {
       return false;
     }
