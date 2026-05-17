@@ -887,15 +887,41 @@ button.button:hover {
 .topic-hero-chips span {
   display: inline-flex;
   align-items: center;
+  gap: 0.5rem;
   min-height: 2rem;
-  padding: 0.35rem 0.65rem;
-  border: 1px solid rgba(191, 211, 219, 0.82);
-  border-radius: var(--radius-sm);
-  color: var(--color-ink-soft);
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: var(--shadow-xs);
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(95, 185, 198, 0.45);
+  border-radius: var(--radius-md);
+  color: #f4fbfc;
+  background: rgba(13, 45, 56, 0.84);
+  box-shadow: 0 10px 24px rgba(15, 35, 45, 0.16);
   font-size: 0.88rem;
   font-weight: 700;
+}
+
+.topic-hero-chips span::before {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: #5fb9c6;
+  box-shadow: 0 0 0 3px rgba(95, 185, 198, 0.16);
+}
+
+.topic-hero-chips span:nth-child(2)::before {
+  background: #6fbf8d;
+  box-shadow: 0 0 0 3px rgba(111, 191, 141, 0.16);
+}
+
+.topic-hero-chips span:nth-child(3)::before {
+  background: #7ea7ff;
+  box-shadow: 0 0 0 3px rgba(126, 167, 255, 0.16);
+}
+
+.topic-hero-chips span:nth-child(4)::before {
+  background: #f1aa56;
+  box-shadow: 0 0 0 3px rgba(241, 170, 86, 0.18);
 }
 
 .topic-hero-visual {
@@ -1052,6 +1078,17 @@ tr:last-child td {
 
   .portal-toolbar {
     grid-template-columns: minmax(18rem, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .topic-hero-chips {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .topic-hero-chips span {
+    width: 100%;
   }
 }
 
