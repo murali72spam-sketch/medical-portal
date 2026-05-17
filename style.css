@@ -857,6 +857,22 @@ button.button:hover {
   padding-bottom: clamp(0.75rem, 2vw, 1.15rem);
 }
 
+.topic-hero-visual {
+  margin: clamp(1.25rem, 3vw, 1.9rem) 0 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(214, 227, 232, 0.72);
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.topic-hero-visual img {
+  width: 100%;
+  max-height: clamp(15rem, 44vw, 28rem);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .resource-page-section {
   padding-top: 0;
 }
@@ -1150,7 +1166,8 @@ tr:last-child td {
   .button,
   .skip-link,
   .breadcrumb,
-  .resource-meta {
+  .resource-meta,
+  .topic-hero-visual {
     display: none !important;
   }
 

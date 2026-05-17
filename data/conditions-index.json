@@ -102,6 +102,9 @@
     "references": "IAP Guidelines for Fever; IAP STG 146 Management of Fever without Focus in Office Practice; ICMR STW Fever in Children; RCH Australia Fever in children; NICE NG143 Fever in under 5s; American Academy of Pediatrics fever and thermometer guidance",
     "featured": true,
     "status": "published",
+    "hero_image": "../assets/condition-visuals/fever-in-children.png",
+    "hero_alt": "Indian mother checking her child for fever at home",
+    "visual_context": "mother-child-home-care",
     "url": "html-conditions/fever-in-children.html"
   },
   {
