@@ -860,6 +860,7 @@ button.button:hover {
 .topic-hero-layout {
   display: grid;
   gap: clamp(1rem, 3vw, 2rem);
+  width: min(calc(100% - 2rem), 1360px);
 }
 
 .topic-hero-layout .breadcrumb {
@@ -944,6 +945,10 @@ button.button:hover {
   border-radius: calc(var(--radius-xl) - 0.45rem);
   object-fit: cover;
   box-shadow: var(--shadow-xs);
+}
+
+.topic-hero-visual-dengue img {
+  object-position: 82% center;
 }
 
 .resource-page-section {
@@ -1119,7 +1124,7 @@ tr:last-child td {
   }
 
   .topic-hero-layout {
-    grid-template-columns: minmax(0, 0.95fr) minmax(21rem, 1.05fr);
+    grid-template-columns: minmax(0, 0.9fr) minmax(24rem, 1.25fr);
     align-items: center;
   }
 
