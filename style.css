@@ -790,6 +790,37 @@ button.button:hover {
   background: var(--color-primary-soft);
 }
 
+/* ---------- Content Protection Lite ---------- */
+
+.patient-education-copyright {
+  position: relative;
+  margin-top: 1.35rem;
+}
+
+.content-protection-note,
+.resource-footer-note {
+  margin: 0;
+  padding: 0.8rem 0.95rem;
+  border: 1px solid rgba(191, 211, 219, 0.82);
+  border-radius: var(--radius-md);
+  color: var(--color-ink-muted);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(237, 245, 247, 0.62)),
+    var(--color-surface);
+  font-size: 0.88rem;
+}
+
+.content-protection-note strong,
+.resource-footer-note strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--color-primary-deep);
+}
+
+.print-watermark {
+  display: none;
+}
+
 /* ---------- Device Education ---------- */
 
 .device-card-grid {
@@ -1277,6 +1308,14 @@ tr:last-child td {
   .site-footer {
     background: rgba(16, 32, 40, 0.72);
   }
+
+  .content-protection-note,
+  .resource-footer-note {
+    border-color: rgba(53, 83, 95, 0.95);
+    background:
+      linear-gradient(135deg, rgba(16, 32, 40, 0.92), rgba(19, 40, 49, 0.82)),
+      var(--color-surface);
+  }
 }
 
 /* ---------- Print Styles ---------- */
@@ -1467,5 +1506,37 @@ tr:last-child td {
 
   .text-small {
     font-size: 8.5pt;
+  }
+
+  .patient-education-copyright {
+    margin-top: 0.7rem;
+    break-inside: avoid;
+  }
+
+  .content-protection-note,
+  .resource-footer-note {
+    padding: 0.45rem 0.6rem;
+    border: 1px solid #c7d0d4;
+    border-radius: 0;
+    color: #333333 !important;
+    background: #ffffff !important;
+    font-size: 8pt;
+    line-height: 1.25;
+  }
+
+  .content-protection-note strong,
+  .resource-footer-note strong {
+    color: #000000 !important;
+  }
+
+  .print-watermark {
+    position: fixed;
+    right: 12mm;
+    bottom: 6mm;
+    display: block;
+    color: rgba(0, 0, 0, 0.42);
+    font-size: 7.5pt;
+    line-height: 1;
+    text-align: right;
   }
 }
