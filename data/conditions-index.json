@@ -1188,6 +1188,9 @@
     "references": "Royal Children’s Hospital Melbourne. Kids Health Info: Eczema (atopic dermatitis). https://www.rch.org.au/kidsinfo/fact_sheets/eczema/",
     "featured": false,
     "status": "draft",
+    "hero_image": "../assets/condition-visuals/eczema.png",
+    "hero_alt": "Indian mother applying moisturiser to a child with mild eczema at home",
+    "visual_context": "gentle-skin-care-home",
     "url": "html-conditions/18-eczema-parent-guide.html"
   },
   {
