@@ -1131,6 +1131,24 @@
     "url": "html-conditions/13-vulvovaginitis-parent-guide.html"
   },
   {
+    "title": "Asthma in Children",
+    "slug": "asthma-in-children",
+    "category": "Respiratory",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to asthma in children, including inhaler and spacer use, asthma action plans, nebulizer caution, and urgent warning signs.",
+    "keywords": "asthma, child asthma, inhaler, spacer, asthma action plan, nebulizer, bronchodilator syrup, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-18",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Global Initiative for Asthma. Global Strategy for Asthma Management and Prevention, 2026. https://ginasthma.org/; NICE. Asthma: diagnosis, monitoring and chronic asthma management (BTS, NICE, SIGN), NG245, 2024 with later updates. https://www.nice.org.uk/guidance/ng245; Royal Children’s Hospital Melbourne. Kids Health Info: Asthma, Asthma spacers, and Asthma Action Plan resources. https://www.rch.org.au/kidsinfo/",
+    "featured": false,
+    "status": "draft",
+    "hero_image": "../assets/condition-visuals/asthma-children-hero.png",
+    "hero_alt": "Indian mother helping her child use an inhaler with spacer at home",
+    "visual_context": "inhaler-spacer-home-care",
+    "url": "html-conditions/asthma-in-children.html"
+  },
+  {
     "title": "Bronchiolitis in Babies",
     "slug": "bronchiolitis-in-babies",
     "category": "Respiratory",

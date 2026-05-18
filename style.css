@@ -790,6 +790,46 @@ button.button:hover {
   background: var(--color-primary-soft);
 }
 
+/* ---------- Device Education ---------- */
+
+.device-card-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.device-card {
+  overflow: hidden;
+}
+
+.device-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background:
+    linear-gradient(135deg, rgba(237, 245, 247, 0.88), rgba(255, 255, 255, 0.96)),
+    var(--color-surface);
+}
+
+.device-card > div {
+  padding: 1rem;
+}
+
+.device-card h3 {
+  margin-top: 0;
+  color: var(--color-primary-deep);
+}
+
+.device-card p:last-child {
+  margin-bottom: 0;
+}
+
+.device-disclaimer {
+  margin-top: 0.85rem;
+  color: var(--color-ink-muted);
+  font-size: 0.92rem;
+}
+
 /* ---------- Lists ---------- */
 
 .clean-list {
@@ -1146,6 +1186,10 @@ tr:last-child td {
 
   .portal-toolbar {
     grid-template-columns: minmax(22rem, 1fr);
+  }
+
+  .device-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .resource-shell {
