@@ -306,6 +306,24 @@
     "url": "html-conditions/15-whooping-cough-parent-guide.html"
   },
   {
+    "title": "Gastroenteritis / Diarrhoea in Children",
+    "slug": "gastroenteritis-diarrhoea",
+    "category": "Gastrointestinal",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to gastroenteritis and diarrhoea in children, including ORS, hydration, feeding, dehydration signs, medicine cautions, and urgent red flags.",
+    "keywords": "gastroenteritis, diarrhoea, diarrhea, vomiting, ORS, oral rehydration solution, dehydration, child stomach infection, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-19",
+    "medical_review_status": "draft",
+    "references": "Royal Children",
+    "featured": true,
+    "status": "published",
+    "hero_image": "../assets/condition-visuals/gastroenteritis-diarrhoea.png",
+    "hero_alt": "Indian parent offering ORS to a mildly unwell child at home",
+    "visual_context": "hydration-ors-home-care",
+    "url": "html-conditions/gastroenteritis-diarrhoea.html"
+  },
+  {
     "title": "Adolescent Mental Health Warning Signs",
     "slug": "adolescent-mental-health-warning-signs",
     "category": "Growth & Development",
