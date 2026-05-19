@@ -801,21 +801,6 @@
     "url": "html-conditions/childhood-overweight-and-obesity.html"
   },
   {
-    "title": "Complementary Feeding After 6 Months",
-    "slug": "complementary-feeding-after-6-months",
-    "category": "Nutrition & Feeding",
-    "resource_type": "parent-guide",
-    "description": "Parent guide to starting complementary foods after 6 months while continuing breastfeeding or formula as advised.",
-    "keywords": "complementary feeding, weaning, baby food, six months, infant feeding, parent guide",
-    "audience": "parents",
-    "last_reviewed": "2026-05-13",
-    "medical_review_status": "pending-clinician-review",
-    "references": "Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization complementary feeding guidance; Royal Children&apos;s Hospital Melbourne Kids Health Info nutrition resources.",
-    "featured": false,
-    "status": "draft",
-    "url": "html-conditions/complementary-feeding-after-6-months.html"
-  },
-  {
     "title": "Formula Feeding Guidance",
     "slug": "formula-feeding-guidance",
     "category": "Nutrition & Feeding",
@@ -919,6 +904,24 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/vitamins-and-minerals-parent-guide.html"
+  },
+  {
+    "title": "Weaning Guide",
+    "slug": "complementary-feeding-after-6-months",
+    "category": "Nutrition & Feeding",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to starting complementary feeding around 6 months, with Indian first-food examples, texture progression, responsive feeding, and allergy safety advice.",
+    "keywords": "weaning guide, complementary feeding, baby food, Indian baby foods, six months, infant feeding, allergy safety, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-19",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Dr. Murali Gopal. Weaning Guide & Recommendation; Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization complementary feeding guidance; HAB Eat behavioural feeding principles used only as a reference for variety, repetition, persistence, no pressure, role modelling, and hunger/fullness cues.",
+    "featured": false,
+    "status": "draft",
+    "hero_image": "../assets/condition-visuals/weaning-guide.png",
+    "hero_alt": "Indian mother feeding her baby with two small bowls of puree during weaning at home",
+    "visual_context": "weaning-home-feeding",
+    "url": "html-conditions/complementary-feeding-after-6-months.html"
   },
   {
     "title": "Baby Crying: What is Normal?",
