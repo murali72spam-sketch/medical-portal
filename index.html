@@ -47,49 +47,65 @@
   </header>
 
   <main id="main-content">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Paediatric patient education portal</span>
-
-          <h1>Trusted child-health guidance for parents and caregivers.</h1>
-
+    <section class="hero portal-hero">
+      <div class="container portal-hero-grid">
+        <div class="portal-hero-copy">
+          <span class="eyebrow">Dr. Murali Gopal</span>
+          <h1>Evidence-based paediatric education resources for parents</h1>
           <p class="lead">
-            Clinical Portal 2026 provides verified paediatric education resources,
-            printable parent guides, and carefully governed interactive tools in a
-            clear, parent-friendly format.
+            Clear, calm guidance for Indian families, prepared under the care of a
+            Senior Paediatrician &amp; Paediatric Pulmonologist.
+          </p>
+          <p>
+            Clinical Portal 2026 helps parents understand common child-health topics,
+            home-care basics, warning signs, and when medical review is needed.
           </p>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="#resources">Browse resources</a>
-            <a class="button button-secondary" href="#about">About this portal</a>
+          <form class="hero-search" action="#resources" data-hero-search-form>
+            <label class="search-field hero-search-field">
+              <span class="visually-hidden">Search paediatric parent resources</span>
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <input
+                type="search"
+                placeholder="Search fever, asthma, eczema, weaning..."
+                data-hero-resource-search
+              >
+            </label>
+            <button class="button button-primary" type="submit">Search resources</button>
+          </form>
+
+          <div class="portal-hero-points" aria-label="Portal highlights">
+            <span>Parent-friendly</span>
+            <span>Clinically cautious</span>
+            <span>No patient data stored</span>
           </div>
         </div>
 
-        <aside class="hero-card" aria-label="Portal overview">
-          <div class="stack-md">
-            <div>
-              <span class="eyebrow">Medical lead</span>
-              <h2>Dr. Murali Gopal</h2>
-              <p class="text-muted">
-                Senior Paediatrician &amp; Paediatric Pulmonologist
-              </p>
-            </div>
+        <aside class="portal-hero-panel" aria-label="Clinical portal overview">
+          <div class="hero-visual-mosaic" aria-hidden="true">
+            <img src="assets/condition-visuals/fever-in-children.png" alt="">
+            <img src="assets/condition-visuals/dengue-fever.png" alt="">
+            <img src="assets/condition-visuals/eczema.png" alt="">
+            <img src="assets/condition-visuals/asthma-children-hero.png" alt="">
+            <img src="assets/condition-visuals/weaning-guide.png" alt="">
+          </div>
 
+          <div class="doctor-card">
+            <span class="eyebrow">Medical lead</span>
+            <h2>Dr. Murali Gopal</h2>
+            <p>Senior Paediatrician &amp; Paediatric Pulmonologist</p>
             <div class="hero-stat-grid">
               <div class="hero-stat">
-                <strong>Read-only</strong>
-                <span>Public education portal</span>
+                <strong data-total-resource-count>0</strong>
+                <span>indexed education resources</span>
               </div>
-
               <div class="hero-stat">
-                <strong>Verified</strong>
-                <span>Reviewed resources only</span>
+                <strong>5</strong>
+                <span>premium guide pilots</span>
               </div>
-
               <div class="hero-stat">
                 <strong>Private</strong>
-                <span>No patient data stored initially</span>
+                <span>read-only public portal</span>
               </div>
             </div>
           </div>
@@ -99,134 +115,141 @@
 
     <section class="section-compact">
       <div class="container">
-        <div class="notice notice-disclaimer">
+        <div class="notice notice-disclaimer homepage-disclaimer">
           <strong>Important medical notice</strong>
-          This portal provides general educational resources only. It does not replace
-          medical consultation, diagnosis, or individualized treatment. No
-          patient-specific medical data is collected or stored in the initial version.
+          This portal provides general educational resources only and is not a
+          substitute for medical consultation, diagnosis, or individualized treatment.
+          No patient-specific data is collected or stored in the initial version.
         </div>
       </div>
     </section>
 
-    <section class="section" id="categories">
+    <section class="section" aria-labelledby="popular-guides-title">
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div>
+            <span class="eyebrow">Start here</span>
+            <h2 id="popular-guides-title">Popular Parent Guides</h2>
+            <p class="lead">
+              Premium pilot guides with realistic parent-education visuals and cautious clinical wording.
+            </p>
+          </div>
+          <a class="button button-secondary" href="#resources">View all resources</a>
+        </div>
+
+        <div class="resource-grid premium-resource-grid" data-popular-guides></div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="categories">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">Browse by topic</span>
+          <span class="eyebrow">Browse by need</span>
           <h2>Clinical resource categories</h2>
           <p class="lead">
-            Resources will be organised by common parent needs and paediatric care themes.
+            Common paediatric topics grouped the way parents usually look for help.
           </p>
         </div>
 
-        <div class="category-grid">
-          <article class="card category-card">
+        <div class="category-grid premium-category-grid">
+          <article class="card category-card" data-category-jump="Respiratory">
             <div class="category-icon" aria-hidden="true">🫁</div>
             <div>
               <h3>Respiratory</h3>
-              <p>Cough, asthma, bronchiolitis, croup, and related guidance.</p>
+              <p>Cough, asthma, bronchiolitis, croup, and inhaler education.</p>
             </div>
-            <p class="text-small text-muted">
-              <span data-category-count="Respiratory">0</span> published resources
-            </p>
+            <p class="text-small text-muted"><span data-category-count="Respiratory">0</span> resources</p>
           </article>
 
-          <article class="card category-card">
-            <div class="category-icon" aria-hidden="true">🥣</div>
-            <div>
-              <h3>Gastrointestinal</h3>
-              <p>Diarrhoea, constipation, reflux, and abdominal symptoms.</p>
-            </div>
-            <p class="text-small text-muted">
-              <span data-category-count="Gastrointestinal">0</span> published resources
-            </p>
-          </article>
-
-          <article class="card category-card">
+          <article class="card category-card" data-category-jump="Nutrition &amp; Feeding">
             <div class="category-icon" aria-hidden="true">🍎</div>
             <div>
-              <h3>Nutrition &amp; Feeding</h3>
-              <p>Weaning, picky eating, feeding guidance, and nutrition charts.</p>
+              <h3>Feeding &amp; Nutrition</h3>
+              <p>Weaning, picky eating, infant feeding, and practical food guidance.</p>
             </div>
-            <p class="text-small text-muted">
-              <span data-category-count="Nutrition &amp; Feeding">0</span> published resources
-            </p>
+            <p class="text-small text-muted"><span data-category-count="Nutrition &amp; Feeding">0</span> resources</p>
           </article>
 
-          <article class="card category-card">
-            <div class="category-icon" aria-hidden="true">💉</div>
-            <div>
-              <h3>Vaccination</h3>
-              <p>Routine guidance, vaccine FAQs, and future reference tools.</p>
-            </div>
-            <p class="text-small text-muted">
-              <span data-category-count="Vaccination">0</span> published resources
-            </p>
-          </article>
-
-          <article class="card category-card">
+          <article class="card category-card" data-category-jump="Fever &amp; Infections">
             <div class="category-icon" aria-hidden="true">🌡️</div>
             <div>
               <h3>Fever &amp; Infections</h3>
-              <p>Fever, common infections, red flags, and when to seek care.</p>
+              <p>Fever, dengue, common infections, hydration, and red flags.</p>
             </div>
-            <p class="text-small text-muted">
-              <span data-category-count="Fever &amp; Infections">0</span> published resources
-            </p>
+            <p class="text-small text-muted"><span data-category-count="Fever &amp; Infections">0</span> resources</p>
           </article>
 
-          <article class="card category-card">
+          <article class="card category-card" data-category-jump="Skin &amp; Allergy">
             <div class="category-icon" aria-hidden="true">🧴</div>
             <div>
               <h3>Skin &amp; Allergy</h3>
-              <p>Eczema, hives, rashes, and common skin infections.</p>
+              <p>Eczema, hives, rashes, allergy concerns, and skin-care basics.</p>
             </div>
-            <p class="text-small text-muted">
-              <span data-category-count="Skin &amp; Allergy">0</span> published resources
-            </p>
+            <p class="text-small text-muted"><span data-category-count="Skin &amp; Allergy">0</span> resources</p>
           </article>
 
-          <article class="card category-card">
+          <article class="card category-card" data-category-jump="Vaccination">
+            <div class="category-icon" aria-hidden="true">💉</div>
+            <div>
+              <h3>Vaccination</h3>
+              <p>Vaccine visit planning, aftercare, records, and parent FAQs.</p>
+            </div>
+            <p class="text-small text-muted"><span data-category-count="Vaccination">0</span> resources</p>
+          </article>
+
+          <article class="card category-card" data-category-jump="Growth &amp; Development">
             <div class="category-icon" aria-hidden="true">📈</div>
             <div>
               <h3>Growth &amp; Development</h3>
-              <p>Milestones, sleep, bedwetting, and growth references.</p>
+              <p>Growth, puberty, milestones, sleep, and development concerns.</p>
             </div>
-            <p class="text-small text-muted">
-              <span data-category-count="Growth &amp; Development">0</span> published resources
-            </p>
-          </article>
-
-          <article class="card category-card">
-            <div class="category-icon" aria-hidden="true">💊</div>
-            <div>
-              <h3>Medication Information</h3>
-              <p>High-safety educational references and device-use guides.</p>
-            </div>
-            <p class="text-small text-muted">
-              <span data-category-count="Medication Information">0</span> published resources
-            </p>
-          </article>
-
-          <article class="card category-card">
-            <div class="category-icon" aria-hidden="true">📘</div>
-            <div>
-              <h3>Parent Education</h3>
-              <p>Urgent-care signs, common myths, and practical home guidance.</p>
-            </div>
-            <p class="text-small text-muted">
-              <span data-category-count="Parent Education">0</span> published resources
-            </p>
+            <p class="text-small text-muted"><span data-category-count="Growth &amp; Development">0</span> resources</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="resources">
+    <section class="section" aria-labelledby="parent-lanes-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Parent guide lanes</span>
+          <h2 id="parent-lanes-title">Find the right starting point</h2>
+        </div>
+
+        <div class="homepage-lanes">
+          <section class="homepage-lane" aria-labelledby="feeding-lane-title">
+            <div class="lane-heading">
+              <h3 id="feeding-lane-title">Feeding &amp; Nutrition</h3>
+              <a href="#resources" data-lane-filter="Nutrition &amp; Feeding">See all</a>
+            </div>
+            <div class="mini-resource-list" data-feeding-grid></div>
+          </section>
+
+          <section class="homepage-lane" aria-labelledby="infection-lane-title">
+            <div class="lane-heading">
+              <h3 id="infection-lane-title">Fever &amp; Infections</h3>
+              <a href="#resources" data-lane-filter="Fever &amp; Infections">See all</a>
+            </div>
+            <div class="mini-resource-list" data-infection-grid></div>
+          </section>
+
+          <section class="homepage-lane" aria-labelledby="respiratory-lane-title">
+            <div class="lane-heading">
+              <h3 id="respiratory-lane-title">Respiratory Resources</h3>
+              <a href="#resources" data-lane-filter="Respiratory">See all</a>
+            </div>
+            <div class="mini-resource-list" data-respiratory-grid></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="resources">
       <div class="container">
         <div class="section-heading">
           <span class="eyebrow">Resource library</span>
-          <h2>Published parent resources</h2>
-          <p class="lead" data-resource-count>0 published resources</p>
+          <h2>Paediatric education resources</h2>
+          <p class="lead" data-resource-count>0 resources</p>
         </div>
 
         <div class="portal-toolbar" aria-label="Resource search and filters">
@@ -241,69 +264,59 @@
           </label>
 
           <div class="filter-row" role="group" aria-label="Filter by category">
-            <button class="filter-button is-active" type="button" aria-pressed="true" data-category-filter="All">
-              All
-            </button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Respiratory">
-              Respiratory
-            </button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Gastrointestinal">
-              Gastrointestinal
-            </button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Nutrition &amp; Feeding">
-              Nutrition &amp; Feeding
-            </button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Vaccination">
-              Vaccination
-            </button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Fever &amp; Infections">
-              Fever &amp; Infections
-            </button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Skin &amp; Allergy">
-              Skin &amp; Allergy
-            </button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Growth &amp; Development">
-              Growth &amp; Development
-            </button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Medication Information">
-              Medication Information
-            </button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Parent Education">
-              Parent Education
-            </button>
+            <button class="filter-button is-active" type="button" aria-pressed="true" data-category-filter="All">All</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Respiratory">Respiratory</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Gastrointestinal">Gastrointestinal</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Nutrition &amp; Feeding">Nutrition &amp; Feeding</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Vaccination">Vaccination</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Fever &amp; Infections">Fever &amp; Infections</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Skin &amp; Allergy">Skin &amp; Allergy</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Growth &amp; Development">Growth &amp; Development</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Medication Information">Medication Information</button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Parent Education">Parent Education</button>
           </div>
         </div>
 
         <div class="empty-state" data-empty-state>
-          No published resources match the current search or filter yet.
+          No resources match the current search or filter yet.
         </div>
 
-        <div class="resource-grid" data-resource-grid></div>
+        <div class="resource-grid premium-resource-grid" data-resource-grid></div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container two-column-grid">
-        <div>
-          <div class="section-heading">
-            <span class="eyebrow">Selected content</span>
-            <h2>Featured resources</h2>
-          </div>
-
-          <div class="resource-grid" data-featured-grid></div>
-        </div>
-
-        <div>
+      <div class="container homepage-secondary-grid">
+        <section>
           <div class="section-heading">
             <span class="eyebrow">Review history</span>
-            <h2>Recent updates</h2>
+            <h2>Recently Updated</h2>
           </div>
 
-          <div class="card info-card">
+          <div class="card info-card recent-card">
             <ul class="clean-list" data-recent-updates>
               <li>Reviewed resources will appear here as the portal grows.</li>
             </ul>
           </div>
+        </section>
+
+        <section data-tools-section>
+          <div class="section-heading">
+            <span class="eyebrow">Tools &amp; charts</span>
+            <h2>Interactive Tools / Reference Charts</h2>
+          </div>
+
+          <div class="resource-grid compact-resource-grid" data-tools-grid></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section-compact">
+      <div class="container">
+        <div class="resource-footer-note">
+          <strong>© Dr. Murali Gopal | For Patient Education Only</strong>
+          Educational material on this portal is intended for parent and patient education.
+          Reproduction, redistribution, or modification without permission is not allowed.
         </div>
       </div>
     </section>
@@ -319,28 +332,19 @@
           <article class="card feature-card">
             <div class="feature-icon" aria-hidden="true">✓</div>
             <h3>Clinically cautious</h3>
-            <p>
-              Public resources require references, last-reviewed dates, and clear
-              non-substitution wording before publication.
-            </p>
+            <p>Resources use references, last-reviewed dates, medical review status, and clear safety wording.</p>
           </article>
 
           <article class="card feature-card">
             <div class="feature-icon" aria-hidden="true">⌘</div>
             <h3>Static and lightweight</h3>
-            <p>
-              The portal is designed as a fast, public, read-only website using HTML,
-              CSS, and vanilla JavaScript.
-            </p>
+            <p>The portal stays fast and simple with HTML, CSS, and vanilla JavaScript.</p>
           </article>
 
           <article class="card feature-card">
             <div class="feature-icon" aria-hidden="true">▣</div>
-            <h3>Printable by design</h3>
-            <p>
-              Parent guides and future PDFs are planned for A4-friendly printing and
-              clinic distribution.
-            </p>
+            <h3>Clinic-friendly</h3>
+            <p>Parent guides are designed for clear reading on phone screens and practical clinic education.</p>
           </article>
         </div>
       </div>
