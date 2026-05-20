@@ -1,110 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="title" content="Impetigo (School Sores)">
-<meta name="slug" content="impetigo">
-<meta name="category" content="Skin &amp; Allergy">
-<meta name="resource_type" content="parent-guide">
-<meta name="description" content="Parent guide to impetigo, including common features, spread prevention, skin care, and when medical treatment is needed.">
-<meta name="keywords" content="impetigo, school sores, skin infection, crusted sores, child rash">
-<meta name="audience" content="parents">
-<meta name="last_reviewed" content="2026-05-10">
-<meta name="medical_review_status" content="pending-clinician-review">
-<meta name="references" content="Royal Children’s Hospital Melbourne. Kids Health Info: Impetigo (school sores). https://www.rch.org.au/kidsinfo/fact_sheets/impetigo_school_sores/">
-<meta name="featured" content="false">
-<meta name="status" content="draft"><title>Impetigo (School Sores) | Parent Guide</title>
-<style>
-:root {
-  --primary: #b45309;
-  --secondary: #fef3c7;
-  --ink: #1f2937;
-  --muted: #546071;
-  --bg: #f6f8fb;
-  --line: rgba(15,23,42,0.09);
-}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.55}
-body{padding:22px}
-.page{max-width:210mm;margin:0 auto;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 18px 40px rgba(15,23,42,.08)}
-.header{background:linear-gradient(135deg,var(--primary),color-mix(in srgb,var(--primary) 50%, white));color:#fff;padding:28px 30px}
-.header-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;align-items:start}
-.title{font-size:30px;font-weight:800;line-height:1.1;margin:0 0 8px}
-.tagline{font-size:16px;opacity:.95;max-width:58ch}
-.docbox{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:14px 16px}
-.docname{font-size:19px;font-weight:800}
-.docline{font-size:12.6px;margin-top:4px}
-.content{padding:24px 30px 28px}
-.reassure{background:linear-gradient(180deg,color-mix(in srgb,var(--secondary) 72%, white), #fff);border-left:6px solid var(--primary);border-radius:16px;padding:16px 18px;margin-bottom:20px}
-.reassure strong{display:block;font-size:17px;margin-bottom:6px}
-.figure{margin:0 0 20px}
-.figure img{display:block;width:100%;max-height:360px;object-fit:cover;border-radius:18px;border:1px solid var(--line)}
-.caption{font-size:12px;color:var(--muted);margin-top:8px;text-align:center}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.card{border:1px solid var(--line);border-radius:18px;padding:16px 18px;break-inside:avoid}
-.card.full{grid-column:1/-1}
-.card h2{margin:0 0 10px;color:var(--primary);font-size:18px}
-.card p{margin:0}
-ul{margin:0;padding-left:18px}
-li{margin:0 0 8px}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.fact{border:1px solid var(--line);border-radius:14px;padding:12px;background:color-mix(in srgb,var(--secondary) 68%, white);font-size:14px}
-.footer-note{margin-top:18px;border:1px solid var(--line);border-radius:14px;background:#f8fafc;padding:14px 16px;color:var(--muted);font-size:12px}
-.index-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
-.index-item{display:block;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff}
-.index-item strong{display:block;color:var(--primary);margin-bottom:4px}
-.small{font-size:13px;color:var(--muted)}
-@media (max-width: 900px){
- body{padding:0}
- .page{border-radius:0;box-shadow:none}
- .header-grid,.grid,.facts,.index-list{display:block}
- .docbox{margin-top:14px}
- .card,.fact,.index-item{margin-bottom:12px}
-}
-@page{size:A4;margin:12mm}
-@media print{
- body{padding:0;background:#fff}
- .page{box-shadow:none;border-radius:0}
- a{color:inherit;text-decoration:none}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Clinical Portal 2026 resource metadata -->
+  <meta name="title" content="Impetigo in Children">
+  <meta name="slug" content="impetigo">
+  <meta name="category" content="Fever &amp; Infections">
+  <meta name="resource_type" content="parent-guide">
+  <meta name="description" content="Parent guide to impetigo in children, including symptoms, spread, hygiene, school guidance, treatment principles, and warning signs.">
+  <meta name="keywords" content="impetigo, school sores, honey crusted rash, child skin infection, bacterial skin infection, parent guide">
+  <meta name="audience" content="parents">
+  <meta name="last_reviewed" content="2026-05-20">
+  <meta name="medical_review_status" content="draft">
+  <meta name="references" content="RCH Kids Health Info: Impetigo; NHS impetigo guidance; CDC impetigo group A strep information; American Academy of Pediatrics HealthyChildren skin infection guidance">
+  <meta name="featured" content="true">
+  <meta name="status" content="published">
+  <meta name="hero_image" content="../assets/condition-visuals/impetigo.png">
+  <meta name="hero_alt" content="Indian child with mild impetigo being assessed in a calm clinical setting">
+  <meta name="visual_context" content="bacterial-skin-infection-care">
+  <meta name="author" content="Dr. Murali Gopal">
+  <meta name="theme-color" content="#0f6b78">
+
+  <title>Impetigo in Children | Clinical Portal 2026</title>
+
+  <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-<main class="page">
-  <header class="header">
-    <div class="header-grid">
-      <div>
-        <h1 class="title">🩹 Impetigo (School Sores)</h1>
-        <div class="tagline">A contagious skin infection with crusted sores.</div>
-      </div>
-      <div class="docbox">
-        <div class="docname">Dr. Murali Gopal</div>
-        <div class="docline">Senior Paediatrician & Paediatric Pulmonologist</div>
-        <div class="docline">MCR: 57489</div>
-        <div class="docline">MBBS, DCH(UK), MRCPCH(UK), FRCPCH(UK), CCT Paediatrics (UK), Fellow in Paediatric Pulmonology (Aus), Allergology (Ind)</div>
-    <div class="docline">Last reviewed: 10 May 2026</div>
-      </div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Clinical Portal 2026 home">
+        <span class="brand-mark" aria-hidden="true">&#10010;</span>
+        <span class="brand-copy">
+          <span class="brand-name">Clinical Portal 2026</span>
+          <span class="brand-subtitle">Dr. Murali Gopal</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" data-nav-toggle>
+        &#9776;
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
+        <a href="../index.html#resources">Resources</a>
+        <a href="../index.html#categories">Categories</a>
+        <a href="../index.html#about">About</a>
+        <a href="../legal/disclaimer.html">Disclaimer</a>
+        <a href="../legal/privacy-policy.html">Privacy</a>
+      </nav>
     </div>
   </header>
-  <section class="content">
-    <div class="reassure"><strong>Reassurance for parents</strong>Impetigo is a common bacterial skin infection in children. It spreads easily, but it usually responds well to treatment and good skin hygiene.</div>
-    <figure class="figure">
-      <img src="../assets/parent-guide-images/06-impetigo-parent-guide.jpg" alt="Illustration for Impetigo (School Sores)">
-      <div class="caption">Illustrative parent-education artwork. Medical text verified using approved paediatric sources. Final clinician review recommended.</div>
-    </figure>
-    <div class="grid">
-      <section class="card full"><h2>What is Impetigo (School Sores)?</h2><p>Impetigo is a bacterial infection of the top layer of the skin. It causes red sores or blisters that may ooze and form a yellow or honey-coloured crust.</p></section>
-      <section class="card"><h2>Symptoms &amp; Signs</h2><ul><li>Red sores or small blisters</li><li>Yellow or honey-coloured crusts</li><li>Itchy skin lesions</li><li>Often around the nose, mouth, or on exposed skin</li><li>May spread to other body parts by scratching</li></ul></section>
-      <section class="card"><h2>Causes</h2><ul><li>Usually caused by Staphylococcus aureus or Streptococcus bacteria</li><li>Spreads through close contact, shared towels, and scratching</li><li>More common when skin is already broken by eczema, insect bites, or scratches</li></ul></section>
-      <section class="card full"><h2>Home Management</h2><ul><li>Keep nails short and discourage scratching.</li><li>Wash hands often and avoid sharing towels or clothing.</li><li>Gently remove crusts as advised so treatment can work better.</li><li>Follow the treatment plan given by your doctor, which may include antibiotic cream or oral antibiotics.</li><li>Cover sores when practical.</li></ul></section>
-      <section class="card full"><h2>Red Flags / When to Seek Help</h2><ul><li>Rapidly spreading redness or swelling</li><li>Fever or child appearing unwell</li><li>Painful deeper skin infection</li><li>Sores near the eye or on a very young infant</li><li>No improvement after treatment starts</li></ul></section>
-      <section class="card full"><h2>Important Facts / Myth correction</h2><div class="facts"><div class="fact">Impetigo is contagious and often needs medical treatment.</div><div class="fact">It is not caused by poor parenting or poor hygiene alone.</div><div class="fact">Good hygiene helps prevent spread to siblings and classmates.</div></div></section>
-      <section class="card full"><h2>Legal medical disclaimer</h2><p>This parent guide is for education only and does not replace a medical consultation, diagnosis, or treatment plan. Advice should be interpreted in the context of your child&#x27;s age, symptoms, and medical history. If your child has worsening symptoms, breathing difficulty, dehydration, unusual drowsiness, persistent high fever, seizures, or any emergency warning signs, seek urgent medical care immediately. All final guides should be reviewed by a qualified medical professional before clinical use.</p></section>
-      <section class="card full"><h2>References</h2><ul><li>Royal Children’s Hospital Melbourne. Kids Health Info: Impetigo (school sores). https://www.rch.org.au/kidsinfo/fact_sheets/impetigo_school_sores/</li></ul></section>
+
+  <main id="main-content">
+    <section class="page-hero resource-page-hero">
+      <div class="container topic-hero-layout">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Fever &amp; Infections</span>
+          <span aria-hidden="true">/</span>
+          <span>Impetigo</span>
+        </nav>
+
+        <div class="topic-hero-copy">
+          <span class="eyebrow">Parent guide</span>
+          <h1>Impetigo in Children</h1>
+          <p class="lead">
+            A practical guide to honey-crusted sores, spread, hygiene, school guidance,
+            treatment principles, and warning signs.
+          </p>
+
+          <div class="resource-meta">
+            <span class="badge badge-parent-guide">Parent Guide</span>
+            <span class="badge badge-draft">Draft</span>
+          </div>
+
+          <div class="topic-hero-chips" aria-label="Quick parent information">
+            <span>Contagious skin infection</span>
+            <span>Cover sores where possible</span>
+            <span>Do not share towels</span>
+            <span>Medical review helps</span>
+          </div>
+        </div>
+
+        <figure class="topic-hero-visual">
+          <img src="../assets/condition-visuals/impetigo.png" alt="Indian child with mild impetigo being assessed in a calm clinical setting" loading="eager" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-compact resource-page-section">
+      <div class="narrow-container resource-shell">
+        <article class="resource-content">
+          <div class="card info-card">
+            <h2>Dr. Murali Gopal</h2>
+            <p>
+              Senior Paediatrician &amp; Paediatric Pulmonologist<br>
+              MCR: 57489<br>
+              MBBS, DCH(UK), MRCPCH(UK), FRCPCH(UK), CCT Paediatrics (UK),
+              Fellow in Paediatric Pulmonology (Aus), Allergology (Ind)<br>
+              Last reviewed: 20 May 2026
+            </p>
+          </div>
+
+          <div class="callout callout-reassurance">
+            <strong>Impetigo is common and treatable, but it spreads easily.</strong>
+            Early medical review, good hand hygiene, covering sores where practical, and not sharing towels can reduce spread at home and school.
+          </div>
+
+          <section>
+            <h2>What is it?</h2>
+            <p>Impetigo, sometimes called school sores, is a contagious bacterial skin infection. It is common in children and often starts where the skin has been scratched, irritated, or broken.</p>
+            <p>Medical review is usually needed because treatment may involve prescribed skin-applied or oral antibiotics depending on the child age, rash location, number of sores, and severity.</p>
+          </section>
+
+          <section>
+            <h2>Symptoms and signs</h2>
+            <ul>
+              <li>Red sores, blisters, or wet-looking patches on the skin.</li>
+              <li>Oozing sores that form honey-coloured or golden crusts.</li>
+              <li>Common areas include around the nose, mouth, hands, arms, or legs.</li>
+              <li>Itch, mild pain, or irritation can lead to scratching and more spread.</li>
+              <li>There may be one small patch or many lesions.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>How it spreads</h2>
+            <ul>
+              <li>Touching sores or blister fluid.</li>
+              <li>Scratching and then touching other skin areas.</li>
+              <li>Sharing towels, face cloths, clothing, bedding, or personal items.</li>
+              <li>Close skin contact at home, school, sports, or childcare.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Home management</h2>
+            <ul>
+              <li>Arrange medical review to confirm the diagnosis and treatment plan.</li>
+              <li>Wash hands often, especially after touching the rash or helping with dressings.</li>
+              <li>Keep nails short and discourage scratching.</li>
+              <li>Cover sores where practical with a clean dressing or clothing.</li>
+              <li>Wash towels, clothes, and bedding if soiled with fluid from the sores.</li>
+              <li>Use the prescribed treatment exactly as advised by the doctor.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>What to avoid</h2>
+            <ul>
+              <li>Do not share towels, face cloths, clothing, razors, or personal items.</li>
+              <li>Do not start leftover antibiotics or use another child prescription.</li>
+              <li>Do not use steroid creams for suspected impetigo unless a doctor has advised them.</li>
+              <li>Do not pick crusts or pierce blisters.</li>
+              <li>Do not delay review if redness is spreading or the child is unwell.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>School and daycare guidance</h2>
+            <p>Follow local school or childcare policy. In general, children are often kept away until treatment has started and exposed sores can be covered, according to local guidance and doctor advice.</p>
+          </section>
+
+          <section>
+            <h2>Important facts</h2>
+            <ul>
+              <li>Impetigo is a bacterial skin infection, not a sign of poor parenting.</li>
+              <li>Antibiotic treatment choices should be made by a clinician.</li>
+              <li>Scratching can spread infection to other body areas and other people.</li>
+              <li>Recurrent infections may need review for household spread, skin conditions, or other risk factors.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Red flags / when to seek medical care</h2>
+            <div class="callout red-flags">
+              <strong>Seek medical care promptly if your child has impetigo symptoms with any of these signs:</strong>
+              <ul>
+                <li>Fever, child unwell, or baby or very young child affected.</li>
+                <li>Rapidly spreading redness, swelling, increasing pain, pus, or worsening sores.</li>
+                <li>Redness around the eyes or rash near the eye.</li>
+                <li>Multiple, widespread, recurrent, or not improving lesions.</li>
+                <li>Child has a weak immune system or significant chronic illness.</li>
+                <li>You are worried or feel something is seriously wrong.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Medical disclaimer</h2>
+            <div class="notice notice-disclaimer">
+              <strong>General education only</strong>
+              This guide is parent education only and does not replace medical consultation, diagnosis, wound assessment, antibiotic decisions, school exclusion advice, or individualized advice from a qualified healthcare professional. It does not provide antibiotic names or doses.
+            </div>
+          </section>
+
+          <section>
+            <h2>References</h2>
+            <ol class="reference-list">
+              <li>RCH Kids Health Info. <em>Impetigo.</em> Accessed 20 May 2026.</li>
+              <li>NHS. <em>Impetigo.</em> Accessed 20 May 2026.</li>
+              <li>Centers for Disease Control and Prevention. <em>Group A strep impetigo information.</em> Accessed 20 May 2026.</li>
+              <li>American Academy of Pediatrics, HealthyChildren.org. <em>Skin infection guidance.</em> Accessed 20 May 2026.</li>
+            </ol>
+          </section>
+
+          <p class="text-small text-muted">
+            Last reviewed: 20 May 2026. Draft clinical content; clinician review recommended before distribution.
+          </p>
+
+          <div class="patient-education-copyright">
+            <p class="content-protection-note">
+              <strong>&copy; Dr. Murali Gopal | For Patient Education Only</strong>
+              This educational material is intended for parent and patient education. Reproduction, redistribution, or modification without permission is not allowed.
+            </p>
+            <div class="print-watermark" aria-hidden="true">&copy; Dr. Murali Gopal | For Patient Education Only</div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="../legal/disclaimer.html">Disclaimer</a>
+        <a href="../legal/privacy-policy.html">Privacy Policy</a>
+        <a href="../legal/terms-of-use.html">Terms of Use</a>
+        <a href="../legal/copyright.html">Copyright</a>
+      </div>
+      <div class="footer-note">
+        <p>This portal provides general educational resources only. It is not a substitute for medical consultation, diagnosis, or individualized treatment.</p>
+        <p>&copy; <span data-current-year></span> Dr. Murali Gopal. All rights reserved.</p>
+      </div>
     </div>
-    <div class="footer-note">Evidence-based parent guide prepared in an Indian clinic-education format. Final clinician review recommended before printing or distribution.</div>
-  </section>
-</main>
+  </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>
