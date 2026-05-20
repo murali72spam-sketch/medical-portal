@@ -40,6 +40,7 @@
   ];
 
   document.addEventListener("DOMContentLoaded", () => {
+    markResourcePage();
     setupDraftResourceNotice();
     setupNavigation();
     setCurrentYear();
@@ -50,6 +51,12 @@
     setupLaneFilters();
     loadResources();
   });
+
+  function markResourcePage() {
+    if (getMetaContent("resource_type")) {
+      document.body.classList.add("resource-page");
+    }
+  }
 
   function setupDraftResourceNotice() {
     const status = getMetaContent("status").toLowerCase();
@@ -537,6 +544,11 @@
 
   function createResourceMedia(resource) {
     const wrap = document.createElement("div");
+    const addFallback = () => {
+      wrap.className = "resource-card-media resource-card-media-fallback";
+      wrap.replaceChildren(createResourceFallbackIcon(resource));
+    };
+
     wrap.className = resource.hero_image
       ? "resource-card-media"
       : "resource-card-media resource-card-media-fallback";
@@ -547,15 +559,20 @@
       image.alt = resource.hero_alt || "";
       image.loading = "lazy";
       image.decoding = "async";
+      image.addEventListener("error", addFallback, { once: true });
       wrap.appendChild(image);
       return wrap;
     }
 
+    addFallback();
+    return wrap;
+  }
+
+  function createResourceFallbackIcon(resource) {
     const icon = document.createElement("span");
     icon.setAttribute("aria-hidden", "true");
     icon.textContent = categoryIcon(resource.category);
-    wrap.appendChild(icon);
-    return wrap;
+    return icon;
   }
 
   function createMiniResourceCard(resource) {
@@ -575,6 +592,13 @@
       image.alt = resource.hero_alt || "";
       image.loading = "lazy";
       image.decoding = "async";
+      image.addEventListener("error", () => {
+        const fallback = document.createElement("span");
+        fallback.className = "mini-resource-icon";
+        fallback.setAttribute("aria-hidden", "true");
+        fallback.textContent = categoryIcon(resource.category);
+        image.replaceWith(fallback);
+      }, { once: true });
       link.appendChild(image);
     } else {
       const fallback = document.createElement("span");

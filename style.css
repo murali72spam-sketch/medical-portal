@@ -348,6 +348,10 @@ small,
   backdrop-filter: blur(16px);
 }
 
+body.resource-page .site-header {
+  position: static;
+}
+
 .header-inner {
   min-height: 5rem;
   display: flex;
@@ -420,6 +424,10 @@ small,
   border-bottom: 1px solid var(--color-line);
   background: rgba(255, 255, 255, 0.98);
   box-shadow: var(--shadow-sm);
+}
+
+body.resource-page .site-nav.is-open {
+  position: static;
 }
 
 .site-nav a {
