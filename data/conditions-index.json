@@ -1,5 +1,23 @@
 [
   {
+    "title": "Chickenpox in Children",
+    "slug": "chickenpox",
+    "category": "Fever & Infections",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to chickenpox in children, including rash care, itch relief principles, infection spread, school exclusion, warning signs, and vaccine discussion with a doctor.",
+    "keywords": "chickenpox, varicella, child rash, itchy rash, fever, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-20",
+    "medical_review_status": "draft",
+    "references": "RCH Kids Health Info: Chickenpox; CDC chickenpox varicella; NHS chickenpox; American Academy of Pediatrics HealthyChildren chickenpox guidance",
+    "featured": true,
+    "status": "published",
+    "hero_image": "../assets/condition-visuals/chickenpox.png",
+    "hero_alt": "Indian parent caring for a child resting at home with mild chickenpox rash",
+    "visual_context": "viral-rash-home-care",
+    "url": "html-conditions/chickenpox.html"
+  },
+  {
     "title": "Conjunctivitis (Pink Eye)",
     "slug": "conjunctivitis",
     "category": "Fever & Infections",
@@ -109,6 +127,24 @@
     "hero_alt": "Indian mother checking her child for fever at home",
     "visual_context": "mother-child-home-care",
     "url": "html-conditions/fever-in-children.html"
+  },
+  {
+    "title": "Hand, Foot & Mouth Disease in Children",
+    "slug": "hand-foot-mouth-disease",
+    "category": "Fever & Infections",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to hand, foot and mouth disease in children, including symptoms, fluids, pain relief principles, hygiene, school exclusion, and warning signs.",
+    "keywords": "hand foot mouth disease, HFMD, mouth ulcers, viral rash, child fever, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-20",
+    "medical_review_status": "draft",
+    "references": "RCH Kids Health Info: Hand foot and mouth disease; CDC hand foot and mouth disease; NHS hand foot and mouth disease",
+    "featured": true,
+    "status": "published",
+    "hero_image": "../assets/condition-visuals/hand-foot-mouth-disease.png",
+    "hero_alt": "Indian parent comforting a child with mild hand foot and mouth disease at home",
+    "visual_context": "viral-rash-home-care",
+    "url": "html-conditions/hand-foot-mouth-disease.html"
   },
   {
     "title": "Infectious Mononucleosis",
@@ -895,6 +931,24 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/nutrition-1-to-2-years.html"
+  },
+  {
+    "title": "Picky Eating in Children",
+    "slug": "picky-eating",
+    "category": "Nutrition & Feeding",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to picky eating, normal toddler food refusal, pressure-free feeding, repeated exposure, growth monitoring, and when to seek help.",
+    "keywords": "picky eating, fussy eating, toddler feeding, food refusal, repeated exposure, responsive feeding, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-20",
+    "medical_review_status": "draft",
+    "references": "Raising Children Network fussy eating guidance; American Academy of Pediatrics HealthyChildren picky eaters guidance; RCH Kids Health Info nutrition and child feeding guidance if relevant",
+    "featured": true,
+    "status": "published",
+    "hero_image": "../assets/condition-visuals/picky-eating.png",
+    "hero_alt": "Indian parent calmly offering a colourful balanced meal to a hesitant child",
+    "visual_context": "feeding-mealtime-guidance",
+    "url": "html-conditions/picky-eating.html"
   },
   {
     "title": "Preschool Nutrition 2 to 5 Years",
