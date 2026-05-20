@@ -342,6 +342,24 @@
     "url": "html-conditions/15-whooping-cough-parent-guide.html"
   },
   {
+    "title": "Abdominal Pain in Children",
+    "slug": "abdominal-pain-in-children",
+    "category": "Gastrointestinal",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to abdominal pain in children, including common causes, home observation, constipation and gastroenteritis clues, what to avoid, and urgent warning signs.",
+    "keywords": "abdominal pain, tummy pain, child stomach pain, appendicitis warning signs, constipation, gastroenteritis, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-20",
+    "medical_review_status": "draft",
+    "references": "RCH Kids Health Info: Abdominal pain; NICE suspected neurological conditions and acute abdomen references if relevant; NHS stomach ache in children; American Academy of Pediatrics HealthyChildren abdominal pain guidance",
+    "featured": true,
+    "status": "published",
+    "hero_image": "../assets/condition-visuals/abdominal-pain-in-children.png",
+    "hero_alt": "Indian parent gently supporting a child with mild tummy discomfort at home",
+    "visual_context": "tummy-pain-parent-observation",
+    "url": "html-conditions/abdominal-pain-in-children.html"
+  },
+  {
     "title": "Constipation in Children",
     "slug": "constipation-in-children",
     "category": "Gastrointestinal",
@@ -376,6 +394,24 @@
     "hero_alt": "Indian parent offering ORS to a mildly unwell child at home",
     "visual_context": "hydration-ors-home-care",
     "url": "html-conditions/gastroenteritis-diarrhoea.html"
+  },
+  {
+    "title": "Reflux in Infants and Children",
+    "slug": "reflux-in-children",
+    "category": "Gastrointestinal",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to reflux in infants and children, including normal posseting, feeding support, comfort measures, what to avoid, and warning signs.",
+    "keywords": "reflux, infant reflux, posseting, vomiting, feeding, baby reflux, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-20",
+    "medical_review_status": "draft",
+    "references": "RCH Kids Health Info: Reflux; NICE gastro-oesophageal reflux disease in children and young people; NHS reflux in babies; American Academy of Pediatrics HealthyChildren reflux guidance",
+    "featured": true,
+    "status": "published",
+    "hero_image": "../assets/condition-visuals/reflux-in-children.png",
+    "hero_alt": "Indian parent holding an infant upright after feeding at home",
+    "visual_context": "infant-feeding-reflux-care",
+    "url": "html-conditions/reflux-in-children.html"
   },
   {
     "title": "Adolescent Mental Health Warning Signs",
@@ -1162,6 +1198,24 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/premature-baby-care-at-home.html"
+  },
+  {
+    "title": "Red Flags: When to Seek Urgent Medical Care",
+    "slug": "red-flags-urgent-care",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to important warning signs in children, including breathing difficulty, dehydration, drowsiness, seizures, serious rash, severe pain, and when to seek urgent medical help.",
+    "keywords": "red flags, urgent care, emergency symptoms, child warning signs, breathing difficulty, dehydration, seizure, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-20",
+    "medical_review_status": "draft",
+    "references": "RCH Kids Health Info: Fever in children; RCH Kids Health Info: Dehydration; NHS child illness urgent warning signs; American Academy of Pediatrics HealthyChildren emergency symptoms guidance",
+    "featured": true,
+    "status": "published",
+    "hero_image": "../assets/condition-visuals/red-flags-urgent-care.png",
+    "hero_alt": "Indian parent calmly monitoring an unwell child and preparing to seek timely medical care",
+    "visual_context": "urgent-care-warning-signs",
+    "url": "html-conditions/red-flags-urgent-care.html"
   },
   {
     "title": "Safe Food, Water and Deworming",
