@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Clinical Portal 2026 resource metadata -->
+  <meta name="title" content="Constipation in Children">
+  <meta name="slug" content="constipation-in-children">
+  <meta name="category" content="Gastrointestinal">
+  <meta name="resource_type" content="parent-guide">
+  <meta name="description" content="Parent guide to constipation in children, including symptoms, stool withholding, toilet routine, diet and fluid habits, medicine cautions, Bristol stool type guidance, and warning signs.">
+  <meta name="keywords" content="constipation, hard stool, painful stool, stool withholding, soiling, encopresis, child constipation, bristol stool chart, parent guide">
+  <meta name="audience" content="parents">
+  <meta name="last_reviewed" content="2026-05-20">
+  <meta name="medical_review_status" content="draft">
+  <meta name="references" content="RCH Kids Health Info: Constipation; NICE CG99 Constipation in children and young people: diagnosis and management; American Academy of Pediatrics HealthyChildren constipation parent guidance; Raising Children Network constipation parent guidance">
+  <meta name="featured" content="true">
+  <meta name="status" content="published">
+  <meta name="hero_image" content="../assets/condition-visuals/constipation-in-children.png">
+  <meta name="hero_alt" content="Indian parent gently supporting a child with healthy toilet routine and hydration at home">
+  <meta name="visual_context" content="bowel-habits-home-care">
+  <meta name="author" content="Dr. Murali Gopal">
+  <meta name="theme-color" content="#0f6b78">
+
+  <title>Constipation in Children | Clinical Portal 2026</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .stool-guide {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .stool-group-label {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      min-height: 2rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: #eef7f4;
+      color: #245a52;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .stool-type-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+
+    .stool-card {
+      display: grid;
+      grid-template-rows: auto 5.5rem auto;
+      gap: 0.7rem;
+      min-height: 15rem;
+      padding: 0.85rem;
+      border: 1px solid rgba(36, 90, 82, 0.16);
+      border-radius: 8px;
+      background: #fffdf8;
+      break-inside: avoid;
+    }
+
+    .stool-card strong {
+      color: #24443f;
+      line-height: 1.25;
+    }
+
+    .stool-card p {
+      margin: 0;
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    .stool-visual {
+      position: relative;
+      min-height: 5.5rem;
+      border-radius: 8px;
+      background: #f7efe2;
+      overflow: hidden;
+    }
+
+    .stool-visual span {
+      position: absolute;
+      display: block;
+      background: #9a6a3a;
+      border: 2px solid rgba(86, 53, 24, 0.12);
+      box-shadow: inset 0 0.2rem 0.45rem rgba(255, 255, 255, 0.2);
+    }
+
+    .stool-1 span {
+      width: 1.1rem;
+      height: 1rem;
+      border-radius: 50%;
+    }
+
+    .stool-1 span:nth-child(1) { left: 16%; top: 25%; }
+    .stool-1 span:nth-child(2) { left: 39%; top: 42%; }
+    .stool-1 span:nth-child(3) { left: 61%; top: 25%; }
+    .stool-1 span:nth-child(4) { left: 70%; top: 56%; }
+
+    .stool-2 span {
+      width: 1.35rem;
+      height: 1.2rem;
+      border-radius: 45% 55% 48% 52%;
+      top: 39%;
+    }
+
+    .stool-2 span:nth-child(1) { left: 15%; }
+    .stool-2 span:nth-child(2) { left: 33%; }
+    .stool-2 span:nth-child(3) { left: 51%; }
+    .stool-2 span:nth-child(4) { left: 69%; }
+
+    .stool-3 span,
+    .stool-4 span {
+      left: 13%;
+      top: 38%;
+      width: 74%;
+      height: 1.45rem;
+      border-radius: 999px;
+    }
+
+    .stool-3 span::after {
+      content: "";
+      position: absolute;
+      inset: 0.25rem 0.55rem;
+      background:
+        linear-gradient(100deg, transparent 0 16%, rgba(255, 255, 255, 0.35) 17% 20%, transparent 21% 45%, rgba(255, 255, 255, 0.28) 46% 49%, transparent 50%),
+        linear-gradient(80deg, transparent 0 62%, rgba(70, 43, 20, 0.22) 63% 66%, transparent 67%);
+      border-radius: inherit;
+    }
+
+    .stool-4 span {
+      background: #a97742;
+    }
+
+    .stool-5 span {
+      width: 1.35rem;
+      height: 1.05rem;
+      border-radius: 55% 45% 50% 50%;
+      top: 42%;
+    }
+
+    .stool-5 span:nth-child(1) { left: 20%; }
+    .stool-5 span:nth-child(2) { left: 43%; }
+    .stool-5 span:nth-child(3) { left: 66%; }
+
+    .stool-6 span {
+      width: 1.65rem;
+      height: 1.15rem;
+      border-radius: 45% 55% 40% 60%;
+      background: #b58551;
+      top: 40%;
+    }
+
+    .stool-6 span:nth-child(1) { left: 18%; transform: rotate(-8deg); }
+    .stool-6 span:nth-child(2) { left: 40%; transform: rotate(6deg); }
+    .stool-6 span:nth-child(3) { left: 62%; transform: rotate(-4deg); }
+
+    .stool-7 span {
+      left: 18%;
+      top: 36%;
+      width: 64%;
+      height: 1.8rem;
+      border-radius: 999px 999px 45% 45%;
+      background: #c99b62;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 980px) {
+      .stool-type-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .stool-type-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stool-card {
+        grid-template-rows: auto 4.75rem auto;
+        min-height: auto;
+      }
+    }
+
+    @media print {
+      .stool-type-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .stool-card {
+        min-height: 12rem;
+        background: #ffffff;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Clinical Portal 2026 home">
+        <span class="brand-mark" aria-hidden="true">&#10010;</span>
+        <span class="brand-copy">
+          <span class="brand-name">Clinical Portal 2026</span>
+          <span class="brand-subtitle">Dr. Murali Gopal</span>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        data-nav-toggle
+      >
+        &#9776;
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
+        <a href="../index.html#resources">Resources</a>
+        <a href="../index.html#categories">Categories</a>
+        <a href="../index.html#about">About</a>
+        <a href="../legal/disclaimer.html">Disclaimer</a>
+        <a href="../legal/privacy-policy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero resource-page-hero">
+      <div class="container topic-hero-layout">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Gastrointestinal</span>
+          <span aria-hidden="true">/</span>
+          <span>Constipation</span>
+        </nav>
+
+        <div class="topic-hero-copy">
+          <span class="eyebrow">Parent guide</span>
+          <h1>Constipation in Children</h1>
+          <p class="lead">
+            A practical parent guide to hard or painful stools, stool withholding,
+            toilet routines, diet habits, medicine cautions, and warning signs.
+          </p>
+
+          <div class="resource-meta">
+            <span class="badge badge-parent-guide">Parent Guide</span>
+            <span class="badge badge-draft">Draft</span>
+          </div>
+
+          <div class="topic-hero-chips" aria-label="Quick parent information">
+            <span>Common and treatable</span>
+            <span>No punishment for soiling</span>
+            <span>Routine helps</span>
+            <span>Review red flags</span>
+          </div>
+        </div>
+
+        <figure class="topic-hero-visual">
+          <img
+            src="../assets/condition-visuals/constipation-in-children.png"
+            alt="Indian parent gently supporting a child with healthy toilet routine and hydration at home"
+            loading="eager"
+            decoding="async"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-compact resource-page-section">
+      <div class="narrow-container resource-shell">
+        <article class="resource-content">
+          <div class="card info-card">
+            <h2>Dr. Murali Gopal</h2>
+            <p>
+              Senior Paediatrician &amp; Paediatric Pulmonologist<br>
+              MCR: 57489<br>
+              MBBS, DCH(UK), MRCPCH(UK), FRCPCH(UK), CCT Paediatrics (UK),
+              Fellow in Paediatric Pulmonology (Aus), Allergology (Ind)<br>
+              Last reviewed: 20 May 2026
+            </p>
+          </div>
+
+          <div class="callout callout-reassurance">
+            <strong>Constipation is common and treatable.</strong>
+            Many children improve with a calm routine, diet and fluid support, and medical guidance when needed. Long-standing constipation often needs patience, follow-up, and a planned treatment course from a doctor.
+          </div>
+
+          <section>
+            <h2>What constipation means</h2>
+            <p>Constipation does not only mean passing stool less often. In children, it can mean hard stools, painful stools, difficulty passing stool, or stooling less often than is comfortable for that child.</p>
+            <p>Stool frequency varies. Some children pass stool daily, while others pass stool less often and are still well. The key question is whether the stool is easy to pass, soft enough, and not causing pain, fear, tummy symptoms, or soiling.</p>
+          </section>
+
+          <section>
+            <h2>Common triggers</h2>
+            <p>Constipation often starts after a normal change in routine or diet. A painful stool can make a child hold back the next stool, which allows it to become harder and more painful. This can become a hard stool-pain-withholding cycle.</p>
+            <ul>
+              <li>Toilet training period, especially if the child is anxious or not developmentally ready.</li>
+              <li>Starting solids, changes in milk intake, or changes in family food patterns.</li>
+              <li>One painful stool leading to fear and stool withholding.</li>
+              <li>Avoiding school toilets because of privacy, cleanliness, teasing, or lack of time.</li>
+              <li>Low fibre intake, low fluid intake, or limited fruits and vegetables.</li>
+              <li>Excess milk in some children, especially when it reduces appetite for fibre-rich foods.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Toilet training and withholding</h2>
+            <div class="callout callout-note">
+              <strong>This is not about blame.</strong>
+              Around toilet training, constipation is common. If toilet training is pushed before a child is ready, or if there is too much pressure around stooling, some children may hold stool back. That withholding can worsen pain and make stools harder.
+            </div>
+            <p>A gentle, readiness-based approach usually works better than pressure. Some children need more time, more reassurance, or a pause in training while constipation is treated.</p>
+          </section>
+
+          <section>
+            <h2>Symptoms parents may notice</h2>
+            <ul>
+              <li>Hard stool, large stool, or stool that comes out as small hard lumps.</li>
+              <li>Pain, crying, fear, or straining when passing stool.</li>
+              <li>Tummy pain, bloating, reduced appetite, or feeling full quickly.</li>
+              <li>Irritability, toilet avoidance, or hiding when the urge to stool comes.</li>
+              <li>Stool withholding postures such as crossing legs, stiffening, tiptoe standing, rocking, or clenching.</li>
+              <li>A small tear near the anus, called an anal fissure, which may cause pain or a streak of bright red blood.</li>
+              <li>Soiling or stool marks in underwear, especially when constipation has been present for a while.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Soiling is not bad behaviour</h2>
+            <div class="callout key-points">
+              <strong>Soiling can be overflow from chronic constipation.</strong>
+              When hard stool is stuck in the bowel, softer stool may leak around it without the child fully controlling it. This should not be treated as laziness, stubbornness, or naughtiness.
+            </div>
+            <p>Children who soil often feel embarrassed or worried. Calm support, a treatment plan, and follow-up are more helpful than scolding or punishment.</p>
+          </section>
+
+          <section>
+            <h2>Home care that may help</h2>
+            <ul>
+              <li>For toilet-trained children, offer regular toilet sitting after meals, especially after breakfast or dinner.</li>
+              <li>Use a foot stool so the knees are supported and slightly higher than the hips. This can make stooling easier.</li>
+              <li>Keep toilet sitting short and calm. Reading a small book or using quiet encouragement can help some children relax.</li>
+              <li>Use positive reinforcement for sitting, trying, or telling an adult about stool urge. Do not punish accidents.</li>
+              <li>Offer enough fluids through the day, guided by age, weather, activity, and doctor advice.</li>
+              <li>Include fruits, vegetables, dals, whole grains, and other fibre-containing family foods in an age-appropriate way.</li>
+              <li>Review excess milk intake with a doctor if appetite for other foods is low or constipation is persistent.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Best toilet posture for easier stool passage</h2>
+            <p>A squatting posture, as used with an Indian-style toilet, can make stool passage easier for many children because the knees are higher than the hips and the child is in a more natural defecation position.</p>
+            <p>If your child uses a Western-style toilet, place a safe, stable foot stool under the feet so the knees are slightly higher than the hips. This can mimic a squatting posture and may help the child sit securely, relax the tummy and pelvic muscles, and avoid unnecessary straining.</p>
+            <div class="callout callout-note">
+              <strong>Keep the setup safe and relaxed.</strong>
+              Use only a safe, clean, stable toilet arrangement. Do not force a child to squat if they are afraid, unsteady, in pain, or not developmentally ready. The child should not be made to sit for long periods. Short relaxed toilet sitting after meals is better than pressure or punishment.
+            </div>
+          </section>
+
+          <section>
+            <h2>Medicines and home remedies</h2>
+            <div class="callout red-flags">
+              <strong>Do not start laxatives, suppositories, enemas, or repeated home remedies without medical advice.</strong>
+              Constipation treatment depends on the child, age, severity, duration, and red flags. This guide does not provide laxative amounts or treatment protocols.
+            </div>
+            <p>Persistent constipation may need a planned course of treatment and follow-up by a doctor. Stopping treatment too early can allow stool to build up again, so follow the plan given for your child.</p>
+          </section>
+
+          <section>
+            <h2>Stool type guide for parents</h2>
+            <p>This parent-friendly stool type guide can help you describe stool consistency to the doctor. It does not diagnose the cause of constipation or diarrhoea by itself.</p>
+
+            <div class="stool-guide" aria-label="Parent-friendly stool type guide">
+              <span class="stool-group-label">Constipation pattern</span>
+              <div class="stool-type-grid">
+                <div class="stool-card">
+                  <strong>Type 1</strong>
+                  <div class="stool-visual stool-1" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                  <p>Separate hard lumps. Often difficult or painful to pass.</p>
+                </div>
+
+                <div class="stool-card">
+                  <strong>Type 2</strong>
+                  <div class="stool-visual stool-2" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                  <p>Lumpy sausage-shaped stool. A constipation pattern.</p>
+                </div>
+
+                <div class="stool-card">
+                  <strong>Type 3</strong>
+                  <div class="stool-visual stool-3" aria-hidden="true">
+                    <span></span>
+                  </div>
+                  <p>Sausage-shaped stool with cracks. Usually acceptable if easy to pass.</p>
+                </div>
+
+                <div class="stool-card">
+                  <strong>Type 4</strong>
+                  <div class="stool-visual stool-4" aria-hidden="true">
+                    <span></span>
+                  </div>
+                  <p>Smooth soft sausage or snake-like stool. Usually ideal and easy to pass.</p>
+                </div>
+
+                <div class="stool-card">
+                  <strong>Type 5</strong>
+                  <div class="stool-visual stool-5" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <p>Soft blobs with clear edges. May be loose.</p>
+                </div>
+
+                <div class="stool-card">
+                  <strong>Type 6</strong>
+                  <div class="stool-visual stool-6" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <p>Mushy stool with ragged edges. Loose stool or diarrhoea pattern.</p>
+                </div>
+
+                <div class="stool-card">
+                  <strong>Type 7</strong>
+                  <div class="stool-visual stool-7" aria-hidden="true">
+                    <span></span>
+                  </div>
+                  <p>Watery stool with no solid pieces. Diarrhoea pattern.</p>
+                </div>
+              </div>
+
+              <div class="callout callout-note">
+                <strong>Quick grouping:</strong>
+                Types 1 and 2 suggest a constipation pattern. Types 3 and 4 are usual or easier stools. Types 5, 6, and 7 are looser stools and may suggest diarrhoea, depending on the child and situation.
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>When to seek medical review</h2>
+            <p>Seek medical review if constipation is persistent, painful, recurrent, or not improving with basic routine and diet measures. Review is also important when soiling or overflow is happening.</p>
+            <ul>
+              <li>A baby under 12 months has suspected constipation.</li>
+              <li>Constipation is present from birth or your baby had delayed passage of meconium after birth.</li>
+              <li>Constipation is not improving despite basic measures.</li>
+              <li>There is recurrent soiling, stool leakage, or overflow.</li>
+              <li>Your child has repeated painful stools, fissures, or fear of passing stool.</li>
+              <li>You feel stuck in a cycle of withholding, pain, and hard stool.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Red flags / when to seek urgent care</h2>
+            <div class="callout red-flags">
+              <strong>Seek urgent medical care if constipation is associated with any of these signs:</strong>
+              <ul>
+                <li>Persistent vomiting, green vomit, or vomiting with a swollen tummy.</li>
+                <li>Abdominal distension, severe abdominal pain, or a hard painful abdomen.</li>
+                <li>Blood in stool that is not clearly from a small fissure.</li>
+                <li>Poor feeding, poor weight gain, weight loss, fever, or a very unwell child.</li>
+                <li>Weakness in the legs, abnormal walking, new bladder problems, or loss of usual strength.</li>
+                <li>Abnormal back or spine signs such as a deep dimple, tuft of hair, swelling, or unusual birthmark over the lower spine.</li>
+                <li>Constipation from birth, delayed passage of meconium, or a baby who is not thriving.</li>
+                <li>Your child is worsening quickly or you feel something is seriously wrong.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Medical disclaimer</h2>
+            <div class="notice notice-disclaimer">
+              <strong>General education only</strong>
+              This guide is parent education only and does not replace medical consultation, diagnosis, emergency care, examination, growth assessment, stool or blood testing decisions, or individualized advice from a qualified healthcare professional. It does not provide medicine amount instructions or treatment protocols. Seek medical advice for symptoms specific to your child.
+            </div>
+          </section>
+
+          <section>
+            <h2>References</h2>
+            <ol class="reference-list">
+              <li>RCH Kids Health Info. <em>Constipation.</em> Includes guidance on correct equipment and foot stool support for an adult-sized toilet. Accessed 20 May 2026.</li>
+              <li>National Institute for Health and Care Excellence. <em>Constipation in children and young people: diagnosis and management, CG99.</em> Accessed 20 May 2026.</li>
+              <li>American Academy of Pediatrics, HealthyChildren.org. <em>Constipation parent guidance.</em> Includes parent guidance on stool withholding and toilet training pressure. Accessed 20 May 2026.</li>
+              <li>Raising Children Network. <em>Constipation parent guidance.</em> Accessed 20 May 2026.</li>
+            </ol>
+          </section>
+
+          <p class="text-small text-muted">
+            Last reviewed: 20 May 2026. Draft clinical content; clinician review recommended before distribution.
+          </p>
+
+          <div class="patient-education-copyright">
+            <p class="content-protection-note">
+              <strong>&copy; Dr. Murali Gopal | For Patient Education Only</strong>
+              This educational material is intended for parent and patient education. Reproduction, redistribution, or modification without permission is not allowed.
+            </p>
+            <div class="print-watermark" aria-hidden="true">&copy; Dr. Murali Gopal | For Patient Education Only</div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="../legal/disclaimer.html">Disclaimer</a>
+        <a href="../legal/privacy-policy.html">Privacy Policy</a>
+        <a href="../legal/terms-of-use.html">Terms of Use</a>
+        <a href="../legal/copyright.html">Copyright</a>
+      </div>
+
+      <div class="footer-note">
+        <p>
+          This portal provides general educational resources only. It is not a
+          substitute for medical consultation, diagnosis, or individualized treatment.
+        </p>
+        <p>
+          &copy; <span data-current-year></span> Dr. Murali Gopal. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

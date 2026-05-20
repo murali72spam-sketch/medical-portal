@@ -306,6 +306,24 @@
     "url": "html-conditions/15-whooping-cough-parent-guide.html"
   },
   {
+    "title": "Constipation in Children",
+    "slug": "constipation-in-children",
+    "category": "Gastrointestinal",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to constipation in children, including symptoms, stool withholding, toilet routine, diet and fluid habits, medicine cautions, Bristol stool type guidance, and warning signs.",
+    "keywords": "constipation, hard stool, painful stool, stool withholding, soiling, encopresis, child constipation, bristol stool chart, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-20",
+    "medical_review_status": "draft",
+    "references": "RCH Kids Health Info: Constipation; NICE CG99 Constipation in children and young people: diagnosis and management; American Academy of Pediatrics HealthyChildren constipation parent guidance; Raising Children Network constipation parent guidance",
+    "featured": true,
+    "status": "published",
+    "hero_image": "../assets/condition-visuals/constipation-in-children.png",
+    "hero_alt": "Indian parent gently supporting a child with healthy toilet routine and hydration at home",
+    "visual_context": "bowel-habits-home-care",
+    "url": "html-conditions/constipation-in-children.html"
+  },
+  {
     "title": "Gastroenteritis / Diarrhoea in Children",
     "slug": "gastroenteritis-diarrhoea",
     "category": "Gastrointestinal",
