@@ -7,7 +7,7 @@
     "build": "node auto-index-generator.js",
     "generate:index": "node auto-index-generator.js",
     "validate:resources": "node tools/validate-resources.js",
-    "qa:batch10": "playwright test tests/batch10.spec.js"
+    "qa:batch10": "node tools/run-batch10-qa.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.60.0",

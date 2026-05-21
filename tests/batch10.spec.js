@@ -1,4 +1,9 @@
-﻿const { test, expect } = require("@playwright/test");
+const { test, expect } = require("@playwright/test");
+
+// Production QA should use the public production alias:
+// BASE_URL=https://medical-portal-brown.vercel.app npm run qa:batch10
+// Protected Vercel preview/deployment URLs can redirect to Vercel Authentication.
+const publicProductionUrl = "https://medical-portal-brown.vercel.app";
 
 const batch10Resources = [
   {
@@ -39,9 +44,49 @@ const batch10Resources = [
   }
 ];
 
+function isVercelLoginUrl(url) {
+  return /https:\/\/vercel\.com\/login/i.test(url);
+}
+
+function vercelLoginMessage(url) {
+  return [
+    `Batch 10 QA was redirected to Vercel login: ${url}`,
+    `Use the public production alias (${publicProductionUrl}) for production browser QA.`,
+    "Protected Vercel preview/deployment URLs are expected to fail these public page-opening checks."
+  ].join(" ");
+}
+
+async function expectNotVercelLogin(responseOrPage) {
+  const url = typeof responseOrPage.url === "function" ? responseOrPage.url() : responseOrPage.url();
+
+  if (isVercelLoginUrl(url)) {
+    throw new Error(vercelLoginMessage(url));
+  }
+}
+
+async function waitForImagesToSettle(page) {
+  await page.locator("img").evaluateAll((images) =>
+    Promise.all(
+      images.map((image) => {
+        if (image.complete) {
+          return Promise.resolve();
+        }
+
+        return new Promise((resolve) => {
+          const done = () => resolve();
+          image.addEventListener("load", done, { once: true });
+          image.addEventListener("error", done, { once: true });
+          setTimeout(done, 10000);
+        });
+      })
+    )
+  );
+}
+
 test.describe("Batch 10 newborn and infant care automated QA", () => {
   test("Batch 10 resources are correctly indexed without duplicates", async ({ request }) => {
     const response = await request.get("/data/conditions-index.json");
+    await expectNotVercelLogin(response);
     expect(response.ok()).toBeTruthy();
 
     const resources = await response.json();
@@ -73,7 +118,10 @@ test.describe("Batch 10 newborn and infant care automated QA", () => {
 
   for (const resource of batch10Resources) {
     test(`${resource.title} page opens and passes visual-safety checks`, async ({ page }) => {
-      await page.goto(resource.path, { waitUntil: "domcontentloaded" });
+      const response = await page.goto(resource.path, { waitUntil: "domcontentloaded" });
+      await expectNotVercelLogin(page);
+
+      expect(response?.ok(), `${resource.title} should load from the configured public site`).toBeTruthy();
 
       await expect(page.getByRole("heading", { name: resource.title, level: 1 })).toBeVisible();
 
@@ -83,6 +131,7 @@ test.describe("Batch 10 newborn and infant care automated QA", () => {
 
       const heroImage = page.locator(`img[src*="${resource.image}"]`);
       await expect(heroImage).toHaveCount(1);
+      await waitForImagesToSettle(page);
 
       const brokenImages = await page.locator("img").evaluateAll((images) =>
         images
