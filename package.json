@@ -6,6 +6,11 @@
   "scripts": {
     "build": "node auto-index-generator.js",
     "generate:index": "node auto-index-generator.js",
-    "validate:resources": "node tools/validate-resources.js"
+    "validate:resources": "node tools/validate-resources.js",
+    "qa:batch10": "playwright test tests/batch10.spec.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "http-server": "^14.1.1"
   }
 }

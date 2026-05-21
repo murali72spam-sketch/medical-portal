@@ -1224,21 +1224,6 @@
     "url": "html-conditions/mosquito-bite-prevention.html"
   },
   {
-    "title": "Neonatal Danger Signs",
-    "slug": "neonatal-danger-signs",
-    "category": "Parent Education",
-    "resource_type": "parent-guide",
-    "description": "Parent guide to newborn danger signs that need urgent medical review, including feeding, breathing, temperature, jaundice, and activity concerns.",
-    "keywords": "neonatal danger signs, newborn warning signs, newborn fever, poor feeding, breathing difficulty, parent guide",
-    "audience": "parents",
-    "last_reviewed": "2026-05-15",
-    "medical_review_status": "pending-clinician-review",
-    "references": "WHO maternal and newborn care recommendations; World Health Organization newborn care resources; Indian Academy of Pediatrics Guidelines for Parents; National Health Mission Government of India Home Based Newborn Care resources; Indian Academy of Pediatrics Action Plan 2026.",
-    "featured": false,
-    "status": "draft",
-    "url": "html-conditions/neonatal-danger-signs.html"
-  },
-  {
     "title": "Newborn Danger Signs",
     "slug": "neonatal-danger-signs-parent-guide",
     "category": "Parent Education",
