@@ -957,21 +957,6 @@
     "url": "html-conditions/breastfeeding-parent-guide.html"
   },
   {
-    "title": "Breastfeeding Basics",
-    "slug": "breastfeeding-basics",
-    "category": "Nutrition & Feeding",
-    "resource_type": "parent-guide",
-    "description": "Parent guide to breastfeeding basics, including latch, milk transfer, home support, and urgent newborn feeding warning signs.",
-    "keywords": "breastfeeding basics, latch, milk transfer, newborn feeding, wet nappies, parent guide",
-    "audience": "parents",
-    "last_reviewed": "2026-05-15",
-    "medical_review_status": "pending-clinician-review",
-    "references": "Indian Pediatrics / IAP Infant and Young Child Feeding Guidelines 2016; AAP HealthyChildren.org breastfeeding guidance; Royal Children's Hospital Melbourne Kids Health Info Breastfeeding; World Health Organization newborn care resources; Indian Academy of Pediatrics Action Plan 2026.",
-    "featured": false,
-    "status": "draft",
-    "url": "html-conditions/breastfeeding-basics.html"
-  },
-  {
     "title": "Childhood Overweight and Obesity",
     "slug": "childhood-overweight-and-obesity",
     "category": "Nutrition & Feeding",
@@ -1308,21 +1293,6 @@
     "url": "html-conditions/normal-newborn-care-parent-guide.html"
   },
   {
-    "title": "Normal Newborn Care",
-    "slug": "normal-newborn-care",
-    "category": "Parent Education",
-    "resource_type": "parent-guide",
-    "description": "Parent guide to everyday newborn care, including feeding, warmth, safe sleep, hygiene, follow-up, and urgent warning signs.",
-    "keywords": "normal newborn care, newborn safety, newborn warning signs, safe sleep, cord care, parent guide",
-    "audience": "parents",
-    "last_reviewed": "2026-05-15",
-    "medical_review_status": "pending-clinician-review",
-    "references": "World Health Organization newborn care resources; WHO maternal and newborn care recommendations; Indian Academy of Pediatrics Guidelines for Parents; National Health Mission Government of India Home Based Newborn Care resources; AAP HealthyChildren.org safe sleep guidance.",
-    "featured": false,
-    "status": "draft",
-    "url": "html-conditions/normal-newborn-care.html"
-  },
-  {
     "title": "Premature Baby Care at Home",
     "slug": "premature-baby-care-at-home",
     "category": "Parent Education",
@@ -1402,21 +1372,6 @@
     "hero_alt": "Indian parent gently caring for a newborn umbilical cord stump",
     "visual_context": "clean-dry-newborn-cord-care",
     "url": "html-conditions/umbilical-cord-care-parent-guide.html"
-  },
-  {
-    "title": "Umbilical Cord Care",
-    "slug": "umbilical-cord-care",
-    "category": "Parent Education",
-    "resource_type": "parent-guide",
-    "description": "Parent guide to clean and dry umbilical cord care, expected changes, and signs of cord infection needing review.",
-    "keywords": "umbilical cord care, newborn belly button, cord stump, omphalitis warning signs, parent guide",
-    "audience": "parents",
-    "last_reviewed": "2026-05-15",
-    "medical_review_status": "pending-clinician-review",
-    "references": "Royal Children's Hospital Melbourne Kids Health Info skincare and cord care; AAP HealthyChildren.org Umbilical Cord Care; Raising Children Network umbilical care; World Health Organization newborn care resources; National Health Mission Government of India Home Based Newborn Care resources.",
-    "featured": false,
-    "status": "draft",
-    "url": "html-conditions/umbilical-cord-care.html"
   },
   {
     "title": "Vulvovaginitis in Children",
