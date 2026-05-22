@@ -31,6 +31,8 @@
     searchTerm: ""
   };
 
+  const searchContexts = {};
+
   const premiumPilotSlugs = [
     "fever-in-children",
     "dengue-fever",
@@ -156,11 +158,15 @@
 
   function setupSearch() {
     const input = document.querySelector("[data-resource-search]");
+    const panel = document.querySelector('[data-search-results="library"]');
     if (!input) return;
 
+    registerSearchContext("library", input, panel);
+
     input.addEventListener("input", (event) => {
-      state.searchTerm = event.target.value.trim().toLowerCase();
+      state.searchTerm = normalizeQuery(event.target.value);
       renderResources();
+      renderSearchResults("library");
     });
   }
 
@@ -186,21 +192,302 @@
   function setupHeroSearch() {
     const form = document.querySelector("[data-hero-search-form]");
     const input = document.querySelector("[data-hero-resource-search]");
+    const panel = document.querySelector('[data-search-results="hero"]');
     const libraryInput = document.querySelector("[data-resource-search]");
 
     if (!form || !input) return;
 
-    form.addEventListener("submit", () => {
+    registerSearchContext("hero", input, panel);
+
+    input.addEventListener("input", () => {
+      renderSearchResults("hero");
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
       const value = input.value.trim();
-      state.searchTerm = value.toLowerCase();
+      const query = normalizeQuery(value);
 
       if (libraryInput) {
         libraryInput.value = value;
       }
 
+      state.searchTerm = query;
       setActiveCategory("All");
       renderResources();
+      handleSearchSubmit("hero");
     });
+  }
+
+  function registerSearchContext(name, input, panel) {
+    searchContexts[name] = {
+      input,
+      panel,
+      activeIndex: -1,
+      results: []
+    };
+
+    input.addEventListener("keydown", (event) => {
+      handleSearchKeydown(name, event);
+    });
+
+    input.addEventListener("focus", () => {
+      if (normalizeQuery(input.value).length >= 2) {
+        renderSearchResults(name);
+      }
+    });
+  }
+
+  function handleSearchKeydown(name, event) {
+    const context = searchContexts[name];
+    if (!context) return;
+
+    if (event.key === "Escape") {
+      event.preventDefault();
+      hideSearchResults(name, { clear: true });
+      return;
+    }
+
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      if (!context.results.length) renderSearchResults(name);
+      if (!context.results.length) return;
+
+      event.preventDefault();
+      const direction = event.key === "ArrowDown" ? 1 : -1;
+      const nextIndex =
+        context.activeIndex === -1
+          ? direction === 1
+            ? 0
+            : context.results.length - 1
+          : (context.activeIndex + direction + context.results.length) %
+            context.results.length;
+
+      setActiveSearchResult(name, nextIndex);
+      return;
+    }
+
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handleSearchSubmit(name);
+    }
+  }
+
+  function handleSearchSubmit(name) {
+    const context = searchContexts[name];
+    if (!context) return;
+
+    const query = normalizeQuery(context.input.value);
+    if (query.length < 2) {
+      renderSearchResults(name);
+      return;
+    }
+
+    const results = findMatchingResources(query);
+    context.results = results;
+
+    if (context.activeIndex >= 0 && results[context.activeIndex]) {
+      openResource(results[context.activeIndex]);
+      return;
+    }
+
+    const exactMatch = results.find((resource) => isExactTitleMatch(resource, query));
+    if (exactMatch) {
+      openResource(exactMatch);
+      return;
+    }
+
+    if (results.length === 1) {
+      openResource(results[0]);
+      return;
+    }
+
+    renderSearchResults(name, results);
+  }
+
+  function renderSearchResults(name, suppliedResults) {
+    const context = searchContexts[name];
+    if (!context || !context.panel) return;
+
+    const query = normalizeQuery(context.input.value);
+    context.activeIndex = -1;
+
+    if (query.length < 2) {
+      hideSearchResults(name);
+      return;
+    }
+
+    const results = suppliedResults || findMatchingResources(query);
+    const visibleResults = results.slice(0, 8);
+    context.results = visibleResults;
+    context.panel.replaceChildren();
+    context.panel.classList.remove("hidden");
+    context.input.setAttribute("aria-expanded", "true");
+    context.input.removeAttribute("aria-activedescendant");
+
+    const summary = document.createElement("p");
+    summary.className = "search-results-summary";
+
+    if (!results.length) {
+      summary.textContent =
+        "No matching resource found. Try another keyword or browse by category.";
+      context.panel.appendChild(summary);
+      return;
+    }
+
+    summary.textContent =
+      results.length === 1
+        ? "1 matching resource"
+        : `${results.length} matching resources`;
+
+    const list = document.createElement("div");
+    list.className = "search-results-list";
+    list.setAttribute("role", "list");
+
+    visibleResults.forEach((resource, index) => {
+      list.appendChild(createSearchResultItem(resource, name, index));
+    });
+
+    context.panel.append(summary, list);
+  }
+
+  function createSearchResultItem(resource, name, index) {
+    const item = document.createElement("article");
+    const link = document.createElement("a");
+    const meta = document.createElement("span");
+    const title = document.createElement("strong");
+    const description = document.createElement("span");
+    const action = document.createElement("span");
+
+    item.className = "search-result-item";
+    item.setAttribute("role", "listitem");
+
+    link.className = "search-result-link";
+    link.id = `${name}-search-result-${index}`;
+    link.href = resourceUrl(resource);
+    link.dataset.searchResultIndex = String(index);
+
+    meta.className = "search-result-meta";
+    meta.textContent = [
+      resource.category || "Clinical resource",
+      typeLabels[resource.resource_type] || resource.resource_type || "Resource"
+    ]
+      .filter(Boolean)
+      .join(" • ");
+
+    title.textContent = resource.title || "Untitled resource";
+    description.className = "search-result-description";
+    description.textContent =
+      resource.description || "Description will be added after review.";
+    action.className = "search-result-action";
+    action.textContent = "Open guide";
+
+    link.append(meta, title, description, action);
+    item.appendChild(link);
+
+    return item;
+  }
+
+  function setActiveSearchResult(name, index) {
+    const context = searchContexts[name];
+    if (!context || !context.panel) return;
+
+    context.activeIndex = index;
+
+    context.panel.querySelectorAll("[data-search-result-index]").forEach((link) => {
+      const active = Number(link.dataset.searchResultIndex) === index;
+      link.classList.toggle("is-active", active);
+      if (active) {
+        context.input.setAttribute("aria-activedescendant", link.id);
+        link.scrollIntoView({ block: "nearest" });
+      }
+    });
+  }
+
+  function hideSearchResults(name, options = {}) {
+    const context = searchContexts[name];
+    if (!context) return;
+
+    if (options.clear) {
+      context.input.value = "";
+      if (name === "library") {
+        state.searchTerm = "";
+        renderResources();
+      }
+    }
+
+    context.activeIndex = -1;
+    context.results = [];
+
+    if (context.panel) {
+      context.panel.replaceChildren();
+      context.panel.classList.add("hidden");
+    }
+
+    context.input.setAttribute("aria-expanded", "false");
+    context.input.removeAttribute("aria-activedescendant");
+  }
+
+  function findMatchingResources(query) {
+    const safeQuery = normalizeQuery(query);
+    if (safeQuery.length < 2) return [];
+
+    return state.resources
+      .map((resource) => ({
+        resource,
+        score: scoreResourceMatch(resource, safeQuery)
+      }))
+      .filter((item) => item.score > 0)
+      .sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        return a.resource.title.localeCompare(b.resource.title);
+      })
+      .map((item) => item.resource);
+  }
+
+  function scoreResourceMatch(resource, query) {
+    const title = normalizeQuery(resource.title);
+    const slug = normalizeSlug(resource.slug);
+    const querySlug = normalizeSlug(query);
+    const keywords = normalizeQuery(resource.keywords);
+    const category = normalizeQuery(resource.category);
+    const description = normalizeQuery(resource.description);
+    const resourceType = normalizeQuery(
+      `${resource.resource_type} ${typeLabels[resource.resource_type] || ""}`
+    );
+
+    if (title === query) return 100;
+    if (slug && slug === querySlug) return 90;
+    if (title.startsWith(query)) return 80;
+    if (keywords.includes(query)) return 70;
+    if (title.includes(query)) return 65;
+    if (category.includes(query)) return 60;
+    if (slug.includes(querySlug)) return 55;
+    if (description.includes(query)) return 50;
+    if (resourceType.includes(query)) return 40;
+
+    return 0;
+  }
+
+  function isExactTitleMatch(resource, query) {
+    return normalizeQuery(resource.title) === normalizeQuery(query);
+  }
+
+  function openResource(resource) {
+    const url = resourceUrl(resource);
+    if (!url || url === "#") return;
+    window.location.href = url;
+  }
+
+  function normalizeQuery(value) {
+    return text(value).toLowerCase().replace(/\s+/g, " ");
+  }
+
+  function normalizeSlug(value) {
+    return normalizeQuery(value)
+      .replace(/&/g, " and ")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
   }
 
   function setupCategoryJumps() {

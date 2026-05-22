@@ -68,10 +68,21 @@
               <input
                 type="search"
                 placeholder="Search fever, asthma, eczema, weaning..."
+                aria-label="Search paediatric parent resources"
+                aria-controls="hero-search-results"
+                aria-expanded="false"
+                autocomplete="off"
                 data-hero-resource-search
               >
             </label>
             <button class="button button-primary" type="submit">Search resources</button>
+            <div
+              class="search-results-panel hidden"
+              id="hero-search-results"
+              role="region"
+              aria-live="polite"
+              data-search-results="hero"
+            ></div>
           </form>
 
           <div class="portal-hero-points" aria-label="Portal highlights">
@@ -259,9 +270,21 @@
             <input
               type="search"
               placeholder="Search by condition, keyword, or category"
+              aria-label="Search resources"
+              aria-controls="resource-search-results"
+              aria-expanded="false"
+              autocomplete="off"
               data-resource-search
             >
           </label>
+
+          <div
+            class="search-results-panel hidden"
+            id="resource-search-results"
+            role="region"
+            aria-live="polite"
+            data-search-results="library"
+          ></div>
 
           <div class="filter-row" role="group" aria-label="Filter by category">
             <button class="filter-button is-active" type="button" aria-pressed="true" data-category-filter="All">All</button>
