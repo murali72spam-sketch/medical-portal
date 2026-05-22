@@ -507,6 +507,36 @@
     "url": "html-conditions/adolescent-mental-health-warning-signs.html"
   },
   {
+    "title": "Anxiety in Children",
+    "slug": "childhood-anxiety-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to anxiety in children, including common signs, routines, sleep, school liaison, gradual support, and when urgent help is needed.",
+    "keywords": "childhood anxiety, anxious child, worries, school anxiety, mental health, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org anxiety and mental-health guidance; NICE guidance on mental-health recognition and support; NHS anxiety guidance; Raising Children Network anxiety resources; World Health Organization child and adolescent mental-health resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/childhood-anxiety-parent-guide.html"
+  },
+  {
+    "title": "Autism: Early Signs Parents May Notice",
+    "slug": "autism-early-signs-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to early signs parents may notice in autism, including social communication, play, sensory differences, repetitive behaviours, language concerns, regression, and developmental assessment.",
+    "keywords": "autism early signs, autism spectrum, social communication, sensory differences, developmental assessment, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "CDC autism spectrum disorder resources; American Academy of Pediatrics / HealthyChildren.org autism guidance; NICE autism recognition and referral guidance; NHS autism guidance; Raising Children Network autism resources; Indian Academy of Pediatrics developmental guidance.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/autism-early-signs-parent-guide.html"
+  },
+  {
     "title": "Back Pain and Posture in Children",
     "slug": "back-pain-and-posture-parent-guide",
     "category": "Growth & Development",
@@ -595,6 +625,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/developmental-dysplasia-of-hip-parent-guide.html"
+  },
+  {
+    "title": "Developmental Milestones: Parent Guide",
+    "slug": "developmental-milestones-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to developmental milestones, including broad developmental areas, supportive routines, and when developmental assessment is helpful.",
+    "keywords": "developmental milestones, child development, delayed milestones, developmental assessment, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "CDC developmental milestones resources; American Academy of Pediatrics / HealthyChildren.org developmental guidance; Royal Children's Hospital Melbourne and Raising Children Network child development resources; World Health Organization early childhood development resources; Indian Academy of Pediatrics parent guidance.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/developmental-milestones-parent-guide.html"
   },
   {
     "title": "Early Puberty in Children",
@@ -702,6 +747,21 @@
     "url": "html-conditions/intoeing-parent-guide.html"
   },
   {
+    "title": "Learning Difficulties and School Support",
+    "slug": "learning-difficulties-school-support-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to learning difficulties and school support, including observations, school communication, hearing and vision checks, wellbeing, and developmental assessment.",
+    "keywords": "learning difficulties, school support, school problems, child learning, developmental assessment, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org learning and school guidance; CDC developmental resources; NICE guidance on developmental and mental-health recognition where relevant; Raising Children Network school and learning resources; Indian government and Indian paediatric child development resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/learning-difficulties-school-support-parent-guide.html"
+  },
+  {
     "title": "Menstrual Health for Adolescents",
     "slug": "menstrual-health-parent-guide",
     "category": "Growth & Development",
@@ -745,6 +805,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/osgood-schlatter-parent-guide.html"
+  },
+  {
+    "title": "Positive Behaviour Guidance for Children",
+    "slug": "positive-behaviour-guidance-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to positive behaviour guidance, including routines, connection, clear limits, praise, modelling, predictable consequences, and when to seek help.",
+    "keywords": "positive behaviour guidance, child behaviour, parenting, routines, limits, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org discipline and behaviour guidance; Raising Children Network positive behaviour resources; NHS child behaviour guidance; World Health Organization parenting and nurturing care resources; Indian Academy of Pediatrics parent guidance.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/positive-behaviour-guidance-parent-guide.html"
   },
   {
     "title": "Puberty: Early and Late Changes",
@@ -837,6 +912,21 @@
     "url": "html-conditions/short-stature-in-children.html"
   },
   {
+    "title": "Sleep Problems in Children",
+    "slug": "sleep-problems-in-children-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to common sleep problems in children, including bedtime routines, night waking, screens, sleep environment, and when medical review is needed.",
+    "keywords": "sleep problems, child sleep, bedtime routine, night waking, snoring, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org sleep guidance; Royal Children's Hospital Melbourne Kids Health Info sleep resources; Raising Children Network sleep resources; NHS child sleep guidance; World Health Organization physical activity, sedentary behaviour and sleep resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/sleep-problems-in-children-parent-guide.html"
+  },
+  {
     "title": "Slipped Upper Femoral Epiphysis (SCFE/SUFE)",
     "slug": "slipped-upper-femoral-epiphysis-scfe-parent-guide",
     "category": "Growth & Development",
@@ -852,6 +942,21 @@
     "url": "html-conditions/slipped-upper-femoral-epiphysis-scfe-parent-guide.html"
   },
   {
+    "title": "Speech and Language Delay in Children",
+    "slug": "speech-and-language-delay-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to speech and language delay, including communication concerns, hearing assessment, developmental review, home support, and when to seek help.",
+    "keywords": "speech delay, language delay, communication delay, hearing assessment, developmental review, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org speech and language guidance; CDC developmental milestones resources; Royal Children's Hospital Melbourne and Raising Children Network communication development resources; NHS speech and language delay guidance; Indian Academy of Pediatrics parent guidance.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/speech-and-language-delay-parent-guide.html"
+  },
+  {
     "title": "Stuttering and Stammering",
     "slug": "stuttering-parent-guide",
     "category": "Growth & Development",
@@ -865,6 +970,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/stuttering-parent-guide.html"
+  },
+  {
+    "title": "Temper Tantrums in Young Children",
+    "slug": "temper-tantrums-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to temper tantrums in young children, including common triggers, calm responses, safety, routines, and when to seek help.",
+    "keywords": "temper tantrums, toddler tantrums, child behaviour, emotional regulation, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org behaviour guidance; Raising Children Network tantrums and behaviour resources; Royal Children's Hospital Melbourne Kids Health Info parent resources; NHS child behaviour guidance; Indian Academy of Pediatrics parent guidance.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/temper-tantrums-parent-guide.html"
   },
   {
     "title": "Thumb Sucking and Common Childhood Habits",
