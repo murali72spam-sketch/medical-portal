@@ -567,6 +567,36 @@
     "url": "html-conditions/bedwetting-parent-guide.html"
   },
   {
+    "title": "Body Image Concerns in Teenagers",
+    "slug": "teen-body-image-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to body image concerns in teenagers, with supportive communication, non-shaming routines, and when professional help is needed.",
+    "keywords": "teen body image, eating concerns, puberty, social media, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org body image and eating disorder guidance; Royal Children's Hospital Melbourne and Raising Children Network teen wellbeing resources; NICE eating disorder and mental-health guidance; World Health Organization adolescent health resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/teen-body-image-parent-guide.html"
+  },
+  {
+    "title": "Bullying and Cyberbullying: Parent Guide",
+    "slug": "bullying-and-cyberbullying-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to bullying and cyberbullying, including signs parents may notice, listening, school communication, online safety, and urgent-help situations.",
+    "keywords": "bullying, cyberbullying, school safety, online safety, teenager, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org bullying guidance; CDC bullying prevention resources; NICE guidance relevant to mental wellbeing and safeguarding; Raising Children Network bullying resources; Indian school safety and government child protection resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/bullying-and-cyberbullying-parent-guide.html"
+  },
+  {
     "title": "Clubfoot / CTEV Parent Overview",
     "slug": "clubfoot-parent-guide",
     "category": "Growth & Development",
@@ -702,6 +732,21 @@
     "url": "html-conditions/growing-pains-parent-guide.html"
   },
   {
+    "title": "Healthy Sleep Habits for Teenagers",
+    "slug": "teen-sleep-habits-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to healthy teenage sleep habits, including circadian rhythm, school timing, screens, caffeine, consistency, and when to seek review.",
+    "keywords": "teen sleep habits, adolescent sleep, circadian rhythm, screens, caffeine, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org sleep guidance; NHS sleep resources; Royal Children's Hospital Melbourne and Raising Children Network sleep resources; World Health Organization sleep, sedentary behaviour and activity resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/teen-sleep-habits-parent-guide.html"
+  },
+  {
     "title": "Hyperthyroidism in Children",
     "slug": "hyperthyroidism-in-children",
     "category": "Growth & Development",
@@ -805,6 +850,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/osgood-schlatter-parent-guide.html"
+  },
+  {
+    "title": "Physical Activity for Teenagers",
+    "slug": "physical-activity-for-teenagers-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to physical activity for teenagers, including routine movement, reduced sitting, strength, sports safety, sleep, and mental wellbeing.",
+    "keywords": "teen physical activity, exercise, sports safety, reduced sitting, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "World Health Organization physical activity and sedentary behaviour guidance; CDC physical activity resources; American Academy of Pediatrics / HealthyChildren.org activity guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/physical-activity-for-teenagers-parent-guide.html"
   },
   {
     "title": "Positive Behaviour Guidance for Children",
@@ -970,6 +1030,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/stuttering-parent-guide.html"
+  },
+  {
+    "title": "Supporting Independence in Teenagers",
+    "slug": "healthy-teen-independence-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to supporting teenage independence through communication, responsibility, routines, privacy, boundaries, digital behaviour, and school balance.",
+    "keywords": "teen independence, adolescent communication, boundaries, responsibility, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org adolescent development guidance; Raising Children Network teenage independence resources; World Health Organization adolescent health resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/healthy-teen-independence-parent-guide.html"
   },
   {
     "title": "Temper Tantrums in Young Children",
@@ -1557,6 +1632,21 @@
     "url": "html-conditions/safe-sleep-for-infants.html"
   },
   {
+    "title": "Talking to Teenagers About Safety, Boundaries and Consent",
+    "slug": "talking-to-teens-about-safety-and-consent",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to talking with teenagers about personal safety, boundaries, consent, online safety, trusted adults, saying no, and getting help.",
+    "keywords": "teen safety, boundaries, consent, online safety, trusted adults, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org adolescent safety guidance; World Health Organization adolescent health and violence prevention resources; UNICEF child protection resources; Indian child protection resources; NHS and Royal Children's Hospital Melbourne safeguarding-style parent resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/talking-to-teens-about-safety-and-consent.html"
+  },
+  {
     "title": "Umbilical Cord Care",
     "slug": "umbilical-cord-care-parent-guide",
     "category": "Parent Education",
@@ -1573,6 +1663,21 @@
     "hero_alt": "Indian parent gently caring for a newborn umbilical cord stump",
     "visual_context": "clean-dry-newborn-cord-care",
     "url": "html-conditions/umbilical-cord-care-parent-guide.html"
+  },
+  {
+    "title": "Vaping, Tobacco and Alcohol in Teenagers",
+    "slug": "teen-vaping-tobacco-alcohol-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to vaping, tobacco and alcohol in teenagers, with non-punitive communication, broad health risks, professional support, and urgent-help situations.",
+    "keywords": "teen vaping, tobacco, alcohol, substance use, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "World Health Organization tobacco and alcohol resources; CDC youth tobacco and alcohol resources; American Academy of Pediatrics / HealthyChildren.org substance use guidance; Indian government tobacco-control resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/teen-vaping-tobacco-alcohol-parent-guide.html"
   },
   {
     "title": "Vulvovaginitis in Children",
@@ -1696,6 +1801,21 @@
     "hero_alt": "Indian parent supporting a child with cough and fever in a calm home setting",
     "visual_context": "cough-fever-breathing-monitoring",
     "url": "html-conditions/16-pneumonia-parent-guide.html"
+  },
+  {
+    "title": "Acne in Teenagers",
+    "slug": "acne-in-teenagers-parent-guide",
+    "category": "Skin & Allergy",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to teenage acne, gentle skin care, avoiding picking and harsh scrubbing, and when medical review is helpful.",
+    "keywords": "teen acne, pimples, adolescent skin care, acne scarring, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org acne guidance; NHS acne resources; Royal Children's Hospital Melbourne skin resources; American Academy of Dermatology acne resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/acne-in-teenagers-parent-guide.html"
   },
   {
     "title": "Eczema (Atopic Dermatitis)",
