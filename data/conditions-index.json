@@ -1146,6 +1146,22 @@
     "url": "html-conditions/breastfeeding-basics-parent-guide.html"
   },
   {
+    "title": "Burns and Scalds",
+    "slug": "burns-and-scalds-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to burns and scalds in children, including immediate cooling, safe covering, what not to apply, and when urgent care is needed.",
+    "keywords": "burns children, scalds children, burn first aid, hot water injury, child safety, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "RCH Kids Health Info burns guidance; NHS burns and scalds guidance; American Academy of Pediatrics HealthyChildren burn prevention and care guidance; WHO burns fact sheet",
+    "featured": false,
+    "status": "draft",
+    "visual_context": "child-burn-scald-cool-running-water-safety",
+    "url": "html-conditions/burns-and-scalds-parent-guide.html"
+  },
+  {
     "title": "Child Travel Health",
     "slug": "child-travel-health",
     "category": "Parent Education",
@@ -1174,6 +1190,38 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/colic-in-babies.html"
+  },
+  {
+    "title": "Dog Bite and Animal Bite Care",
+    "slug": "dog-bite-animal-bite-care-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to dog bites and animal bites in children, including safe wound first aid, infection warning signs, rabies caution, and when urgent care is needed.",
+    "keywords": "dog bite child, animal bite care, rabies risk, bite wound first aid, child safety, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "WHO rabies guidance; CDC rabies and animal bite information; NHS animal and human bites guidance; RCH Kids Health Info wound care guidance; National Centre for Disease Control India rabies resources",
+    "featured": false,
+    "status": "draft",
+    "visual_context": "dog-bite-animal-bite-wound-care-rabies-caution",
+    "url": "html-conditions/dog-bite-animal-bite-care-parent-guide.html"
+  },
+  {
+    "title": "Foreign Body in Ear, Nose, or Eye",
+    "slug": "foreign-body-ear-nose-eye-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to objects in a child",
+    "keywords": "foreign body ear child, foreign body nose child, eye foreign body, button battery nose, child first aid, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "RCH Kids Health Info foreign body guidance; NHS foreign body and eye injury guidance; American Academy of Pediatrics HealthyChildren first aid guidance; CDC button battery safety resources",
+    "featured": false,
+    "status": "draft",
+    "visual_context": "foreign-body-ear-nose-eye-child-safety-first-aid",
+    "url": "html-conditions/foreign-body-ear-nose-eye-parent-guide.html"
   },
   {
     "title": "Hand Hygiene and Cough Etiquette",
@@ -1207,6 +1255,22 @@
     "hero_alt": "Indian parents soothing a crying infant safely at home",
     "visual_context": "infant-colic-crying-soothing-parent-support",
     "url": "html-conditions/infant-colic-parent-guide.html"
+  },
+  {
+    "title": "Minor Head Injury and Concussion",
+    "slug": "minor-head-injury-concussion-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to minor head injury and possible concussion in children, including what to observe, safe first aid, what not to do, and when to seek urgent care.",
+    "keywords": "minor head injury, concussion children, head bump, head injury red flags, child safety, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "RCH Kids Health Info head injury guidance; NHS head injury and concussion guidance; CDC HEADS UP concussion information; American Academy of Pediatrics HealthyChildren head injury guidance",
+    "featured": false,
+    "status": "draft",
+    "visual_context": "child-head-injury-observation-first-aid",
+    "url": "html-conditions/minor-head-injury-concussion-parent-guide.html"
   },
   {
     "title": "Mosquito Bite Prevention",
@@ -1276,6 +1340,38 @@
     "hero_alt": "Indian parents caring for a calm newborn at home",
     "visual_context": "newborn-home-feeding-warmth-safe-sleep",
     "url": "html-conditions/normal-newborn-care-parent-guide.html"
+  },
+  {
+    "title": "Nosebleeds in Children",
+    "slug": "nosebleeds-in-children-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to nosebleeds in children, including common triggers, safe first aid, what not to do, and when medical care is needed.",
+    "keywords": "nosebleed children, epistaxis child, nosebleed first aid, child bleeding nose, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "RCH Kids Health Info nosebleeds guidance; NHS nosebleed guidance; American Academy of Pediatrics HealthyChildren nosebleed guidance; NICE Clinical Knowledge Summary epistaxis resources",
+    "featured": false,
+    "status": "draft",
+    "visual_context": "child-nosebleed-forward-lean-pressure-first-aid",
+    "url": "html-conditions/nosebleeds-in-children-parent-guide.html"
+  },
+  {
+    "title": "Poisoning and Accidental Ingestion",
+    "slug": "poisoning-accidental-ingestion-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to accidental poisoning or ingestion in children, including what parents may observe, safe first actions, what not to do, and when to call emergency services.",
+    "keywords": "poisoning children, accidental ingestion, child swallowed medicine, household chemical ingestion, poison first aid, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-22",
+    "medical_review_status": "pending-clinician-review",
+    "references": "WHO poisoning prevention resources; NHS poisoning guidance; CDC poison prevention guidance; American Academy of Pediatrics HealthyChildren poison prevention guidance; National Poisons Information Centre AIIMS India resources",
+    "featured": false,
+    "status": "draft",
+    "visual_context": "accidental-ingestion-poisoning-emergency-parent-safety",
+    "url": "html-conditions/poisoning-accidental-ingestion-parent-guide.html"
   },
   {
     "title": "Premature Baby Care at Home",
