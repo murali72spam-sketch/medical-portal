@@ -511,6 +511,10 @@ body.resource-page .site-nav.is-open {
   margin-top: 0.65rem;
 }
 
+.hero-search .search-results-panel {
+  grid-column: 1 / -1;
+}
+
 .hero-search-field input {
   min-height: 3.35rem;
   border-color: rgba(167, 226, 232, 0.34);
@@ -782,6 +786,86 @@ button.button:hover {
   color: var(--color-primary-deep);
   border-color: var(--color-primary);
   background: var(--color-primary-soft);
+}
+
+.search-results-panel {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-line-strong);
+  border-radius: var(--radius-lg);
+  color: var(--color-ink);
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: var(--shadow-md);
+}
+
+.portal-hero .search-results-panel {
+  color: var(--color-ink);
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.search-results-summary {
+  margin: 0 0 0.65rem;
+  color: var(--color-ink-soft);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.search-results-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.search-result-link {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.85rem;
+  border: 1px solid rgba(214, 227, 232, 0.9);
+  border-radius: var(--radius-md);
+  color: inherit;
+  background: var(--color-surface);
+  text-decoration: none;
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.search-result-link:hover,
+.search-result-link:focus-visible,
+.search-result-link.is-active {
+  transform: translateY(-1px);
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+  box-shadow: var(--shadow-xs);
+}
+
+.search-result-meta {
+  color: var(--color-primary-deep);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.search-result-link strong {
+  color: var(--color-ink);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.search-result-description {
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.search-result-action {
+  justify-self: start;
+  margin-top: 0.1rem;
+  color: var(--color-primary-deep);
+  font-size: 0.9rem;
+  font-weight: 800;
 }
 
 /* ---------- Cards ---------- */
@@ -1655,6 +1739,8 @@ tr:last-child td {
   .callout,
   .table-wrap,
   .search-field input,
+  .search-results-panel,
+  .search-result-link,
   .filter-button {
     background: rgba(16, 32, 40, 0.92);
   }
@@ -1690,6 +1776,15 @@ tr:last-child td {
 
   .mini-resource-card a:hover {
     background: rgba(16, 32, 40, 0.94);
+  }
+
+  .portal-hero .search-results-panel {
+    color: var(--color-ink);
+    background: rgba(16, 32, 40, 0.98);
+  }
+
+  .search-result-link {
+    border-color: rgba(53, 83, 95, 0.86);
   }
 
   .resource-card-media {
@@ -1745,6 +1840,7 @@ tr:last-child td {
   .nav-toggle,
   .hero-actions,
   .hero-search,
+  .search-results-panel,
   .hero-visual-mosaic,
   .portal-toolbar,
   .button,
