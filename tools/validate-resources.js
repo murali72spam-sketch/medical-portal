@@ -229,11 +229,100 @@ function groupBy(items, keyName) {
   return groups;
 }
 
-function findTerms(text, terms) {
+function isIgnoredClinicalContext(term, context) {
+  const lowerTerm = term.toLowerCase();
+  const lowerContext = context.toLowerCase();
+
+  // These phrases explicitly say that the page is not giving actionable
+  // dosing, schedule, calculator, or algorithm guidance. Ignore only the
+  // individual keyword occurrence inside that disclaimer-style context.
+  const negativeClinicalPatterns = [
+    /\bdoes not provide\b.{0,80}\b(dose|doses|dosing|amount|amounts|schedule|schedules|calculator|algorithm|algorithms|protocol|protocols|table|tables)\b/i,
+    /\bdoes not include\b.{0,80}\b(dose|doses|dosing|schedule|schedules|algorithm|algorithms|protocol|protocols)\b/i,
+    /\bno\b.{0,40}\b(dose|doses|dosing|schedule|schedules|calculator|algorithm|algorithms|antibiotic names|antibiotic doses)\b/i,
+    /\bnot\b.{0,50}\b(a|an|the|full|complete)?\s*(catch-up vaccination )?(calculator|treatment algorithm|schedule table|vaccine schedule|catch-up calculator)\b/i,
+    /\bnot\b.{0,50}\bprovide\b.{0,60}\b(dose|doses|dosing|schedule|schedules|calculator|algorithm|algorithms|table|tables)\b/i
+  ];
+
+  if (
+    ["dose", "dosing", "calculator", "treatment algorithm"].includes(lowerTerm) &&
+    negativeClinicalPatterns.some((pattern) => pattern.test(lowerContext))
+  ) {
+    return true;
+  }
+
+  if (
+    lowerTerm === "antibiotic" &&
+    /\bdoes not provide\b.{0,80}\bantibiotic names?\b.{0,40}\b(antibiotic )?doses?\b/i.test(lowerContext)
+  ) {
+    return true;
+  }
+
+  return false;
+}
+
+function isIgnoredVaccinationContext(term, context) {
+  const lowerTerm = term.toLowerCase();
+  const lowerContext = context.toLowerCase();
+
+  if (
+    lowerTerm === "schedule table" &&
+    /\b(does not provide|not)\b.{0,50}\bschedule table\b/i.test(lowerContext)
+  ) {
+    return true;
+  }
+
+  // In travel resources, "route" can mean itinerary/transit route rather than
+  // vaccine administration route. Keep route warnings for actual injection
+  // wording such as intramuscular, subcutaneous, needle, or administration.
+  if (
+    lowerTerm === "route" &&
+    /\btravel route\b/i.test(lowerContext) &&
+    !/\b(administration|administered|intramuscular|subcutaneous|injection|injectable|needle)\b/i.test(lowerContext)
+  ) {
+    return true;
+  }
+
+  return false;
+}
+
+function contextForMatch(text, index, termLength) {
+  const windowStart = Math.max(0, index - 160);
+  const windowEnd = Math.min(text.length, index + termLength + 160);
+  const previousBoundary = Math.max(
+    text.lastIndexOf(".", index),
+    text.lastIndexOf("!", index),
+    text.lastIndexOf("?", index)
+  );
+  const nextBoundaries = [".", "!", "?"]
+    .map((marker) => text.indexOf(marker, index + termLength))
+    .filter((boundary) => boundary !== -1);
+  const nextBoundary = nextBoundaries.length ? Math.min(...nextBoundaries) + 1 : -1;
+  const start = Math.max(windowStart, previousBoundary === -1 ? windowStart : previousBoundary + 1);
+  const end = Math.min(windowEnd, nextBoundary === -1 ? windowEnd : nextBoundary);
+  return text.slice(start, end);
+}
+
+function findTerms(text, terms, options = {}) {
   const matches = [];
   terms.forEach((term) => {
-    const pattern = new RegExp(`\\b${escapeRegExp(term)}\\b`, "i");
-    if (pattern.test(text)) matches.push(term);
+    const pattern = new RegExp(`\\b${escapeRegExp(term)}\\b`, "gi");
+    let match;
+    let hasActionableMatch = false;
+    while ((match = pattern.exec(text)) !== null) {
+      const context = contextForMatch(text, match.index, term.length);
+      const ignored =
+        options.scanType === "vaccination"
+          ? isIgnoredVaccinationContext(term, context)
+          : isIgnoredClinicalContext(term, context);
+
+      if (!ignored) {
+        hasActionableMatch = true;
+        break;
+      }
+    }
+
+    if (hasActionableMatch) matches.push(term);
   });
   return matches;
 }
@@ -398,7 +487,7 @@ htmlFiles.forEach((fileName) => {
 section("Clinical governance warnings");
 htmlFiles.forEach((fileName) => {
   const html = readText(path.join(htmlConditionsDir, fileName));
-  const terms = findTerms(textForSafetyScan(html), clinicalTerms);
+  const terms = findTerms(textForSafetyScan(html), clinicalTerms, { scanType: "clinical" });
   if (terms.length) warn(`${fileName}: ${terms.join(", ")}`);
 });
 
@@ -414,7 +503,7 @@ htmlFiles.forEach((fileName) => {
   if (!isVaccination) return;
 
   const html = readText(path.join(htmlConditionsDir, fileName));
-  const terms = findTerms(textForSafetyScan(html), vaccinationTerms);
+  const terms = findTerms(textForSafetyScan(html), vaccinationTerms, { scanType: "vaccination" });
   if (terms.length) warn(`${fileName}: ${terms.join(", ")}`);
 });
 
