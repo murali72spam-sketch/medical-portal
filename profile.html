@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr Murali Gopal | Paediatrician & Paediatric Pulmonologist</title>
+  <meta name="description" content="Professional profile of Dr Murali Gopal, Senior Paediatrician and Paediatric Pulmonologist, highlighting UK specialist training, Australian paediatric pulmonology fellowship, allergology training, paediatric nutrition training, and parent education focus." />
+  <style>
+    :root {
+      --ink: #102434;
+      --muted: #5e6f7e;
+      --soft: #f4f8fb;
+      --surface: #ffffff;
+      --line: rgba(16, 36, 52, 0.12);
+      --brand: #146c94;
+      --brand-2: #19a7ce;
+      --accent: #f2b84b;
+      --calm: #dff5f7;
+      --success: #287d63;
+      --shadow: 0 24px 70px rgba(16, 36, 52, 0.14);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(25, 167, 206, 0.18), transparent 32rem),
+        radial-gradient(circle at 92% 10%, rgba(242, 184, 75, 0.20), transparent 26rem),
+        linear-gradient(180deg, #f7fbfd 0%, #ffffff 46%, #f6fafb 100%);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link:focus {
+      left: 1rem;
+      top: 1rem;
+      width: auto;
+      height: auto;
+      padding: 0.75rem 1rem;
+      background: var(--ink);
+      color: white;
+      border-radius: 999px;
+      z-index: 10;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(255, 255, 255, 0.78);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1.2rem;
+      gap: 1rem;
+    }
+
+    .brandmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .brandmark .logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      box-shadow: 0 10px 24px rgba(20, 108, 148, 0.25);
+      font-weight: 900;
+      font-size: 0.9rem;
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 0.9rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-size: 0.93rem;
+      color: var(--muted);
+    }
+
+    .navlinks a {
+      text-decoration: none;
+      padding: 0.45rem 0.7rem;
+      border-radius: 999px;
+    }
+
+    .navlinks a:hover {
+      background: var(--soft);
+      color: var(--ink);
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.2rem;
+    }
+
+    .hero {
+      padding: clamp(3rem, 7vw, 6.5rem) 0 3.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+      gap: clamp(1.8rem, 5vw, 4rem);
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.75rem;
+      border: 1px solid rgba(20, 108, 148, 0.18);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 0.9rem;
+      box-shadow: 0 8px 24px rgba(16, 36, 52, 0.06);
+    }
+
+    h1 {
+      margin: 1rem 0 0.8rem;
+      font-size: clamp(2.5rem, 6.6vw, 5.15rem);
+      line-height: 0.96;
+      letter-spacing: -0.07em;
+      max-width: 920px;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 2.1vw, 1.35rem);
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 0 1.4rem;
+    }
+
+    .credential-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.25rem 0 1.5rem;
+    }
+
+    .credential-strip span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      border-radius: 999px;
+      background: white;
+      border: 1px solid var(--line);
+      padding: 0.52rem 0.78rem;
+      font-weight: 750;
+      color: #24455a;
+      box-shadow: 0 8px 20px rgba(16, 36, 52, 0.05);
+      font-size: 0.93rem;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      border-radius: 999px;
+      padding: 0.9rem 1.15rem;
+      text-decoration: none;
+      font-weight: 850;
+      border: 1px solid transparent;
+      min-height: 46px;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: white;
+      box-shadow: 0 16px 38px rgba(20, 108, 148, 0.28);
+    }
+
+    .button.secondary {
+      background: white;
+      color: var(--ink);
+      border-color: var(--line);
+    }
+
+    .profile-card {
+      position: relative;
+      border-radius: var(--radius-xl);
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(25, 167, 206, 0.20), transparent 45%, rgba(242, 184, 75, 0.18));
+      pointer-events: none;
+    }
+
+    .portrait {
+      min-height: 410px;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .portrait-inner {
+      width: min(250px, 72vw);
+      aspect-ratio: 1;
+      border-radius: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 30% 28%, rgba(255,255,255,0.9), transparent 32%),
+        linear-gradient(135deg, #11617d, #1fb9d4 58%, #f4c46a);
+      color: white;
+      font-size: 4.5rem;
+      font-weight: 950;
+      letter-spacing: -0.08em;
+      box-shadow: 0 22px 60px rgba(20, 108, 148, 0.33);
+    }
+
+    .portrait-caption {
+      position: absolute;
+      left: 1.2rem;
+      right: 1.2rem;
+      bottom: 1.2rem;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(255,255,255,0.9);
+      padding: 1rem;
+      box-shadow: 0 14px 32px rgba(16, 36, 52, 0.12);
+    }
+
+    .portrait-caption strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .portrait-caption span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    section {
+      padding: 3rem 0;
+    }
+
+    .section-head {
+      max-width: 780px;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-kicker {
+      color: var(--brand);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 900;
+      font-size: 0.78rem;
+      margin-bottom: 0.45rem;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      line-height: 1.06;
+      letter-spacing: -0.045em;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin-top: 0.8rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.6rem;
+    }
+
+    .stat {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      box-shadow: 0 12px 32px rgba(16, 36, 52, 0.06);
+    }
+
+    .stat .num {
+      font-size: clamp(1.85rem, 3vw, 2.45rem);
+      font-weight: 950;
+      letter-spacing: -0.06em;
+      color: var(--brand);
+      line-height: 1;
+    }
+
+    .stat p {
+      margin: 0.5rem 0 0;
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      box-shadow: 0 15px 36px rgba(16, 36, 52, 0.07);
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 45px rgba(16, 36, 52, 0.11);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: var(--calm);
+      font-size: 1.45rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .card h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.18rem;
+      letter-spacing: -0.02em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 18px;
+      bottom: 18px;
+      width: 2px;
+      background: linear-gradient(var(--brand-2), rgba(20, 108, 148, 0.08));
+    }
+
+    .time-item {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .dot {
+      position: relative;
+      z-index: 1;
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: white;
+      border: 2px solid var(--brand-2);
+      box-shadow: 0 0 0 6px rgba(25, 167, 206, 0.09);
+      color: var(--brand);
+      font-weight: 900;
+      font-size: 0.75rem;
+    }
+
+    .time-box {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 1.15rem 1.2rem;
+      box-shadow: 0 14px 36px rgba(16, 36, 52, 0.06);
+    }
+
+    .time-box .year {
+      color: var(--brand);
+      font-weight: 900;
+      margin-bottom: 0.3rem;
+    }
+
+    .time-box h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.16rem;
+    }
+
+    .time-box p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 1.2rem;
+      align-items: stretch;
+    }
+
+    .panel {
+      border-radius: var(--radius-xl);
+      padding: clamp(1.35rem, 3vw, 2rem);
+      background: white;
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 45px rgba(16, 36, 52, 0.07);
+    }
+
+    .panel.emphasis {
+      background:
+        linear-gradient(135deg, rgba(20, 108, 148, 0.96), rgba(25, 167, 206, 0.90)),
+        var(--brand);
+      color: white;
+      border: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .panel.emphasis::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      right: -70px;
+      top: -90px;
+    }
+
+    .panel.emphasis p, .panel.emphasis li { color: rgba(255,255,255,0.88); }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .checklist li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.65rem;
+      color: var(--muted);
+    }
+
+    .checklist li::before {
+      content: "✓";
+      display: grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: rgba(40, 125, 99, 0.12);
+      color: var(--success);
+      font-weight: 950;
+      font-size: 0.78rem;
+      margin-top: 0.1rem;
+    }
+
+    .qualification-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+      margin-top: 1.4rem;
+    }
+
+    .qualification {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      display: grid;
+      gap: 0.2rem;
+    }
+
+    .qualification strong {
+      font-size: 1rem;
+    }
+
+    .qualification span {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .quote {
+      margin: 0;
+      font-size: clamp(1.35rem, 3vw, 2.05rem);
+      line-height: 1.22;
+      letter-spacing: -0.04em;
+      font-weight: 850;
+    }
+
+    .note {
+      background: #fffaf0;
+      border: 1px solid rgba(242, 184, 75, 0.34);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.1rem;
+      color: #6b5422;
+      margin-top: 1rem;
+    }
+
+    .footer {
+      padding: 2.2rem 0 3rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .footer strong { color: var(--ink); }
+
+    @media (max-width: 900px) {
+      .hero-grid, .split { grid-template-columns: 1fr; }
+      .stats, .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .portrait { min-height: 330px; }
+    }
+
+    @media (max-width: 640px) {
+      .nav { align-items: flex-start; }
+      .navlinks { display: none; }
+      .stats, .cards, .qualification-grid, .mentor-grid { grid-template-columns: 1fr; }
+      h1 { letter-spacing: -0.055em; }
+      .hero { padding-top: 2.5rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      body { background: white; color: #111; }
+      .topbar, .cta-row, .button { display: none !important; }
+      .hero, section { padding: 1.2rem 0; }
+      .profile-card, .card, .stat, .time-box, .panel, .qualification { box-shadow: none; break-inside: avoid; }
+      .container { max-width: 100%; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="topbar" aria-label="Page navigation">
+    <nav class="nav">
+      <a class="brandmark" href="#top" aria-label="Dr Murali Gopal profile home">
+        <span class="logo" aria-hidden="true">MG</span>
+        <span>Dr Murali Gopal</span>
+      </a>
+      <div class="navlinks" aria-label="Profile sections">
+        <a href="index.html">Clinical Portal Home</a>
+        <a href="#about">About</a>
+        <a href="#training">Training</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#parents">For Parents</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Paediatrics • Respiratory Medicine • Allergy • Nutrition</div>
+          <h1>Trusted child health guidance, built on international paediatric training.</h1>
+          <p class="hero-subtitle">
+            Dr Murali Gopal is a Senior Paediatrician and Paediatric Pulmonologist based in Chennai, with UK higher specialist training, Australian paediatric pulmonology fellowship experience, dedicated allergology training, and postgraduate paediatric nutrition training.
+          </p>
+          <div class="credential-strip" aria-label="Key credentials">
+            <span>MBBS</span>
+            <span>DCH, UK</span>
+            <span>MRCPCH, UK</span>
+            <span>FRCPCH, UK</span>
+            <span>CCT Paediatrics, UK</span>
+            <span>Paediatric Pulmonology Fellow, Australia</span>
+            <span>Allergology, India</span>
+            <span>PGPN, Boston</span>
+          </div>
+          <div class="cta-row">
+            <a class="button secondary" href="index.html">Clinical Portal Home</a>
+            <a class="button primary" href="#training">View Professional Training</a>
+            <a class="button secondary" href="#parents">Why this portal exists</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="Doctor profile card">
+          <div class="portrait">
+            <div class="portrait-inner" aria-hidden="true">MG</div>
+            <div class="portrait-caption">
+              <strong>Dr Murali Gopal</strong>
+              <span>Senior Paediatrician & Paediatric Pulmonologist<br />Tamil Nadu Medical Council Reg. No. 57489</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">About the Doctor</div>
+          <h2>A child-centred clinician with broad paediatric and respiratory experience.</h2>
+          <p class="lead">
+            This profile is designed for parents visiting an education portal: clear, reassuring, and focused on the training behind the advice. Dr Murali’s professional journey includes general paediatrics, neonatology, paediatric intensive care, paediatric respiratory medicine, cystic fibrosis care, and allergy practice.
+          </p>
+        </div>
+
+        <div class="stats" aria-label="Professional summary statistics">
+          <div class="stat">
+            <div class="num">UK</div>
+            <p>Higher specialist paediatric training and CCT in Paediatrics</p>
+          </div>
+          <div class="stat">
+            <div class="num">Australia</div>
+            <p>Paediatric pulmonology fellowship experience in Brisbane, Australia</p>
+          </div>
+          <div class="stat">
+            <div class="num">25+</div>
+            <p>Years across paediatrics, neonatal care, intensive care, and respiratory medicine</p>
+          </div>
+          <div class="stat">
+            <div class="num">57489</div>
+            <p>Tamil Nadu Medical Council registration number</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="training">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Professional Training</div>
+          <h2>Training pathway and qualifications</h2>
+          <p class="lead">
+            A concise parent-friendly summary of formal qualifications, specialist training, advanced paediatric respiratory exposure, allergy training, and paediatric nutrition training.
+          </p>
+        </div>
+
+        <div class="qualification-grid" aria-label="Qualifications">
+          <div class="qualification"><strong>MBBS</strong><span>Annamalai University, India</span></div>
+          <div class="qualification"><strong>Diploma in Child Health</strong><span>Royal College of Paediatrics and Child Health, UK</span></div>
+          <div class="qualification"><strong>MRCPCH</strong><span>Royal College of Paediatrics and Child Health, UK</span></div>
+          <div class="qualification"><strong>CCT in Paediatrics</strong><span>General Medical Council, United Kingdom</span></div>
+          <div class="qualification"><strong>FRCPCH</strong><span>Royal College of Paediatrics and Child Health, UK</span></div>
+          <div class="qualification"><strong>Fellowship in Paediatric Pulmonology</strong><span>Royal Children’s Hospital, Brisbane, Australia</span></div>
+          <div class="qualification"><strong>Allergology</strong><span>Bangalore, India</span></div>
+          <div class="qualification"><strong>PGPN</strong><span>Postgraduate Course in Paediatric Nutrition • Boston</span></div>
+        </div>
+
+        <div class="timeline" aria-label="Training timeline">
+          <article class="time-item">
+            <div class="dot">01</div>
+            <div class="time-box">
+              <h3>Medical graduation and internship</h3>
+              <p>Completed MBBS through Annamalai University and internship training at Rajah Muthiah Medical College, Chidambaram.</p>
+            </div>
+          </article>
+          <article class="time-item">
+            <div class="dot">02</div>
+            <div class="time-box">
+              <h3>Broad NHS paediatric training</h3>
+              <p>Worked across neonatology, general paediatrics, community paediatrics, gastroenterology, rheumatology, cardiology, cardiac intensive care, and paediatric intensive care in multiple UK centres.</p>
+            </div>
+          </article>
+          <article class="time-item">
+            <div class="dot">03</div>
+            <div class="time-box">
+              <h3>CCT in Paediatrics</h3>
+              <p>Completed higher specialist paediatric training in the UK and obtained Certificate of Completion of Training in Paediatrics from the General Medical Council.</p>
+            </div>
+          </article>
+          <article class="time-item">
+            <div class="dot">04</div>
+            <div class="time-box">
+              <h3>Respiratory medicine and intensive care exposure</h3>
+              <p>Specialised in paediatric respiratory medicine at University Hospitals of Leicester, with experience in asthma, cystic fibrosis, chronic lung disease, bronchiolitis, pneumonia, empyema, long-term ventilation, and multidisciplinary respiratory care.</p>
+            </div>
+          </article>
+          <article class="time-item">
+            <div class="dot">05</div>
+            <div class="time-box">
+              <h3>Fellow in Cystic Fibrosis & Respiratory Medicine</h3>
+              <p>Completed fellowship-level paediatric respiratory work at Royal Children’s Hospital, Brisbane, Australia, a tertiary centre managing complex respiratory disorders, cystic fibrosis, suppurative lung disease, neonatal lung disease, interstitial lung disease, airway disorders, and complex respiratory referrals.</p>
+            </div>
+          </article>
+          <article class="time-item">
+            <div class="dot">06</div>
+            <div class="time-box">
+              <h3>Paediatric pulmonology and allergy practice</h3>
+              <p>Practises in Chennai with a focus on paediatrics, respiratory medicine, allergy, and child nutrition, including parent counselling, vaccination guidance, feeding guidance, and long-term child health education.</p>
+            </div>
+          </article>
+          <article class="time-item">
+            <div class="dot">07</div>
+            <div class="time-box">
+              <h3>Postgraduate Course in Paediatric Nutrition</h3>
+              <p>Completed PGPN, Boston, adding a structured nutrition perspective to infant feeding, growth, weaning, and family counselling within the parent education portal.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="mentor-panel" aria-label="Advanced respiratory and allergy training context">
+          <div class="section-kicker">Advanced Training Context</div>
+          <h3>Training exposure within specialist respiratory and allergy services.</h3>
+          <p>During his fellowship-level paediatric respiratory work at Royal Children’s Hospital, Brisbane, Australia, Dr Murali had clinical training exposure in specialist respiratory services where senior physicians’ public professional profiles reflect major work in chronic cough, bronchiectasis, airway malacia, respiratory physiology, environmental lung health, cystic fibrosis care, and complex paediatric respiratory medicine. These references describe the training environment and areas of influence; they do not imply endorsement of this portal.</p>
+          <div class="mentor-grid">
+            <div class="mentor"><strong>Professor Anne B. Chang AM</strong><span>Consultant paediatric respiratory physician; internationally recognised for work in chronic cough, protracted bacterial bronchitis, and paediatric bronchiectasis.</span></div>
+            <div class="mentor"><strong>A/Professor Brent Masters</strong><span>Senior Respiratory & Sleep Physician; known for clinical and research work in paediatric airway malacia and tracheomalacia.</span></div>
+            <div class="mentor"><strong>Professor Peter D. Sly</strong><span>Emeritus paediatric respiratory physician with major expertise in respiratory physiology, developmental immunology, and children’s environmental lung health.</span></div>
+            <div class="mentor"><strong>Professor Claire Wainwright AM</strong><span>Paediatric respiratory physician and cystic fibrosis service leader, with recognised work in cystic fibrosis, airway disease, and paediatric respiratory clinical trials.</span></div>
+            <div class="mentor"><strong>Dr Pendakur Anand</strong><span>Allergology training exposure in Bengaluru; Senior Allergist & ENT Specialist, former President and founder Vice President of the Indian Academy of Allergy.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Clinical Focus</div>
+          <h2>Areas of special interest</h2>
+          <p class="lead">The page deliberately explains expertise in parent-friendly language, without turning the profile into a dense academic CV.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon" aria-hidden="true">🫁</div>
+            <h3>Childhood breathing problems</h3>
+            <p>Asthma, chronic cough, recurrent wheeze, bronchiolitis, pneumonia, cystic fibrosis, chronic lung disease, and complex respiratory symptoms.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🌿</div>
+            <h3>Allergy care</h3>
+            <p>Assessment of allergic conditions, allergy counselling, and long-term management discussions with families.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">👶</div>
+            <h3>Infants and children</h3>
+            <p>General paediatrics, newborn care, growth and development, vaccination counselling, feeding advice, and preventive child health.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🥣</div>
+            <h3>Paediatric nutrition</h3>
+            <p>Postgraduate paediatric nutrition training supporting practical guidance on infant feeding, growth, weaning, and parent education.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🏥</div>
+            <h3>Critical care background</h3>
+            <p>Training exposure in paediatric intensive care, neonatal care, cardiac intensive care, and emergency stabilisation of unwell children.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">📈</div>
+            <h3>Complex respiratory review</h3>
+            <p>Experience with respiratory investigations, multidisciplinary respiratory review, and long-term support for children with complex breathing problems.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🤝</div>
+            <h3>Parent communication</h3>
+            <p>Focus on clear explanation, practical home-care guidance, red-flag recognition, and evidence-based parent education.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="parents">
+      <div class="container split">
+        <div class="panel emphasis">
+          <div class="section-kicker" style="color:rgba(255,255,255,.78)">Parent Education Portal</div>
+          <p class="quote">Good paediatric care does not end with a prescription. Parents need clarity, reassurance, and reliable guidance they can revisit at home.</p>
+        </div>
+        <div class="panel">
+          <h2>Why this portal exists</h2>
+          <p class="lead">
+            This portal is being developed as a trusted library of parent education resources: condition guides, feeding and nutrition information, vaccination resources, safety checklists, and practical home-care instructions.
+          </p>
+          <ul class="checklist">
+            <li>To explain common child health problems in simple, accurate language.</li>
+            <li>To help parents recognise warning signs that require medical review.</li>
+            <li>To support clinic counselling with printable and mobile-friendly resources.</li>
+            <li>To reduce confusion from unreliable online information and social media myths.</li>
+          </ul>
+          <div class="note">
+            This educational portal does not replace a consultation with a qualified doctor. Urgent symptoms, breathing difficulty, dehydration, seizures, altered sensorium, or a very unwell child require immediate medical attention.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Dr Murali Gopal</strong><br />
+        Senior Paediatrician & Paediatric Pulmonologist<br />
+        MBBS, DCH(UK), MRCPCH(UK), FRCPCH(UK), CCT Paediatrics (UK), Fellow in Paediatric Pulmonology (Australia), Allergology (India), PGPN (Boston)<br />
+        Tamil Nadu Medical Council Reg. No. 57489
+      </div>
+      <div>
+        <a class="button secondary" href="index.html">Clinical Portal Home</a>
+        <a class="button secondary" href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
