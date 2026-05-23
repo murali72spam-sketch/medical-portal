@@ -182,7 +182,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Royal Children's Hospital Melbourne. Kids Health Info. https://www.rch.org.au/kidsinfo/; American Academy of Pediatrics. HealthyChildren.org. https://www.healthychildren.org/; World Health Organization disease fact sheets and public-health guidance. https://www.who.int/",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/infectious-mononucleosis.html"
   },
   {
@@ -1148,7 +1148,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization infant and young child feeding guidance; Royal Children&apos;s Hospital Melbourne Kids Health Info nutrition resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/breastfeeding-parent-guide.html"
   },
   {
@@ -1163,7 +1163,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent nutrition guidance; Indian Academy of Pediatrics revised guidance on evaluation prevention and management of childhood obesity; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization child growth and obesity prevention resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/childhood-overweight-and-obesity.html"
   },
   {
@@ -1178,7 +1178,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Royal Children's Hospital Melbourne Kids Health Info Bottle feeding; Raising Children Network infant formula and bottle-feeding; Royal Children's Hospital Melbourne nutrition babies and toddlers resources; World Health Organization newborn care resources; Indian Academy of Pediatrics Guidelines for Parents.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/formula-feeding-guidance.html"
   },
   {
@@ -1208,7 +1208,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; Indian Pediatrics micronutrient deficiency prevention resources; Royal Children&apos;s Hospital Melbourne Kids Health Info nutrition and iron resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/iron-rich-diet-iron-deficiency-prevention.html"
   },
   {
@@ -1286,7 +1286,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization child nutrition resources; Royal Children&apos;s Hospital Melbourne Kids Health Info vitamin D and nutrition resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/vitamins-and-minerals-parent-guide.html"
   },
   {
@@ -1548,7 +1548,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "RCH Kids Health Info nosebleeds guidance; NHS nosebleed guidance; American Academy of Pediatrics HealthyChildren nosebleed guidance; NICE Clinical Knowledge Summary epistaxis resources",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "visual_context": "child-nosebleed-forward-lean-pressure-first-aid",
     "url": "html-conditions/nosebleeds-in-children-parent-guide.html"
   },
@@ -1613,7 +1613,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "WHO Five Keys to Safer Food; IAP Guidelines for Parents; WHO community hand hygiene guidance; MoHFW/NHM National Deworming Day guidance.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/safe-food-water-and-deworming.html"
   },
   {
@@ -1658,7 +1658,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "World Health Organization newborn cord care guidance; UNICEF newborn hygiene guidance; National Health Mission India home based newborn care guidance; RCH Kids Health Info newborn care guidance",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "hero_image": "../assets/condition-visuals/umbilical-cord-care.png",
     "hero_alt": "Indian parent gently caring for a newborn umbilical cord stump",
     "visual_context": "clean-dry-newborn-cord-care",
@@ -1691,7 +1691,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Royal Children’s Hospital Melbourne. Kids Health Info: Vulvovaginitis. https://www.rch.org.au/kidsinfo/fact_sheets/vulvovaginitis/",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/13-vulvovaginitis-parent-guide.html"
   },
   {
