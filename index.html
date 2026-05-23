@@ -106,6 +106,7 @@
             <span class="eyebrow">Medical lead</span>
             <h2>Dr. Murali Gopal</h2>
             <p>Senior Paediatrician &amp; Paediatric Pulmonologist</p>
+            <a class="button button-secondary doctor-profile-link" href="profile.html">View doctor profile</a>
             <div class="hero-stat-grid">
               <div class="hero-stat">
                 <strong data-total-resource-count>0</strong>
@@ -182,6 +183,15 @@
             <p class="text-small text-muted"><span data-category-count="Nutrition &amp; Feeding">0</span> resources</p>
           </article>
 
+          <article class="card category-card" data-category-jump="Gastrointestinal">
+            <div class="category-icon" aria-hidden="true">🥣</div>
+            <div>
+              <h3>Gastrointestinal</h3>
+              <p>Vomiting, diarrhoea, constipation, abdominal pain, and gut health concerns.</p>
+            </div>
+            <p class="text-small text-muted"><span data-category-count="Gastrointestinal">0</span> resources</p>
+          </article>
+
           <article class="card category-card" data-category-jump="Fever &amp; Infections">
             <div class="category-icon" aria-hidden="true">🌡️</div>
             <div>
@@ -216,6 +226,15 @@
               <p>Growth, puberty, milestones, sleep, and development concerns.</p>
             </div>
             <p class="text-small text-muted"><span data-category-count="Growth &amp; Development">0</span> resources</p>
+          </article>
+
+          <article class="card category-card" data-category-jump="Parent Education">
+            <div class="category-icon" aria-hidden="true">📘</div>
+            <div>
+              <h3>Parent Education</h3>
+              <p>Practical guidance for everyday child health decisions and clinic conversations.</p>
+            </div>
+            <p class="text-small text-muted"><span data-category-count="Parent Education">0</span> resources</p>
           </article>
         </div>
       </div>
@@ -288,17 +307,21 @@
           ></div>
 
           <div class="filter-row" role="group" aria-label="Filter by category">
-            <button class="filter-button is-active" type="button" aria-pressed="true" data-category-filter="All">All</button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Respiratory">Respiratory</button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Gastrointestinal">Gastrointestinal</button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Nutrition &amp; Feeding">Nutrition &amp; Feeding</button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Vaccination">Vaccination</button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Fever &amp; Infections">Fever &amp; Infections</button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Skin &amp; Allergy">Skin &amp; Allergy</button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Growth &amp; Development">Growth &amp; Development</button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Medication Information">Medication Information</button>
-            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Parent Education">Parent Education</button>
+            <button class="filter-button is-active" type="button" aria-pressed="true" data-category-filter="All" data-category-label="All">All <span data-category-filter-count="All">(0)</span></button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Respiratory" data-category-label="Respiratory">Respiratory <span data-category-filter-count="Respiratory">(0)</span></button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Gastrointestinal" data-category-label="Gastrointestinal">Gastrointestinal <span data-category-filter-count="Gastrointestinal">(0)</span></button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Nutrition &amp; Feeding" data-category-label="Nutrition &amp; Feeding">Nutrition &amp; Feeding <span data-category-filter-count="Nutrition &amp; Feeding">(0)</span></button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Vaccination" data-category-label="Vaccination">Vaccination <span data-category-filter-count="Vaccination">(0)</span></button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Fever &amp; Infections" data-category-label="Fever &amp; Infections">Fever &amp; Infections <span data-category-filter-count="Fever &amp; Infections">(0)</span></button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Skin &amp; Allergy" data-category-label="Skin &amp; Allergy">Skin &amp; Allergy <span data-category-filter-count="Skin &amp; Allergy">(0)</span></button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Growth &amp; Development" data-category-label="Growth &amp; Development">Growth &amp; Development <span data-category-filter-count="Growth &amp; Development">(0)</span></button>
+            <button class="filter-button is-disabled" type="button" aria-pressed="false" data-category-filter="Medication Information" data-category-label="Medication Information" disabled>Medication Information <span class="coming-soon-label">Coming soon</span></button>
+            <button class="filter-button" type="button" aria-pressed="false" data-category-filter="Parent Education" data-category-label="Parent Education">Parent Education <span data-category-filter-count="Parent Education">(0)</span></button>
           </div>
+
+          <button class="clear-filter-button hidden" type="button" data-clear-filters>
+            Clear search/filter
+          </button>
         </div>
 
         <div class="empty-state" data-empty-state>
