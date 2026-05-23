@@ -1547,7 +1547,11 @@ button.button:hover {
 /* ---------- Tables ---------- */
 
 .table-wrap {
+  max-width: 100%;
+  margin-block: 1rem;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
   background: var(--color-surface);
@@ -1555,6 +1559,7 @@ button.button:hover {
 
 table {
   width: 100%;
+  min-width: 38rem;
   border-collapse: collapse;
 }
 
@@ -1564,6 +1569,8 @@ td {
   border-bottom: 1px solid var(--color-line);
   text-align: left;
   vertical-align: top;
+  line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 th + th,
@@ -1575,6 +1582,10 @@ th {
   color: var(--color-ink);
   background: var(--color-surface-tint);
   font-size: 0.92rem;
+}
+
+.table-wrap tbody tr:nth-child(even) {
+  background: var(--color-surface-soft);
 }
 
 tr:last-child td {
@@ -1647,6 +1658,22 @@ tr:last-child td {
 
   .topic-hero-chips span {
     width: 100%;
+  }
+
+  .table-wrap {
+    margin-inline: -0.25rem;
+    border-radius: var(--radius-sm);
+  }
+
+  table {
+    min-width: 34rem;
+  }
+
+  th,
+  td {
+    padding: 0.65rem 0.7rem;
+    font-size: 0.94rem;
+    line-height: 1.45;
   }
 }
 
@@ -2023,6 +2050,50 @@ tr:last-child td {
   .legal-card,
   .table-wrap {
     box-shadow: none !important;
+  }
+
+  .table-wrap {
+    margin-block: 0.45rem 0.6rem;
+    overflow: visible;
+    border-color: #9aa7ad;
+    border-radius: 0;
+    background: #ffffff !important;
+  }
+
+  table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+    break-inside: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    break-inside: avoid;
+    break-after: auto;
+  }
+
+  th,
+  td {
+    padding: 0.32rem 0.4rem;
+    color: #000000 !important;
+    border-color: #9aa7ad;
+    font-size: 8.4pt;
+    line-height: 1.24;
+    overflow-wrap: anywhere;
+  }
+
+  th {
+    background: #eef3f5 !important;
+    font-size: 8.2pt;
+    font-weight: 700;
+  }
+
+  .table-wrap tbody tr:nth-child(even) {
+    background: #f7f9fa !important;
   }
 
   .resource-content section,
