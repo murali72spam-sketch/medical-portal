@@ -774,6 +774,16 @@ button.button:hover {
   gap: 0.55rem;
 }
 
+.subgroup-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.72);
+}
+
 .filter-button {
   min-height: 2.35rem;
   padding: 0.45rem 0.8rem;
@@ -790,6 +800,10 @@ button.button:hover {
   color: var(--color-primary-deep);
   border-color: var(--color-primary);
   background: var(--color-primary-soft);
+}
+
+.subgroup-filter-row .filter-button {
+  font-size: 0.84rem;
 }
 
 .filter-button:disabled,
@@ -1776,6 +1790,7 @@ tr:last-child td {
   .search-field input,
   .search-results-panel,
   .search-result-link,
+  .subgroup-filter-row,
   .filter-button,
   .clear-filter-button {
     background: rgba(16, 32, 40, 0.92);
