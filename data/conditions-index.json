@@ -1901,7 +1901,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "RCH Kids Health Info BCG vaccine for TB; IAP Guidebook on Immunization and ACVIP parent resources; WHO vaccines and immunization overview.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/bcg-scar-and-lump.html"
   },
   {
@@ -1931,7 +1931,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "WHO vaccines and immunization vaccine safety guidance; RCH Kids Health Info flu vaccine; RCH Kids Health Info BCG vaccine for TB.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/fever-after-vaccination.html"
   },
   {
@@ -2069,7 +2069,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "IAP Guidebook on Immunization and ACVIP parent resources; IAP Guidelines for Parents; WHO vaccines and immunization vaccine safety guidance; WHO vaccines and immunization overview; MoHFW/PIB update on immunization of children in India.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/vaccination-why-it-matters.html"
   },
   {
@@ -2099,7 +2099,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics / ACVIP. https://iapindia.org/; WHO immunization safety resources. https://www.who.int/teams/immunization-vaccines-and-biologicals; Royal Children",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/vaccine-side-effects-and-aftercare.html"
   }
 ]
