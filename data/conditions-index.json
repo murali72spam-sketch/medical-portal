@@ -503,7 +503,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/adolescent-mental-health-warning-signs.html"
   },
   {
@@ -653,7 +653,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Pediatrics / POSI / IAP consensus on DDH surveillance in India; IAP Standard Treatment Guidelines: developmental dysplasia of the hip; Royal Children's Hospital Melbourne and NHS orthopaedic parent resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/developmental-dysplasia-of-hip-parent-guide.html"
   },
   {
@@ -818,7 +818,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/menstrual-health-parent-guide.html"
   },
   {
@@ -908,7 +908,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/school-refusal-parent-guide.html"
   },
   {
@@ -1319,7 +1319,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Royal Children's Hospital Melbourne Kids Health Info Crying and unsettled babies; WHO maternal and newborn care recommendations; Indian Academy of Pediatrics Guidelines for Parents; AAP HealthyChildren.org safe sleep guidance.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/baby-crying-what-is-normal.html"
   },
   {
@@ -1628,7 +1628,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "AAP HealthyChildren.org safe sleep guidance; Royal Children's Hospital Melbourne safe sleeping clinical guideline; World Health Organization newborn care resources; Indian Academy of Pediatrics Guidelines for Parents.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/safe-sleep-for-infants.html"
   },
   {
