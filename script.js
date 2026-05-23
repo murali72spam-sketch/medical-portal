@@ -25,9 +25,69 @@
     "calculator": "Calculator"
   };
 
+  const allSubgroupsLabel = "All in this category";
+
+  const subgroupDefinitions = {
+    "Growth & Development": [
+      "Development, Speech & Behaviour",
+      "School, Learning & Stress",
+      "Puberty & Teen Health",
+      "Growth, Thyroid & Endocrine",
+      "Sleep, Habits & Toileting",
+      "Bones, Posture & Movement"
+    ],
+    "Fever & Infections": [
+      "Fever, Viral Illnesses & Rashes",
+      "Respiratory, Ear & Throat Infections",
+      "Skin & Eye Infections",
+      "Serious Warning-Sign Illnesses",
+      "Mosquito, Tropical & Seasonal Infections",
+      "Urine, Bone & Other Infections"
+    ],
+    "Parent Education": [
+      "Newborn & Baby Care",
+      "Safety, First Aid & Injury",
+      "Everyday Parenting & Hygiene",
+      "Digital, Teen & Travel Guidance",
+      "Urgent Care & Red Flags"
+    ],
+    "Vaccination": [
+      "Vaccine Basics & FAQs",
+      "Missed Doses, Records & Catch-up",
+      "Vaccine Aftercare & Reactions",
+      "Special Situation Vaccines",
+      "Travel & Adolescent Vaccines"
+    ],
+    "Nutrition & Feeding": [
+      "Infant Feeding",
+      "Weaning & Complementary Feeding",
+      "Toddler and Preschool Feeding",
+      "School-age and Teen Nutrition",
+      "Growth, Weight & Micronutrients"
+    ]
+  };
+
+  const subgroupOverrides = {
+    "Growth & Development": {
+      "adolescent-mental-health-warning-signs": "Puberty & Teen Health",
+      "healthy-teen-independence-parent-guide": "Puberty & Teen Health",
+      "positive-behaviour-guidance-parent-guide": "Development, Speech & Behaviour",
+      "thumb-sucking-parent-guide": "Sleep, Habits & Toileting"
+    },
+    "Parent Education": {
+      "child-travel-health": "Digital, Teen & Travel Guidance",
+      "red-flags-urgent-care": "Urgent Care & Red Flags"
+    },
+    "Vaccination": {
+      "vaccination-faq": "Vaccine Basics & FAQs",
+      "vaccination-why-it-matters": "Vaccine Basics & FAQs"
+    }
+  };
+
   const state = {
     resources: [],
     activeCategory: "All",
+    activeSubgroup: allSubgroupsLabel,
     searchTerm: ""
   };
 
@@ -48,6 +108,7 @@
     setCurrentYear();
     setupSearch();
     setupFilters();
+    setupSubgroupFilters();
     setupClearFilters();
     setupHeroSearch();
     setupCategoryJumps();
@@ -166,6 +227,7 @@
 
     input.addEventListener("input", (event) => {
       state.searchTerm = normalizeQuery(event.target.value);
+      state.activeSubgroup = allSubgroupsLabel;
       renderResources();
       renderSearchResults("library");
     });
@@ -179,16 +241,22 @@
       button.addEventListener("click", () => {
         if (button.disabled) return;
 
-        state.activeCategory = button.dataset.categoryFilter || "All";
-
-        buttons.forEach((item) => {
-          const active = item === button;
-          item.classList.toggle("is-active", active);
-          item.setAttribute("aria-pressed", String(active));
-        });
-
+        setActiveCategory(button.dataset.categoryFilter || "All");
         renderResources();
       });
+    });
+  }
+
+  function setupSubgroupFilters() {
+    const row = document.querySelector("[data-subgroup-filter-row]");
+    if (!row) return;
+
+    row.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-subgroup-filter]");
+      if (!button || !row.contains(button)) return;
+
+      state.activeSubgroup = button.dataset.subgroupFilter || allSubgroupsLabel;
+      renderResources();
     });
   }
 
@@ -442,6 +510,7 @@
 
   function clearSearchAndFilters(options = {}) {
     state.searchTerm = "";
+    state.activeSubgroup = allSubgroupsLabel;
     setActiveCategory("All");
 
     Object.keys(searchContexts).forEach((name) => {
@@ -551,6 +620,7 @@
 
   function setActiveCategory(category) {
     state.activeCategory = category || "All";
+    state.activeSubgroup = allSubgroupsLabel;
 
     document.querySelectorAll("[data-category-filter]").forEach((button) => {
       const active = (button.dataset.categoryFilter || "All") === state.activeCategory;
@@ -636,6 +706,10 @@
         state.activeCategory === "All" ||
         resource.category === state.activeCategory;
 
+      const subgroupMatch =
+        !shouldApplySubgroupFilter() ||
+        getResourceSubgroup(resource) === state.activeSubgroup;
+
       const searchableText = [
         resource.title,
         resource.description,
@@ -649,7 +723,7 @@
       const searchMatch =
         !state.searchTerm || searchableText.includes(state.searchTerm);
 
-      return categoryMatch && searchMatch;
+      return categoryMatch && subgroupMatch && searchMatch;
     });
   }
 
@@ -662,6 +736,7 @@
 
     const resources = getFilteredResources();
     grid.replaceChildren();
+    renderSubgroupFilters();
 
     resources.forEach((resource) => {
       grid.appendChild(createResourceCard(resource));
@@ -679,6 +754,243 @@
     }
 
     updateClearFiltersButton();
+  }
+
+  function renderSubgroupFilters() {
+    const row = document.querySelector("[data-subgroup-filter-row]");
+    if (!row) return;
+
+    const subgroups = subgroupDefinitions[state.activeCategory];
+    const showSubgroups = Boolean(subgroups) && !state.searchTerm;
+
+    row.replaceChildren();
+    row.classList.toggle("hidden", !showSubgroups);
+
+    if (!showSubgroups) return;
+
+    const categoryResources = state.resources.filter(
+      (resource) => resource.category === state.activeCategory
+    );
+
+    const allButton = createSubgroupButton(
+      allSubgroupsLabel,
+      categoryResources.length,
+      state.activeSubgroup === allSubgroupsLabel
+    );
+
+    row.appendChild(allButton);
+
+    subgroups.forEach((subgroup) => {
+      const count = categoryResources.filter(
+        (resource) => getResourceSubgroup(resource) === subgroup
+      ).length;
+
+      row.appendChild(
+        createSubgroupButton(subgroup, count, state.activeSubgroup === subgroup)
+      );
+    });
+  }
+
+  function createSubgroupButton(label, count, active) {
+    const button = document.createElement("button");
+    const countLabel = document.createElement("span");
+
+    button.className = "filter-button";
+    button.type = "button";
+    button.dataset.subgroupFilter = label;
+    button.setAttribute("aria-pressed", String(active));
+    button.classList.toggle("is-active", active);
+
+    countLabel.textContent = ` (${count})`;
+    button.append(label, countLabel);
+
+    return button;
+  }
+
+  function shouldApplySubgroupFilter() {
+    return Boolean(subgroupDefinitions[state.activeCategory]) &&
+      !state.searchTerm &&
+      state.activeSubgroup !== allSubgroupsLabel;
+  }
+
+  function getResourceSubgroup(resource) {
+    const subgroups = subgroupDefinitions[resource.category];
+    if (!subgroups) return "";
+
+    const override = subgroupOverrides[resource.category]?.[resource.slug];
+    if (override) return override;
+
+    const primaryText = normalizeQuery(`${resource.title} ${resource.slug}`);
+    const keywordText = normalizeQuery(resource.keywords);
+    const fallbackText = normalizeQuery(resource.description);
+
+    return deriveResourceSubgroup(
+      resource.category,
+      primaryText,
+      keywordText,
+      fallbackText
+    ) || subgroups[0];
+  }
+
+  function deriveResourceSubgroup(category, primaryText, keywordText, fallbackText) {
+    switch (category) {
+      case "Growth & Development":
+        return deriveGrowthSubgroup(primaryText, keywordText, fallbackText);
+      case "Fever & Infections":
+        return deriveInfectionSubgroup(primaryText, keywordText, fallbackText);
+      case "Parent Education":
+        return deriveParentEducationSubgroup(primaryText, keywordText, fallbackText);
+      case "Vaccination":
+        return deriveVaccinationSubgroup(primaryText, keywordText, fallbackText);
+      case "Nutrition & Feeding":
+        return deriveNutritionSubgroup(primaryText, keywordText, fallbackText);
+      default:
+        return "";
+    }
+  }
+
+  function deriveGrowthSubgroup(primaryText, keywordText, fallbackText) {
+    if (hasAny(primaryText, ["puberty", "menstrual", "teen", "adolescent", "body image", "physical activity"])) {
+      return "Puberty & Teen Health";
+    }
+
+    if (hasAny(primaryText, ["short stature", "thyroid", "growth faltering", "weight gain"])) {
+      return "Growth, Thyroid & Endocrine";
+    }
+
+    if (hasAny(primaryText, ["sleep", "bedwetting", "daytime wetting", "thumb sucking", "tantrum", "tics"])) {
+      return "Sleep, Habits & Toileting";
+    }
+
+    if (hasAny(primaryText, ["back pain", "posture", "clubfoot", "hip", "flat feet", "intoeing", "growing pains", "osgood", "scoliosis", "sever", "scfe", "sufe"])) {
+      return "Bones, Posture & Movement";
+    }
+
+    if (hasAny(primaryText, ["school", "learning", "exam", "bullying", "anxiety", "refusal"])) {
+      return "School, Learning & Stress";
+    }
+
+    if (hasAny(`${primaryText} ${keywordText}`, ["development", "speech", "language", "autism", "behaviour", "milestone", "stuttering"])) {
+      return "Development, Speech & Behaviour";
+    }
+
+    if (hasAny(fallbackText, ["school", "learning", "stress"])) {
+      return "School, Learning & Stress";
+    }
+
+    return "";
+  }
+
+  function deriveInfectionSubgroup(primaryText, keywordText, fallbackText) {
+    if (hasAny(primaryText, ["dengue", "malaria", "rickettsial", "scrub typhus", "typhoid"])) {
+      return "Mosquito, Tropical & Seasonal Infections";
+    }
+
+    if (hasAny(primaryText, ["meningitis", "encephalitis", "kawasaki", "mis-c", "diphtheria"])) {
+      return "Serious Warning-Sign Illnesses";
+    }
+
+    if (hasAny(primaryText, ["impetigo", "ringworm", "scabies", "conjunctivitis"])) {
+      return "Skin & Eye Infections";
+    }
+
+    if (hasAny(primaryText, ["tonsillitis", "ear infection", "otitis", "whooping cough", "tuberculosis"])) {
+      return "Respiratory, Ear & Throat Infections";
+    }
+
+    if (hasAny(primaryText, ["urinary tract", "uti", "osteomyelitis"])) {
+      return "Urine, Bone & Other Infections";
+    }
+
+    if (hasAny(`${primaryText} ${keywordText}`, ["fever", "viral", "rash", "chickenpox", "covid", "hand foot mouth", "mononucleosis", "measles", "febrile seizure"])) {
+      return "Fever, Viral Illnesses & Rashes";
+    }
+
+    if (hasAny(fallbackText, ["urgent", "warning signs"])) {
+      return "Serious Warning-Sign Illnesses";
+    }
+
+    return "";
+  }
+
+  function deriveParentEducationSubgroup(primaryText, keywordText, fallbackText) {
+    if (hasAny(primaryText, ["newborn", "baby", "colic", "crying", "premature", "jaundice", "safe sleep", "umbilical", "breastfeeding"])) {
+      return "Newborn & Baby Care";
+    }
+
+    if (hasAny(primaryText, ["burns", "scalds", "dog bite", "animal bite", "foreign body", "head injury", "concussion", "nosebleed", "poisoning"])) {
+      return "Safety, First Aid & Injury";
+    }
+
+    if (hasAny(primaryText, ["teen", "vaping", "tobacco", "alcohol", "travel", "consent", "boundaries"])) {
+      return "Digital, Teen & Travel Guidance";
+    }
+
+    if (hasAny(primaryText, ["red flags", "danger signs"])) {
+      return "Urgent Care & Red Flags";
+    }
+
+    if (hasAny(`${primaryText} ${keywordText}`, ["hygiene", "cough etiquette", "mosquito", "safe food", "safe water", "deworming", "vulvovaginitis"])) {
+      return "Everyday Parenting & Hygiene";
+    }
+
+    if (hasAny(fallbackText, ["urgent care", "warning signs"])) {
+      return "Urgent Care & Red Flags";
+    }
+
+    return "";
+  }
+
+  function deriveVaccinationSubgroup(primaryText, keywordText, fallbackText) {
+    if (hasAny(primaryText, ["missed", "delayed", "catch-up", "records", "doses"])) {
+      return "Missed Doses, Records & Catch-up";
+    }
+
+    if (hasAny(primaryText, ["side effects", "aftercare", "fever after", "scar", "lump"])) {
+      return "Vaccine Aftercare & Reactions";
+    }
+
+    if (hasAny(primaryText, ["special medical", "asthma", "allergy"])) {
+      return "Special Situation Vaccines";
+    }
+
+    if (hasAny(primaryText, ["travel", "hpv", "influenza", "adolescent"])) {
+      return "Travel & Adolescent Vaccines";
+    }
+
+    if (hasAny(`${primaryText} ${keywordText} ${fallbackText}`, ["faq", "why it matters", "myths", "misconceptions", "vaccine safety", "vaccination"])) {
+      return "Vaccine Basics & FAQs";
+    }
+
+    return "";
+  }
+
+  function deriveNutritionSubgroup(primaryText, keywordText, fallbackText) {
+    if (hasAny(primaryText, ["breastfeeding", "formula", "infant feeding"])) {
+      return "Infant Feeding";
+    }
+
+    if (hasAny(primaryText, ["weaning", "complementary feeding", "6 months"])) {
+      return "Weaning & Complementary Feeding";
+    }
+
+    if (hasAny(primaryText, ["1 to 2", "2 to 5", "toddler", "preschool", "picky"])) {
+      return "Toddler and Preschool Feeding";
+    }
+
+    if (hasAny(primaryText, ["school-age", "adolescent", "teen"])) {
+      return "School-age and Teen Nutrition";
+    }
+
+    if (hasAny(`${primaryText} ${keywordText} ${fallbackText}`, ["growth", "weight", "obesity", "iron", "vitamin", "mineral", "micronutrient"])) {
+      return "Growth, Weight & Micronutrients";
+    }
+
+    return "";
+  }
+
+  function hasAny(value, terms) {
+    return terms.some((term) => value.includes(term));
   }
 
   function renderFeaturedResources() {
@@ -1088,7 +1400,11 @@
 
     const hasActiveSearch = Boolean(state.searchTerm);
     const hasActiveCategory = state.activeCategory !== "All";
-    button.classList.toggle("hidden", !hasActiveSearch && !hasActiveCategory);
+    const hasActiveSubgroup = state.activeSubgroup !== allSubgroupsLabel;
+    button.classList.toggle(
+      "hidden",
+      !hasActiveSearch && !hasActiveCategory && !hasActiveSubgroup
+    );
   }
 
   function renderLoadError() {
