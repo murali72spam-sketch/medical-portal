@@ -410,7 +410,7 @@
 
     if (!results.length) {
       summary.textContent =
-        "No matching resource found. Try another keyword or browse by category.";
+        "No matching portal resource found. Please contact your doctor for patient-specific advice or urgent symptoms.";
       context.panel.appendChild(summary);
       return;
     }
@@ -563,7 +563,32 @@
     if (description.includes(query)) return 50;
     if (resourceType.includes(query)) return 40;
 
+    const terms = getSearchTerms(query);
+    if (terms.length > 1) {
+      const searchableFields = [
+        title,
+        keywords,
+        category,
+        description,
+        resourceType,
+        slug.replace(/-/g, " ")
+      ];
+      const matchedTerms = terms.filter((term) =>
+        searchableFields.some((field) => field.includes(term))
+      );
+
+      if (matchedTerms.length === terms.length) return 35;
+      if (matchedTerms.length >= Math.ceil(terms.length * 0.7)) return 25;
+    }
+
     return 0;
+  }
+
+  function getSearchTerms(query) {
+    return normalizeQuery(query)
+      .split(" ")
+      .map((term) => term.trim())
+      .filter((term) => term.length >= 2);
   }
 
   function isExactTitleMatch(resource, query) {

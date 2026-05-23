@@ -63,19 +63,26 @@
           </p>
 
           <form class="hero-search" action="#resources" data-hero-search-form>
-            <label class="search-field hero-search-field">
-              <span class="visually-hidden">Search paediatric parent resources</span>
-              <span class="search-icon" aria-hidden="true">⌕</span>
-              <input
-                type="search"
-                placeholder="Search fever, asthma, eczema, weaning..."
-                aria-label="Search paediatric parent resources"
-                aria-controls="hero-search-results"
-                aria-expanded="false"
-                autocomplete="off"
-                data-hero-resource-search
-              >
-            </label>
+            <div class="search-input-group">
+              <label class="search-field hero-search-field">
+                <span class="visually-hidden">Search paediatric parent resources</span>
+                <span class="search-icon" aria-hidden="true">⌕</span>
+                <input
+                  type="search"
+                  placeholder="Search fever, asthma, eczema, weaning..."
+                  aria-label="Search paediatric parent resources"
+                  aria-describedby="hero-search-guidance"
+                  aria-controls="hero-search-results"
+                  aria-expanded="false"
+                  autocomplete="off"
+                  data-hero-resource-search
+                >
+              </label>
+              <p class="search-guidance" id="hero-search-guidance">
+                Please do not enter names, phone numbers, reports, prescriptions, or private medical details.
+                Search results are limited to resources already published on this portal.
+              </p>
+            </div>
             <button class="button button-primary" type="submit">Search resources</button>
             <div
               class="search-results-panel hidden"
@@ -284,19 +291,26 @@
         </div>
 
         <div class="portal-toolbar" aria-label="Resource search and filters">
-          <label class="search-field">
-            <span class="visually-hidden">Search resources</span>
-            <span class="search-icon" aria-hidden="true">⌕</span>
-            <input
-              type="search"
-              placeholder="Search by condition, keyword, or category"
-              aria-label="Search resources"
-              aria-controls="resource-search-results"
-              aria-expanded="false"
-              autocomplete="off"
-              data-resource-search
-            >
-          </label>
+          <div class="search-input-group">
+            <label class="search-field">
+              <span class="visually-hidden">Search resources</span>
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <input
+                type="search"
+                placeholder="Search by condition, keyword, or category"
+                aria-label="Search resources"
+                aria-describedby="resource-search-guidance"
+                aria-controls="resource-search-results"
+                aria-expanded="false"
+                autocomplete="off"
+                data-resource-search
+              >
+            </label>
+            <p class="search-guidance" id="resource-search-guidance">
+              Please do not enter names, phone numbers, reports, prescriptions, or private medical details.
+              Search results are limited to resources already published on this portal.
+            </p>
+          </div>
 
           <div
             class="search-results-panel hidden"
@@ -332,7 +346,7 @@
         </div>
 
         <div class="empty-state" data-empty-state>
-          No resources match the current search or filter yet.
+          No matching portal resource found. Please contact your doctor for patient-specific advice or urgent symptoms.
         </div>
 
         <div class="resource-grid premium-resource-grid" data-resource-grid></div>
