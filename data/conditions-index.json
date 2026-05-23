@@ -548,7 +548,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "AAP HealthyChildren: back pain in children and teens; Royal Children's Hospital Melbourne Orthopaedics: back pain; NICE CKS back pain red flags.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/back-pain-and-posture-parent-guide.html"
   },
   {
@@ -608,7 +608,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Journal of Paediatric Orthopaedics: Ponseti-treated clubfoot walking-age and parent concerns; POSI paediatric orthopaedic guidance; orthopaedic literature on clubfoot and Ponseti method.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/clubfoot-parent-guide.html"
   },
   {
@@ -623,7 +623,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/daytime-wetting-parent-guide.html"
   },
   {
@@ -698,7 +698,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/exam-stress-parent-guide.html"
   },
   {
@@ -728,7 +728,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "IAP Standard Treatment Guidelines: Growing Pains; Indian Pediatrics review on growing pains; NICE CKS musculoskeletal presentations in children.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/growing-pains-parent-guide.html"
   },
   {
@@ -893,7 +893,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/puberty-parent-guide.html"
   },
   {
@@ -923,7 +923,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Royal Children's Hospital Melbourne Orthopaedics: scoliosis; NHS scoliosis guidance; KidsHealth NZ scoliosis in children.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/scoliosis-parent-guide.html"
   },
   {
@@ -1133,7 +1133,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization adolescent nutrition resources; Royal Children&apos;s Hospital Melbourne Kids Health Info nutrition resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/adolescent-nutrition-10-to-19-years.html"
   },
   {
@@ -1223,7 +1223,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization infant and young child feeding guidance; Royal Children&apos;s Hospital Melbourne Kids Health Info nutrition resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/nutrition-1-to-2-years.html"
   },
   {
@@ -1256,7 +1256,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization child nutrition guidance; Royal Children&apos;s Hospital Melbourne Kids Health Info nutrition resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/preschool-nutrition-2-to-5-years.html"
   },
   {
@@ -1271,7 +1271,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization child nutrition guidance; Royal Children&apos;s Hospital Melbourne Kids Health Info nutrition resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/school-age-nutrition-5-to-12-years.html"
   },
   {
@@ -1829,7 +1829,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Royal Children’s Hospital Melbourne. Kids Health Info: Eczema (atopic dermatitis). https://www.rch.org.au/kidsinfo/fact_sheets/eczema/",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "hero_image": "../assets/condition-visuals/eczema.png",
     "hero_alt": "Indian mother applying moisturiser to a child with mild eczema at home",
     "visual_context": "gentle-skin-care-home",
