@@ -48,6 +48,7 @@
     setCurrentYear();
     setupSearch();
     setupFilters();
+    setupClearFilters();
     setupHeroSearch();
     setupCategoryJumps();
     setupLaneFilters();
@@ -176,6 +177,8 @@
 
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
+        if (button.disabled) return;
+
         state.activeCategory = button.dataset.categoryFilter || "All";
 
         buttons.forEach((item) => {
@@ -186,6 +189,15 @@
 
         renderResources();
       });
+    });
+  }
+
+  function setupClearFilters() {
+    const button = document.querySelector("[data-clear-filters]");
+    if (!button) return;
+
+    button.addEventListener("click", () => {
+      clearSearchAndFilters({ focus: true });
     });
   }
 
@@ -428,6 +440,22 @@
     context.input.removeAttribute("aria-activedescendant");
   }
 
+  function clearSearchAndFilters(options = {}) {
+    state.searchTerm = "";
+    setActiveCategory("All");
+
+    Object.keys(searchContexts).forEach((name) => {
+      hideSearchResults(name, { clear: true });
+    });
+
+    renderResources();
+
+    if (options.focus) {
+      const input = document.querySelector("[data-resource-search]");
+      if (input) input.focus();
+    }
+  }
+
   function findMatchingResources(query) {
     const safeQuery = normalizeQuery(query);
     if (safeQuery.length < 2) return [];
@@ -529,6 +557,8 @@
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
     });
+
+    updateClearFiltersButton();
   }
 
   async function loadResources() {
@@ -647,6 +677,8 @@
           ? "1 resource"
           : `${resources.length} resources`;
     }
+
+    updateClearFiltersButton();
   }
 
   function renderFeaturedResources() {
@@ -991,17 +1023,72 @@
   }
 
   function updateCategoryCounts() {
+    const counts = getCategoryCounts();
+
     categoryOrder.forEach((category) => {
-      const count = state.resources.filter(
-        (resource) => resource.category === category
-      ).length;
+      const count = counts.get(category) || 0;
 
-      const element = document.querySelector(
+      document.querySelectorAll(
         `[data-category-count="${category}"]`
-      );
+      ).forEach((element) => {
+        element.textContent = String(count);
+      });
 
-      if (element) element.textContent = String(count);
+      document.querySelectorAll(
+        `[data-category-filter-count="${category}"]`
+      ).forEach((element) => {
+        element.textContent = `(${count})`;
+      });
     });
+
+    document.querySelectorAll('[data-category-filter-count="All"]').forEach((element) => {
+      element.textContent = `(${state.resources.length})`;
+    });
+
+    updateEmptyCategoryFilters(counts);
+  }
+
+  function getCategoryCounts() {
+    return state.resources.reduce((counts, resource) => {
+      if (!resource.category) return counts;
+      counts.set(resource.category, (counts.get(resource.category) || 0) + 1);
+      return counts;
+    }, new Map());
+  }
+
+  function updateEmptyCategoryFilters(counts) {
+    document.querySelectorAll("[data-category-filter]").forEach((button) => {
+      const category = button.dataset.categoryFilter || "All";
+      if (category === "All") return;
+
+      const count = counts.get(category) || 0;
+      const isEmpty = count === 0;
+
+      button.disabled = isEmpty;
+      button.classList.toggle("is-disabled", isEmpty);
+      button.setAttribute("aria-disabled", String(isEmpty));
+
+      if (isEmpty) {
+        button.classList.remove("is-active");
+        button.setAttribute("aria-pressed", "false");
+        button.innerHTML = `${button.dataset.categoryLabel || category} <span class="coming-soon-label">Coming soon</span>`;
+      } else {
+        button.innerHTML = `${button.dataset.categoryLabel || category} <span data-category-filter-count="${category}">(${count})</span>`;
+      }
+    });
+
+    if (state.activeCategory !== "All" && (counts.get(state.activeCategory) || 0) === 0) {
+      setActiveCategory("All");
+    }
+  }
+
+  function updateClearFiltersButton() {
+    const button = document.querySelector("[data-clear-filters]");
+    if (!button) return;
+
+    const hasActiveSearch = Boolean(state.searchTerm);
+    const hasActiveCategory = state.activeCategory !== "All";
+    button.classList.toggle("hidden", !hasActiveSearch && !hasActiveCategory);
   }
 
   function renderLoadError() {
