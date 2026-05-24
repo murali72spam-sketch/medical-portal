@@ -655,7 +655,7 @@ body.resource-page .site-nav.is-open {
   display: flex;
   align-items: center;
   gap: 0.55rem;
-  color: rgba(245, 253, 255, 0.94);
+  color: var(--color-ink-soft);
   font-weight: 700;
 }
 
@@ -1767,6 +1767,34 @@ tr:last-child td {
   }
 }
 
+@media (max-width: 899px) {
+  .site-nav.is-open {
+    gap: 0.45rem;
+    padding-inline: max(1rem, env(safe-area-inset-left)) max(1rem, env(safe-area-inset-right));
+  }
+
+  .site-nav.is-open .header-search {
+    order: -1;
+    width: 100%;
+    margin-bottom: 0.35rem;
+    padding: 0.85rem;
+    border: 1px solid rgba(191, 211, 219, 0.82);
+    border-radius: var(--radius-md);
+    background: rgba(246, 249, 251, 0.92);
+  }
+
+  .header-search .search-guidance {
+    max-width: none;
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  .header-search-results {
+    max-height: min(60vh, 28rem);
+    overflow-y: auto;
+  }
+}
+
 @media (max-width: 520px) {
   .topic-hero-chips {
     display: grid;
@@ -1987,6 +2015,11 @@ tr:last-child td {
     color: rgba(199, 214, 220, 0.82);
   }
 
+  .site-nav.is-open .header-search {
+    border-color: rgba(53, 83, 95, 0.82);
+    background: rgba(19, 40, 49, 0.88);
+  }
+
   .hero-card,
   .doctor-card,
   .medical-lead-strip,
@@ -2026,6 +2059,10 @@ tr:last-child td {
   }
 
   .doctor-card p {
+    color: var(--color-ink-soft);
+  }
+
+  .hero-trust-list span {
     color: var(--color-ink-soft);
   }
 
