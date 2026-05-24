@@ -110,7 +110,6 @@
     setupFilters();
     setupSubgroupFilters();
     setupClearFilters();
-    setupHeroSearch();
     setupCategoryJumps();
     setupLaneFilters();
     loadResources();
@@ -219,6 +218,7 @@
   }
 
   function setupSearch() {
+    const form = document.querySelector("[data-resource-search-form]");
     const input = document.querySelector("[data-resource-search]");
     const panel = document.querySelector('[data-search-results="library"]');
     if (!input) return;
@@ -231,6 +231,23 @@
       renderResources();
       renderSearchResults("library");
     });
+
+    if (form) {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        state.searchTerm = normalizeQuery(input.value);
+        state.activeSubgroup = allSubgroupsLabel;
+        setActiveCategory("All");
+        renderResources();
+        const openedResource = handleSearchSubmit("library");
+
+        if (!openedResource) {
+          const resources = document.querySelector("#resources");
+          if (resources) resources.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    }
   }
 
   function setupFilters() {
@@ -266,37 +283,6 @@
 
     button.addEventListener("click", () => {
       clearSearchAndFilters({ focus: true });
-    });
-  }
-
-  function setupHeroSearch() {
-    const form = document.querySelector("[data-hero-search-form]");
-    const input = document.querySelector("[data-hero-resource-search]");
-    const panel = document.querySelector('[data-search-results="hero"]');
-    const libraryInput = document.querySelector("[data-resource-search]");
-
-    if (!form || !input) return;
-
-    registerSearchContext("hero", input, panel);
-
-    input.addEventListener("input", () => {
-      renderSearchResults("hero");
-    });
-
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      const value = input.value.trim();
-      const query = normalizeQuery(value);
-
-      if (libraryInput) {
-        libraryInput.value = value;
-      }
-
-      state.searchTerm = query;
-      setActiveCategory("All");
-      renderResources();
-      handleSearchSubmit("hero");
     });
   }
 
@@ -360,7 +346,7 @@
     const query = normalizeQuery(context.input.value);
     if (query.length < 2) {
       renderSearchResults(name);
-      return;
+      return false;
     }
 
     const results = findMatchingResources(query);
@@ -368,21 +354,22 @@
 
     if (context.activeIndex >= 0 && results[context.activeIndex]) {
       openResource(results[context.activeIndex]);
-      return;
+      return true;
     }
 
     const exactMatch = results.find((resource) => isExactTitleMatch(resource, query));
     if (exactMatch) {
       openResource(exactMatch);
-      return;
+      return true;
     }
 
     if (results.length === 1) {
       openResource(results[0]);
-      return;
+      return true;
     }
 
     renderSearchResults(name, results);
+    return false;
   }
 
   function renderSearchResults(name, suppliedResults) {

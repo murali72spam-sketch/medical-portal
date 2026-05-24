@@ -43,6 +43,35 @@
         <a href="profile.html">Profile</a>
         <a href="legal/disclaimer.html">Disclaimer</a>
         <a href="legal/privacy-policy.html">Privacy</a>
+        <form class="header-search" action="#resources" data-resource-search-form>
+          <div class="search-input-group">
+            <label class="search-field header-search-field">
+              <span class="visually-hidden">Search paediatric parent resources</span>
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <input
+                type="search"
+                placeholder="Search resources"
+                aria-label="Search paediatric parent resources"
+                aria-describedby="resource-search-guidance"
+                aria-controls="resource-search-results"
+                aria-expanded="false"
+                autocomplete="off"
+                data-resource-search
+              >
+            </label>
+            <p class="search-guidance" id="resource-search-guidance">
+              Search only checks education resources available on this portal. Do not enter personal medical details.
+            </p>
+          </div>
+          <button class="button button-primary header-search-button" type="submit">Search</button>
+          <div
+            class="search-results-panel header-search-results hidden"
+            id="resource-search-results"
+            role="region"
+            aria-live="polite"
+            data-search-results="library"
+          ></div>
+        </form>
       </nav>
     </div>
   </header>
@@ -61,37 +90,6 @@
             Clinical Portal 2026 helps parents understand common child-health topics,
             home-care basics, warning signs, and when medical review is needed.
           </p>
-
-          <form class="hero-search" action="#resources" data-hero-search-form>
-            <div class="search-input-group">
-              <label class="search-field hero-search-field">
-                <span class="visually-hidden">Search paediatric parent resources</span>
-                <span class="search-icon" aria-hidden="true">⌕</span>
-                <input
-                  type="search"
-                  placeholder="Search fever, asthma, eczema, weaning..."
-                  aria-label="Search paediatric parent resources"
-                  aria-describedby="hero-search-guidance"
-                  aria-controls="hero-search-results"
-                  aria-expanded="false"
-                  autocomplete="off"
-                  data-hero-resource-search
-                >
-              </label>
-              <p class="search-guidance" id="hero-search-guidance">
-                Please do not enter names, phone numbers, reports, prescriptions, or private medical details.
-                Search results are limited to resources already published on this portal.
-              </p>
-            </div>
-            <button class="button button-primary" type="submit">Search resources</button>
-            <div
-              class="search-results-panel hidden"
-              id="hero-search-results"
-              role="region"
-              aria-live="polite"
-              data-search-results="hero"
-            ></div>
-          </form>
 
           <div class="portal-hero-points" aria-label="Portal highlights">
             <span>Parent-friendly</span>
@@ -290,35 +288,10 @@
           <p class="lead" data-resource-count>0 resources</p>
         </div>
 
-        <div class="portal-toolbar" aria-label="Resource search and filters">
-          <div class="search-input-group">
-            <label class="search-field">
-              <span class="visually-hidden">Search resources</span>
-              <span class="search-icon" aria-hidden="true">⌕</span>
-              <input
-                type="search"
-                placeholder="Search by condition, keyword, or category"
-                aria-label="Search resources"
-                aria-describedby="resource-search-guidance"
-                aria-controls="resource-search-results"
-                aria-expanded="false"
-                autocomplete="off"
-                data-resource-search
-              >
-            </label>
-            <p class="search-guidance" id="resource-search-guidance">
-              Please do not enter names, phone numbers, reports, prescriptions, or private medical details.
-              Search results are limited to resources already published on this portal.
-            </p>
-          </div>
-
-          <div
-            class="search-results-panel hidden"
-            id="resource-search-results"
-            role="region"
-            aria-live="polite"
-            data-search-results="library"
-          ></div>
+        <div class="portal-toolbar" aria-label="Resource filters">
+          <p class="resource-search-note">
+            Use the search box in the header to search this portal's education resources.
+          </p>
 
           <div class="filter-row" role="group" aria-label="Filter by category">
             <button class="filter-button is-active" type="button" aria-pressed="true" data-category-filter="All" data-category-label="All">All <span data-category-filter-count="All">(0)</span></button>
