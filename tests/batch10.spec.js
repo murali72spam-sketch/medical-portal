@@ -84,6 +84,59 @@ async function waitForImagesToSettle(page) {
 }
 
 test.describe("Batch 10 newborn and infant care automated QA", () => {
+  test("Homepage search and trust wording remain visible and education-only", async ({ page }) => {
+    const response = await page.goto("/", { waitUntil: "networkidle" });
+    await expectNotVercelLogin(page);
+
+    expect(response?.ok(), "Homepage should load from the configured public site").toBeTruthy();
+
+    await expect(page.getByLabel("Search paediatric parent resources")).toBeVisible();
+    await expect(
+      page.getByText(/Search only checks education resources available on this portal/i)
+    ).toBeVisible();
+
+    await expect(page.getByText("Parent education only")).toBeVisible();
+    await expect(page.getByText("Read-only public portal")).toBeVisible();
+    await expect(page.getByText("No patient data stored").first()).toBeVisible();
+    const homepageNotice = page.locator(".homepage-disclaimer");
+    await expect(homepageNotice).toContainText("Important medical notice");
+    await expect(homepageNotice).toContainText(/general educational resources only/i);
+    await expect(homepageNotice).toContainText(/No patient-specific data is collected or stored/i);
+
+    const searchInput = page.getByLabel("Search paediatric parent resources");
+    await searchInput.fill("fever");
+
+    await expect(page.locator("#resource-search-results")).toBeVisible();
+    await expect(page.getByRole("link", { name: /Fever in Children/i }).first()).toBeVisible();
+  });
+
+  test("Mobile menu exposes portal search without horizontal overflow", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    const response = await page.goto("/", { waitUntil: "networkidle" });
+    await expectNotVercelLogin(page);
+
+    expect(response?.ok(), "Homepage should load from the configured public site").toBeTruthy();
+
+    await page.getByRole("button", { name: /open navigation menu/i }).click();
+
+    const searchInput = page.getByLabel("Search paediatric parent resources");
+    await expect(searchInput).toBeVisible();
+
+    const searchInputHeight = await searchInput.evaluate((input) =>
+      input.getBoundingClientRect().height
+    );
+    expect(searchInputHeight).toBeGreaterThanOrEqual(44);
+
+    await expect(
+      page.getByText(/Do not enter personal medical details/i)
+    ).toBeVisible();
+
+    const hasHorizontalOverflow = await page.evaluate(
+      () => document.documentElement.scrollWidth > window.innerWidth
+    );
+    expect(hasHorizontalOverflow).toBe(false);
+  });
+
   test("Batch 10 resources are correctly indexed without duplicates", async ({ request }) => {
     const response = await request.get("/data/conditions-index.json");
     await expectNotVercelLogin(response);
