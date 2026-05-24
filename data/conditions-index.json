@@ -522,6 +522,21 @@
     "url": "html-conditions/childhood-anxiety-parent-guide.html"
   },
   {
+    "title": "Autism Early Concerns - Parent Awareness Guide",
+    "slug": "autism-early-concerns-parent-awareness-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent awareness guide to early autism concerns, including social communication, play, sensory differences, regression, and when to seek developmental assessment.",
+    "keywords": "autism early concerns, autism awareness, social communication, sensory differences, developmental assessment, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "CDC autism spectrum disorder resources; American Academy of Pediatrics / HealthyChildren.org autism guidance; NICE autism recognition and referral guidance; NHS autism guidance; Raising Children Network autism resources; Royal Children's Hospital Melbourne autism resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/autism-early-concerns-parent-awareness-guide.html"
+  },
+  {
     "title": "Autism: Early Signs Parents May Notice",
     "slug": "autism-early-signs-parent-guide",
     "category": "Growth & Development",
@@ -565,6 +580,21 @@
     "featured": false,
     "status": "published",
     "url": "html-conditions/bedwetting-parent-guide.html"
+  },
+  {
+    "title": "Bedwetting / Nocturnal Enuresis - Parent Guide",
+    "slug": "bedwetting-nocturnal-enuresis-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to bedwetting and nocturnal enuresis, including reassurance, routines, constipation awareness, and when medical review is needed.",
+    "keywords": "bedwetting, nocturnal enuresis, night wetting, child bladder control, constipation, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "Royal Children's Hospital Melbourne Kids Health Info bedwetting resources; NICE bedwetting in under 19s guidance; NHS bedwetting guidance; American Academy of Pediatrics / HealthyChildren.org bedwetting guidance; Raising Children Network bedwetting resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/bedwetting-nocturnal-enuresis-parent-guide.html"
   },
   {
     "title": "Body Image Concerns in Teenagers",
@@ -657,7 +687,7 @@
     "url": "html-conditions/developmental-dysplasia-of-hip-parent-guide.html"
   },
   {
-    "title": "Developmental Milestones: Parent Guide",
+    "title": "Developmental Milestones - Parent Guide",
     "slug": "developmental-milestones-parent-guide",
     "category": "Growth & Development",
     "resource_type": "parent-guide",
@@ -882,6 +912,21 @@
     "url": "html-conditions/positive-behaviour-guidance-parent-guide.html"
   },
   {
+    "title": "Puberty and Normal Growth Changes - Parent Guide",
+    "slug": "puberty-and-normal-growth-changes-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to puberty and normal growth changes, including body changes, privacy, emotional support, and when early, delayed, or rapid changes need review.",
+    "keywords": "puberty, normal growth, adolescent development, periods, growth spurt, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org puberty guidance; Royal Children's Hospital Melbourne Kids Health Info puberty resources; Raising Children Network puberty resources; NHS puberty guidance; World Health Organization adolescent health resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/puberty-and-normal-growth-changes-parent-guide.html"
+  },
+  {
     "title": "Puberty: Early and Late Changes",
     "slug": "puberty-parent-guide",
     "category": "Growth & Development",
@@ -925,6 +970,21 @@
     "featured": false,
     "status": "published",
     "url": "html-conditions/scoliosis-parent-guide.html"
+  },
+  {
+    "title": "Screen Time and Behaviour - Parent Guide",
+    "slug": "screen-time-and-behaviour-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to screen time and behaviour, including sleep, routines, emotional regulation, online safety, and when to seek help.",
+    "keywords": "screen time, child behaviour, digital wellness, gaming, sleep, emotional regulation, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org family media guidance; Royal Children's Hospital Melbourne Kids Health Info screen time resources; Raising Children Network screen time and behaviour resources; World Health Organization physical activity, sedentary behaviour and sleep guidelines; Indian Academy of Pediatrics digital wellness guidance.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/screen-time-and-behaviour-parent-guide.html"
   },
   {
     "title": "Screen Time and Digital Wellness",
@@ -972,7 +1032,7 @@
     "url": "html-conditions/short-stature-in-children.html"
   },
   {
-    "title": "Sleep Problems in Children",
+    "title": "Sleep Problems in Children - Parent Guide",
     "slug": "sleep-problems-in-children-parent-guide",
     "category": "Growth & Development",
     "resource_type": "parent-guide",
@@ -1002,7 +1062,7 @@
     "url": "html-conditions/slipped-upper-femoral-epiphysis-scfe-parent-guide.html"
   },
   {
-    "title": "Speech and Language Delay in Children",
+    "title": "Speech and Language Delay - Parent Guide",
     "slug": "speech-and-language-delay-parent-guide",
     "category": "Growth & Development",
     "resource_type": "parent-guide",
@@ -1045,6 +1105,21 @@
     "featured": false,
     "status": "published",
     "url": "html-conditions/healthy-teen-independence-parent-guide.html"
+  },
+  {
+    "title": "Temper Tantrums and Behaviour Regulation - Parent Guide",
+    "slug": "temper-tantrums-and-behaviour-regulation-parent-guide",
+    "category": "Growth & Development",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to temper tantrums and behaviour regulation, including common triggers, calm responses, safety, routines, and when to seek assessment.",
+    "keywords": "temper tantrums, behaviour regulation, emotional regulation, toddler behaviour, child behaviour, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Academy of Pediatrics / HealthyChildren.org tantrum and discipline guidance; Raising Children Network tantrums and behaviour resources; Royal Children's Hospital Melbourne Kids Health Info behaviour resources; NHS child behaviour guidance; CDC developmental milestones resources.",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/temper-tantrums-and-behaviour-regulation-parent-guide.html"
   },
   {
     "title": "Temper Tantrums in Young Children",
