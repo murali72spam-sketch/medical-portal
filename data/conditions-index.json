@@ -1432,6 +1432,36 @@
     "url": "html-conditions/burns-and-scalds-parent-guide.html"
   },
   {
+    "title": "Burns and Scalds in Children",
+    "slug": "burns-and-scalds-in-children-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent safety guide to preventing burns and scalds in children, immediate first response, and warning signs that need urgent care.",
+    "keywords": "burns children, scalds children, burn first aid, hot water burn, child safety, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "RCH Kids Health Info burns and scalds prevention and first aid; NHS burns and scalds guidance; St John Ambulance first aid burn resources; WHO child injury prevention resources",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/burns-and-scalds-in-children-parent-guide.html"
+  },
+  {
+    "title": "Child First Aid Basics",
+    "slug": "child-first-aid-basics-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent safety-awareness guide to child first aid basics, emergency preparation, when to call for help, and why certified first-aid training matters.",
+    "keywords": "child first aid basics, paediatric first aid, parent safety guide, emergency preparation, CPR training",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "RCH Kids Health Info first aid for babies children and teens; American Red Cross child and baby first aid resources; St John Ambulance paediatric first aid resources; Indian 112 Emergency Response Support System",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/child-first-aid-basics-parent-guide.html"
+  },
+  {
     "title": "Child Travel Health",
     "slug": "child-travel-health",
     "category": "Parent Education",
@@ -1445,6 +1475,21 @@
     "featured": false,
     "status": "draft",
     "url": "html-conditions/child-travel-health.html"
+  },
+  {
+    "title": "Choking Prevention and First Response",
+    "slug": "choking-prevention-and-first-response-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent safety guide to reducing choking risk in children and responding to choking emergencies while seeking urgent help.",
+    "keywords": "choking prevention children, child choking first response, infant choking, food safety, toy safety, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "American Red Cross infant and child choking first aid resources; British Red Cross choking child first aid resources; St John Ambulance paediatric first aid resources; CDC child safety resources",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/choking-prevention-and-first-response-parent-guide.html"
   },
   {
     "title": "Colic in Babies",
@@ -1507,6 +1552,36 @@
     "featured": false,
     "status": "published",
     "url": "html-conditions/hand-hygiene-and-cough-etiquette.html"
+  },
+  {
+    "title": "Head Injury in Children",
+    "slug": "head-injury-in-children-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent safety guide to head injury in children, including observation, warning signs, and when urgent medical care is needed.",
+    "keywords": "head injury children, child head injury warning signs, concussion children, fall head injury, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "RCH Kids Health Info head injury guidance; NHS head injury guidance; CDC HEADS UP concussion resources; American Academy of Pediatrics HealthyChildren head injury guidance",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/head-injury-in-children-parent-guide.html"
+  },
+  {
+    "title": "Home Safety for Toddlers",
+    "slug": "home-safety-for-toddlers-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to safer homes for toddlers, including falls, burns, choking, poisoning, water safety, windows, furniture, medicines, and supervision.",
+    "keywords": "toddler home safety, childproofing, falls prevention, toddler poisoning prevention, burn prevention, choking prevention, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "CDC young children safety in the home and community; AAP HealthyChildren childproofing and poison prevention guidance; WHO child injury prevention resources; RCH Kids Health Info home safety and first aid resources",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/home-safety-for-toddlers-parent-guide.html"
   },
   {
     "title": "Infant Colic",
@@ -1644,6 +1719,21 @@
     "url": "html-conditions/poisoning-accidental-ingestion-parent-guide.html"
   },
   {
+    "title": "Poisoning Prevention and What to Do",
+    "slug": "poisoning-prevention-and-what-to-do-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent safety guide to poisoning prevention in children and urgent steps to take after possible medicine, chemical, plant, battery, or household product exposure.",
+    "keywords": "poisoning prevention children, accidental ingestion, poison control, child swallowed medicine, household chemical safety, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "AAP HealthyChildren poison prevention guidance; NHS poisoning guidance; CDC poison prevention guidance; WHO poison centre resources; National Poisons Information Centre AIIMS India resources",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/poisoning-prevention-and-what-to-do-parent-guide.html"
+  },
+  {
     "title": "Premature Baby Care at Home",
     "slug": "premature-baby-care-at-home",
     "category": "Parent Education",
@@ -1690,6 +1780,21 @@
     "featured": false,
     "status": "published",
     "url": "html-conditions/safe-food-water-and-deworming.html"
+  },
+  {
+    "title": "Safe Medicine Use at Home",
+    "slug": "safe-medicine-use-at-home-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to safe medicine storage and use at home, including labels, expiry dates, prescription sharing, safe disposal, and asking a doctor or pharmacist.",
+    "keywords": "safe medicine use children, medicine storage, child medication safety, expiry labels, prescriptions, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "AAP HealthyChildren medication safety resources; CDC medication safety and poison prevention resources; NHS medicines safety guidance; RCH Kids Health Info medication safety resources",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/safe-medicine-use-at-home-parent-guide.html"
   },
   {
     "title": "Safe Sleep for Infants",
@@ -1768,6 +1873,21 @@
     "featured": false,
     "status": "published",
     "url": "html-conditions/13-vulvovaginitis-parent-guide.html"
+  },
+  {
+    "title": "When to Seek Urgent Medical Care",
+    "slug": "when-to-seek-urgent-medical-care-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent safety guide to urgent medical warning signs in children, including breathing difficulty, altered responsiveness, dehydration, serious injury, poisoning, burns, choking, and severe pain.",
+    "keywords": "urgent medical care children, child emergency warning signs, when to call ambulance, parent safety guide, child red flags",
+    "audience": "parents",
+    "last_reviewed": "2026-05-24",
+    "medical_review_status": "pending-clinician-review",
+    "references": "RCH Kids Health Info emergency and illness guidance; NHS child illness and poisoning guidance; American Academy of Pediatrics HealthyChildren emergency symptoms guidance; Indian 112 Emergency Response Support System",
+    "featured": false,
+    "status": "draft",
+    "url": "html-conditions/when-to-seek-urgent-medical-care-parent-guide.html"
   },
   {
     "title": "Asthma in Children",
