@@ -506,12 +506,13 @@ body.resource-page .site-nav.is-open {
   position: relative;
   display: grid;
   gap: clamp(1.6rem, 4vw, 3rem);
-  align-items: center;
+  align-items: start;
 }
 
 .portal-hero-copy {
   display: grid;
   gap: 1rem;
+  padding-top: clamp(0.15rem, 1.2vw, 0.75rem);
 }
 
 .portal-hero .eyebrow {
@@ -643,6 +644,51 @@ body.resource-page .site-nav.is-open {
 
 .doctor-profile-link {
   margin: 0.9rem 0 1rem;
+}
+
+.hero-trust-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.hero-trust-list span {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: rgba(245, 253, 255, 0.94);
+  font-weight: 700;
+}
+
+.hero-trust-list span::before {
+  content: "";
+  flex: 0 0 0.55rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+  box-shadow: 0 0 0 0.28rem var(--color-primary-soft);
+}
+
+.medical-lead-strip {
+  display: grid;
+  gap: 1.1rem;
+  align-items: center;
+  border: 1px solid rgba(191, 211, 219, 0.74);
+  border-radius: var(--radius-xl);
+  padding: clamp(1.1rem, 2.7vw, 1.55rem);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(237, 248, 250, 0.86));
+  box-shadow: var(--shadow-xs);
+}
+
+.medical-lead-strip h2 {
+  margin-bottom: 0.45rem;
+}
+
+.medical-lead-strip p {
+  max-width: 78ch;
+  margin: 0;
+  color: var(--color-ink-soft);
 }
 
 .homepage-disclaimer {
@@ -1702,6 +1748,10 @@ tr:last-child td {
     grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 0.7fr);
   }
 
+  .medical-lead-strip {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
   .hero-stat-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1939,6 +1989,7 @@ tr:last-child td {
 
   .hero-card,
   .doctor-card,
+  .medical-lead-strip,
   .homepage-lane,
   .recent-card,
   .card,
