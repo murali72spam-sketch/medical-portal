@@ -47,7 +47,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics. Standard Treatment Guidelines. https://iapindia.org/standard-treatment-guidelines/; World Health Organization disease fact sheets and public-health guidance. https://www.who.int/; Royal Children's Hospital Melbourne. Kids Health Info. https://www.rch.org.au/kidsinfo/",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/covid-19-in-children.html"
   },
   {
@@ -80,7 +80,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics. Standard Treatment Guidelines. https://iapindia.org/standard-treatment-guidelines/; World Health Organization disease fact sheets and public-health guidance. https://www.who.int/",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/diphtheria.html"
   },
   {
@@ -296,7 +296,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics. Standard Treatment Guidelines. https://iapindia.org/standard-treatment-guidelines/; National Centre for Disease Control, India. https://ncdc.mohfw.gov.in/",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/rickettsial-fever-scrub-typhus.html"
   },
   {
@@ -668,7 +668,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Society for Pediatric and Adolescent Endocrinology. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; HealthyChildren.org. https://www.healthychildren.org/; Pediatric Endocrine Society patient resources. https://pedsendo.org/patient-resource/",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/delayed-puberty-in-children.html"
   },
   {
@@ -713,7 +713,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Society for Pediatric and Adolescent Endocrinology. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; HealthyChildren.org. https://www.healthychildren.org/; Pediatric Endocrine Society patient resources. https://pedsendo.org/patient-resource/",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/early-puberty-in-children.html"
   },
   {
@@ -863,7 +863,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "WHO maternal and newborn care recommendations; World Health Organization newborn care resources; Royal Children's Hospital Melbourne Kids Health Info Breastfeeding; Indian Pediatrics / IAP Infant and Young Child Feeding Guidelines 2016; National Health Mission Government of India Home Based Newborn Care resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/newborn-weight-loss-and-gain.html"
   },
   {
@@ -1028,7 +1028,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Society for Pediatric and Adolescent Endocrinology parent resources. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; Royal Children",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/short-stature-in-children.html"
   },
   {
@@ -1193,7 +1193,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Society for Pediatric and Adolescent Endocrinology. https://ispae.org.in/; Indian Academy of Pediatrics. https://iapindia.org/; Pediatric Endocrine Society patient resources. https://pedsendo.org/patient-resource/; Royal Children",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/types-of-short-stature.html"
   },
   {
@@ -1268,7 +1268,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization Child Growth Standards and wasting guidance; Royal Children&apos;s Hospital Melbourne Kids Health Info nutrition resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/growth-faltering-poor-weight-gain.html"
   },
   {
@@ -1376,7 +1376,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "Dr. Murali Gopal. Weaning Guide & Recommendation; Indian Academy of Pediatrics parent nutrition guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization complementary feeding guidance; HAB Eat behavioural feeding principles used only as a reference for variety, repetition, persistence, no pressure, role modelling, and hunger/fullness cues.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "hero_image": "../assets/condition-visuals/weaning-guide.png",
     "hero_alt": "Indian mother feeding her baby with two small bowls of puree during weaning at home",
     "visual_context": "weaning-home-feeding",
@@ -1409,7 +1409,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "World Health Organization infant feeding guidance; UNICEF breastfeeding guidance; CDC breastfeeding guidance; American Academy of Pediatrics HealthyChildren breastfeeding guidance; National Health Mission India infant and young child feeding guidance",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "hero_image": "../assets/condition-visuals/breastfeeding-basics.png",
     "hero_alt": "Indian parent receiving supportive newborn feeding guidance without exposed imagery",
     "visual_context": "supportive-newborn-feeding-parent-guidance",
@@ -1473,7 +1473,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "CDC Yellow Book 2026 travel vaccine recommendations for infants and children; CDC Yellow Book 2026 traveling safely with infants and children; WHO Five Keys to Safer Food; NCVBDC/MoHFW dengue prevention and vector control.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/child-travel-health.html"
   },
   {
@@ -1595,7 +1595,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "RCH Kids Health Info crying babies guidance; NHS colic guidance; American Academy of Pediatrics HealthyChildren crying and colic guidance; CDC infant safety guidance",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "hero_image": "../assets/condition-visuals/infant-colic.png",
     "hero_alt": "Indian parents soothing a crying infant safely at home",
     "visual_context": "infant-colic-crying-soothing-parent-support",
@@ -1745,7 +1745,7 @@
     "medical_review_status": "pending-clinician-review",
     "references": "AAP HealthyChildren.org Going Home With Your Preemie; Raising Children Network going home from hospital for premature babies; Indian Academy of Pediatrics Action Plan 2026; World Health Organization newborn care resources; National Health Mission Government of India Home Based Newborn Care resources.",
     "featured": false,
-    "status": "draft",
+    "status": "published",
     "url": "html-conditions/premature-baby-care-at-home.html"
   },
   {
