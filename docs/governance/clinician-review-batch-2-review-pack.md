@@ -85,7 +85,7 @@ Home-care or parent-action advice stated on the page:
 - Use Indian family foods such as dal-rice, khichdi, curd rice, softened idli, mashed rice with vegetables, mashed vegetables, mashed fruits, dal, pulses, egg, fish, chicken, meat, paneer, or curd according to family practice and clinician advice.
 - Add a small amount of suitable oil or ghee to home foods when advised.
 - Offer variety, repeat safe foods patiently, avoid pressure-feeding, and watch hunger/fullness cues.
-- Avoid honey before 1 year, choking hazards, tea, coffee, sugary drinks, packaged juices, cola, sweetened drinks, excess salt/sugar/chilli/fried snacks/ultra-processed foods, unsafe water, unhygienic foods, and cow's milk as the main drink before 1 year unless advised.
+- Avoid honey before 1 year, choking hazards, tea, coffee, sugary drinks, packaged juices, cola, sweetened drinks, excess salt/sugar/chilli/fried snacks/ultra-processed foods, unsafe water, unhygienic foods, and cow's milk as the main drink before 1 year unless advised. Avoid Maida based food or snacks.
 - Stop a concerning food and seek urgent medical review if severe allergy-type symptoms occur.
 
 Nutrition quantities, age ranges, meal frequency, iron advice, food introduction advice, or feeding-behaviour advice that may need clinician verification:
@@ -97,8 +97,8 @@ Nutrition quantities, age ranges, meal frequency, iron advice, food introduction
 - Movement toward family meal timings, safe soft finger foods, and thicker textures at 9-12 months.
 - Modified family foods with snacks as needed after 12 months.
 - Thick food rather than watery food.
-- Protein foods including egg, fish, chicken, meat, paneer, or curd according to family practice and clinician advice.
-- Oil/ghee advice when food is watery or low in energy.
+- Protein foods including egg, fish, chicken, meat, paneer, Pulses, legumes, dals, Millets or curd according to family practice and clinician advice.
+- Oil/ghee, Gingely oil, Coconut oil advice when food is watery or low in energy.
 - Texture progression and choking-hazard list.
 - Allergy-risk exclusion wording and food-introduction boundaries.
 - Behavioural feeding principles linked to repeated exposure, no pressure, role modelling, hunger/fullness cues, and persistence.
@@ -158,8 +158,7 @@ Main parent-facing educational claims stated on the page:
 - A skipped meal can be common; intake should be viewed over several days.
 - Milk is useful but should not replace meals.
 - Force-feeding can worsen refusal and mealtime stress.
-
-Red flags / when to seek medical review stated on the page:
+- Red flags / when to seek medical review stated on the page:
 
 - Weight loss or no weight gain on serial measurements.
 - Choking, recurrent coughing with feeds, or swallowing difficulty.
@@ -173,7 +172,8 @@ Home-care or parent-action advice stated on the page:
 - Offer nuts only in safe forms such as paste or powder.
 - Give water as the main drink and avoid sugary drinks.
 - Eat together and allow self-feeding under supervision.
-
+- Strictly avoid screentime like Mobile phones, Televison when feeding. Avoid too much distraction when eating.
+- Encourage messy play with food, this helps in preventing food texture aversion.
 Nutrition quantities, age ranges, meal frequency, iron advice, food introduction advice, or feeding-behaviour advice that may need clinician verification:
 
 - Age range of 1 to 2 years for this guidance.
@@ -259,7 +259,7 @@ Nutrition quantities, age ranges, meal frequency, iron advice, food introduction
 - Daily vegetables and fruits.
 - Inclusion of pulses, egg, meat, fish, or dairy based on family diet.
 - Small portions with more if hungry.
-- Screen-free meals, active play, sleep routine, and no bribe/punishment approach.
+- Screentime-free meals, active play, sleep routine, and no bribe/punishment approach.
 - Food neophobia and repeated-exposure framing.
 
 Diagnostic, treatment, medication, supplement, investigation, or referral-related statements:
@@ -469,9 +469,9 @@ Main parent-facing educational claims stated on the page:
 - Picky eating is very common in toddlers and preschool children.
 - Appetite can change day to day.
 - A single skipped meal is usually less important than growth, energy, and variety over weeks.
-- Picky or fussy eating includes refusal of some foods, narrow range, small amounts at some meals, resistance to new foods, and is common during toddler/preschool independence.
+- Picky or fussy eating includes refusal of some foods, narrow range, small amounts at some meals, resistance to new foods, aversion to food textures and is common during toddler/preschool independence.
 - Many children need repeated neutral exposure before accepting new food.
-- Normal toddler independence, changing appetite, frequent grazing, too much milk/juice/snacks, pressure, force-feeding, bribing, screens, conflict, illness, constipation, mouth pain, sleep disruption, or home stress can contribute.
+- Normal toddler independence, changing appetite, frequent grazing, too much milk/juice/snacks, pressure, force-feeding, bribing, screen time during feeding, conflict, illness, constipation, mouth pain, sleep disruption, or home stress can contribute.
 - The page states that parents decide what food is offered and when, while the child decides how much to eat from what is offered.
 - Picky eating is not automatically a parenting failure or a child being bad.
 - Some feeding problems are medical, developmental, sensory, or anxiety-related and need help.
@@ -575,8 +575,8 @@ Red flags / when to seek medical review stated on the page:
 
 Home-care or parent-action advice stated on the page:
 
-- Include iron-rich foods such as pulses, chana, rajma, soy, green leafy vegetables, ragi, sesame, and nuts or seeds in safe form.
-- Use egg, meat, or fish where culturally acceptable and safely prepared.
+- Include iron-rich foods such as pulses, chana, rajma, soy, green leafy vegetables, ragi, sesame, and nuts or seeds, drumstick leaves, curry leaves, sunflower seeds, amaranthus seeds in safe form.
+- Use egg, lamb or goat spleen, red meat or fish where culturally acceptable and safely prepared.
 - Pair plant iron foods with vitamin C foods such as lemon, amla, guava, or citrus fruits.
 - Avoid tea or coffee with meals for older children and adolescents.
 - Seek medical testing if symptoms or poor growth are present.
