@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Controlled clinical-review mode.
+# Search engines may crawl so the X-Robots-Tag noindex header can be seen,
+# but the site should not be treated as publicly launched until review is complete.

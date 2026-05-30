@@ -12,6 +12,8 @@ const projectRoot = __dirname;
 const conditionsDirectory = path.join(projectRoot, "html-conditions");
 const dataDirectory = path.join(projectRoot, "data");
 const outputFile = path.join(dataDirectory, "conditions-index.json");
+const publicIndexMode = process.env.CLINICAL_PORTAL_PUBLIC_INDEX_MODE ||
+  (process.env.VERCEL ? "reviewed-only" : "all");
 
 const approvedCategories = [
   "Respiratory",
@@ -167,24 +169,39 @@ function validateCategory(category, fileName) {
 
 }
 
+function shouldIncludeInPublicIndex(resource) {
+  if (publicIndexMode === "all") return true;
+
+  return resource.status === "published" &&
+    resource.medical_review_status === "reviewed";
+}
+
 function buildIndex() {
   ensureDirectoryExists(dataDirectory);
 
   const htmlFiles = getHtmlFiles(conditionsDirectory);
 
-  const resources = htmlFiles
-    .map((fileName) => {
-      const resource = extractMetadata(fileName);
-      validateMetadata(resource, fileName);
-      return resource;
-    })
+  const extractedResources = htmlFiles.map((fileName) => {
+    const resource = extractMetadata(fileName);
+    validateMetadata(resource, fileName);
+    return resource;
+  });
+
+  const resources = extractedResources
+    .filter(shouldIncludeInPublicIndex)
     .sort(compareResources);
 
   fs.writeFileSync(outputFile, `${JSON.stringify(resources, null, 2)}\n`, "utf8");
 
   console.log(
-    `Generated ${path.relative(projectRoot, outputFile)} with ${resources.length} resource(s).`
+    `Generated ${path.relative(projectRoot, outputFile)} with ${resources.length} public resource(s) in ${publicIndexMode} mode.`
   );
+
+  if (publicIndexMode !== "all") {
+    console.log(
+      `Public index filtered from ${extractedResources.length} total resource(s); only reviewed and published resources are exposed.`
+    );
+  }
 }
 
 buildIndex();

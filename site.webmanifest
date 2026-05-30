@@ -1,0 +1,18 @@
+{
+  "name": "Clinical Portal 2026",
+  "short_name": "Clinical Portal",
+  "description": "Evidence-based paediatric parent education resources by Dr. Murali Gopal.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7fbfd",
+  "theme_color": "#0f6b78",
+  "icons": [
+    {
+      "src": "/assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

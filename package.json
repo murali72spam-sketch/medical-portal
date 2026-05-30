@@ -4,8 +4,9 @@
   "private": true,
   "description": "Static paediatric clinical education portal for Dr. Murali Gopal.",
   "scripts": {
-    "build": "node auto-index-generator.js",
+    "build": "node auto-index-generator.js && node tools/generate-sitemap.js",
     "generate:index": "node auto-index-generator.js",
+    "generate:sitemap": "node tools/generate-sitemap.js",
     "validate:resources": "node tools/validate-resources.js",
     "qa:batch10": "node tools/run-batch10-qa.js"
   },
