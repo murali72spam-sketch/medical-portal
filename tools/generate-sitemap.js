@@ -6,6 +6,10 @@ const ROOT_DIR = path.join(__dirname, '..');
 const INDEX_PATH = path.join(ROOT_DIR, 'data', 'conditions-index.json');
 const OUTPUT_PATH = path.join(ROOT_DIR, 'sitemap.xml');
 
+// Controlled-review mode: keep sitemap conservative until the full portal is launch-ready.
+// Only resources that are both published and clinician-reviewed are included.
+const INCLUDE_ONLY_REVIEWED_RESOURCES = true;
+
 const staticPages = [
   { url: '/', changefreq: 'weekly', priority: '1.0' },
   { url: '/profile.html', changefreq: 'monthly', priority: '0.8' },
@@ -44,12 +48,16 @@ function loadPublishedResources() {
   const resources = JSON.parse(fs.readFileSync(INDEX_PATH, 'utf8'));
 
   return resources
-    .filter((resource) => resource && resource.status === 'published' && resource.url)
+    .filter((resource) => {
+      if (!resource || resource.status !== 'published' || !resource.url) return false;
+      if (INCLUDE_ONLY_REVIEWED_RESOURCES && resource.medical_review_status !== 'reviewed') return false;
+      return true;
+    })
     .map((resource) => ({
       url: normalizeUrlPath(resource.url),
       lastmod: isValidDate(resource.last_reviewed) ? resource.last_reviewed : null,
       changefreq: 'monthly',
-      priority: resource.medical_review_status === 'reviewed' ? '0.8' : '0.6'
+      priority: '0.8'
     }))
     .filter((resource) => resource.url);
 }
