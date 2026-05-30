@@ -12,7 +12,8 @@ const projectRoot = __dirname;
 const conditionsDirectory = path.join(projectRoot, "html-conditions");
 const dataDirectory = path.join(projectRoot, "data");
 const outputFile = path.join(dataDirectory, "conditions-index.json");
-const publicIndexMode = process.env.CLINICAL_PORTAL_PUBLIC_INDEX_MODE || "reviewed-only";
+const publicIndexMode = process.env.CLINICAL_PORTAL_PUBLIC_INDEX_MODE ||
+  (process.env.VERCEL ? "reviewed-only" : "all");
 
 const approvedCategories = [
   "Respiratory",
