@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Clinical Portal 2026 icon</title>
+  <desc id="desc">Rounded teal medical cross icon for Dr. Murali Gopal's paediatric education portal.</desc>
+  <rect width="512" height="512" rx="112" fill="#0f6b78"/>
+  <circle cx="256" cy="256" r="174" fill="#ffffff" opacity="0.12"/>
+  <path fill="#ffffff" d="M224 120h64c13.3 0 24 10.7 24 24v80h80c13.3 0 24 10.7 24 24v64c0 13.3-10.7 24-24 24h-80v80c0 13.3-10.7 24-24 24h-64c-13.3 0-24-10.7-24-24v-80h-80c-13.3 0-24-10.7-24-24v-64c0-13.3 10.7-24 24-24h80v-80c0-13.3 10.7-24 24-24Z"/>
+  <path fill="#f2b84b" d="M328 120h40c13.3 0 24 10.7 24 24v40h-64v-64Z" opacity="0.95"/>
+</svg>
