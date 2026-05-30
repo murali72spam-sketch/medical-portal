@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://medical-portal-brown.vercel.app/sitemap.xml
