@@ -9,6 +9,7 @@
     "generate:sitemap": "node tools/generate-sitemap.js",
     "validate:resources": "node tools/validate-resources.js",
     "audit:public-status": "node tools/audit-public-status-consistency.js",
+    "audit:duplicate-metadata": "node tools/audit-duplicate-metadata-targets.js",
     "qa:batch10": "node tools/run-batch10-qa.js"
   },
   "devDependencies": {
