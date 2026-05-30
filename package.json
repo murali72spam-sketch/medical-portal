@@ -8,6 +8,7 @@
     "generate:index": "node auto-index-generator.js",
     "generate:sitemap": "node tools/generate-sitemap.js",
     "validate:resources": "node tools/validate-resources.js",
+    "audit:public-status": "node tools/audit-public-status-consistency.js",
     "qa:batch10": "node tools/run-batch10-qa.js"
   },
   "devDependencies": {
