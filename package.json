@@ -11,6 +11,7 @@
     "audit:public-status": "node tools/audit-public-status-consistency.js",
     "audit:duplicate-metadata": "node tools/audit-duplicate-metadata-targets.js",
     "audit:high-risk-review": "node tools/audit-high-risk-review-sprint.js",
+    "audit:vaccination-governance": "node tools/audit-vaccination-governance-pack.js",
     "qa:batch10": "node tools/run-batch10-qa.js"
   },
   "devDependencies": {
