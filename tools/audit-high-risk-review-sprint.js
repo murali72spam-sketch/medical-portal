@@ -4,30 +4,35 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const conditionsDir = path.join(root, "html-conditions");
 
-const riskRules = [
+const rules = [
   {
     key: "vaccination",
     label: "Vaccination / immunisation",
     priority: 1,
-    pattern: /vaccin|immunis|immuniz|catch-up|bcg|hpv|acvip|iap/i
+    matches: (record) =>
+      record.category === "Vaccination" ||
+      /vaccin|immunis|immuniz|catch-up|bcg|hpv/i.test(`${record.file} ${record.title} ${record.slug}`)
   },
   {
     key: "dose-medication",
     label: "Dose / medication / treatment wording",
     priority: 1,
-    pattern: /\b(dose|dosing|mg|mcg|mL|antibiotic|steroid|insulin|levothyroxine|salbutamol|adrenaline|epinephrine|emergency treatment|treatment algorithm|minimum interval)\b/i
-  },
-  {
-    key: "emergency-high-caution",
-    label: "Emergency / high-caution recognition",
-    priority: 2,
-    pattern: /\b(emergency|danger signs|urgent|red flags|breathing difficulty|unconscious|seizure|anaphylaxis|poison|burn|head injury|meningitis|kawasaki|mis-c)\b/i
+    matches: (record, bodyText) =>
+      /\b(dose|dosing|mg|mcg|mL|minimum interval|antibiotic|steroid|insulin|levothyroxine|salbutamol|adrenaline|epinephrine|emergency treatment|treatment algorithm)\b/i.test(bodyText)
   },
   {
     key: "serious-infection",
     label: "Serious infection / systemic illness",
     priority: 2,
-    pattern: /\b(osteomyelitis|typhoid|pneumonia|measles|pertussis|dengue|meningitis|sepsis|tuberculosis|uti|urinary tract infection)\b/i
+    matches: (record) =>
+      /\b(osteomyelitis|typhoid|pneumonia|measles|pertussis|whooping-cough|dengue|meningitis|encephalitis|sepsis|tuberculosis|malaria|rickettsial|scrub-typhus|uti|urinary-tract-infection|covid|diphtheria|infectious-mononucleosis)\b/i.test(`${record.file} ${record.title} ${record.slug}`)
+  },
+  {
+    key: "emergency-high-caution",
+    label: "Emergency / high-caution recognition",
+    priority: 2,
+    matches: (record) =>
+      /\b(danger-signs|urgent-care|urgent-medical-care|red-flags|first-aid|anaphylaxis|poison|poisoning|burn|burns|scald|scalds|head-injury|concussion|choking|foreign-body|animal-bite|dog-bite|seizure|kawasaki|mis-c)\b/i.test(`${record.file} ${record.title} ${record.slug}`)
   }
 ];
 
@@ -66,8 +71,11 @@ function decodeEntities(value) {
     .replace(/&gt;/gi, ">");
 }
 
-function textForScan(html) {
-  return html
+function bodyTextForScan(html) {
+  const bodyMatch = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+  const body = bodyMatch ? bodyMatch[1] : html.replace(/<head[\s\S]*?<\/head>/i, " ");
+
+  return body
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
     .replace(/<!--([\s\S]*?)-->/g, " ")
@@ -84,15 +92,18 @@ function metadataFor(file, html) {
     category: readMeta(html, "category"),
     status: readMeta(html, "status"),
     medical_review_status: readMeta(html, "medical_review_status"),
-    last_reviewed: readMeta(html, "last_reviewed"),
-    references: readMeta(html, "references")
+    last_reviewed: readMeta(html, "last_reviewed")
   };
 }
 
-function ruleMatches(record, scanText) {
-  return riskRules
-    .filter((rule) => rule.pattern.test(`${record.file} ${record.title} ${record.slug} ${record.category} ${record.references} ${scanText}`))
+function ruleMatches(record, bodyText) {
+  return rules
+    .filter((rule) => rule.matches(record, bodyText))
     .map((rule) => ({ key: rule.key, label: rule.label, priority: rule.priority }));
+}
+
+function uniqueRiskGroups(matches) {
+  return [...new Set(matches.map((match) => match.label))];
 }
 
 function audit() {
@@ -102,7 +113,7 @@ function audit() {
   files.forEach((file) => {
     const html = fs.readFileSync(path.join(conditionsDir, file), "utf8");
     const record = metadataFor(file, html);
-    const matches = ruleMatches(record, textForScan(html));
+    const matches = ruleMatches(record, bodyTextForScan(html));
 
     if (!matches.length) return;
 
@@ -110,24 +121,27 @@ function audit() {
     candidates.push({
       ...record,
       priority: highestPriority,
-      riskGroups: matches.map((match) => match.label)
+      riskGroups: uniqueRiskGroups(matches)
     });
   });
 
   candidates.sort((a, b) => {
     if (a.priority !== b.priority) return a.priority - b.priority;
-    if (a.medical_review_status !== b.medical_review_status) {
-      if (a.medical_review_status === "pending-clinician-review") return -1;
-      if (b.medical_review_status === "pending-clinician-review") return 1;
-    }
+    const aPending = a.medical_review_status !== "reviewed";
+    const bPending = b.medical_review_status !== "reviewed";
+    if (aPending !== bPending) return aPending ? -1 : 1;
     return a.file.localeCompare(b.file);
   });
 
+  const pendingCandidates = candidates.filter((item) => item.medical_review_status !== "reviewed");
+  const reviewedCandidates = candidates.filter((item) => item.medical_review_status === "reviewed");
   const summary = {
     totalHtmlFiles: files.length,
     highRiskCandidates: candidates.length,
-    pendingHighRiskCandidates: candidates.filter((item) => item.medical_review_status !== "reviewed").length,
-    reviewedHighRiskCandidates: candidates.filter((item) => item.medical_review_status === "reviewed").length
+    pendingHighRiskCandidates: pendingCandidates.length,
+    reviewedHighRiskCandidates: reviewedCandidates.length,
+    priority1PendingCandidates: pendingCandidates.filter((item) => item.priority === 1).length,
+    priority2PendingCandidates: pendingCandidates.filter((item) => item.priority === 2).length
   };
 
   console.log("Clinical Portal 2026 — high-risk clinical review sprint audit");
