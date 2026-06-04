@@ -2,205 +2,271 @@
 
 ## 1. Purpose
 
-This Stage 2 review pack prepares Batch 3 candidate resources for Dr. Murali's manual clinician review. It summarizes existing page content and metadata only, so the clinician can decide what needs confirmation before any future resource is finalized.
+This is a Stage 2 clinician-facing review pack for Dr. Murali's manual review of the 7 selected low-risk resources in Batch 3.
 
-This review pack does not change medical content, resource metadata, status, `medical_review_status`, `last_reviewed`, or reviewed state.
+This pack supports clinician review and source verification only. It does not approve, publish, finalize, promote, retire, redirect, merge, or mark any resource as reviewed.
 
 ## 2. Safety Boundaries
 
-- Documentation-only pack.
-- No HTML medical content was edited.
-- No resource metadata was changed.
-- No `medical_review_status` value was changed.
-- No resource was marked as reviewed.
-- `data/conditions-index.json` was not edited.
-- Homepage, `script.js`, `style.css`, package files, tests, and legal pages are out of scope.
-- Medical facts below are summarized only from existing candidate HTML files.
-- Where matching, metadata, or clinical meaning is unclear, this pack uses "Needs confirmation".
+- Documentation-only.
+- No HTML medical content changed.
+- No metadata changed.
+- No resource review status changed.
+- No generated index or sitemap committed.
+- Medical facts are summarized only from existing selected HTML files.
+- If anything is unclear, use "Needs confirmation."
 
-Out-of-scope topics for this batch: vaccination, catch-up vaccination, medication or dosing content, emergency or first-aid content, typhoid, osteomyelitis, serious infection pages, urgent-recognition pages, high-caution newborn pages, pages requiring current guideline schedule verification, and any page containing drug doses, dose intervals, maximum doses, or treatment algorithms.
+## 3. Batch 3 Selected Resource Summary Table
 
-## 3. Batch 3 Candidate Summary Table
-
-| Candidate | Matching file status | Current title | Current category | Current status | Current medical_review_status | Current last_reviewed | References | Disclaimer |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Sleep Issues | Found | Sleep Problems in Children - Parent Guide | Growth & Development | published | pending-clinician-review | 2026-05-22 | Present | Present |
-| Tantrums | Found, duplicate/near-duplicate needs confirmation | Temper Tantrums in Young Children; Temper Tantrums and Behaviour Regulation - Parent Guide | Growth & Development | published | pending-clinician-review | 2026-05-22; 2026-05-24 | Present | Present |
-| Bedwetting | Found, duplicate/near-duplicate needs confirmation | Bedwetting; Bedwetting / Nocturnal Enuresis - Parent Guide | Growth & Development | published | pending-clinician-review | 2026-05-13; 2026-05-24 | Present | Present |
-| Head Lice | Found | Head Lice and Nits in Children | Skin & Allergy | published | pending-clinician-review | 2026-05-21 | Present | Present |
-| Molluscum Contagiosum | Found | Molluscum Contagiosum in Children | Skin & Allergy | published | pending-clinician-review | 2026-05-21 | Present | Present |
-| Common Rashes | Not found | Needs confirmation | Needs confirmation | Needs confirmation | Needs confirmation | Needs confirmation | Needs confirmation | Needs confirmation |
-| Ringworm | Found | Ringworm / Tinea in Children | Fever & Infections | published | pending-clinician-review | 2026-05-20 | Present | Present |
-| Hives | Found | Hives (Urticaria) in Children | Skin & Allergy | published | pending-clinician-review | 2026-05-21 | Present | Present |
-| Hay Fever | Not found | Needs confirmation | Needs confirmation | Needs confirmation | Needs confirmation | Needs confirmation | Needs confirmation | Needs confirmation |
-| Conjunctivitis | Found | Conjunctivitis / Pink Eye in Children | Fever & Infections | published | pending-clinician-review | 2026-05-21 | Present | Present |
+| Resource | File path | Current title from metadata | Category | status | medical_review_status | last_reviewed | references present yes/no | disclaimer present yes/no | clinician review priority | source verification needed before status change |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tics in Children | `html-conditions/tics-parent-guide.html` | Tics in Children | Growth & Development | published | pending-clinician-review | 2026-05-13 | Yes | Yes | Low-risk parent education; focus on reassurance, school support, neurodevelopmental wording, and red-flag boundaries. | Yes |
+| Screen Time and Behaviour - Parent Guide | `html-conditions/screen-time-and-behaviour-parent-guide.html` | Screen Time and Behaviour - Parent Guide | Growth & Development | published | pending-clinician-review | 2026-05-24 | Yes | Yes | Low-risk behaviour and family-routine education; focus on non-diagnostic digital wellness wording and safety cues. | Yes |
+| Learning Difficulties and School Support | `html-conditions/learning-difficulties-school-support-parent-guide.html` | Learning Difficulties and School Support | Growth & Development | published | pending-clinician-review | 2026-05-22 | Yes | Yes | Low-risk school-support education; focus on non-diagnostic framing, assessment cues, and school-support boundaries. | Yes |
+| Daytime Wetting in Children | `html-conditions/daytime-wetting-parent-guide.html` | Daytime Wetting in Children | Growth & Development | published | pending-clinician-review | 2026-05-13 | Yes | Yes | Low-risk toileting education; focus on urinary symptom red flags, constipation wording, and avoiding treatment algorithms. | Yes |
+| Growing Pains in Children | `html-conditions/growing-pains-parent-guide.html` | Growing Pains in Children | Growth & Development | published | pending-clinician-review | 2026-05-15 | Yes | Yes | Low-risk musculoskeletal education; focus on typical-pattern reassurance and warning signs that should not be dismissed. | Yes |
+| Osgood-Schlatter Disease | `html-conditions/osgood-schlatter-parent-guide.html` | Osgood-Schlatter Disease | Growth & Development | published | pending-clinician-review | 2026-05-15 | Yes | Yes | Low-risk adolescent knee-pain education; focus on activity language, red flags, and diagnostic/treatment boundaries. | Yes |
+| Sever's Disease / Heel Pain | `html-conditions/severs-disease-parent-guide.html` | Sever's Disease / Heel Pain | Growth & Development | published | pending-clinician-review | 2026-05-15 | Yes | Yes | Low-risk heel-pain education; focus on activity/footwear wording, red flags, and return-to-sport boundaries. | Yes |
 
 ## 4. Resource-by-Resource Review Notes
 
-### Sleep Issues
+### Tics in Children
 
-- File path: `html-conditions/sleep-problems-in-children-parent-guide.html`
-- Current title: Sleep Problems in Children - Parent Guide
+- File path: `html-conditions/tics-parent-guide.html`
+- Current metadata title: Tics in Children
 - Current category: Growth & Development
 - Current status: published
 - Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-22
-- References present: American Academy of Pediatrics / HealthyChildren.org sleep guidance; Royal Children's Hospital Melbourne Kids Health Info sleep resources; Raising Children Network sleep resources; NHS child sleep guidance; WHO physical activity, sedentary behaviour and sleep resources.
-- Disclaimer present: Yes. The page states it is general education only and does not replace consultation, diagnosis, examination, sleep assessment, or individualized treatment.
-- Sections needing clinician review: What parents should know; concerns parents may notice; what can contribute; practical home support; red flags / when to seek medical review; important facts for parents.
-- Safety concerns from existing content: Loud snoring, breathing pauses, gasping, blue colour, possible seizures, unsafe daytime sleepiness, developmental concerns, severe anxiety, self-harm talk, injury risk, family safety concerns, and avoiding self-started sleep medicines or sedatives.
-- Suggested clinician-review questions:
-  - Are the sleep red flags complete and appropriately worded for parent use?
-  - Is the page clear that it is not an infant safe-sleep guide?
-  - Is the wording around screens, routines, caffeine, anxiety, respiratory issues, and sedatives clinically appropriate?
+- Current last_reviewed: 2026-05-13
+- Existing references from metadata: Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.
+- Disclaimer present: Yes
+- Sections to review based on existing page structure: What parents should know; What parents may notice; What can contribute?; Practical home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- Existing red-flag / medical-review wording to check, summarized from the page only: The page asks for prompt medical review for sudden severe movements, injury, pain, loss of awareness, possible seizures, developmental regression, new weakness, abnormal walking, neurological symptoms, severe anxiety, obsessive symptoms, bullying, major distress, or school impairment.
+- Specific clinician-review questions:
+  - Is the reassurance that tics are not deliberate misbehaviour clinically safe and parent-friendly?
+  - Is the wording around stress, tiredness, excitement, attention, and family tendency accurate enough?
+  - Are the neurological, school, distress, bullying, anxiety, and obsessive-symptom review cues sufficiently clear?
+  - Does the page avoid diagnosis or treatment-selection advice?
+- Source verification checklist:
+  - Verify the IAP parent guidance source remains appropriate.
+  - Verify the RCH Kids Health Info source remains appropriate.
+  - Verify HealthyChildren.org parent guidance remains appropriate.
+  - Verify the WHO adolescent health / physical activity / sedentary behaviour source is relevant enough for this page.
+- Decision box:
+  - Clinician approved as-is? Yes / No / Needs edits
+  - Source verification complete? Yes / No
+  - Content edits required? Yes / No
+  - Metadata edits required? Yes / No
+  - Can be marked reviewed later? Yes / No / Not yet
 
-### Tantrums
+### Screen Time and Behaviour - Parent Guide
 
-- Candidate match: Needs confirmation because two near-duplicate files exist.
-- File paths: `html-conditions/temper-tantrums-parent-guide.html`; `html-conditions/temper-tantrums-and-behaviour-regulation-parent-guide.html`
-- Current titles: Temper Tantrums in Young Children; Temper Tantrums and Behaviour Regulation - Parent Guide
+- File path: `html-conditions/screen-time-and-behaviour-parent-guide.html`
+- Current metadata title: Screen Time and Behaviour - Parent Guide
 - Current category: Growth & Development
-- Current status: published for both
-- Current medical_review_status: pending-clinician-review for both
-- Current last_reviewed dates: 2026-05-22; 2026-05-24
-- References present: Both files include behaviour/tantrum references from HealthyChildren.org, Raising Children Network, RCH or similar parent resources, NHS, and either IAP or CDC developmental milestones resources.
-- Disclaimer present: Yes in both files. Both state general education only and no replacement for medical consultation, diagnosis, developmental assessment, mental-health assessment, or individualized treatment.
-- Sections needing clinician review: What parents should know; common triggers; practical home support; after the tantrum where present; red flags / when to seek medical review; important facts for parents.
-- Safety concerns from existing content: Self-injury, injury to others, dangerous running away, property destruction, loss of skills, developmental/language/hearing concerns, poor social interaction, trauma, abuse, bullying, family safety concerns, severe impairment, and immediate safety concerns.
-- Suggested clinician-review questions:
-  - Which tantrum file should be treated as the Batch 3 review target?
-  - Should the duplicate/near-duplicate page be merged, retired, or left as a separate resource in a later task?
-  - Are the developmental, mental-health, safeguarding, and school impairment red flags sufficiently clear?
+- Current status: published
+- Current medical_review_status: pending-clinician-review
+- Current last_reviewed: 2026-05-24
+- Existing references from metadata: American Academy of Pediatrics / HealthyChildren.org family media guidance; Royal Children's Hospital Melbourne Kids Health Info screen time resources; Raising Children Network screen time and behaviour resources; World Health Organization physical activity, sedentary behaviour and sleep guidelines; Indian Academy of Pediatrics digital wellness guidance.
+- Disclaimer present: Yes
+- Sections to review based on existing page structure: What parents should know; What parents may notice; Practical home support; Red flags / when to seek help; Important facts for parents; Medical disclaimer; References.
+- Existing red-flag / medical-review wording to check, summarized from the page only: The page asks families to seek medical, mental-health, school, or safety support when screen use is linked with self-harm talk, severe withdrawal, severe anxiety, violent behaviour, major mood change, cyberbullying, sexual exploitation concern, unsafe online contact, abuse concern, immediate danger, persistent sleep difficulty, school attendance or study impairment, or inability to participate in family life.
+- Specific clinician-review questions:
+  - Is the digital wellness advice safe without becoming individualized behavioural or mental-health care?
+  - Is the page clear that it cannot diagnose ADHD, autism, anxiety, depression, or gaming disorder?
+  - Is the online safety and exploitation wording clear without becoming an emergency protocol?
+  - Are family media plan, sleep, school, and caregiver-consistency points appropriate for parent education?
+- Source verification checklist:
+  - Verify AAP / HealthyChildren.org family media guidance.
+  - Verify RCH screen-time resources.
+  - Verify Raising Children Network screen-time and behaviour resources.
+  - Verify WHO physical activity, sedentary behaviour, and sleep guideline relevance.
+  - Verify IAP digital wellness guidance.
+- Decision box:
+  - Clinician approved as-is? Yes / No / Needs edits
+  - Source verification complete? Yes / No
+  - Content edits required? Yes / No
+  - Metadata edits required? Yes / No
+  - Can be marked reviewed later? Yes / No / Not yet
 
-### Bedwetting
+### Learning Difficulties and School Support
 
-- Candidate match: Needs confirmation because two near-duplicate files exist.
-- File paths: `html-conditions/bedwetting-parent-guide.html`; `html-conditions/bedwetting-nocturnal-enuresis-parent-guide.html`
-- Current titles: Bedwetting; Bedwetting / Nocturnal Enuresis - Parent Guide
+- File path: `html-conditions/learning-difficulties-school-support-parent-guide.html`
+- Current metadata title: Learning Difficulties and School Support
 - Current category: Growth & Development
-- Current status: published for both
-- Current medical_review_status: pending-clinician-review for both
-- Current last_reviewed dates: 2026-05-13; 2026-05-24
-- References present: Both files have references. The newer nocturnal enuresis file includes RCH, NICE, NHS, HealthyChildren.org, and Raising Children Network bedwetting resources.
-- Disclaimer present: Yes in both files. Both state general education only and no replacement for consultation, diagnosis, examination/urine testing/continence assessment, or individualized treatment.
-- Sections needing clinician review: What parents should know; what parents may notice; what can contribute where present; practical home support; red flags / when to seek medical review; important facts for parents.
-- Safety concerns from existing content: Pain passing urine, fever, blood in urine, recurrent UTI, new daytime symptoms, constipation with pain, excessive thirst, weight loss, tiredness, snoring with disturbed sleep, neurological symptoms, new-onset wetting after being dry, distress, bullying, and safeguarding concerns.
-- Suggested clinician-review questions:
-  - Which bedwetting file should be treated as the Batch 3 review target?
-  - Is the newer nocturnal enuresis page preferred because it cites bedwetting-specific references?
-  - Are red flags for UTI, diabetes, sleep-disordered breathing, constipation, neurological issues, and safeguarding sufficient?
-
-### Head Lice
-
-- File path: `html-conditions/12-head-lice-parent-guide.html`
-- Current title: Head Lice and Nits in Children
-- Current category: Skin & Allergy
 - Current status: published
 - Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-21
-- References present: RCH Kids Health Info; NHS; CDC; HealthyChildren.org.
-- Disclaimer present: Yes. The page says it is parent education only and does not replace consultation, diagnosis, product selection, school advice, poison advice, or individualized advice; it does not provide product-specific doses or treatment schedules.
-- Sections needing clinician review: What is it; symptoms and signs; how it spreads; home management; when to see a doctor; do's and don'ts; school and daycare guidance; red flags / urgent care advice.
-- Safety concerns from existing content: Painful, swollen, oozing, crusted, or infected scalp; persistent lice despite careful treatment; eczema/scalp disease/product allergy; unsafe home remedies such as insect sprays, kerosene, harsh chemicals; severe product reaction; eye exposure; accidental swallowing.
-- Suggested clinician-review questions:
-  - Are product-safety warnings strong enough without naming products or schedules?
-  - Is school/daycare guidance appropriately local-policy dependent?
-  - Are poison/eye-exposure safety instructions clear enough without becoming first-aid content?
+- Current last_reviewed: 2026-05-22
+- Existing references from metadata: American Academy of Pediatrics / HealthyChildren.org learning and school guidance; CDC developmental resources; NICE guidance on developmental and mental-health recognition where relevant; Raising Children Network school and learning resources; Indian government and Indian paediatric child development resources.
+- Disclaimer present: Yes
+- Sections to review based on existing page structure: What parents should know; Concerns parents may notice; What can contribute?; Practical parent steps; Home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- Existing red-flag / medical-review wording to check, summarized from the page only: The page asks for medical review when there is loss of previously learned skills, developmental concerns, seizures, headaches with neurological symptoms, major behaviour change, severe anxiety, school refusal, bullying, self-harm talk, abuse concern, immediate safety concern, or ongoing school difficulty despite reasonable support and regular attendance.
+- Specific clinician-review questions:
+  - Does the page avoid diagnosing learning disability, ADHD, autism, anxiety, or other conditions?
+  - Are vision, hearing, sleep, attendance, language, development, emotional stress, bullying, and chronic illness cues appropriately framed?
+  - Is the advice to ask about developmental, psychological, speech-language, or educational assessment safe and non-prescriptive?
+  - Is the disclaimer strong enough about no legal advice, school placement advice, service guarantee, or individualized treatment?
+- Source verification checklist:
+  - Verify AAP / HealthyChildren.org learning and school guidance.
+  - Verify CDC developmental resources.
+  - Verify NICE recognition/support relevance.
+  - Verify Raising Children Network school and learning resources.
+  - Verify Indian government and Indian paediatric child development resources.
+- Decision box:
+  - Clinician approved as-is? Yes / No / Needs edits
+  - Source verification complete? Yes / No
+  - Content edits required? Yes / No
+  - Metadata edits required? Yes / No
+  - Can be marked reviewed later? Yes / No / Not yet
 
-### Molluscum Contagiosum
+### Daytime Wetting in Children
 
-- File path: `html-conditions/17-molluscum-parent-guide.html`
-- Current title: Molluscum Contagiosum in Children
-- Current category: Skin & Allergy
+- File path: `html-conditions/daytime-wetting-parent-guide.html`
+- Current metadata title: Daytime Wetting in Children
+- Current category: Growth & Development
 - Current status: published
 - Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-21
-- References present: RCH Kids Health Info; NHS; CDC; American Academy of Dermatology.
-- Disclaimer present: Yes. The page says it is parent education only and does not replace consultation, diagnosis, skin examination, treatment selection, school advice, or individualized advice; it does not provide procedure recommendations or medicine doses.
-- Sections needing clinician review: What is it; symptoms and signs; how it spreads; home management; when to see a doctor; do's and don'ts; school and daycare guidance; red flags / urgent care advice.
-- Safety concerns from existing content: Painful/hot/red/swollen/crusted/pus lesions, eye or eyelid involvement, widespread or rapidly increasing rash, eczema flare, weak immune system/chronic illness, unusual lesions, fever, child unwell, and harsh chemicals/wart acids/unverified remedies.
-- Suggested clinician-review questions:
-  - Is the self-limiting wording balanced with eye-area, eczema, and immune-suppression cautions?
-  - Is school/swimming/contact-sport guidance sufficiently cautious without over-excluding children?
-  - Are procedure/treatment boundaries clear enough?
+- Current last_reviewed: 2026-05-13
+- Existing references from metadata: Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.
+- Disclaimer present: Yes
+- Sections to review based on existing page structure: What parents should know; What parents may notice; What can contribute?; Practical home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- Existing red-flag / medical-review wording to check, summarized from the page only: The page asks for prompt medical review for pain or burning urine, fever, back pain, blood in urine, recurrent UTI, new-onset wetting after being dry, excessive thirst, weight loss, weak urine stream, continuous dribbling, neurological symptoms, constipation with pain, stool accidents, significant distress, bullying, or safeguarding concern.
+- Specific clinician-review questions:
+  - Is the balance between kind support and medical review appropriate?
+  - Is constipation wording clear enough without becoming a treatment algorithm?
+  - Are urinary infection, diabetes-like symptoms, stream/dribbling, neurological symptoms, and safeguarding cues complete enough?
+  - Is the statement that medication decisions should be clinician-led strong enough?
+- Source verification checklist:
+  - Verify IAP parent guidance.
+  - Verify RCH Kids Health Info parent fact sheets.
+  - Verify AAP / HealthyChildren.org parent guidance.
+  - Verify whether the WHO adolescent health / physical activity / sedentary behaviour source is relevant enough for daytime wetting.
+- Decision box:
+  - Clinician approved as-is? Yes / No / Needs edits
+  - Source verification complete? Yes / No
+  - Content edits required? Yes / No
+  - Metadata edits required? Yes / No
+  - Can be marked reviewed later? Yes / No / Not yet
 
-### Ringworm
+### Growing Pains in Children
 
-- File path: `html-conditions/19-ringworm-parent-guide.html`
-- Current title: Ringworm / Tinea in Children
-- Current category: Fever & Infections
+- File path: `html-conditions/growing-pains-parent-guide.html`
+- Current metadata title: Growing Pains in Children
+- Current category: Growth & Development
 - Current status: published
 - Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-20
-- References present: RCH Kids Health Info; NHS; CDC fungal diseases; DermNet.
-- Disclaimer present: Yes. The page says it is parent education only and does not replace consultation, diagnosis, scalp assessment, treatment selection, school advice, or individualized advice; it does not provide antifungal names or doses.
-- Sections needing clinician review: What is it; symptoms and signs; how it spreads; home management; what to avoid; school and daycare guidance; important facts; red flags / when to seek medical care.
-- Safety concerns from existing content: Scalp involvement, face/eye-area rash, widespread/recurrent/painful/uncertain rash, tender swelling, pus, fever, weak immune system, pet exposure, and steroid-mixed creams masking or worsening fungal infection.
-- Suggested clinician-review questions:
-  - Should the category remain Fever & Infections or move to Skin & Allergy in a later metadata task?
-  - Are scalp tinea and steroid-mixed cream warnings sufficiently prominent?
-  - Is pet/household spread advice clinically appropriate and not overextended?
+- Current last_reviewed: 2026-05-15
+- Existing references from metadata: IAP Standard Treatment Guidelines: Growing Pains; Indian Pediatrics review on growing pains; NICE CKS musculoskeletal presentations in children.
+- Disclaimer present: Yes
+- Sections to review based on existing page structure: What parents should know; What parents may notice; Practical home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- Existing red-flag / medical-review wording to check, summarized from the page only: The page asks for prompt medical review for limping, refusal to walk, inability to bear weight, activity limitation, persistent pain in one leg, worsening pain, pain after injury, joint swelling, redness, warmth, severe tenderness, morning stiffness, fever, weight loss, night sweats, child looking unwell, night pain with systemic symptoms, weakness, numbness, abnormal gait, or developmental concerns.
+- Specific clinician-review questions:
+  - Is the typical-pattern wording accurate and not over-reassuring?
+  - Are unilateral, persistent, injury-related, inflammatory, systemic, neurological, and activity-limiting red flags sufficiently clear?
+  - Is the repeated pain medicine wording safe without naming medicines or doses?
+  - Are references adequate and current enough for future reviewed status?
+- Source verification checklist:
+  - Verify IAP Standard Treatment Guidelines reference.
+  - Verify Indian Pediatrics growing pains review reference.
+  - Verify NICE CKS musculoskeletal presentations relevance.
+- Decision box:
+  - Clinician approved as-is? Yes / No / Needs edits
+  - Source verification complete? Yes / No
+  - Content edits required? Yes / No
+  - Metadata edits required? Yes / No
+  - Can be marked reviewed later? Yes / No / Not yet
 
-### Hives
+### Osgood-Schlatter Disease
 
-- File path: `html-conditions/11-hives-parent-guide.html`
-- Current title: Hives (Urticaria) in Children
-- Current category: Skin & Allergy
+- File path: `html-conditions/osgood-schlatter-parent-guide.html`
+- Current metadata title: Osgood-Schlatter Disease
+- Current category: Growth & Development
 - Current status: published
 - Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-21
-- References present: RCH Kids Health Info; NHS urticaria guidance; American Academy of Dermatology; HealthyChildren.org.
-- Disclaimer present: Yes. The page says it is parent education only and does not replace consultation, diagnosis, allergy assessment, emergency care, treatment selection, or individualized advice; it does not provide medicine names or doses.
-- Sections needing clinician review: What is it; symptoms and signs; common triggers and causes; home management; when to see a doctor; do's and don'ts; school and daycare guidance; red flags / urgent care advice.
-- Safety concerns from existing content: Hives with breathing difficulty, wheeze, swelling of face/lips/tongue/throat, dizziness, fainting, collapse, confusion, repeated vomiting, severe abdominal pain, rapidly worsening symptoms after food/medicine/sting/allergen, fever, joint pain, bruising, purple marks, blisters, peeling, painful rash, and suspected medicine trigger.
-- Suggested clinician-review questions:
-  - Is anaphylaxis language clear enough while avoiding emergency protocol detail?
-  - Are allergy trigger examples balanced with viral hives being common in children?
-  - Is antihistamine wording appropriate without medicine names or doses?
+- Current last_reviewed: 2026-05-15
+- Existing references from metadata: Royal Children's Hospital Melbourne Orthopaedics: Osgood-Schlatter disease; AAP HealthyChildren knee pain resources; Royal Children's Hospital Melbourne orthopaedic fact sheets.
+- Disclaimer present: Yes
+- Sections to review based on existing page structure: What parents should know; What parents may notice; Practical home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- Existing red-flag / medical-review wording to check, summarized from the page only: The page asks for prompt medical review for severe pain, pain after trauma, deformity, marked swelling, inability to walk or bear weight, fever, redness, warmth, very painful joint, persistent night pain, pain at rest, child looking unwell, or limp with hip, thigh, or knee pain in an adolescent.
+- Specific clinician-review questions:
+  - Is the activity modification wording safe and not too prescriptive?
+  - Is stretching/strengthening appropriately clinician-guided?
+  - Are trauma, infection, inflammatory, tumour-like, and adolescent hip/thigh/knee red flags adequately represented without overclaiming?
+  - Is the imaging wording appropriately non-directive?
+- Source verification checklist:
+  - Verify RCH Orthopaedics Osgood-Schlatter disease source.
+  - Verify AAP / HealthyChildren.org knee pain resources.
+  - Verify RCH orthopaedic fact sheets.
+- Decision box:
+  - Clinician approved as-is? Yes / No / Needs edits
+  - Source verification complete? Yes / No
+  - Content edits required? Yes / No
+  - Metadata edits required? Yes / No
+  - Can be marked reviewed later? Yes / No / Not yet
 
-### Conjunctivitis
+### Sever's Disease / Heel Pain
 
-- File path: `html-conditions/04-conjunctivitis-parent-guide.html`
-- Current title: Conjunctivitis / Pink Eye in Children
-- Current category: Fever & Infections
+- File path: `html-conditions/severs-disease-parent-guide.html`
+- Current metadata title: Sever's Disease / Heel Pain
+- Current category: Growth & Development
 - Current status: published
 - Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-21
-- References present: RCH Kids Health Info; NHS; HealthyChildren.org; CDC.
-- Disclaimer present: Yes. The page says it is parent education only and does not replace consultation, eye examination, diagnosis, treatment selection, school advice, or individualized advice; it does not provide eye-drop names or doses, and steroid drops should only be used when specifically prescribed.
-- Sections needing clinician review: What is it; symptoms and signs; common causes and spread; home management; what to avoid; school and daycare guidance; important facts; red flags / when to seek medical care.
-- Safety concerns from existing content: Eye pain, light sensitivity, blurred/reduced vision, eye injury, chemical exposure, severe eye swelling, rash/blisters around eye, baby/newborn eye discharge, contact lens use, severe headache/vomiting, worsening symptoms, unverified eye remedies, leftover drops, and steroid eye drops without prescription.
-- Suggested clinician-review questions:
-  - Are red-eye danger signs sufficiently prominent for parents?
-  - Is the antibiotic/steroid eye-drop wording clinically safe and clear?
-  - Is the category Fever & Infections appropriate, or should allergic/irritant causes prompt a later metadata review?
+- Current last_reviewed: 2026-05-15
+- Existing references from metadata: AAP HealthyChildren heel pain and Sever's disease resources; AAOS OrthoInfo: Sever's Disease; Nemours KidsHealth: Sever's disease.
+- Disclaimer present: Yes
+- Sections to review based on existing page structure: What parents should know; What parents may notice; Practical home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- Existing red-flag / medical-review wording to check, summarized from the page only: The page asks for prompt medical review for severe pain, inability to walk or bear weight, pain after significant injury, deformity, severe swelling, fever, redness, warmth, child looking unwell, numbness, weakness, persistent night pain, pain at rest, or pain that does not improve despite reducing painful activity.
+- Specific clinician-review questions:
+  - Is the heel-pain pattern wording accurate and not over-diagnostic?
+  - Is footwear, ice, impact reduction, and stretching wording safe without becoming a treatment protocol?
+  - Are injury, infection, neurological, rest pain, night pain, and persistent pain red flags complete enough?
+  - Is return-to-sport guidance appropriately clinician-led?
+- Source verification checklist:
+  - Verify AAP / HealthyChildren.org heel pain and Sever's disease resources.
+  - Verify AAOS OrthoInfo Sever's Disease source.
+  - Verify Nemours KidsHealth Sever's disease source.
+- Decision box:
+  - Clinician approved as-is? Yes / No / Needs edits
+  - Source verification complete? Yes / No
+  - Content edits required? Yes / No
+  - Metadata edits required? Yes / No
+  - Can be marked reviewed later? Yes / No / Not yet
 
-## 5. Not Found / Needs Confirmation
+## 5. Common Clinician Review Questions
 
-- Common Rashes: No exact `html-conditions/` candidate file found by title search. Related rash-specific pages exist, but selecting a substitute would require confirmation.
-- Hay Fever: No exact `html-conditions/` candidate file found by title search. "Allergic rhinitis" appears only in other contexts and does not identify a dedicated Hay Fever parent guide.
-- Tantrums: Two candidate files found; primary review target needs confirmation.
-- Bedwetting: Two candidate files found; primary review target needs confirmation.
+- Is the page safe for parent education?
+- Does it avoid diagnosis/treatment algorithms?
+- Does it avoid medicine names, doses, dose intervals, maximum doses, and patient-specific advice?
+- Are red flags sufficiently clear without overclaiming?
+- Are references adequate and current enough?
+- Is the disclaimer strong enough?
+- Should any category/reference/title issue be fixed in a later PR?
 
-## 6. Common Review Questions for Dr. Murali
+## 6. Explicitly Out of Scope
 
-- Is this page safe for parent education without adding diagnosis, treatment algorithms, medicine names, doses, dose intervals, or maximum doses?
-- Are the red flags complete, easy to understand, and not falsely reassuring?
-- Does the page clearly say when clinician review is needed?
-- Does the page avoid out-of-scope emergency/first-aid instructions while still directing urgent care where needed?
-- Are school/daycare statements appropriate as local-policy dependent guidance?
-- Are references adequate for clinician review, or should any reference set be updated in a separate metadata/content task?
-- Are duplicate/near-duplicate pages present, and which page should be reviewed first?
+- Vaccination and catch-up vaccination
+- Medication/dosing
+- Emergency/first-aid
+- Typhoid
+- Osteomyelitis
+- Serious infection pages
+- Urgent-recognition pages
+- High-caution newborn pages
+- Any page requiring current guideline schedule verification
+- Any page with drug doses, dose intervals, max doses, treatment algorithms, contraindication algorithms, or patient-specific action rules
 
-## 7. Items Explicitly Out of Scope for This Batch
+## 7. Final Sign-Off Table
 
-- Editing any HTML medical content.
-- Editing `data/conditions-index.json` or any resource metadata.
-- Changing `status`, `medical_review_status`, `last_reviewed`, featured flags, categories, slugs, titles, references, or URLs.
-- Marking any resource as reviewed.
-- Adding medication names, dosing, dose intervals, maximum doses, treatment algorithms, emergency protocols, or first-aid instructions.
-- Reviewing vaccination, catch-up vaccination, typhoid, osteomyelitis, serious infection, urgent-recognition, high-caution newborn, or guideline-schedule-verification pages.
+| Resource | Reviewed by Dr. Murali | Review date | Source verification complete | Edits needed | Approved for future reviewed status | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Tics in Children |  |  |  |  |  |  |
+| Screen Time and Behaviour - Parent Guide |  |  |  |  |  |  |
+| Learning Difficulties and School Support |  |  |  |  |  |  |
+| Daytime Wetting in Children |  |  |  |  |  |  |
+| Growing Pains in Children |  |  |  |  |  |  |
+| Osgood-Schlatter Disease |  |  |  |  |  |  |
+| Sever's Disease / Heel Pain |  |  |  |  |  |  |
 
-## 8. Next Step After Clinician Review
+## 8. Next Step
 
-After Dr. Murali completes manual review, create a separate follow-up task for any approved changes. That later task should explicitly identify which pages are approved for editing, what content or metadata changes are allowed, whether duplicate pages should be merged or retired, and whether any resource may be marked reviewed.
+After manual clinician review, create a separate follow-up PR for approved content/metadata edits only. Only after review and source verification are complete should any selected resource be marked reviewed.
