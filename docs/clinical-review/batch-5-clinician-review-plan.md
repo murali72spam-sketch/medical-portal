@@ -1,138 +1,142 @@
-# Clinical Portal 2026 — Clinician Review Batch 5 Plan
+# Clinical Portal 2026 - Clinician Review Batch 5 Plan
+
+Plan date: 2026-06-05
+
+Scope: documentation-only planning update for the next small clinician-review workflow batch.
+
+This plan does not edit resource HTML, medical content, page status, `medical_review_status`, `last_reviewed`, metadata, references, slugs, titles, featured flags, generated index data, the sitemap, application files, package files, tests, legal pages, or assets. It does not mark any resource as reviewed.
 
 ## 1. Purpose
 
-This document plans Clinician Review Batch 5 for Clinical Portal 2026. Batch 1 growth/endocrine resources have been finalized and reviewed. Batch 2 nutrition/feeding resources have been finalized and reviewed. Batch 3 low-risk resources have been finalized and reviewed. Batch 4 prevention/behaviour/development resources have been finalized and reviewed in PR #87. PR #82 added a duplicate/metadata cleanup plan.
+Batch 5 selects a small group of existing parent-education resources for a future staged clinician review and source-verification workflow after Batches 1, 2, 3, and 4 have been completed.
 
-This is a documentation-only planning document. It does not edit medical content, metadata, status, `medical_review_status`, or `last_reviewed`, and it does not mark any resource as reviewed.
+This is a documentation-only planning update. It selects review candidates and defines safety boundaries only. No page content, metadata, reviewed status, or generated file is changed in this planning stage.
 
-## 2. Safety Boundary
+## 2. Current Checkpoint
 
-Batch 5 should continue the staged clinician-review workflow with lower-risk or moderate-low-risk parent education resources. The proposed group should avoid current guideline schedule verification, medication dosing, urgent-recognition workflows, emergency or first-aid action steps, serious infection assessment, high-caution newborn care, and treatment algorithms.
-
-If a candidate includes safety-sensitive wording, mental-health boundaries, safeguarding boundaries, diagnosis boundaries, or red-flag language, it is marked as "needs caution" for the later clinician review pack. No wording changes should be made during this planning stage.
+| Checkpoint | Current value |
+| --- | ---: |
+| Production public reviewed-only index | 64 resources |
+| Total local generated resources | 145 resources |
+| Batch 1 | completed |
+| Batch 2 | completed |
+| Batch 3 | completed |
+| Batch 4 | completed |
 
 ## 3. Selection Criteria
 
-Candidate resources were selected from existing `html-conditions/` files and `data/conditions-index.json` entries only.
+Selection used:
 
-Batch 5 candidates should be:
+- `docs/governance/`
+- `docs/clinical-review/`
+- Existing Batch 1, Batch 2, Batch 3, and Batch 4 planning, review-pack, and finalization records
+- `data/conditions-index.json`
+- `html-conditions/*.html` metadata only
+
+Selected Batch 5 resources must be:
 
 - Currently `published`.
 - Currently `pending-clinician-review`.
+- Existing resources only.
+- Not already reviewed or finalized in Batch 1, Batch 2, Batch 3, or Batch 4.
 - Parent education focused.
-- Not already finalized in Batch 1, Batch 2, Batch 3, or Batch 4.
-- Lower risk than emergency, dosing, vaccination, serious infection, urgent-recognition, or high-caution newborn pages.
-- Suitable for a staged review pack before any wording update or finalization PR.
+- Suitable for source, disclaimer, parent-friendly clarity, metadata-completeness, and conservative wording review.
+- Free from dosing, dose intervals, maximum doses, treatment algorithms, contraindication algorithms, and patient-specific action rules within the intended Batch 5 review scope.
+- Suitable for review without adding acute triage logic, urgent-recognition instructions, current vaccination schedules, or individualized clinical advice.
+- Able to preserve clinician-assessment boundaries and defer treatment, investigation, referral, safeguarding, or urgent-action decisions to qualified clinicians.
 
-## 4. Topics Excluded From Batch 5
+## 4. Exclusion Criteria
 
-- Vaccination
-- Catch-up vaccination
-- Medication or dosing content
-- Emergency / first-aid content
-- Serious infection pages
-- Urgent-recognition pages
-- High-caution newborn pages
-- Typhoid
-- Osteomyelitis
-- Meningitis
-- Pneumonia
-- Seizures / epilepsy
-- Febrile seizures
-- Burns
-- Fractures
-- Poisoning
-- Anaphylaxis
-- Any page requiring current guideline schedule verification
-- Any page containing drug doses, dose intervals, maximum doses, or treatment algorithms
+The following are excluded from Batch 5:
 
-## 5. Proposed Batch 5 Candidate Resources
+- All resources already marked `reviewed`.
+- All finalized Batch 1, Batch 2, Batch 3, and Batch 4 resources.
+- Vaccination and catch-up vaccination pages.
+- Medication or dosing content.
+- Emergency or first-aid content.
+- Typhoid.
+- Osteomyelitis.
+- Serious infection pages.
+- Urgent-recognition pages.
+- High-caution newborn pages.
+- Mental-health crisis, safeguarding, immediate-safety, self-harm, substance-use, or abuse-related pages.
+- Pages requiring current guideline schedule verification.
+- Pages containing drug doses, dose intervals, maximum doses, treatment algorithms, contraindication algorithms, or patient-specific action rules.
+- Redirect stubs, because this batch is not intended to review redirects as redirects.
 
-The proposed Batch 5 set contains 8 existing resources. The group emphasizes skin/allergy parent education, adolescent lifestyle guidance, and common musculoskeletal/developmental concerns that are lower-risk than acute infection, emergency, dosing, vaccination, or urgent-recognition pages.
+## 5. Selected Batch 5 Resources
 
-1. Acne in Teenagers
-2. Eczema (Atopic Dermatitis)
-3. Physical Activity for Teenagers
-4. Healthy Sleep Habits for Teenagers
-5. Supporting Independence in Teenagers
-6. Back Pain and Posture in Children
-7. Flat Feet in Children
-8. Intoeing / Feet Turning Inwards
+The proposed Batch 5 set contains five existing resources. All five are currently `published` and `pending-clinician-review` in the inspected local metadata. The batch is deliberately limited to five because most remaining pending resources fall into excluded acute-care, infection, medicine, vaccination, newborn, safeguarding, or urgent-recognition groups.
 
-## 6. Candidate Resource Table
+| Resource title | File path | Category | Current status | Current medical_review_status | Current last_reviewed | Rationale for selection | Required review focus | Caution notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Childhood Overweight and Obesity | `html-conditions/childhood-overweight-and-obesity.html` | Nutrition & Feeding | published | pending-clinician-review | 2026-05-13 | Supportive parent education focused on family-centred habits, medical review, and avoiding blame rather than acute care or dosing. | Confirm non-stigmatizing and parent-friendly clarity; disclaimer strength; reference quality; metadata completeness; general family-habit wording; and clear clinician-assessment boundaries. | Do not add weight-loss targets, restrictive diet plans, medicine advice, diagnostic thresholds, eating-disorder assessment, body-image crisis pathways, or patient-specific actions. |
+| Menstrual Health for Adolescents | `html-conditions/menstrual-health-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-13 | General adolescent parent education focused on periods, practical support, dignity, and when clinician review may help. | Confirm respectful age-appropriate language; parent-friendly clarity; disclaimer strength; references; metadata completeness; and conservative, non-diagnostic review wording. | Keep safeguarding, abuse, immediate-safety, crisis, treatment, and patient-specific decision pathways outside this batch. Do not add medicine advice, diagnostic thresholds, or individualized menstrual-management plans. |
+| Scoliosis in Children | `html-conditions/scoliosis-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-15 | Parent education about visible signs, monitoring, and seeking assessment; suitable for cautious source and clarity review without adding treatment decisions. | Confirm non-diagnostic framing; parent-friendly explanation; disclaimer strength; references; metadata completeness; and conservative wording about assessment and monitoring. | Do not add imaging rules, measurement thresholds, brace or surgery recommendations, referral algorithms, urgency rules, or patient-specific activity advice. |
+| Developmental Dysplasia of the Hip (DDH) | `html-conditions/developmental-dysplasia-of-hip-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-15 | Parent guide focused on general awareness, early hip checks, and when parents should seek clinician review, without a dosing or emergency focus. | Confirm clear non-diagnostic parent education; disclaimer strength; source quality; metadata completeness; conservative assessment wording; and appropriate Indian-context references. | Do not add surveillance schedules, examination or imaging algorithms, treatment pathways, fixed referral thresholds, or patient-specific action rules. |
+| Clubfoot / CTEV Parent Overview | `html-conditions/clubfoot-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-15 | Parent overview suited to clarity, reassurance, source, disclaimer, and specialist-care-boundary review rather than acute triage or dosing. | Confirm parent-friendly and non-blaming explanation; disclaimer strength; references; metadata completeness; conservative specialist-care wording; and clear limits of general education. | Review must not expand treatment details. Do not add Ponseti schedules, intervention algorithms, fixed referral thresholds, treatment troubleshooting, or patient-specific instructions. |
 
-| Resource title | File path | Current category | Current status | Current medical_review_status | Current last_reviewed | Reason for inclusion | Caution notes |
-|---|---|---|---|---|---|---|---|
-| Acne in Teenagers | `html-conditions/acne-in-teenagers-parent-guide.html` | Skin & Allergy | published | pending-clinician-review | 2026-05-22 | Skin/allergy and adolescent parent education focused on gentle skin care, avoiding picking and harsh scrubbing, and when medical review is helpful. | Needs caution because acne content can drift into treatment selection, scarring thresholds, and mental-health or immediate-safety wording. Review should avoid product schedules, medication advice, and individualized dermatology plans. |
-| Eczema (Atopic Dermatitis) | `html-conditions/18-eczema-parent-guide.html` | Skin & Allergy | published | pending-clinician-review | 2026-05-10 | Common skin parent education focused on dry itchy skin, trigger reduction, skin care principles, and review boundaries. | Needs caution because eczema care can drift into treatment plans, steroid/medicine instructions, infection recognition, or allergy workups. Review should keep wording general and non-prescriptive. |
-| Physical Activity for Teenagers | `html-conditions/physical-activity-for-teenagers-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-22 | Adolescent lifestyle education focused on activity routines, sedentary behaviour, confidence, and family support rather than acute treatment. | Needs caution for sports clearance, injury, eating/body-image, and mental-health boundaries. Avoid fitness prescriptions for individual medical conditions. |
-| Healthy Sleep Habits for Teenagers | `html-conditions/teen-sleep-habits-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-22 | Adolescent parent guidance focused on routines, sleep timing, school impact, screens, and general wellbeing. | Needs caution because the page can overlap breathing, seizure, intoxication, self-harm, and mental-health safety language. Avoid crisis-management algorithms or individualized sleep-treatment advice. |
-| Supporting Independence in Teenagers | `html-conditions/healthy-teen-independence-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-22 | Adolescent parent education focused on gradual responsibility, communication, boundaries, and family support. | Needs caution for safeguarding, legal, mental-health, substance-use, and immediate-safety wording. Keep the page general and avoid counselling protocols. |
-| Back Pain and Posture in Children | `html-conditions/back-pain-and-posture-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-15 | Common musculoskeletal parent education focused on posture, activity, school-bag habits, and when review is helpful. | Needs caution for red-flag wording such as injury, neurological symptoms, systemic symptoms, persistent pain, or night pain. Avoid diagnostic algorithms, imaging advice, or treatment plans. |
-| Flat Feet in Children | `html-conditions/flat-feet-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-15 | Lower-risk musculoskeletal parent education about common foot shape variation and when assessment may be useful. | Needs caution for pain, stiffness, asymmetry, functional limitation, and referral thresholds. Avoid orthotic or treatment-plan recommendations. |
-| Intoeing / Feet Turning Inwards | `html-conditions/intoeing-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-15 | Lower-risk musculoskeletal/developmental parent education about common gait variation and supportive observation. | Needs caution for limp, pain, asymmetry, delayed milestones, neurological signs, or progressive deformity. Avoid fixed diagnostic thresholds or intervention pathways. |
+## 6. Rationale for the Batch
 
-## 7. Resources Considered But Deferred
+- Five resources keeps the clinician-review workload small, focused, and reviewable.
+- Every selected resource is an existing resource that remains `published` and `pending-clinician-review` in the inspected local metadata.
+- The selected resources are parent education pages that can be reviewed primarily for clarity, disclaimer strength, references, metadata completeness, respectful wording, and conservative clinician-assessment boundaries.
+- The set avoids vaccination, dosing, emergency and first-aid instructions, serious infection, urgent-recognition workflows, high-caution newborn care, and redirect review.
+- Each selected resource has an explicit caution boundary so that later review does not drift into treatment algorithms, diagnostic thresholds, safeguarding pathways, urgent triage, or patient-specific action rules.
+- The batch is limited to five because the remaining pending pool contains many resources that are already completed, reviewed, acute, schedule-dependent, medicine-related, infection-related, newborn-related, or otherwise higher caution.
 
-| Resource title | File path | Reason deferred |
-|---|---|---|
-| Vulvovaginitis in Children | `html-conditions/13-vulvovaginitis-parent-guide.html` | Deferred because urinary symptoms, discharge, injury, foreign body, infection, and safeguarding boundaries make it moderate-risk. |
-| Bullying and Cyberbullying: Parent Guide | `html-conditions/bullying-and-cyberbullying-parent-guide.html` | Deferred because it includes safeguarding, urgent-help, school safety, exploitation, and mental-health boundaries. |
-| Exam Stress and Performance Pressure | `html-conditions/exam-stress-parent-guide.html` | Deferred because it can include urgent mental-health, self-harm, crisis, or safety concerns. |
-| Common Cold in Children | `html-conditions/common-cold-in-children.html` | Deferred because respiratory infection pages can include medicine boundaries, warning signs, contagiousness, and symptom-care advice. |
-| Hand, Foot & Mouth Disease in Children | `html-conditions/hand-foot-mouth-disease.html` | Deferred because infection pages can involve fever, hydration, exclusion guidance, warning signs, and clinical boundary checks. |
-| Baby Crying: What is Normal? | `html-conditions/baby-crying-what-is-normal.html` | Deferred because young-infant crying pages require careful infant red-flag and caregiver-safety review. |
-| Infant Colic | `html-conditions/infant-colic-parent-guide.html` | Deferred because infant red flags, feeding concerns, and overlap with the crying page should be handled in a higher-caution group. |
-| Menstrual Health for Adolescents | `html-conditions/menstrual-health-parent-guide.html` | Deferred because menstrual symptoms can require diagnostic boundaries, anemia/pain review, safeguarding sensitivity, and individualized care decisions. |
-| Body Image Concerns in Teenagers | `html-conditions/teen-body-image-parent-guide.html` | Deferred because it overlaps eating-disorder assessment, nutrition, mental-health, safeguarding, and immediate-safety wording. |
-| Puberty and Normal Growth Changes - Parent Guide | `html-conditions/puberty-and-normal-growth-changes-parent-guide.html` | Deferred because it overlaps growth/puberty assessment, safeguarding, mental-health wording, and prior growth/endocrine review themes. |
-| Growing Pains in Children | `html-conditions/growing-pains-parent-guide.html` | Deferred because leg-pain red flags can require careful distinction from injury, infection, inflammatory disease, malignancy, or neurological symptoms. |
-| Osgood-Schlatter Disease | `html-conditions/osgood-schlatter-parent-guide.html` | Deferred because sports-injury and knee-pain guidance can drift into activity restriction, physiotherapy, imaging, or treatment-plan advice. |
-| Sever's Disease / Heel Pain | `html-conditions/severs-disease-parent-guide.html` | Deferred because heel-pain guidance can drift into sports restriction, physiotherapy, orthotic, or treatment-plan advice. |
+## 7. Resources Deliberately Excluded and Why
 
-## 8. Proposed Staged Workflow
+| Excluded group or resources | Examples deliberately excluded | Why excluded from Batch 5 |
+| --- | --- | --- |
+| Already reviewed or finalized resources | All resources marked `reviewed`; all finalized Batch 1, Batch 2, Batch 3, and Batch 4 resources | Completed or reviewed resources must not be reselected for a pending clinician-review batch. |
+| Vaccination and schedule-dependent resources | Catch-up Vaccination; Missed or Delayed Vaccines; BCG Scar and Lump; Fever After Vaccination; Vaccination FAQ; vaccine side-effects and aftercare pages | Require current guideline, schedule, interval, contraindication, or patient-specific verification. |
+| Medication, dosing, supplement, or treatment-selection resources | Safe Medicine Use at Home; Vitamins and Minerals; constipation and other pages with medicine or treatment implications | Excluded to avoid drug advice, doses, dose intervals, maximum doses, supplement decisions, and treatment algorithms. |
+| Emergency, first-aid, and urgent-recognition resources | Burns; choking; poisoning; nosebleed first aid; febrile seizures; head injury; urgent-care and red-flag pages | Require immediate-action, first-response, or urgency-sensitive clinician safety review. |
+| Serious infection and acute infection resources | Typhoid; osteomyelitis; meningitis; pneumonia; diphtheria; COVID-19; rickettsial fever; whooping cough; urinary tract infection; acute infection pages | Require serious-infection, public-health, treatment-boundary, complication, or urgent-recognition review. |
+| High-caution newborn and infant resources | Newborn danger signs; newborn jaundice; newborn weight loss and gain; premature baby care; safe sleep; umbilical cord care; baby crying and infant-colic pages | Require separate newborn or young-infant safety and escalation review. |
+| Mental-health crisis, safeguarding, substance-use, abuse, or immediate-safety resources | Adolescent Mental Health Warning Signs; Anxiety; Bullying and Cyberbullying; Exam Stress; Body Image; school refusal; teen substance-use; safety, boundaries, and consent pages | May require crisis, self-harm, safeguarding, abuse, substance-use, or immediate-safety pathways. |
+| Redirect stubs | Older bedwetting and temper-tantrum redirect files | This batch is not intended to review redirects as redirects. |
+| Resources with acute triage or more detailed treatment implications | Abdominal pain; reflux; gastroenteritis; bronchiolitis; croup; common cold; formula feeding; growth faltering | Require more detailed urgent-warning, feeding-safety, treatment-boundary, or patient-specific review than this batch permits. |
 
-Stage 1: Planning PR
+## 8. Exact Next-Step Workflow
 
-Create this documentation-only Batch 5 plan. Do not change source HTML medical content, metadata, `status`, `medical_review_status`, `last_reviewed`, or reviewed state.
+1. Accept this documentation-only Batch 5 planning PR without changing any resource page, metadata, generated index, sitemap, or reviewed state.
+2. Prepare a separate Batch 5 clinician review pack for only the five selected resources. Record current metadata, references, disclaimers, caution boundaries, and specific clinician-review questions.
+3. Dr. Murali performs clinician review and source verification for each selected resource.
+4. Create a separate approved-edits PR only after clinician review. Limit changes to edits explicitly approved by Dr. Murali, and do not add dosing, treatment algorithms, urgent triage logic, safeguarding workflows, or patient-specific action rules.
+5. Create a separate final reviewed-status PR only after clinician review, source verification, approved edits, and final clinician approval are complete.
 
-Stage 2: Batch 5 review pack
+## 9. Required Warning
 
-Prepare a clinician-facing review pack listing the selected Batch 5 resources, current page status, current review metadata, references, disclaimers, and specific review questions.
+**No page should be marked `reviewed` until clinician review and source verification are complete.**
 
-Stage 3: Clinician wording review checklist
+No selected page should be promoted, finalized, redirected, merged, retired, or otherwise treated as clinically approved during this planning stage.
 
-Prepare a checklist for Dr. Murali to review wording, parent action boundaries, caution language, non-substitution disclaimers, and any source-verification needs.
+This plan is not medical approval, source verification, publication approval, or a status-change task. It only selects Batch 5 resources for a future staged clinician-review workflow.
 
-Stage 4: Wording update PR after clinician review
+## 10. Validation Requirements
 
-After clinician feedback is complete, make only approved wording updates in a separate PR. Keep the change scope limited to the clinician-reviewed wording and any explicitly approved metadata adjustments for that stage.
-
-Stage 5: Finalization PR only after Dr. Murali approval
-
-Only after Dr. Murali approval, create a separate finalization PR for approved resources. Do not mark any resource reviewed, change `medical_review_status`, update `last_reviewed`, or alter status before that approval.
-
-## 9. Validation Requirements
-
-Run these commands before committing the Batch 5 planning document:
+Run:
 
 ```powershell
 npm.cmd run build
 npm.cmd run validate:resources
 npm.cmd run qa:batch10 -- --reporter=list
 Get-ChildItem ".\assets" -Recurse -Filter "*.png.png" | Select-Object FullName
+git diff --check
+git diff --stat
 git status
 ```
 
-If `data/conditions-index.json` changes only from build churn, restore it before staging:
+If build changes only generated files, restore them:
 
 ```powershell
-git checkout -- data/conditions-index.json
+git checkout -- data/conditions-index.json sitemap.xml
 ```
 
-Only `docs/clinical-review/batch-5-clinician-review-plan.md` should be staged for this planning PR.
+The expected final changed file for this planning task is:
 
-## 10. Next Step
-
-After this planning PR is reviewed and accepted, prepare the Stage 2 Batch 5 review pack. No source HTML medical content, metadata, status, `medical_review_status`, or `last_reviewed` should be changed during the planning step.
+```text
+docs/clinical-review/batch-5-clinician-review-plan.md
+```
