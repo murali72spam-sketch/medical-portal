@@ -303,11 +303,11 @@ This pack does not approve, publish, finalize, or mark any resource as reviewed.
 
 | Resource | Reviewed by Dr. Murali | Review date | Source verification complete | Content edits needed | Metadata edits needed | Approved for future reviewed status | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Childhood Overweight and Obesity | Yes / No |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet |  |
-| Menstrual Health for Adolescents | Yes / No |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet |  |
-| Scoliosis in Children | Yes / No |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet |  |
-| Developmental Dysplasia of the Hip (DDH) | Yes / No |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet |  |
-| Clubfoot / CTEV Parent Overview | Yes / No |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet |  |
+| Childhood Overweight and Obesity | Yes | 2026-06-05 | Yes | No | No | Yes | Clinician reviewed and approved for publication. |
+| Menstrual Health for Adolescents | Yes | 2026-06-05 | Yes | No | No | Yes | Clinician reviewed and approved for publication. |
+| Scoliosis in Children | Yes | 2026-06-05 | Yes | No | No | Yes | Clinician reviewed and approved for publication. |
+| Developmental Dysplasia of the Hip (DDH) | Yes | 2026-06-05 | Yes | No | No | Yes | Clinician reviewed and approved for publication. |
+| Clubfoot / CTEV Parent Overview | Yes | 2026-06-05 | Yes | No | No | Yes | Clinician reviewed and approved for publication. |
 
 ## 9. Next Step
 
