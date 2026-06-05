@@ -1,217 +1,334 @@
-# Clinical Portal 2026 — Batch 4 Clinician Review Pack
+# Clinical Portal 2026 - Batch 4 Clinician Review Pack
 
 ## 1. Purpose
 
-This Stage 2 review pack prepares Batch 4 candidate resources for Dr. Murali's manual clinician review. It summarizes existing repository content only, using the matching `html-conditions/` pages and `data/conditions-index.json` metadata.
+This is a Stage 2 clinician-facing review pack for Dr. Murali's manual review and source verification of the six selected Batch 4 resources.
 
-This review pack does not change medical content, resource metadata, status, `medical_review_status`, `last_reviewed`, or reviewed state.
+This pack does not approve, publish, finalize, consolidate, retire, redirect, or mark any resource as reviewed. It records the current repository state and questions that require clinician confirmation before any later change.
 
-## 2. Safety Boundary
+## 2. Safety Boundaries
 
-- Documentation-only pack.
-- No HTML medical content was edited.
+- This is a documentation-only pack.
+- No HTML medical content was changed.
 - No resource metadata was changed.
-- No `status`, `medical_review_status`, or `last_reviewed` value was changed.
-- No resource was marked as reviewed.
-- `data/conditions-index.json` was not edited.
-- Homepage, `script.js`, `style.css`, package files, tests, legal pages, and HTML pages are out of scope.
-- Medical facts below are summarized only from existing candidate HTML files.
-- Where matching, metadata, or clinical meaning is unclear, this pack uses "Needs clinician confirmation".
+- No `medical_review_status` value was changed.
+- No resource was marked reviewed.
+- `data/conditions-index.json` and `sitemap.xml` were not intentionally edited.
+- Medical facts are summarized only from the existing selected HTML files.
+- Where matching, metadata, references, duplicate/overlap status, or clinical meaning is unclear, this pack uses **Needs confirmation**.
+- The two selected older URLs for bedwetting and tantrums are currently draft redirect stubs to reviewed canonical resources. This pack records that current state but does not approve or alter it.
 
-Out-of-scope topics for this batch: vaccination, catch-up vaccination, medication or dosing content, emergency or first-aid content, serious infection pages, urgent-recognition pages, high-caution newborn pages, treatment algorithms, diagnostic thresholds, drug names, doses, dose intervals, maximum doses, and current guideline schedule verification.
+## 3. Batch 4 Selected Resource Summary
 
-## 3. Batch 4 Candidate Summary Table
-
-| Candidate | Matching file status | Current title | Current category | Current status | Current medical_review_status | Current last_reviewed | References | Disclaimer | Caution level |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Hand Hygiene and Cough Etiquette | Found | Hand Hygiene and Cough Etiquette | Parent Education | published | pending-clinician-review | 2026-05-13 | Present | Present | low |
-| Mosquito Bite Prevention | Found | Mosquito Bite Prevention | Parent Education | published | pending-clinician-review | 2026-05-13 | Present | Present | moderate-low |
-| Screen Time and Digital Wellness | Found | Screen Time and Digital Wellness | Growth & Development | published | pending-clinician-review | 2026-05-13 | Present | Present | moderate-low |
-| Positive Behaviour Guidance for Children | Found | Positive Behaviour Guidance for Children | Growth & Development | published | pending-clinician-review | 2026-05-22 | Present | Present | moderate-low |
-| Developmental Milestones | Found | Developmental Milestones - Parent Guide | Growth & Development | published | pending-clinician-review | 2026-05-22 | Present | Present | moderate-low |
-| Speech and Language Delay | Found | Speech and Language Delay - Parent Guide | Growth & Development | published | pending-clinician-review | 2026-05-22 | Present | Present | needs caution |
-| Stuttering and Stammering | Found | Stuttering and Stammering | Growth & Development | published | pending-clinician-review | 2026-05-13 | Present | Present | moderate-low |
-| Thumb Sucking and Common Childhood Habits | Found | Thumb Sucking and Common Childhood Habits | Growth & Development | published | pending-clinician-review | 2026-05-13 | Present | Present | low |
+| Resource | File path | Current title from metadata | Category | status | medical_review_status | last_reviewed | references present yes/no | disclaimer present yes/no | overlap / duplicate concern | clinician review priority | source verification needed before status change |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Autism Early Concerns - Parent Awareness Guide | `html-conditions/autism-early-concerns-parent-awareness-guide.html` | Autism Early Concerns - Parent Awareness Guide | Growth & Development | published | pending-clinician-review | 2026-05-24 | Yes | Yes | Very close overlap with autism early-signs page; distinction or later consolidation needs confirmation | High: compare paired autism pages and confirm non-diagnostic/regression wording | Yes |
+| Autism: Early Signs Parents May Notice | `html-conditions/autism-early-signs-parent-guide.html` | Autism: Early Signs Parents May Notice | Growth & Development | published | pending-clinician-review | 2026-05-22 | Yes | Yes | Very close overlap with autism early-concerns page; distinction or later consolidation needs confirmation | High: compare paired autism pages and confirm assessment cues | Yes |
+| Bedwetting | `html-conditions/bedwetting-parent-guide.html` | Redirect: Bedwetting / Nocturnal Enuresis - Parent Guide | Growth & Development | draft | pending-clinician-review | 2026-05-13 | Yes, canonical-resource reference only | Yes | Current file is a redirect stub to the reviewed canonical bedwetting/nocturnal-enuresis guide | High: confirm redirect and metadata state; no standalone medical content to review | Yes, before any status or consolidation change |
+| Puberty and Normal Growth Changes - Parent Guide | `html-conditions/puberty-and-normal-growth-changes-parent-guide.html` | Puberty and Normal Growth Changes - Parent Guide | Growth & Development | published | pending-clinician-review | 2026-05-24 | Yes | Yes | Substantial overlap with puberty early/late changes page | High: check general timing language, urgent/safeguarding cues, and paired-page role | Yes |
+| Puberty: Early and Late Changes | `html-conditions/puberty-parent-guide.html` | Puberty: Early and Late Changes | Growth & Development | published | pending-clinician-review | 2026-05-13 | Yes | Yes | Substantial overlap with puberty normal-growth page; metadata/body status wording also needs confirmation | High: check early/delayed wording, red flags, and paired-page role | Yes |
+| Temper Tantrums in Young Children | `html-conditions/temper-tantrums-parent-guide.html` | Redirect: Temper Tantrums and Behaviour Regulation - Parent Guide | Growth & Development | draft | pending-clinician-review | 2026-05-22 | Yes, canonical-resource reference only | Yes | Current file is a redirect stub to the reviewed canonical tantrums/behaviour-regulation guide | High: confirm redirect and metadata state; no standalone medical content to review | Yes, before any status or consolidation change |
 
 ## 4. Resource-by-Resource Review Notes
 
-### Hand Hygiene and Cough Etiquette
+### 4.1 Autism Early Concerns - Parent Awareness Guide
 
-- File path: `html-conditions/hand-hygiene-and-cough-etiquette.html`
-- Current title: Hand Hygiene and Cough Etiquette
-- Current category: Parent Education
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-13
-- References present: WHO community hand hygiene guidance; WHO Five Keys to Safer Food.
-- Disclaimer present: Yes. The page states it is general education only and does not replace medical consultation, diagnosis, testing, or treatment by a qualified healthcare professional.
-- Main parent-facing sections: What are hand hygiene and cough etiquette; when to use extra hygiene precautions; practical home steps; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page directs care for illness with breathing difficulty, dehydration, persistent fever, severe lethargy, repeated vomiting, blood in stool, worsening symptoms, or symptoms in a baby or medically fragile child. Needs clinician confirmation for completeness and parent-friendly urgency level.
-- Medication/dosing safety concerns: None identified from existing content. The page does not provide medicine names, doses, dose intervals, or maximum doses.
-- Specific clinician-review questions:
-  - Are the illness red flags appropriately scoped for a prevention-focused hygiene page?
-  - Is the wording around vomiting, diarrhoea, fever, cough, and medically fragile children clear without becoming treatment advice?
-  - Are the references sufficient, or should local public-health references be considered in a separate task?
-- Caution level: low.
+- **File path:** `html-conditions/autism-early-concerns-parent-awareness-guide.html`
+- **Current metadata title:** Autism Early Concerns - Parent Awareness Guide
+- **Current category:** Growth & Development
+- **Current status:** published
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-24
+- **Existing references from metadata:** CDC autism spectrum disorder resources; American Academy of Pediatrics / HealthyChildren.org autism guidance; NICE autism recognition and referral guidance; NHS autism guidance; Raising Children Network autism resources; Royal Children's Hospital Melbourne autism resources.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** What parents should know; Concerns parents may notice; What else can overlap?; Practical parent steps; Red flags / when to seek prompt review; Important facts for parents; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** The page advises prompt medical or developmental review for loss of acquired language, social, play, or other skills; no response to sound or name; major communication or social-interaction concerns; self-injury; severe distress; feeding or sleep problems; seizures; developmental regression; or family safety concerns. It states that the page cannot diagnose autism and that support can begin while assessment is arranged.
+- **Overlap or consistency concern:** Wording, structure, parent steps, and red flags are very close to `autism-early-signs-parent-guide.html`. Needs confirmation whether both pages serve distinct parent needs or should be differentiated or considered for later consolidation.
 
-### Mosquito Bite Prevention
+**Specific clinician-review questions**
 
-- File path: `html-conditions/mosquito-bite-prevention.html`
-- Current title: Mosquito Bite Prevention
-- Current category: Parent Education
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-13
-- References present: NCVBDC/MoHFW dengue prevention and vector control; WHO community prevention resources; MoHFW/NHM public health guidance.
-- Disclaimer present: Yes. The page states it is general education only and does not replace medical consultation, diagnosis, testing, or treatment by a qualified healthcare professional.
-- Main parent-facing sections: Why mosquito prevention matters; common bite patterns; home prevention approach; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page directs urgent care for fever with severe headache, repeated vomiting, abdominal pain, bleeding, drowsiness, breathing difficulty, poor feeding, dehydration, or any fever in a child who looks very unwell. Needs clinician confirmation for dengue/malaria warning wording without moving into diagnosis or treatment.
-- Medication/dosing safety concerns: No medication dosing identified. Existing content mentions age-appropriate repellents as advised; clinician should confirm the safety boundary for repellent wording.
-- Specific clinician-review questions:
-  - Are dengue, malaria, and general fever warning signs balanced and clear for parents?
-  - Is "age-appropriate repellents as advised" safe enough without product names or dosing-style instructions?
-  - Does the page avoid implying that bite timing alone can diagnose mosquito-borne illness?
-- Caution level: moderate-low.
+- Is the description of autism respectful, accurate, parent-friendly, and clearly non-diagnostic?
+- Are regression, seizures, feeding/sleep problems, self-injury, and family safety concerns framed with appropriate urgency?
+- Is "do not wait silently" appropriate without overclaiming benefits or creating a diagnostic pathway?
+- Are hearing, vision, language delay, global developmental delay, anxiety, trauma, and other overlapping concerns described appropriately?
+- Is this page clinically distinct enough from the autism early-signs page to retain separately?
 
-### Screen Time and Digital Wellness
+**Source verification checklist**
 
-- File path: `html-conditions/screen-time-parent-guide.html`
-- Current title: Screen Time and Digital Wellness
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-13
-- References present: Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.
-- Disclaimer present: Yes. The page states it is general education only and does not replace medical consultation, diagnosis, examination, or individualized treatment.
-- Main parent-facing sections: What parents should know; concerns parents may notice; what can drive overuse; practical home support; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags sudden behaviour change, severe anxiety, severe withdrawal, self-harm talk, suicidal thoughts, online exploitation or bullying, sleep loss for many nights, and inability to stop gaming or screen use despite clear harm. Needs clinician confirmation for mental-health urgency wording.
-- Medication/dosing safety concerns: None identified from existing content. The page does not provide medicine names, doses, dose intervals, or maximum doses.
-- Specific clinician-review questions:
-  - Is the age-related screen exposure wording appropriate and not overly rigid?
-  - Are self-harm, suicidal thoughts, exploitation, bullying, gaming, and sleep red flags worded safely for parents?
-  - Does the page sufficiently separate family media planning from diagnosis of behavioural or mental-health conditions?
-- Caution level: moderate-low.
+- [ ] Verify the CDC autism and developmental resources used.
+- [ ] Verify AAP / HealthyChildren.org autism guidance.
+- [ ] Verify current NICE autism recognition and referral guidance.
+- [ ] Verify NHS autism guidance.
+- [ ] Verify Raising Children Network and Royal Children's Hospital Melbourne autism resources.
+- [ ] Confirm that the reference set supports the page's non-diagnostic, regression, and assessment wording.
+- [ ] Record source versions or access dates if later edits are requested.
 
-### Positive Behaviour Guidance for Children
+**Decision box**
 
-- File path: `html-conditions/positive-behaviour-guidance-parent-guide.html`
-- Current title: Positive Behaviour Guidance for Children
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-22
-- References present: American Academy of Pediatrics / HealthyChildren.org discipline and behaviour guidance; Raising Children Network positive behaviour resources; NHS child behaviour guidance; World Health Organization parenting and nurturing care resources; Indian Academy of Pediatrics parent guidance.
-- Disclaimer present: Yes. The page states it is general education only and does not replace medical consultation, diagnosis, developmental assessment, mental-health assessment, school assessment, or individualized treatment.
-- Main parent-facing sections: What parents should know; helpful building blocks; practical home support; what to avoid; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags self-harm talk, aggression causing injury, running away, severe withdrawal, immediate safety concerns, regression, language delay, learning difficulty, sleep problems, bullying, trauma, abuse concern, developmental concerns, and major impairment at home, school, or with peers. Needs clinician confirmation for safeguarding and mental-health wording.
-- Medication/dosing safety concerns: None identified from existing content. Existing content explicitly states it does not provide a behavioural-therapy protocol or medication advice.
-- Specific clinician-review questions:
-  - Are safety, safeguarding, regression, developmental, school, and mental-health red flags complete and appropriately prioritized?
-  - Is the advice on consequences, praise, routines, and avoiding harsh punishment clinically appropriate for parent education?
-  - Does the page avoid sounding like a formal behavioural therapy protocol?
-- Caution level: moderate-low.
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Overlap/consolidation action needed? | Yes / No / Later |
+| Can be marked reviewed later? | Yes / No / Not yet |
 
-### Developmental Milestones
+### 4.2 Autism: Early Signs Parents May Notice
 
-- File path: `html-conditions/developmental-milestones-parent-guide.html`
-- Current title: Developmental Milestones - Parent Guide
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-22
-- References present: CDC developmental milestones resources; American Academy of Pediatrics / HealthyChildren.org developmental guidance; Royal Children's Hospital Melbourne and Raising Children Network child development resources; World Health Organization early childhood development resources; Indian Academy of Pediatrics parent guidance.
-- Disclaimer present: Yes. The page states it is general education only and does not replace medical consultation, diagnosis, examination, developmental assessment, or individualized treatment.
-- Main parent-facing sections: What parents should know; what parents may notice; what can affect development; practical home support; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags loss of previously learned skills, persistent concerns about hearing, vision, feeding, growth, movement, seizures, social interaction, and strong parent/caregiver/teacher concern. Needs clinician confirmation for developmental delay and regression wording.
-- Medication/dosing safety concerns: None identified from existing content. The page does not provide medicine names, doses, dose intervals, or maximum doses.
-- Specific clinician-review questions:
-  - Are the developmental red flags broad enough without becoming diagnostic thresholds?
-  - Is the wording around "do not wait" and seeking developmental review appropriately clear?
-  - Does the page avoid implying that milestone variation rules out clinically important delay?
-- Caution level: moderate-low.
+- **File path:** `html-conditions/autism-early-signs-parent-guide.html`
+- **Current metadata title:** Autism: Early Signs Parents May Notice
+- **Current category:** Growth & Development
+- **Current status:** published
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-22
+- **Existing references from metadata:** CDC autism spectrum disorder resources; American Academy of Pediatrics / HealthyChildren.org autism guidance; NICE autism recognition and referral guidance; NHS autism guidance; Raising Children Network autism resources; Indian Academy of Pediatrics developmental guidance.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** What parents should know; Signs parents may notice; What else can look similar?; Practical parent steps; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** The page advises prompt medical or developmental review for loss of acquired skills; no response to sound or name; major communication or social-interaction concerns; self-injury; severe distress; feeding or sleep problems; seizures; developmental regression; or family safety concerns. It states that a web page or single checklist cannot diagnose autism.
+- **Overlap or consistency concern:** This page is very close to the autism early-concerns page in structure and clinical wording. Their small reference-set differences also need review. Needs confirmation whether to retain distinct purposes, differentiate later, or consider later consolidation.
 
-### Speech and Language Delay
+**Specific clinician-review questions**
 
-- File path: `html-conditions/speech-and-language-delay-parent-guide.html`
-- Current title: Speech and Language Delay - Parent Guide
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-22
-- References present: American Academy of Pediatrics / HealthyChildren.org speech and language guidance; CDC developmental milestones resources; Royal Children's Hospital Melbourne and Raising Children Network communication development resources; NHS speech and language delay guidance; Indian Academy of Pediatrics parent guidance.
-- Disclaimer present: Yes. The page states it is general education only and does not replace medical consultation, hearing assessment, speech-language assessment, developmental assessment, diagnosis, or individualized treatment.
-- Main parent-facing sections: What parents should know; what parents may notice; what can contribute; practical home support; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags no response to sound, loss of words or social skills, poor eye contact, limited social response, feeding or swallowing concerns, global developmental delay, seizures, and strong parental concern. Needs clinician confirmation because this area overlaps hearing assessment, autism/developmental assessment, feeding/swallowing safety, and early intervention.
-- Medication/dosing safety concerns: None identified from existing content. The page does not provide medicine names, doses, dose intervals, or maximum doses.
-- Specific clinician-review questions:
-  - Are hearing, autism/developmental, feeding/swallowing, seizure, and regression red flags appropriately worded?
-  - Is the distinction from stuttering clear enough?
-  - Is the bilingual-language wording clinically appropriate and parent-friendly?
-  - Does the page encourage assessment without adding diagnostic thresholds?
-- Caution level: needs caution.
+- Are the listed signs accurate and sufficiently cautious across different ages and developmental presentations?
+- Does the page avoid implying that listed signs diagnose autism?
+- Are the assessment and early-support cues appropriate and not overly directive?
+- Are the overlap explanations and red flags complete without creating a diagnostic checklist?
+- Should the Indian Academy of Pediatrics reference, or any other source, also appear on the paired autism page?
 
-### Stuttering and Stammering
+**Source verification checklist**
 
-- File path: `html-conditions/stuttering-parent-guide.html`
-- Current title: Stuttering and Stammering
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-13
-- References present: Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.
-- Disclaimer present: Yes. The page states it is general education only and does not replace medical consultation, diagnosis, examination, or individualized treatment.
-- Main parent-facing sections: What parents should know; what parents may notice; what can contribute; practical home support; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags stuttering that persists, worsens, causes significant distress, causes avoidance, teasing, school or social difficulty, strong family history, associated developmental concerns, or speech/language delay. Needs clinician confirmation for when speech-language review is advised.
-- Medication/dosing safety concerns: None identified from existing content. The page does not provide medicine names, doses, dose intervals, or maximum doses.
-- Specific clinician-review questions:
-  - Are persistence, worsening, distress, avoidance, teasing, school/social impact, family history, and associated delay red flags complete?
-  - Is the wording around anxiety and stress clinically appropriate?
-  - Does the page avoid blaming the child or parent while still encouraging timely review?
-- Caution level: moderate-low.
+- [ ] Verify the CDC autism and developmental resources used.
+- [ ] Verify AAP / HealthyChildren.org autism guidance.
+- [ ] Verify current NICE autism recognition and referral guidance.
+- [ ] Verify NHS autism guidance.
+- [ ] Verify Raising Children Network autism resources.
+- [ ] Verify Indian Academy of Pediatrics developmental guidance.
+- [ ] Compare source support and clinical meaning with the autism early-concerns page.
+- [ ] Record source versions or access dates if later edits are requested.
 
-### Thumb Sucking and Common Childhood Habits
+**Decision box**
 
-- File path: `html-conditions/thumb-sucking-parent-guide.html`
-- Current title: Thumb Sucking and Common Childhood Habits
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-13
-- References present: Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.
-- Disclaimer present: Yes. The page states it is general education only and does not replace medical consultation, diagnosis, examination, or individualized treatment.
-- Main parent-facing sections: What parents should know; what parents may notice; what can contribute; practical home support; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags bleeding, infection, dental changes, hair loss, pain, self-injury, major distress, bullying, school impact, sleep problems, or family conflict around the habit. Needs clinician confirmation for dental and behavioural review wording.
-- Medication/dosing safety concerns: None identified from existing content. The page does not provide medicine names, doses, dose intervals, or maximum doses.
-- Specific clinician-review questions:
-  - Are dental concern, self-injury, infection, distress, bullying, sleep, and school-impact red flags clear enough?
-  - Is the gentle-support wording appropriate and not dismissive of harmful or persistent habits?
-  - Are the references adequate for thumb sucking and habit-specific review, or should more specific references be considered in a later task?
-- Caution level: low.
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Overlap/consolidation action needed? | Yes / No / Later |
+| Can be marked reviewed later? | Yes / No / Not yet |
 
-## 5. Not Found / Needs Confirmation
+### 4.3 Bedwetting
 
-- No selected Batch 4 resource was missing from `html-conditions/`.
-- Screen Time and Digital Wellness: Exact selected title matches `html-conditions/screen-time-parent-guide.html`. A separate near-related page, `html-conditions/screen-time-and-behaviour-parent-guide.html`, also exists but was not selected because its title is different. Needs clinician confirmation only if the intended Batch 4 target was the newer behaviour-specific page.
+- **File path:** `html-conditions/bedwetting-parent-guide.html`
+- **Current metadata title:** Redirect: Bedwetting / Nocturnal Enuresis - Parent Guide
+- **Current category:** Growth & Development
+- **Current status:** draft
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-13
+- **Existing references from metadata:** Canonical reviewed Clinical Portal 2026 resource: Bedwetting / Nocturnal Enuresis - Parent Guide.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** Canonical resource; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** No standalone red-flag or clinical guidance section is present. The selected file is a redirect stub that says it is not a standalone medical guide and directs readers to the current reviewed resource.
+- **Overlap or consistency concern:** The file redirects to `html-conditions/bedwetting-nocturnal-enuresis-parent-guide.html`, whose current metadata is `published`, `reviewed`, and last reviewed 2026-05-28. Needs confirmation whether the redirect stub should remain pending, receive any later metadata action, or be handled only through a separate governance/cleanup decision.
 
-## 6. Cross-Resource Review Questions
+**Specific clinician-review questions**
 
-- Are all pages safe for parent education without adding diagnosis, treatment algorithms, medicine names, doses, dose intervals, or maximum doses?
-- Are red flags complete, easy to understand, and not falsely reassuring?
-- Do prevention-focused pages avoid treatment advice while still directing parents to timely medical review?
-- Do development and behaviour pages clearly distinguish general parent support from assessment, diagnosis, therapy protocols, and mental-health care?
-- Are urgent-safety phrases used consistently across behaviour, screen-time, developmental, and speech-language resources?
-- Are references adequate for clinician review, or should any reference set be updated in a separate metadata/content task?
-- Are any categories or duplicate/near-related pages worth reviewing later as a separate metadata cleanup task?
+- Is the redirect target the correct and clinically complete canonical bedwetting resource?
+- Is the redirect stub's disclaimer sufficient for an older URL with no standalone guidance?
+- Should the selected redirect file be treated as a clinical-review target, a metadata/governance target, or excluded from status change?
+- Does any useful or distinct older bedwetting content remain to compare? The current selected file contains only redirect information.
+- Is any future redirect, consolidation, or metadata action appropriate? Needs confirmation in a later PR.
 
-## 7. Items Explicitly Out of Scope
+**Source verification checklist**
 
-- Editing any HTML medical content.
-- Editing `data/conditions-index.json` or any resource metadata.
-- Changing `status`, `medical_review_status`, `last_reviewed`, featured flags, categories, slugs, titles, references, or URLs.
-- Marking any resource as reviewed.
-- Adding medication names, dosing, dose intervals, maximum doses, treatment algorithms, diagnostic thresholds, emergency protocols, or first-aid instructions.
-- Reviewing vaccination, catch-up vaccination, medication or dosing content, emergency or first-aid content, serious infection pages, urgent-recognition pages, high-caution newborn pages, treatment algorithms, diagnostic thresholds, or current guideline schedules.
+- [ ] Confirm the canonical target is `bedwetting-nocturnal-enuresis-parent-guide.html`.
+- [ ] Confirm the canonical target remains clinician reviewed and is the intended parent guide.
+- [ ] Verify that the selected redirect stub contains no standalone medical claims requiring separate source verification.
+- [ ] Confirm whether a canonical-resource reference alone is sufficient for this redirect stub.
+- [ ] Record any approved future governance or metadata action separately.
 
-## 8. Next Step After This Review Pack
+**Decision box**
 
-After Dr. Murali completes manual review, create a separate follow-up task for any approved changes. That later task should explicitly identify which pages are approved for editing, what content or metadata changes are allowed, and whether any resource may be marked reviewed.
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Overlap/consolidation action needed? | Yes / No / Later |
+| Can be marked reviewed later? | Yes / No / Not yet |
+
+### 4.4 Puberty and Normal Growth Changes - Parent Guide
+
+- **File path:** `html-conditions/puberty-and-normal-growth-changes-parent-guide.html`
+- **Current metadata title:** Puberty and Normal Growth Changes - Parent Guide
+- **Current category:** Growth & Development
+- **Current status:** published
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-24
+- **Existing references from metadata:** American Academy of Pediatrics / HealthyChildren.org puberty guidance; Royal Children's Hospital Melbourne Kids Health Info puberty resources; Raising Children Network puberty resources; NHS puberty guidance; World Health Organization adolescent health resources.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** What parents should know; Practical home support; When changes may need review; Red flags / when to seek urgent help; Important facts for parents; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** The page suggests review for puberty much earlier or later than peers, very rapid changes, growth concerns, severe acne, heavy or painful periods, major distress, headache with vision changes, fainting, severe tiredness, weight loss, or other parental concern. It advises urgent help for sexual abuse concern, coercion, unsafe contact, self-harm talk, immediate danger, severe headache with vision problems, collapse, severe bleeding, severe abdominal pain, severe body-change distress, eating concerns, bullying, or family safety concerns.
+- **Overlap or consistency concern:** Considerable overlap exists with `puberty-parent-guide.html`, including common changes, respectful communication, privacy, timing concerns, and safeguarding. Needs confirmation whether the broader normal-growth focus and early/late focus are sufficiently distinct.
+
+**Specific clinician-review questions**
+
+- Is the general "much earlier or much later than peers" wording safe without fixed thresholds?
+- Are severe bleeding, severe abdominal pain, headache/vision changes, collapse, weight loss, and growth concerns appropriately framed?
+- Are safeguarding, consent, personal safety, self-harm, eating concerns, bullying, and family safety cues appropriate for this parent guide?
+- Does the page remain general education without becoming a puberty staging or diagnostic guide?
+- Should this page and the early/late changes page remain separate, be more clearly differentiated, or be considered for later consolidation?
+
+**Source verification checklist**
+
+- [ ] Verify AAP / HealthyChildren.org puberty guidance.
+- [ ] Verify Royal Children's Hospital Melbourne puberty resources.
+- [ ] Verify Raising Children Network puberty resources.
+- [ ] Verify NHS puberty guidance.
+- [ ] Verify WHO adolescent health resources.
+- [ ] Confirm source support for general timing, urgent symptom, menstrual, safeguarding, and mental-health wording.
+- [ ] Compare source support and intended role with the puberty early/late changes page.
+- [ ] Record source versions or access dates if later edits are requested.
+
+**Decision box**
+
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Overlap/consolidation action needed? | Yes / No / Later |
+| Can be marked reviewed later? | Yes / No / Not yet |
+
+### 4.5 Puberty: Early and Late Changes
+
+- **File path:** `html-conditions/puberty-parent-guide.html`
+- **Current metadata title:** Puberty: Early and Late Changes
+- **Current category:** Growth & Development
+- **Current status:** published
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-13
+- **Existing references from metadata:** Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** What parents should know; Common changes; What drives puberty?; Practical home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** The page advises medical review for very early puberty concern, delayed puberty concern, very rapid progression, severe headache, vision problems, growth failure, fainting, severe anaemia symptoms, other worrying symptoms, safeguarding concern, sexual abuse concern, or severe distress about body changes.
+- **Overlap or consistency concern:** This page overlaps substantially with the normal-growth puberty page. The visible footer says "Status: draft, pending clinician review" while metadata says `status: published`; this is a metadata/content consistency issue that needs confirmation in a later approved task, not a change in this pack.
+
+**Specific clinician-review questions**
+
+- Is the wording about very early, delayed, and rapidly progressing puberty sufficiently clear and conservative without thresholds?
+- Is the explanation of hormonal activation and possible influences accurate and appropriately general?
+- Are growth failure, severe anaemia symptoms, headache, vision problems, fainting, safeguarding, sexual abuse, and severe distress appropriate review cues?
+- Is the disclaimer strong enough for a page discussing potentially endocrine or brain-related conditions?
+- Is this page clinically distinct enough from the normal-growth puberty page to retain separately?
+
+**Source verification checklist**
+
+- [ ] Verify the relevant Indian Academy of Pediatrics parent guidance.
+- [ ] Verify Royal Children's Hospital Melbourne puberty or adolescent resources represented by the broad metadata reference.
+- [ ] Verify AAP / HealthyChildren.org puberty guidance represented by the broad metadata reference.
+- [ ] Verify WHO adolescent health resources and confirm whether physical activity/sedentary behaviour sources support this page.
+- [ ] Confirm source support for early, delayed, rapid-progression, neurological, growth, anaemia, and safeguarding wording.
+- [ ] Compare the references and intended role with the normal-growth puberty page.
+- [ ] Record source versions or access dates if later edits are requested.
+
+**Decision box**
+
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Overlap/consolidation action needed? | Yes / No / Later |
+| Can be marked reviewed later? | Yes / No / Not yet |
+
+### 4.6 Temper Tantrums in Young Children
+
+- **File path:** `html-conditions/temper-tantrums-parent-guide.html`
+- **Current metadata title:** Redirect: Temper Tantrums and Behaviour Regulation - Parent Guide
+- **Current category:** Growth & Development
+- **Current status:** draft
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-22
+- **Existing references from metadata:** Canonical reviewed Clinical Portal 2026 resource: Temper Tantrums and Behaviour Regulation - Parent Guide.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** Canonical resource; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** No standalone red-flag or behaviour-guidance section is present. The selected file is a redirect stub that says it is not a standalone medical guide and directs readers to the current reviewed resource.
+- **Overlap or consistency concern:** The file redirects to `html-conditions/temper-tantrums-and-behaviour-regulation-parent-guide.html`, whose current metadata is `published`, `reviewed`, and last reviewed 2026-05-28. Needs confirmation whether the redirect stub should remain pending, receive any later metadata action, or be handled only through a separate governance/cleanup decision.
+
+**Specific clinician-review questions**
+
+- Is the redirect target the correct and clinically complete canonical tantrums/behaviour-regulation resource?
+- Is the redirect stub's disclaimer sufficient for an older URL with no standalone guidance?
+- Should the selected redirect file be treated as a clinical-review target, a metadata/governance target, or excluded from status change?
+- Does any useful or distinct older tantrum content remain to compare? The current selected file contains only redirect information.
+- Is any future redirect, consolidation, or metadata action appropriate? Needs confirmation in a later PR.
+
+**Source verification checklist**
+
+- [ ] Confirm the canonical target is `temper-tantrums-and-behaviour-regulation-parent-guide.html`.
+- [ ] Confirm the canonical target remains clinician reviewed and is the intended parent guide.
+- [ ] Verify that the selected redirect stub contains no standalone medical claims requiring separate source verification.
+- [ ] Confirm whether a canonical-resource reference alone is sufficient for this redirect stub.
+- [ ] Record any approved future governance or metadata action separately.
+
+**Decision box**
+
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Overlap/consolidation action needed? | Yes / No / Later |
+| Can be marked reviewed later? | Yes / No / Not yet |
+
+## 5. Common Clinician Review Questions
+
+- Is the page safe for parent education?
+- Does it avoid diagnosis and treatment algorithms?
+- Does it avoid medicine names, doses, dose intervals, maximum doses, and patient-specific advice?
+- Are red flags or review cues sufficiently clear without overclaiming?
+- Are references adequate and current enough?
+- Is the disclaimer strong enough?
+- Should any overlap or duplicate issue be fixed in a later PR?
+- Should any category, reference, or title issue be fixed in a later PR?
+
+## 6. Explicitly Out of Scope
+
+- Vaccination and catch-up vaccination.
+- Medication and dosing.
+- Emergency and first-aid.
+- Typhoid.
+- Osteomyelitis.
+- Serious infection pages.
+- Urgent-recognition pages.
+- High-caution newborn pages.
+- Mental-health crisis, safeguarding, or immediate-safety pages as separate review targets.
+- Any page requiring current guideline schedule verification.
+- Any page with drug doses, dose intervals, maximum doses, treatment algorithms, contraindication algorithms, or patient-specific action rules.
+- Editing any selected resource HTML or medical content.
+- Changing metadata, references, categories, titles, URLs, status, `medical_review_status`, or `last_reviewed`.
+- Approving, publishing, finalizing, consolidating, retiring, redirecting, or deleting any resource.
+- Marking any Batch 4 page reviewed.
+
+## 7. Final Sign-Off
+
+| Resource | Reviewed by Dr. Murali | Review date | Source verification complete | Content edits needed | Metadata edits needed | Overlap/consolidation action needed | Approved for future reviewed status | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Autism Early Concerns - Parent Awareness Guide |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
+| Autism: Early Signs Parents May Notice |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
+| Bedwetting (`bedwetting-parent-guide.html` redirect stub) |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
+| Puberty and Normal Growth Changes - Parent Guide |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
+| Puberty: Early and Late Changes |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
+| Temper Tantrums in Young Children (`temper-tantrums-parent-guide.html` redirect stub) |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
+
+## 8. Next Step
+
+After Dr. Murali completes manual review, create a separate follow-up PR for approved content, metadata, or overlap edits only. Any redirect, consolidation, retirement, or duplicate-handling decision must also be separately approved and implemented.
+
+Only after clinician review and source verification are complete, and any approved edits have been handled, should any selected resource be considered for a later reviewed-status change.
