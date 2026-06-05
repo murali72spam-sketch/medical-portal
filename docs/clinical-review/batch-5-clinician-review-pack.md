@@ -1,218 +1,316 @@
-# Clinical Portal 2026 — Batch 5 Clinician Review Pack
+# Clinical Portal 2026 - Batch 5 Clinician Review Pack
 
 ## 1. Purpose
 
-This Stage 2 review pack prepares Batch 5 candidate resources for Dr. Murali's manual clinician review. It summarizes existing repository content only, using the matching `html-conditions/` pages and `data/conditions-index.json` metadata.
+This is a Stage 2 clinician-facing review pack for Dr. Murali's manual review and source verification of the five selected Batch 5 resources.
 
-This review pack does not change medical content, resource metadata, status, `medical_review_status`, `last_reviewed`, or reviewed state.
+This pack does not approve, publish, finalize, or mark any resource as reviewed. It records the current repository state and questions that require clinician confirmation before any later content, metadata, or reviewed-status change.
 
-## 2. Safety Boundary
+## 2. Safety Boundaries
 
-- Documentation-only pack.
-- No HTML medical content was edited.
+- This is a documentation-only pack.
+- No HTML medical content was changed.
 - No resource metadata was changed.
-- No `status`, `medical_review_status`, or `last_reviewed` value was changed.
-- No resource was marked as reviewed.
-- `data/conditions-index.json` was not edited.
-- Homepage, `script.js`, `style.css`, package files, tests, legal pages, and HTML pages are out of scope.
-- Medical facts below are summarized only from existing candidate HTML files.
-- Where matching, metadata, or clinical meaning is unclear, this pack uses "Needs clinician confirmation".
+- No `medical_review_status` value was changed.
+- No resource was marked reviewed.
+- `data/conditions-index.json` and `sitemap.xml` were not intentionally edited.
+- Medical facts are summarized only from the existing selected HTML files.
+- Where metadata, references, clinical meaning, red flags, or source verification is unclear, this pack uses **Needs confirmation**.
 
-Out-of-scope topics for this batch: vaccination, catch-up vaccination, medication or dosing instructions, emergency or first-aid content, serious infection pages, urgent-recognition pages, high-caution newborn pages, treatment algorithms, diagnostic thresholds, drug names, doses, dose intervals, maximum doses, and current guideline schedule verification.
+## 3. Batch 5 Selected Resource Summary
 
-Extra caution for Batch 5: acne should avoid treatment schedules, medicine or product recommendations, scarring thresholds, and mental-health escalation pathways. Eczema should avoid steroid or medicine instructions, treatment plans, infection-recognition algorithms, and allergy workup guidance. Teen lifestyle pages should avoid eating-disorder, self-harm, safeguarding, substance-use, and crisis-management algorithms. Back pain and posture should avoid imaging advice, treatment plans, neurological triage algorithms, and diagnosis pathways. Flat feet and intoeing should avoid orthotic prescriptions, fixed referral thresholds, and intervention pathways.
-
-## 3. Batch 5 Candidate Summary Table
-
-| Candidate | Matching file status | Current title | Current category | Current status | Current medical_review_status | Current last_reviewed | References | Disclaimer | Caution level |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Acne in Teenagers | Found | Acne in Teenagers | Skin & Allergy | published | pending-clinician-review | 2026-05-22 | Present | Present | needs caution |
-| Eczema (Atopic Dermatitis) | Found | Eczema (Atopic Dermatitis) | Skin & Allergy | published | pending-clinician-review | 2026-05-10 | Present | Present | needs caution |
-| Physical Activity for Teenagers | Found | Physical Activity for Teenagers | Growth & Development | published | pending-clinician-review | 2026-05-22 | Present | Present | needs caution |
-| Healthy Sleep Habits for Teenagers | Found | Healthy Sleep Habits for Teenagers | Growth & Development | published | pending-clinician-review | 2026-05-22 | Present | Present | needs caution |
-| Supporting Independence in Teenagers | Found | Supporting Independence in Teenagers | Growth & Development | published | pending-clinician-review | 2026-05-22 | Present | Present | needs caution |
-| Back Pain and Posture in Children | Found | Back Pain and Posture in Children | Growth & Development | published | pending-clinician-review | 2026-05-15 | Present | Present | needs caution |
-| Flat Feet in Children | Found | Flat Feet in Children | Growth & Development | published | pending-clinician-review | 2026-05-15 | Present | Present | moderate-low |
-| Intoeing / Feet Turning Inwards | Found | Intoeing / Feet Turning Inwards | Growth & Development | published | pending-clinician-review | 2026-05-15 | Present | Present | moderate-low |
+| Resource | File path | Current title from metadata | Category | status | medical_review_status | last_reviewed | references present yes/no | disclaimer present yes/no | caution level | clinician review priority | source verification needed before status change |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Childhood Overweight and Obesity | `html-conditions/childhood-overweight-and-obesity.html` | Childhood Overweight and Obesity | Nutrition & Feeding | published | pending-clinician-review | 2026-05-13 | Yes | Yes | High | Confirm non-stigmatizing family-centred wording, assessment boundaries, and weight-related review cues | Yes |
+| Menstrual Health for Adolescents | `html-conditions/menstrual-health-parent-guide.html` | Menstrual Health for Adolescents | Growth & Development | published | pending-clinician-review | 2026-05-13 | Yes | Yes | High | Confirm respectful adolescent language, privacy, heavy bleeding/anaemia/pain cues, and safeguarding boundaries | Yes |
+| Scoliosis in Children | `html-conditions/scoliosis-parent-guide.html` | Scoliosis in Children | Growth & Development | published | pending-clinician-review | 2026-05-15 | Yes | Yes | Moderate-high | Confirm non-diagnostic assessment wording, neurological/pain cues, and metadata/footer status consistency | Yes |
+| Developmental Dysplasia of the Hip (DDH) | `html-conditions/developmental-dysplasia-of-hip-parent-guide.html` | Developmental Dysplasia of the Hip (DDH) | Growth & Development | published | pending-clinician-review | 2026-05-15 | Yes | Yes | High | Confirm newborn/infant assessment boundaries and existing surveillance, referral, brace, cast, and risk-history wording | Yes |
+| Clubfoot / CTEV Parent Overview | `html-conditions/clubfoot-parent-guide.html` | Clubfoot / CTEV Parent Overview | Growth & Development | published | pending-clinician-review | 2026-05-15 | Yes | Yes | High | Confirm supportive overview, early specialist-care framing, cast-care warnings, and metadata/footer status consistency | Yes |
 
 ## 4. Resource-by-Resource Review Notes
 
-### Acne in Teenagers
+### 4.1 Childhood Overweight and Obesity
 
-- File path: `html-conditions/acne-in-teenagers-parent-guide.html`
-- Current title: Acne in Teenagers
-- Current category: Skin & Allergy
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-22
-- References present: American Academy of Pediatrics / HealthyChildren.org acne guidance; NHS acne resources; Royal Children's Hospital Melbourne skin resources; American Academy of Dermatology acne resources.
-- Disclaimer present: Yes. The page states it is general education only and does not replace medical consultation, diagnosis, skin examination, mental-health assessment, or individualized treatment by a qualified healthcare professional.
-- Main parent-facing sections: What parents should know; what parents may notice; gentle skin-care basics; when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page directs review for painful deep lumps, widespread acne, early scarring, acne not improving with gentle skin care, acne worsening quickly, marked embarrassment, bullying, low mood, self-harm talk, or avoiding school and social activities. Needs clinician confirmation because this overlaps scarring, dermatology treatment timing, wellbeing, bullying, and immediate-safety wording.
-- Medication/dosing safety concerns: Existing content says it does not prescribe acne medicines, advises speaking to the child's doctor before starting acne medicines, and advises against strong medicated creams, chemical peels, or harsh products without professional advice. No drug names, doses, dose intervals, or maximum doses were identified.
-- Specific clinician-review questions:
-  - Are the acne review triggers clear without creating treatment schedules, product recommendations, or fixed scarring thresholds?
-  - Is the wording around embarrassment, bullying, low mood, self-harm talk, and school avoidance safe and parent-friendly without becoming a mental-health escalation pathway?
-  - Does the gentle skin-care wording avoid implying that acne is caused by poor hygiene or that OTC products are required?
-- Caution level: needs caution.
+- **File path:** `html-conditions/childhood-overweight-and-obesity.html`
+- **Current metadata title:** Childhood Overweight and Obesity
+- **Current category:** Nutrition & Feeding
+- **Current status:** published
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-13
+- **Existing references from metadata:** Indian Academy of Pediatrics parent nutrition guidance; Indian Academy of Pediatrics revised guidance on evaluation, prevention, and management of childhood obesity; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024; World Health Organization child growth and obesity prevention resources.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** What are childhood overweight and obesity?; Possible signs and related concerns; Possible contributors; Family-centred home approach; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** The page advises medical review for rapid weight gain with short stature, severe fatigue, or endocrine symptoms; snoring with pauses, daytime sleepiness, breathlessness, chest pain, or high blood pressure; and bullying, depression, binge eating, or severe body-image distress. It also mentions associated high blood pressure, fatty liver, insulin resistance, and lipid problems.
+- **Special caution note:** Avoid stigma, blame, restrictive diet instructions, target weights, calorie prescriptions, drug or supplement advice, and individualized weight-loss plans. Check family-centred healthy-habit wording and referral/assessment boundaries. Existing references to BMI/growth charts, metabolic concerns, endocrine symptoms, crash diets, fat burners, weight-loss medicines, and supplements need clinician and source confirmation without expanding into diagnostic or treatment instructions.
 
-### Eczema (Atopic Dermatitis)
+**Specific clinician-review questions**
 
-- File path: `html-conditions/18-eczema-parent-guide.html`
-- Current title: Eczema (Atopic Dermatitis)
-- Current category: Skin & Allergy
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-10
-- References present: Royal Children's Hospital Melbourne Kids Health Info: Eczema (atopic dermatitis).
-- Disclaimer present: Yes. The page states it is education only and does not replace a medical consultation, diagnosis, or treatment plan.
-- Main parent-facing sections: What is eczema; symptoms and signs; causes; home management; red flags / when to seek help; important facts / myth correction.
-- Red-flag / safety wording areas needing clinician review: Existing page flags severe itching, sleep disruption, fever or signs of skin infection, rapidly spreading rash, eye-area involvement, poor response to usual care, and breathing difficulty or swelling after foods or medicines. Needs clinician confirmation because this overlaps infection recognition, allergy warning language, and treatment-plan boundaries.
-- Medication/dosing safety concerns: Existing content mentions prescribed anti-inflammatory creams during flares if the doctor advises them, but does not provide drug names, doses, dose intervals, or maximum doses. Needs clinician confirmation that this stays general and does not drift into steroid or medicine instructions.
-- Specific clinician-review questions:
-  - Are infection, eye-area, allergy, and poor-response warnings complete and appropriately prioritized?
-  - Is the home-management wording safe without becoming a treatment plan or steroid instruction?
-  - Are trigger and food/allergy references worded without implying an allergy workup pathway?
-- Caution level: needs caution.
+- Is the wording consistently respectful, non-stigmatizing, and free from blame?
+- Does the page appropriately frame healthy growth and family-wide habits without implying restrictive dieting, target weights, calorie prescriptions, or individualized weight-loss plans?
+- Are the growth-chart/BMI, metabolic, endocrine, sleep, cardiovascular, eating, body-image, bullying, and depression references accurate and appropriately bounded?
+- Are the review cues clear without becoming a diagnostic, investigation, referral, or urgency algorithm?
+- Is the disclaimer strong enough for a weight-related page that mentions medical and psychosocial contributors?
 
-### Physical Activity for Teenagers
+**Source verification checklist**
 
-- File path: `html-conditions/physical-activity-for-teenagers-parent-guide.html`
-- Current title: Physical Activity for Teenagers
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-22
-- References present: World Health Organization physical activity and sedentary behaviour guidance; CDC physical activity resources; American Academy of Pediatrics / HealthyChildren.org activity guidance; ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024.
-- Disclaimer present: Yes. The page states it does not replace medical consultation, fitness assessment, diagnosis, sports clearance, physiotherapy, mental-health assessment, or individualized treatment by a qualified professional.
-- Main parent-facing sections: What parents should know; what helps teenagers stay active; practical parent support; when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags chest pain, fainting, severe breathlessness, palpitations, collapse during activity, repeated injuries, persistent pain, pressure to continue despite injury, compulsive exercise, rapid weight change, missed periods, severe distress, bullying, or self-harm talk. Needs clinician confirmation because this overlaps sports clearance, injury review, eating/body-image concerns, and mental-health safety boundaries.
-- Medication/dosing safety concerns: No medication dosing identified. Existing page advises against sports supplements, energy drinks, and extreme training plans without professional advice.
-- Specific clinician-review questions:
-  - Are exertional chest pain, fainting, severe breathlessness, palpitations, and collapse warnings safe and clear without creating a sports-clearance algorithm?
-  - Is the wording around compulsive exercise, rapid weight change, missed periods, bullying, and self-harm talk appropriately cautious without becoming an eating-disorder or crisis-management pathway?
-  - Does the page avoid individualized fitness prescriptions for chronic illness, disability, injury, or very low fitness?
-- Caution level: needs caution.
+- [ ] Verify the relevant Indian Academy of Pediatrics parent nutrition guidance.
+- [ ] Verify the cited Indian Academy of Pediatrics childhood obesity evaluation, prevention, and management guidance.
+- [ ] Verify the ICMR-National Institute of Nutrition Dietary Guidelines for Indians 2024.
+- [ ] Verify the relevant World Health Organization child growth and obesity prevention resources.
+- [ ] Confirm source support for family-centred, non-stigmatizing wording and the listed review cues.
+- [ ] Confirm that no source-dependent wording implies restrictive dieting, target weights, calorie prescriptions, or individualized treatment.
+- [ ] Record source versions or access dates if later edits are requested.
 
-### Healthy Sleep Habits for Teenagers
+**Decision box**
 
-- File path: `html-conditions/teen-sleep-habits-parent-guide.html`
-- Current title: Healthy Sleep Habits for Teenagers
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-22
-- References present: American Academy of Pediatrics / HealthyChildren.org sleep guidance; NHS sleep resources; Royal Children's Hospital Melbourne and Raising Children Network sleep resources; World Health Organization sleep, sedentary behaviour and activity resources.
-- Disclaimer present: Yes. The page states it does not replace medical consultation, diagnosis, sleep assessment, mental-health assessment, or individualized treatment by a qualified healthcare professional.
-- Main parent-facing sections: What parents should know; signs sleep may be affecting life; practical sleep habits; when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags severe daytime sleepiness, falling asleep in unsafe situations, major school impairment, loud snoring, breathing pauses, gasping, restless sleep, morning headaches, low mood, severe anxiety, self-harm talk, substance use, family safety concern, or immediate danger. Needs clinician confirmation because this overlaps sleep-disordered breathing, seizure or intoxication boundaries in the disclaimer, mental-health wording, substance use, and immediate-safety language.
-- Medication/dosing safety concerns: Existing content says not to start melatonin, sedatives, or other sleep medicines without medical advice. No doses, dose intervals, or maximum doses were identified.
-- Specific clinician-review questions:
-  - Are breathing-related sleep warnings and severe sleepiness warnings clear without becoming a diagnostic or sleep-treatment pathway?
-  - Is the wording around low mood, severe anxiety, self-harm talk, substance use, family safety concern, and immediate danger safe and appropriately scoped?
-  - Is the melatonin/sedative caution sufficiently clear without providing medication instructions?
-- Caution level: needs caution.
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Can be marked reviewed later? | Yes / No / Not yet |
 
-### Supporting Independence in Teenagers
+### 4.2 Menstrual Health for Adolescents
 
-- File path: `html-conditions/healthy-teen-independence-parent-guide.html`
-- Current title: Supporting Independence in Teenagers
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-22
-- References present: American Academy of Pediatrics / HealthyChildren.org adolescent development guidance; Raising Children Network teenage independence resources; World Health Organization adolescent health resources.
-- Disclaimer present: Yes. The page states it does not replace medical consultation, mental-health assessment, family counselling, safeguarding assessment, legal advice, school advice, or individualized treatment by a qualified professional.
-- Main parent-facing sections: What parents should know; helpful areas to practise; practical parent support; when to seek professional support; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags repeated running away, unsafe online contact, exploitation concern, substance use, violence, immediate danger, severe withdrawal, school refusal, self-harm talk, suicidal thoughts, major behaviour change, and family conflict that feels unsafe or impossible to manage. Needs clinician confirmation because this overlaps safeguarding, mental-health, substance-use, family-safety, legal, and school boundaries.
-- Medication/dosing safety concerns: None identified from existing content. The page does not provide medicine names, doses, dose intervals, or maximum doses.
-- Specific clinician-review questions:
-  - Are exploitation, unsafe online contact, running away, violence, substance use, and family-safety warnings appropriate for parent education without becoming a safeguarding algorithm?
-  - Is the wording around self-harm talk, suicidal thoughts, withdrawal, school refusal, and major behaviour change safe without becoming a crisis-management pathway?
-  - Does the page clearly separate general parenting support from counselling, legal advice, school policy advice, and mental-health treatment?
-- Caution level: needs caution.
+- **File path:** `html-conditions/menstrual-health-parent-guide.html`
+- **Current metadata title:** Menstrual Health for Adolescents
+- **Current category:** Growth & Development
+- **Current status:** published
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-13
+- **Existing references from metadata:** Indian Academy of Pediatrics parent guidance; Royal Children's Hospital Melbourne Kids Health Info parent fact sheets; American Academy of Pediatrics / HealthyChildren.org parent guidance; World Health Organization adolescent health, physical activity and sedentary behaviour resources.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** What parents should know; What parents may notice; What is happening?; Practical home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** The page advises prompt medical review or urgent help if severe for very heavy bleeding, dizziness, fainting, severe anaemia symptoms, bleeding that worries the family, severe pain that repeatedly stops school/sleep/daily activity, very early periods, delayed puberty concern, bleeding between periods, possible pregnancy, abuse concern, or other safeguarding concern.
+- **Special caution note:** Avoid diagnostic certainty, medication or dosing advice, individualized pain or bleeding management, sexual-health or safeguarding algorithms, and urgent triage rules. Check respectful adolescent language, privacy, anaemia/pain/heavy bleeding review cues, and disclaimer strength. Existing period-product, heat-pack, iron-rich-food, medicine-use, pregnancy, abuse, and safeguarding wording needs clinician confirmation without expanding into patient-specific instructions.
 
-### Back Pain and Posture in Children
+**Specific clinician-review questions**
 
-- File path: `html-conditions/back-pain-and-posture-parent-guide.html`
-- Current title: Back Pain and Posture in Children
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-15
-- References present: AAP HealthyChildren: back pain in children and teens; Royal Children's Hospital Melbourne Orthopaedics: back pain; NICE CKS back pain red flags.
-- Disclaimer present: Yes. The page states it does not replace medical consultation, diagnosis, examination, or individualized treatment by a qualified healthcare professional.
-- Main parent-facing sections: What parents should know; what parents may notice; practical home support; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags back pain in a very young child, significant trauma, night pain, worsening pain, persistent pain, pain waking the child, fever, weight loss, child looking unwell, infection risk, weakness, numbness, walking difficulty, abnormal neurological signs, bladder or bowel symptoms, progressive spinal curvature, and severe pain. Needs clinician confirmation because this overlaps imaging/test decisions, neurological triage, systemic disease, trauma, and urgent review wording.
-- Medication/dosing safety concerns: Existing content says to seek medical advice before repeated pain medicine use. No medicine names, doses, dose intervals, or maximum doses were identified.
-- Specific clinician-review questions:
-  - Are back-pain red flags complete and parent-friendly without becoming a neurological triage or diagnostic algorithm?
-  - Is the imaging wording safe and sufficiently non-prescriptive?
-  - Does the posture wording avoid falsely reassuring parents or blaming posture as the whole explanation?
-- Caution level: needs caution.
+- Is the language respectful, age-appropriate, dignity-preserving, and supportive of adolescent privacy?
+- Is the statement that early cycles can be irregular sufficiently accurate and conservative without implying diagnostic reassurance?
+- Are heavy bleeding, anaemia, dizziness, fainting, pain, early/delayed puberty, and bleeding-between-periods review cues clear without fixed thresholds or triage rules?
+- Are possible pregnancy, abuse, and safeguarding concerns appropriately mentioned without creating sexual-health or safeguarding algorithms?
+- Do practical support suggestions remain general and avoid individualized pain, bleeding, medicine, or iron-treatment advice?
+- Are the broad reference descriptions sufficiently specific and relevant to the page's claims?
 
-### Flat Feet in Children
+**Source verification checklist**
 
-- File path: `html-conditions/flat-feet-parent-guide.html`
-- Current title: Flat Feet in Children
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-15
-- References present: NHS flat feet guidance; Royal Children's Hospital Melbourne orthopaedic guidance; NHS Greater Glasgow flat feet in children parent resources.
-- Disclaimer present: Yes. The page states it does not replace medical consultation, diagnosis, examination, or individualized treatment by a qualified healthcare professional.
-- Main parent-facing sections: What parents should know; what parents may notice; practical home support; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags painful, rigid, worsening, weak, or numb feet; one foot being flat, newly changed, or clearly different; limp, difficulty walking, poor balance, reduced stamina, repeated falls, swelling, redness, warmth, severe tenderness, delayed developmental milestones, abnormal gait, or neurological concerns. Needs clinician confirmation for pain, stiffness, asymmetry, function, development, and neurological wording.
-- Medication/dosing safety concerns: None identified from existing content. The page does not provide medicine names, doses, dose intervals, or maximum doses. Existing content mentions insoles only generally and does not prescribe orthotics.
-- Specific clinician-review questions:
-  - Are painful, rigid, asymmetric, functional, developmental, and neurological warning signs clear without fixed referral thresholds?
-  - Is the wording around special shoes and insoles safe without becoming orthotic prescribing advice?
-  - Does the page avoid overmedicalising painless flexible flat feet while still prompting review when needed?
-- Caution level: moderate-low.
+- [ ] Verify the relevant Indian Academy of Pediatrics adolescent or menstrual-health parent guidance.
+- [ ] Verify the relevant Royal Children's Hospital Melbourne menstrual-health parent resources represented by the broad reference.
+- [ ] Verify the relevant AAP / HealthyChildren.org menstrual-health guidance represented by the broad reference.
+- [ ] Verify the relevant World Health Organization adolescent-health resources and confirm whether physical activity/sedentary behaviour sources support this page.
+- [ ] Confirm source support for irregular-cycle, heavy-bleeding, anaemia, pain, puberty, and review-cue wording.
+- [ ] Confirm that privacy, pregnancy, abuse, and safeguarding wording remains appropriate for general parent education.
+- [ ] Record source versions or access dates if later edits are requested.
 
-### Intoeing / Feet Turning Inwards
+**Decision box**
 
-- File path: `html-conditions/intoeing-parent-guide.html`
-- Current title: Intoeing / Feet Turning Inwards
-- Current category: Growth & Development
-- Current status: published
-- Current medical_review_status: pending-clinician-review
-- Current last_reviewed date: 2026-05-15
-- References present: Royal Children's Hospital Melbourne Orthopaedics: in-toeing; Royal Children's Hospital Melbourne Kids Health Info parent resources; NHS parent resources on intoeing.
-- Disclaimer present: Yes. The page states it does not replace medical consultation, diagnosis, examination, or individualized treatment by a qualified healthcare professional.
-- Main parent-facing sections: What parents should know; what parents may notice; practical home support; red flags / when to seek medical review; important facts for parents.
-- Red-flag / safety wording areas needing clinician review: Existing page flags severe, one-sided, asymmetric, or worsening intoeing; pain, limp, refusal to walk, inability to bear weight, stiff foot that cannot be gently corrected, delayed milestones, frequent falls, weakness, numbness, other neurological signs, progressive deformity after early childhood, or abnormal gait concerns. Needs clinician confirmation because this overlaps developmental gait variation, neurological signs, orthopedic assessment, and intervention boundaries.
-- Medication/dosing safety concerns: None identified from existing content. The page does not provide medicine names, doses, dose intervals, or maximum doses. Existing content advises avoiding braces, special shoes, or exercises unless recommended after assessment.
-- Specific clinician-review questions:
-  - Are pain, limp, refusal to walk, inability to bear weight, asymmetry, progression, developmental delay, and neurological warnings clear without creating a diagnostic pathway?
-  - Is the wording around braces, special shoes, exercises, and surgery safe without becoming intervention guidance?
-  - Does the page balance reassurance with appropriate review for asymmetric, worsening, painful, or developmentally concerning gait?
-- Caution level: moderate-low.
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Can be marked reviewed later? | Yes / No / Not yet |
 
-## 5. Not Found / Needs Confirmation
+### 4.3 Scoliosis in Children
 
-- No selected Batch 5 resource was missing from `html-conditions/`.
-- All eight selected Batch 5 resources had exact matching file paths from the Batch 5 plan.
+- **File path:** `html-conditions/scoliosis-parent-guide.html`
+- **Current metadata title:** Scoliosis in Children
+- **Current category:** Growth & Development
+- **Current status:** published
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-15
+- **Existing references from metadata:** Royal Children's Hospital Melbourne Orthopaedics: scoliosis; NHS scoliosis guidance; KidsHealth New Zealand scoliosis in children.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** What parents should know; What parents may notice; Practical home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** The page advises prompt review for visible asymmetry, progressive spinal curvature, concerns during rapid growth, severe/persistent/night-waking back pain, weakness, numbness, abnormal walking, bladder or bowel symptoms, fever, weight loss, trauma, a child looking unwell, or a very young child with a visible curve or neurological signs.
+- **Metadata/content consistency note:** Metadata says `status` is `published`, while the visible page footer says "Status: draft, pending clinician review." Needs confirmation for a later approved metadata/content task.
+- **Special caution note:** Avoid diagnostic thresholds, Cobb angle interpretation, imaging pathways, bracing or surgery pathways, and urgency algorithms. Check conservative wording about posture, asymmetry, pain, neurological symptoms, and clinician assessment. Existing observation, specialist-treatment, monitoring, and early-detection wording needs clinician confirmation without expanding treatment detail.
 
-## 6. Cross-Resource Review Questions
+**Specific clinician-review questions**
 
-- Are all pages safe for parent education without adding diagnosis, treatment algorithms, medicine names, doses, dose intervals, or maximum doses?
-- Are red flags complete, easy to understand, and not falsely reassuring?
-- Do skin pages avoid medicine/product schedules, steroid instructions, treatment plans, infection-recognition algorithms, and allergy workup pathways?
-- Do teen lifestyle pages keep self-harm, safeguarding, substance-use, eating/body-image, and immediate-safety language appropriately scoped without becoming crisis-management algorithms?
-- Do musculoskeletal pages avoid diagnostic pathways, imaging advice, orthotic prescriptions, fixed referral thresholds, and intervention plans?
-- Are medication-adjacent caution statements, such as acne medicines, anti-inflammatory creams, sleep medicines, pain medicines, supplements, and energy drinks, safe without dosing or prescribing advice?
-- Are references adequate for clinician review, or should any reference set be updated in a separate metadata/content task?
+- Is the description of scoliosis accurate, parent-friendly, and clearly non-diagnostic?
+- Are posture, asymmetry, progression, rapid-growth, pain, neurological, systemic, trauma, and very-young-child review cues appropriately framed?
+- Are bladder/bowel symptoms and neurological signs clear without becoming an urgency or triage algorithm?
+- Does wording about observation, specialist treatment, monitoring, and early detection stay within general parent education?
+- Is the disclaimer strong enough, and should the metadata/footer status inconsistency be fixed in a later PR?
 
-## 7. Items Explicitly Out of Scope
+**Source verification checklist**
 
-- Editing any HTML medical content.
-- Editing `data/conditions-index.json` or any resource metadata.
-- Changing `status`, `medical_review_status`, `last_reviewed`, featured flags, categories, slugs, titles, references, or URLs.
-- Marking any resource as reviewed.
-- Adding medication names, dosing, dose intervals, maximum doses, treatment algorithms, diagnostic thresholds, emergency protocols, first-aid instructions, or current guideline schedule verification.
-- Reviewing vaccination, catch-up vaccination, serious infection pages, urgent-recognition pages, high-caution newborn pages, emergency or first-aid content, treatment algorithms, diagnostic thresholds, or medication/dosing instructions.
+- [ ] Verify Royal Children's Hospital Melbourne Orthopaedics scoliosis guidance.
+- [ ] Verify current NHS scoliosis guidance.
+- [ ] Verify KidsHealth New Zealand scoliosis-in-children guidance.
+- [ ] Confirm source support for visible-sign, posture, pain, neurological, systemic, and assessment wording.
+- [ ] Confirm that the page does not imply Cobb angle interpretation, imaging rules, or treatment-selection pathways.
+- [ ] Record the metadata/footer status inconsistency for later action if approved.
+- [ ] Record source versions or access dates if later edits are requested.
 
-## 8. Next Step After This Review Pack
+**Decision box**
 
-After Dr. Murali completes manual review, create a separate follow-up task for any approved wording checklist or content changes. That later task should explicitly identify which pages are approved for editing, what content or metadata changes are allowed, and whether any resource may be marked reviewed.
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Can be marked reviewed later? | Yes / No / Not yet |
+
+### 4.4 Developmental Dysplasia of the Hip (DDH)
+
+- **File path:** `html-conditions/developmental-dysplasia-of-hip-parent-guide.html`
+- **Current metadata title:** Developmental Dysplasia of the Hip (DDH)
+- **Current category:** Growth & Development
+- **Current status:** published
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-15
+- **Existing references from metadata:** Indian Pediatrics / POSI / IAP consensus on DDH surveillance in India; IAP Standard Treatment Guidelines: developmental dysplasia of the hip; Royal Children's Hospital Melbourne and NHS orthopaedic parent resources.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** What parents should know; What parents may notice; Practical home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** The page advises review for hip click or clunk concern, limited hip abduction, leg-length difference, asymmetric hip movement, asymmetric thigh folds with other concerns, limp, waddling gait, delayed walking, abnormal gait, breech history, family history, missed screening, or other risk history needing follow-up.
+- **Special caution note:** Avoid screening schedules, treatment pathways, harness or surgery advice, and referral algorithms unless already present and safe. Check newborn/infant caution boundaries, limp/asymmetry wording, and specialist-assessment framing. Existing wording about newborn checks, routine visits, missed screening, referral, prescribed brace/cast instructions, repeated hip surveillance during infancy, and treatment being simpler when found early needs clinician and source confirmation.
+
+**Specific clinician-review questions**
+
+- Is the DDH overview accurate, parent-friendly, and clearly non-diagnostic?
+- Are click/clunk, limited movement, asymmetry, limp, gait, delayed walking, and risk-history cues appropriately framed?
+- Does the page distinguish harmless clicks from abnormal examination findings without false reassurance?
+- Are newborn checks, routine visits, missed screening, repeated surveillance, and referral references safe without becoming a screening or referral algorithm?
+- Are hip-safe swaddling and prescribed brace/cast wording appropriate without becoming treatment instructions?
+- Are the Indian-context references sufficiently specific and current for the claims made?
+
+**Source verification checklist**
+
+- [ ] Verify the cited Indian Pediatrics / POSI / IAP consensus on DDH surveillance in India.
+- [ ] Verify the cited IAP Standard Treatment Guidelines for DDH.
+- [ ] Verify the relevant Royal Children's Hospital Melbourne orthopaedic parent resources.
+- [ ] Verify the relevant NHS orthopaedic parent resources.
+- [ ] Confirm source support for click/clunk, asymmetry, gait, risk-history, swaddling, screening, referral, and surveillance wording.
+- [ ] Confirm that brace/cast and early-treatment wording remains general education and does not form a treatment pathway.
+- [ ] Record source versions or access dates if later edits are requested.
+
+**Decision box**
+
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Can be marked reviewed later? | Yes / No / Not yet |
+
+### 4.5 Clubfoot / CTEV Parent Overview
+
+- **File path:** `html-conditions/clubfoot-parent-guide.html`
+- **Current metadata title:** Clubfoot / CTEV Parent Overview
+- **Current category:** Growth & Development
+- **Current status:** published
+- **Current medical_review_status:** pending-clinician-review
+- **Current last_reviewed:** 2026-05-15
+- **Existing references from metadata:** Indian Journal of Paediatric Orthopaedics: Ponseti-treated clubfoot walking-age and parent concerns; POSI paediatric orthopaedic guidance; orthopaedic literature on clubfoot and Ponseti method.
+- **Disclaimer present:** Yes
+- **Sections to review based on existing page structure:** What parents should know; What parents may notice; Practical home support; Red flags / when to seek medical review; Important facts for parents; Medical disclaimer; References.
+- **Existing red-flag / medical-review wording to check:** The page advises urgent medical review if toes become blue, cold, very swollen, or difficult to move in a cast; the baby has excessive distress, poor feeding, fever, or looks unwell; a cast slips, cracks, becomes wet, smells foul, or causes skin sores; treatment appointments are missed or brace use is difficult; or there are other developmental, neurological, or limb concerns.
+- **Metadata/content consistency note:** Metadata says `status` is `published`, while the visible page footer says "Status: draft, pending clinician review." Needs confirmation for a later approved metadata/content task.
+- **Special caution note:** Avoid Ponseti protocol details, casting schedules, surgical pathways, and individualized treatment advice. Check supportive overview wording, early specialist-review framing, and non-alarming parent guidance. Existing casting, brace, cast-care, toe-check, urgent-review, serial-casting, treatment-follow-up, and relapse wording needs clinician confirmation without expanding treatment detail.
+
+**Specific clinician-review questions**
+
+- Is the overview accurate, supportive, non-blaming, non-alarming, and clear that parents should not manipulate the foot at home?
+- Is early paediatric orthopaedic assessment framed appropriately without a fixed referral threshold or algorithm?
+- Are cast-care, toe-check, brace-use, missed-appointment, relapse, and urgent-review statements safe and sufficiently bounded?
+- Does the page avoid Ponseti schedules, casting protocols, surgical pathways, troubleshooting instructions, and individualized treatment advice?
+- Are the broad POSI and orthopaedic-literature references sufficiently specific and current?
+- Is the disclaimer strong enough, and should the metadata/footer status inconsistency be fixed in a later PR?
+
+**Source verification checklist**
+
+- [ ] Verify the cited Indian Journal of Paediatric Orthopaedics resource on Ponseti-treated clubfoot and parent concerns.
+- [ ] Verify the relevant Paediatric Orthopaedic Society of India guidance.
+- [ ] Identify and verify the orthopaedic literature represented by the broad metadata reference.
+- [ ] Confirm source support for supportive overview, early specialist-care, cast-care warning, brace, follow-up, and relapse wording.
+- [ ] Confirm that urgent-review wording is safe without becoming a cast-care or treatment-troubleshooting algorithm.
+- [ ] Record the metadata/footer status inconsistency for later action if approved.
+- [ ] Record source versions or access dates if later edits are requested.
+
+**Decision box**
+
+| Decision | Dr. Murali's selection |
+| --- | --- |
+| Clinician approved as-is? | Yes / No / Needs edits |
+| Source verification complete? | Yes / No |
+| Content edits required? | Yes / No |
+| Metadata edits required? | Yes / No |
+| Can be marked reviewed later? | Yes / No / Not yet |
+
+## 5. Special Caution Notes
+
+### Childhood Overweight and Obesity
+
+- Avoid stigma, blame, restrictive diet instructions, target weights, calorie prescriptions, drug or supplement advice, and individualized weight-loss plans.
+- Check family-centred healthy-habit wording and referral/assessment boundaries.
+
+### Menstrual Health for Adolescents
+
+- Avoid diagnostic certainty, medication or dosing advice, individualized pain or bleeding management, sexual-health or safeguarding algorithms, and urgent triage rules.
+- Check respectful adolescent language, privacy, anaemia/pain/heavy bleeding review cues, and disclaimer strength.
+
+### Scoliosis in Children
+
+- Avoid diagnostic thresholds, Cobb angle interpretation, imaging pathways, bracing or surgery pathways, and urgency algorithms.
+- Check conservative wording about posture, asymmetry, pain, neurological symptoms, and clinician assessment.
+
+### Developmental Dysplasia of the Hip
+
+- Avoid screening schedules, treatment pathways, harness or surgery advice, and referral algorithms unless already present and safe.
+- Check newborn/infant caution boundaries, limp/asymmetry wording, and specialist-assessment framing.
+
+### Clubfoot / CTEV
+
+- Avoid Ponseti protocol details, casting schedules, surgical pathways, and individualized treatment advice.
+- Check supportive overview wording, early specialist-review framing, and non-alarming parent guidance.
+
+## 6. Common Clinician Review Questions
+
+- Is the page safe for parent education?
+- Does it avoid diagnosis and treatment algorithms?
+- Does it avoid medicine names, doses, dose intervals, maximum doses, supplements, and patient-specific advice?
+- Are review cues and red flags sufficiently clear without overclaiming?
+- Are references adequate and current enough?
+- Is the disclaimer strong enough?
+- Should any category, reference, or title issue be fixed in a later PR?
+- Does the page stay within general parent education and preserve clinician-assessment boundaries?
+
+## 7. Explicitly Out of Scope
+
+- Vaccination and catch-up vaccination.
+- Medication and dosing.
+- Emergency and first-aid.
+- Typhoid.
+- Osteomyelitis.
+- Serious infection pages.
+- Urgent-recognition pages.
+- High-caution newborn pages.
+- Mental-health crisis, safeguarding, and immediate-safety pages.
+- Any page requiring current guideline schedule verification.
+- Any page with drug doses, dose intervals, maximum doses, treatment algorithms, contraindication algorithms, or patient-specific action rules.
+- Editing any selected resource HTML or medical content.
+- Changing metadata, references, featured flags, categories, slugs, titles, URLs, status, `medical_review_status`, or `last_reviewed`.
+- Approving, publishing, finalizing, or marking any Batch 5 page reviewed.
+
+## 8. Final Sign-Off
+
+| Resource | Reviewed by Dr. Murali | Review date | Source verification complete | Content edits needed | Metadata edits needed | Approved for future reviewed status | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Childhood Overweight and Obesity | Yes / No |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet |  |
+| Menstrual Health for Adolescents | Yes / No |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet |  |
+| Scoliosis in Children | Yes / No |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet |  |
+| Developmental Dysplasia of the Hip (DDH) | Yes / No |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet |  |
+| Clubfoot / CTEV Parent Overview | Yes / No |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet |  |
+
+## 9. Next Step
+
+After Dr. Murali completes manual review, create a separate follow-up PR for approved content or metadata edits only.
+
+Only after clinician review and source verification are complete, and any approved edits have been handled, should any selected resource be marked reviewed.
