@@ -320,12 +320,12 @@ This pack does not approve, publish, finalize, consolidate, retire, redirect, or
 
 | Resource | Reviewed by Dr. Murali | Review date | Source verification complete | Content edits needed | Metadata edits needed | Overlap/consolidation action needed | Approved for future reviewed status | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Autism Early Concerns - Parent Awareness Guide |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
-| Autism: Early Signs Parents May Notice |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
-| Bedwetting (`bedwetting-parent-guide.html` redirect stub) |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
-| Puberty and Normal Growth Changes - Parent Guide |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
-| Puberty: Early and Late Changes |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
-| Temper Tantrums in Young Children (`temper-tantrums-parent-guide.html` redirect stub) |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Later | Yes / No / Not yet |  |
+| Autism Early Concerns - Parent Awareness Guide | Yes | 2026-06-05 | Yes | No | No | No immediate action | Yes | Clinician reviewed and approved. |
+| Autism: Early Signs Parents May Notice | Yes | 2026-06-05 | Yes | No | No | No immediate action | Yes | Clinician reviewed and approved. |
+| Bedwetting (`bedwetting-parent-guide.html` redirect stub) | Yes | 2026-06-05 | Yes | No | No | Redirect stub retained | Reviewed redirect stub; keep out of public duplicate index if status remains draft | Clinician reviewed and approved as a redirect stub, not as standalone medical content. |
+| Puberty and Normal Growth Changes - Parent Guide | Yes | 2026-06-05 | Yes | No | No | No immediate action | Yes | Clinician reviewed and approved. |
+| Puberty: Early and Late Changes | Yes | 2026-06-05 | Yes | No | No | No immediate action | Yes | Clinician reviewed and approved. |
+| Temper Tantrums in Young Children (`temper-tantrums-parent-guide.html` redirect stub) | Yes | 2026-06-05 | Yes | No | No | Redirect stub retained | Reviewed redirect stub; keep out of public duplicate index if status remains draft | Clinician reviewed and approved as a redirect stub, not as standalone medical content. |
 
 ## 8. Next Step
 
