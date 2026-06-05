@@ -259,13 +259,13 @@ This pack supports clinician review and source verification only. It does not ap
 
 | Resource | Reviewed by Dr. Murali | Review date | Source verification complete | Edits needed | Approved for future reviewed status | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| Tics in Children |  |  |  |  |  |  |
-| Screen Time and Behaviour - Parent Guide |  |  |  |  |  |  |
-| Learning Difficulties and School Support |  |  |  |  |  |  |
-| Daytime Wetting in Children |  |  |  |  |  |  |
-| Growing Pains in Children |  |  |  |  |  |  |
-| Osgood-Schlatter Disease |  |  |  |  |  |  |
-| Sever's Disease / Heel Pain |  |  |  |  |  |  |
+| Tics in Children | Yes | 2026-06-05 | Yes | No | Yes | Clinician reviewed and approved for publication. |
+| Screen Time and Behaviour - Parent Guide | Yes | 2026-06-05 | Yes | No | Yes | Clinician reviewed and approved for publication. |
+| Learning Difficulties and School Support | Yes | 2026-06-05 | Yes | No | Yes | Clinician reviewed and approved for publication. |
+| Daytime Wetting in Children | Yes | 2026-06-05 | Yes | No | Yes | Clinician reviewed and approved for publication. |
+| Growing Pains in Children | Yes | 2026-06-05 | Yes | No | Yes | Clinician reviewed and approved for publication. |
+| Osgood-Schlatter Disease | Yes | 2026-06-05 | Yes | No | Yes | Clinician reviewed and approved for publication. |
+| Sever's Disease / Heel Pain | Yes | 2026-06-05 | Yes | No | Yes | Clinician reviewed and approved for publication. |
 
 ## 8. Next Step
 
