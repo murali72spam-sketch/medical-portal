@@ -196,11 +196,11 @@ Deferral does not approve either resource and does not reduce its importance. It
 
 ## 8. Final Sign-Off
 
-| Resource | Reviewed by Dr. Murali | Review date | Source verification complete | Content edits needed | Metadata edits needed | Approved for future reviewed status | Defer to higher-caution review? |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Bronchiolitis in Infants | No | TBD | No | TBD | TBD | Not yet | TBD |
-| Croup in Children | No | TBD | No | TBD | TBD | Not yet | TBD |
-| Cough in Children | No | TBD | No | TBD | TBD | Not yet | TBD |
+| Resource | Reviewed by Dr. Murali | Review date | Source verification complete | Content edits needed | Metadata edits needed | Approved for future reviewed status | Defer to higher-caution review? | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Bronchiolitis in Infants | Yes | 2026-06-06 | Yes | No | No | Yes | No | |
+| Croup in Children | Yes | 2026-06-06 | Yes | No | No | Yes | No | |
+| Cough in Children | Yes | 2026-06-06 | Yes | No | No | Yes | No | Clinician reviewed and explicitly approved for publication and reviewed status. |
 
 ## 9. Current Resource Tracker
 
