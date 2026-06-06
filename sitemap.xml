@@ -31,6 +31,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/chickenpox.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/04-conjunctivitis-parent-guide.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -43,8 +49,50 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/hand-foot-mouth-disease.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/06-impetigo-parent-guide.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/03-middle-ear-infection-parent-guide.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/19-ringworm-parent-guide.html</loc>
     <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/20-scabies-parent-guide.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/05-tonsillitis-parent-guide.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/autism-early-concerns-parent-awareness-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/autism-early-signs-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -61,8 +109,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/clubfoot-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/daytime-wetting-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/delayed-puberty-in-children.html</loc>
     <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/developmental-dysplasia-of-hip-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -81,6 +147,12 @@
   <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/flat-feet-parent-guide.html</loc>
     <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/growing-pains-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -109,6 +181,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/learning-difficulties-school-support-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/menstrual-health-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/osgood-schlatter-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/physical-activity-for-teenagers-parent-guide.html</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -121,8 +211,38 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/puberty-and-normal-growth-changes-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/puberty-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/scoliosis-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/screen-time-and-behaviour-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/screen-time-parent-guide.html</loc>
     <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/severs-disease-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -175,6 +295,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/tics-parent-guide.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/types-of-short-stature.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -183,6 +309,18 @@
   <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/adolescent-nutrition-10-to-19-years.html</loc>
     <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/breastfeeding-parent-guide.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/childhood-overweight-and-obesity.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -235,6 +373,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/13-vulvovaginitis-parent-guide.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/02-bronchiolitis-parent-guide.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/common-cold-in-children.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/cough-in-children.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/01-croup-parent-guide.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/acne-in-teenagers-parent-guide.html</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -261,6 +429,90 @@
   <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/17-molluscum-parent-guide.html</loc>
     <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/bcg-scar-and-lump.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/catch-up-vaccination-parent-guide.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/fever-after-vaccination.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/hpv-vaccine-parent-guide.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/influenza-vaccine-parent-guide.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/missed-or-delayed-vaccines.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/travel-vaccination-for-children.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/vaccination-faq-for-parents.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/vaccination-in-children-with-asthma-allergy.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/vaccination-in-special-medical-conditions.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/vaccination-records-and-missed-doses.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/vaccination-why-it-matters.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/vaccine-myths-and-misconceptions.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/vaccine-side-effects-and-aftercare.html</loc>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
