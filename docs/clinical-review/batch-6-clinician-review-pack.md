@@ -321,11 +321,11 @@ This pack does not approve, publish, finalize, consolidate, retire, redirect, or
 
 | Resource | Reviewed by Dr. Murali | Review date | Source verification complete | Content edits needed | Metadata edits needed | Approved for future reviewed status | Defer to later high-caution batch? Yes / No | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Breastfeeding |  |  |  |  |  |  |  |  |
-| Chickenpox in Children |  |  |  |  |  |  |  |  |
-| Hand, Foot & Mouth Disease in Children |  |  |  |  |  |  |  |  |
-| Scabies in Children |  |  |  |  |  |  |  |  |
-| Vulvovaginitis in Children |  |  |  |  |  |  |  |  |
+| Breastfeeding | Yes | 2026-06-06 | Yes | No | No | Yes | No | Clinician reviewed and approved for publication. |
+| Chickenpox in Children | Yes | 2026-06-06 | Yes | No | No | Yes | No | Clinician reviewed and approved for publication. |
+| Hand, Foot & Mouth Disease in Children | Yes | 2026-06-06 | Yes | No | No | Yes | No | Clinician reviewed and approved for publication. |
+| Scabies in Children | Yes | 2026-06-06 | Yes | No | No | Yes | No | Clinician reviewed and approved for publication. |
+| Vulvovaginitis in Children | Yes | 2026-06-06 | Yes | No | No | Yes | No | Clinician reviewed and approved for publication. |
 
 ## 9. Next Step
 
