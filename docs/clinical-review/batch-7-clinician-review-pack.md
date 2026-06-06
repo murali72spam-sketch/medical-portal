@@ -263,18 +263,18 @@ Infant Colic, Colic in Babies, and Baby Crying: What is Normal? were deliberatel
 
 | Resource | Reviewed by Dr. Murali | Review date | Source verification complete | Content edits needed | Metadata edits needed | Approved for future reviewed status | Defer to later higher-caution batch? Yes / No | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Common Cold in Children |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet | Yes / No |  |
-| Middle Ear Infection / Otitis Media in Children |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet | Yes / No |  |
-| Tonsillitis / Sore Throat in Children |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet | Yes / No |  |
-| Impetigo in Children |  |  | Yes / No | Yes / No | Yes / No | Yes / No / Not yet | Yes / No |  |
+| Common Cold in Children | Yes | 2026-06-06 | Yes | No | No | Yes | No | Clinician reviewed and approved for publication. |
+| Middle Ear Infection / Otitis Media in Children | Yes | 2026-06-06 | Yes | No | No | Yes | No | Clinician reviewed and approved for publication. |
+| Tonsillitis / Sore Throat in Children | Yes | 2026-06-06 | Yes | No | No | Yes | No | Clinician reviewed and approved for publication. |
+| Impetigo in Children | Yes | 2026-06-06 | Yes | No | No | Yes | No | Clinician reviewed and approved for publication. |
 
 ## 10. Current Resource Tracker
 
 | Tracker item | Current value | Projected after Batch 7 finalization if all four are later approved |
 | --- | ---: | ---: |
 | Total resources / HTMLs | 145 | 145 |
-| Published + reviewed | 74 | 78 |
-| Published + pending clinician review | 43 | 39 |
+| Published + reviewed | 78 | 78 |
+| Published + pending clinician review | 39 | 39 |
 | Draft + pending review | 26 | 26 |
 | Reviewed draft redirects | 2 | 2 |
 
