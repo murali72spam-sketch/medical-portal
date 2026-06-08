@@ -1629,6 +1629,59 @@ button.button:disabled:hover {
   line-height: 1.55;
 }
 
+/* ---------- Print Handout Pilot ---------- */
+
+.handout-tools {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.5rem;
+}
+
+.print-guide-button {
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: var(--radius-sm);
+  color: #ffffff;
+  background: var(--color-primary);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.print-guide-button:hover,
+.print-guide-button:focus-visible {
+  background: var(--color-primary-deep);
+}
+
+.reviewed-footer__qr {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(33, 133, 112, 0.28);
+}
+
+.reviewed-footer__qr img {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  padding: 0.2rem;
+  background: #ffffff;
+}
+
+.reviewed-footer__qr p {
+  margin: 0;
+}
+
+.reviewed-footer__qr-url {
+  margin-top: 0.25rem !important;
+  color: var(--color-ink-muted);
+  font-size: 0.82rem;
+  overflow-wrap: anywhere;
+}
+
 /* ---------- Device Education ---------- */
 
 .device-card-grid {
@@ -2665,6 +2718,30 @@ tr:last-child td {
     color: #333333 !important;
     font-size: 8.5pt;
     line-height: 1.35;
+  }
+
+  .handout-tools {
+    display: none !important;
+  }
+
+  .reviewed-footer__qr {
+    grid-template-columns: 22mm minmax(0, 1fr);
+    gap: 4mm;
+    margin-top: 0.55rem;
+    padding-top: 0.45rem;
+    break-inside: avoid;
+  }
+
+  .reviewed-footer__qr img {
+    width: 22mm;
+    height: 22mm;
+    padding: 0;
+  }
+
+  .reviewed-footer__qr-url {
+    color: #333333 !important;
+    font-size: 7.5pt;
+    line-height: 1.25;
   }
 
   .content-protection-note,
