@@ -10,6 +10,16 @@ const pageSlugs = [
   "cough-in-children",
   "hand-hygiene-and-cough-etiquette",
   "thumb-sucking-parent-guide",
+  "developmental-milestones-parent-guide",
+  "flat-feet-parent-guide",
+  "intoeing-parent-guide",
+  "nutrition-1-to-2-years",
+  "picky-eating",
+  "preschool-nutrition-2-to-5-years",
+  "school-age-nutrition-5-to-12-years",
+  "speech-and-language-delay-parent-guide",
+  "stuttering-parent-guide",
+  "mosquito-bite-prevention",
 ];
 
 async function generateQrCodes() {
