@@ -20,6 +20,16 @@ const pageSlugs = [
   "speech-and-language-delay-parent-guide",
   "stuttering-parent-guide",
   "mosquito-bite-prevention",
+  "back-pain-and-posture-parent-guide",
+  "bedwetting-nocturnal-enuresis-parent-guide",
+  "growing-pains-parent-guide",
+  "teen-sleep-habits-parent-guide",
+  "physical-activity-for-teenagers-parent-guide",
+  "positive-behaviour-guidance-parent-guide",
+  "screen-time-parent-guide",
+  "sleep-problems-in-children-parent-guide",
+  "healthy-teen-independence-parent-guide",
+  "temper-tantrums-and-behaviour-regulation-parent-guide",
 ];
 
 async function generateQrCodes() {
