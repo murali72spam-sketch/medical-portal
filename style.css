@@ -1579,6 +1579,38 @@ button.button:disabled:hover {
   display: none;
 }
 
+/* ---------- Related Guides Pilot ---------- */
+
+.related-guides {
+  margin-top: 2rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(30, 111, 126, 0.22);
+  border-radius: var(--radius-md);
+  background: rgba(237, 245, 247, 0.62);
+}
+
+.related-guides h2 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  color: var(--color-primary-deep);
+}
+
+.related-guides ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 0.45rem 1.25rem;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.related-guides li {
+  margin: 0;
+}
+
+.related-guides a {
+  font-weight: 650;
+}
+
 /* ---------- Visible Reviewed Footer Pilot ---------- */
 
 .reviewed-footer {
@@ -2694,6 +2726,21 @@ tr:last-child td {
   .patient-education-copyright {
     margin-top: 0.7rem;
     break-inside: avoid;
+  }
+
+  .related-guides {
+    margin-top: 0.8rem;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid #aab8bd;
+    border-radius: 0;
+    background: #ffffff !important;
+    break-inside: avoid;
+  }
+
+  .related-guides ul {
+    display: block;
+    font-size: 8.5pt;
+    line-height: 1.35;
   }
 
   .reviewed-footer {
