@@ -1579,36 +1579,61 @@ button.button:disabled:hover {
   display: none;
 }
 
-/* ---------- Related Guides Pilot ---------- */
+/* ---------- Related Guides ---------- */
 
 .related-guides {
   margin-top: 2rem;
-  padding: 1rem 1.15rem;
-  border: 1px solid rgba(30, 111, 126, 0.22);
+  padding: 1.2rem 1.3rem;
+  border: 1px solid #2e7885;
+  border-left: 0.35rem solid #75c4cd;
   border-radius: var(--radius-md);
-  background: rgba(237, 245, 247, 0.62);
+  background: #0b5360;
+  box-shadow: var(--shadow-sm);
 }
 
 .related-guides h2 {
   margin-top: 0;
-  margin-bottom: 0.7rem;
-  color: var(--color-primary-deep);
+  margin-bottom: 0.85rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 750;
 }
 
 .related-guides ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
-  gap: 0.45rem 1.25rem;
+  gap: 0.65rem 1.4rem;
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 1.25rem;
+  line-height: 1.45;
 }
 
 .related-guides li {
   margin: 0;
+  padding-left: 0.1rem;
+}
+
+.related-guides li::marker {
+  color: #9ddce3;
 }
 
 .related-guides a {
-  font-weight: 650;
+  color: #f1fcfd;
+  font-weight: 700;
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.2em;
+}
+
+.related-guides a:hover {
+  color: #ffffff;
+  text-decoration-thickness: 0.13em;
+}
+
+.related-guides a:focus-visible {
+  color: #ffffff;
+  border-radius: 0.2rem;
+  outline-color: #bcebf0;
+  background: rgba(255, 255, 255, 0.14);
 }
 
 /* ---------- Visible Reviewed Footer Pilot ---------- */
@@ -2732,15 +2757,32 @@ tr:last-child td {
     margin-top: 0.8rem;
     padding: 0.55rem 0.7rem;
     border: 1px solid #aab8bd;
+    border-left: 3px solid #356f7a;
     border-radius: 0;
     background: #ffffff !important;
+    box-shadow: none;
     break-inside: avoid;
+  }
+
+  .related-guides h2 {
+    margin-bottom: 0.45rem;
+    color: #222222 !important;
+    font-size: 11pt;
   }
 
   .related-guides ul {
     display: block;
     font-size: 8.5pt;
     line-height: 1.35;
+  }
+
+  .related-guides li {
+    margin-bottom: 0.18rem;
+  }
+
+  .related-guides a {
+    color: #222222 !important;
+    text-decoration: underline;
   }
 
   .reviewed-footer {
