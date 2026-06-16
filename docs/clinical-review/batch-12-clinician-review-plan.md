@@ -1,10 +1,10 @@
 # Clinical Portal 2026 - Batch 12 Clinician Review Plan
 
-**Batch theme:** Neurology, emergency warning signs, and high-importance general paediatric parent guides
+**Batch theme:** Mental health, school wellbeing, teen safety, and adolescent risk guidance
 
 ## Purpose
 
-Prepare a controlled group of remaining published parent-facing resources for clinician review before any review status is changed.
+Prepare a controlled group of published, parent-facing mental health / school wellbeing / adolescent safety resources for clinician review before any review status is changed.
 
 This is a documentation-only planning step. Inclusion in Batch 12 does not approve a resource, mark it reviewed, authorize public medical-content changes, generate QR assets, or add related-guide blocks.
 
@@ -24,79 +24,70 @@ This is a documentation-only planning step. Inclusion in Batch 12 does not appro
 
 - `data/conditions-index.json`
 - `html-conditions/*.html` metadata/content summaries
-- Previous clinical-review documents where relevant, including recent Batch 11 planning and review-pack documents
+- Previous clinical-review documents where relevant, including the Batch 11 clinician review pack for workflow continuity
 
 ## Candidate Scan
 
-Repository index data and matching HTML metadata/content summaries were searched for neurology, seizure, febrile seizure, emergency, warning signs, injury, first aid, dehydration, abdominal pain, urinary, growth, newborn, fever, general paediatrics, and remaining high-priority published + pending clinician review pages.
-
-The final selected Batch 12 set uses the maximum batch size of 12 and prioritizes published, pending-review resources involving neurologic events, urgent warning signs, first aid, infant/newborn safety, travel safety, and high-importance mental-health/safety guidance. Four additional published + pending resources were found but are deferred because they are less aligned with this Batch 12 theme or would fit better in a later adolescent/nutrition review batch.
+Repository index data and matching HTML metadata/content summaries were checked for the preferred mental health, school wellbeing, teen safety, and adolescent risk guidance candidates. All 8 preferred resources are currently published, pending clinician review, non-draft pages and are included in this Batch 12 plan. Closely related non-selected published + pending pages are listed as excluded because they fit better in later non-mental-health batches.
 
 | Resource title | Filename | Category | Current status | Current medical_review_status | Last reviewed | Included in Batch 12? | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Febrile Seizures in Children | `10-febrile-seizures-parent-guide.html` | Fever & Infections | published | pending-clinician-review | 2026-05-21 | yes | Eligible published parent guide. Direct neurology/fever-seizure topic with first-aid, recurrence, urgent-care, and parent-safety wording needing clinician review. |
-| Adolescent Mental Health Warning Signs | `adolescent-mental-health-warning-signs.html` | Growth & Development | published | pending-clinician-review | 2026-05-13 | yes | Eligible published parent guide. High-importance warning-sign resource with urgent-help and safety wording needing careful review. |
-| Anxiety in Children | `childhood-anxiety-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-22 | yes | Eligible published parent guide. Common high-importance paediatric mental-health topic with urgent-help boundaries and parent-facing support wording. |
-| Bullying and Cyberbullying: Parent Guide | `bullying-and-cyberbullying-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-22 | yes | Eligible published parent guide. Safety-focused resource involving school, online safety, mental-health warning signs, and urgent-help situations. |
-| Child Travel Health | `child-travel-health.html` | Parent Education | published | pending-clinician-review | 2026-05-13 | yes | Eligible published parent guide. High-importance general paediatric safety resource with travel fever, vaccines, food/water safety, mosquito protection, and red-flag wording. |
-| Nosebleeds in Children | `nosebleeds-in-children-parent-guide.html` | Parent Education | published | pending-clinician-review | 2026-05-22 | yes | Eligible published parent guide. First-aid resource needing review of safe home steps, what not to do, bleeding escalation, and parent clarity. |
-| Premature Baby Care at Home | `premature-baby-care-at-home.html` | Parent Education | published | pending-clinician-review | 2026-05-15 | yes | Eligible published parent guide. High-importance infant-care resource with feeding, warmth, follow-up, safe sleep, and warning signs. |
-| Red Flags: When to Seek Urgent Medical Care | `red-flags-urgent-care.html` | Parent Education | published | pending-clinician-review | 2026-05-20 | yes | Eligible published parent guide. Core emergency warning-sign resource with dehydration, seizures, serious rash, severe pain, and urgent-care wording. |
-| Safe Sleep for Infants | `safe-sleep-for-infants.html` | Parent Education | published | pending-clinician-review | 2026-05-15 | yes | Eligible published parent guide. High-importance infant safety topic with breathing warning signs and parent-facing risk-reduction wording. |
-| School Refusal and School Avoidance | `school-refusal-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-13 | yes | Eligible published parent guide. High-importance general paediatric and mental-health resource with warning signs and school-support boundaries. |
-| Talking to Teenagers About Safety, Boundaries and Consent | `talking-to-teens-about-safety-and-consent.html` | Parent Education | published | pending-clinician-review | 2026-05-22 | yes | Eligible published parent guide. Safety-focused adolescent resource needing review of urgent-help, safeguarding, parent clarity, and non-substitution wording. |
-| Umbilical Cord Care | `umbilical-cord-care-parent-guide.html` | Parent Education | published | pending-clinician-review | 2026-05-21 | yes | Eligible published parent guide. Newborn care resource with hygiene, infection warning signs, fever/escalation wording, and urgent-care boundaries. |
-| Body Image Concerns in Teenagers | `teen-body-image-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-22 | no | Less aligned. Eligible published parent guide, but deferred to keep Batch 12 focused on neurology, emergency warning signs, first aid, infant safety, and broad safety resources. |
-| Exam Stress and Performance Pressure | `exam-stress-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-13 | no | Less aligned. Eligible published parent guide, but better suited to a later adolescent mental-health/school-support review batch. |
-| Vitamins and Minerals | `vitamins-and-minerals-parent-guide.html` | Nutrition & Feeding | published | pending-clinician-review | 2026-05-13 | no | Less aligned. Eligible published parent guide, but nutrition/supplement safety fits better in a later nutrition-focused review batch. |
-| Vaping, Tobacco and Alcohol in Teenagers | `teen-vaping-tobacco-alcohol-parent-guide.html` | Parent Education | published | pending-clinician-review | 2026-05-22 | no | Less aligned. Eligible published safety guide, but deferred because Batch 12 is already at the 12-resource maximum and this would fit a later adolescent risk-behaviour batch. |
-| When to Seek Urgent Medical Care | `when-to-seek-urgent-medical-care-parent-guide.html` | Parent Education | draft | pending-clinician-review | 2026-05-24 | no | Draft. Strong thematic match, but excluded by selection rule. |
-| Encephalitis Warning Signs | `encephalitis-warning-signs.html` | Fever & Infections | draft | pending-clinician-review | 2026-05-12 | no | Draft. Strong neurology/emergency match, but excluded by selection rule. |
-| Newborn Danger Signs | `neonatal-danger-signs-parent-guide.html` | Parent Education | draft | pending-clinician-review | 2026-05-21 | no | Draft. Strong newborn warning-sign match, but excluded by selection rule. |
-| Dengue Fever | `dengue-fever.html` | Fever & Infections | draft | pending-clinician-review | 2026-05-12 | no | Draft. Fever/dehydration warning-sign content is relevant, but excluded by selection rule. |
-| Kawasaki Disease / MIS-C Awareness Guide | `kawasaki-disease-mis-c-awareness-guide.html` | Fever & Infections | draft | pending-clinician-review | 2026-05-12 | no | Draft. High-importance fever/rash warning-sign topic, but excluded by selection rule. |
-| Fever in Children | `fever-in-children.html` | Fever & Infections | published | reviewed | 2026-05-10 | no | Already reviewed. Relevant fever/red-flag guide, but excluded by selection rule. |
-| Urinary Tract Infection / UTI in Children | `08-urinary-tract-infection-parent-guide.html` | Fever & Infections | published | reviewed | 2026-06-16 | no | Already reviewed in Batch 11. Relevant urinary/fever guide, but excluded by selection rule. |
-| Abdominal Pain in Children | `abdominal-pain-in-children.html` | Gastrointestinal | published | reviewed | 2026-06-16 | no | Already reviewed. Relevant abdominal-pain warning-sign guide, but excluded by selection rule. |
-| Newborn Weight Loss and Gain | `newborn-weight-loss-and-gain.html` | Growth & Development | published | reviewed | 2026-06-16 | no | Already reviewed. Relevant newborn/growth guide, but excluded by selection rule. |
+| Adolescent Mental Health Warning Signs | `adolescent-mental-health-warning-signs.html` | Growth & Development | published | pending-clinician-review | 2026-05-13 | yes | Eligible preferred candidate. Review self-harm/suicide wording, urgent support wording, warning-sign thresholds, and parent communication tone. |
+| Anxiety in Children | `childhood-anxiety-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-22 | yes | Eligible preferred candidate. Review school anxiety, gradual support, when professional help is needed, and avoidance of false reassurance. |
+| Body Image Concerns in Teenagers | `teen-body-image-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-22 | yes | Eligible preferred candidate. Review eating-disorder warning signs, non-shaming language, social-media wording, and professional-help triggers. |
+| Bullying and Cyberbullying: Parent Guide | `bullying-and-cyberbullying-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-22 | yes | Eligible preferred candidate. Review safeguarding, school escalation, online safety, urgent mental-health risk wording, and non-blaming parent response. |
+| Exam Stress and Performance Pressure | `exam-stress-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-13 | yes | Eligible preferred candidate. Review sleep, routines, distress warning signs, school pressure wording, and avoidance of pressure language. |
+| School Refusal and School Avoidance | `school-refusal-parent-guide.html` | Growth & Development | published | pending-clinician-review | 2026-05-13 | yes | Eligible preferred candidate. Review school partnership, anxiety/bullying differential, attendance support, physical-symptom red flags, and urgent risk wording. |
+| Talking to Teenagers About Safety, Boundaries and Consent | `talking-to-teens-about-safety-and-consent.html` | Parent Education | published | pending-clinician-review | 2026-05-22 | yes | Eligible preferred candidate. Review consent wording, safeguarding, trusted adults, online safety, and urgent-help wording. |
+| Vaping, Tobacco and Alcohol in Teenagers | `teen-vaping-tobacco-alcohol-parent-guide.html` | Parent Education | published | pending-clinician-review | 2026-05-22 | yes | Eligible preferred candidate. Review non-punitive communication, substance risk, professional support, urgent situations, and avoidance of treatment algorithms. |
+| Febrile Seizures in Children | `10-febrile-seizures-parent-guide.html` | Fever & Infections | published | pending-clinician-review | 2026-05-21 | no | Less aligned. Published and pending review, but better suited to a neurology/emergency or fever-focused later batch. |
+| Vitamins and Minerals | `vitamins-and-minerals-parent-guide.html` | Nutrition & Feeding | published | pending-clinician-review | 2026-05-13 | no | Less aligned. Published and pending review, but better suited to a nutrition/supplement safety batch. |
+| Child Travel Health | `child-travel-health.html` | Parent Education | published | pending-clinician-review | 2026-05-13 | no | Less aligned. Published and pending review, but travel vaccines, food/water safety, mosquito protection, and travel red flags fit better in a travel/safety batch. |
+| Nosebleeds in Children | `nosebleeds-in-children-parent-guide.html` | Parent Education | published | pending-clinician-review | 2026-05-22 | no | Less aligned. Published and pending review, but first-aid and bleeding advice fit better in an emergency/first-aid batch. |
+| Premature Baby Care at Home | `premature-baby-care-at-home.html` | Parent Education | published | pending-clinician-review | 2026-05-15 | no | Less aligned. Published and pending review, but newborn/infant care and warning signs fit better in a newborn-care batch. |
+| Red Flags: When to Seek Urgent Medical Care | `red-flags-urgent-care.html` | Parent Education | published | pending-clinician-review | 2026-05-20 | no | Less aligned. Published and pending review, but broad emergency red-flag wording fits better in an emergency warning-signs batch. |
+| Safe Sleep for Infants | `safe-sleep-for-infants.html` | Parent Education | published | pending-clinician-review | 2026-05-15 | no | Less aligned. Published and pending review, but infant sleep safety fits better in a newborn/infant safety batch. |
+| Umbilical Cord Care | `umbilical-cord-care-parent-guide.html` | Parent Education | published | pending-clinician-review | 2026-05-21 | no | Less aligned. Published and pending review, but newborn cord care and infection warning signs fit better in a newborn-care batch. |
 
 ## Final Selected Batch 12 Resources
 
-1. Febrile Seizures in Children - `html-conditions/10-febrile-seizures-parent-guide.html`
-2. Adolescent Mental Health Warning Signs - `html-conditions/adolescent-mental-health-warning-signs.html`
-3. Anxiety in Children - `html-conditions/childhood-anxiety-parent-guide.html`
+1. Adolescent Mental Health Warning Signs - `html-conditions/adolescent-mental-health-warning-signs.html`
+2. Anxiety in Children - `html-conditions/childhood-anxiety-parent-guide.html`
+3. Body Image Concerns in Teenagers - `html-conditions/teen-body-image-parent-guide.html`
 4. Bullying and Cyberbullying: Parent Guide - `html-conditions/bullying-and-cyberbullying-parent-guide.html`
-5. Child Travel Health - `html-conditions/child-travel-health.html`
-6. Nosebleeds in Children - `html-conditions/nosebleeds-in-children-parent-guide.html`
-7. Premature Baby Care at Home - `html-conditions/premature-baby-care-at-home.html`
-8. Red Flags: When to Seek Urgent Medical Care - `html-conditions/red-flags-urgent-care.html`
-9. Safe Sleep for Infants - `html-conditions/safe-sleep-for-infants.html`
-10. School Refusal and School Avoidance - `html-conditions/school-refusal-parent-guide.html`
-11. Talking to Teenagers About Safety, Boundaries and Consent - `html-conditions/talking-to-teens-about-safety-and-consent.html`
-12. Umbilical Cord Care - `html-conditions/umbilical-cord-care-parent-guide.html`
+5. Exam Stress and Performance Pressure - `html-conditions/exam-stress-parent-guide.html`
+6. School Refusal and School Avoidance - `html-conditions/school-refusal-parent-guide.html`
+7. Talking to Teenagers About Safety, Boundaries and Consent - `html-conditions/talking-to-teens-about-safety-and-consent.html`
+8. Vaping, Tobacco and Alcohol in Teenagers - `html-conditions/teen-vaping-tobacco-alcohol-parent-guide.html`
 
 ## Clinician Review Checklist
 
-Apply this checklist separately to each selected resource:
+Apply these general checks separately to each selected resource:
 
-- [ ] Check clinical accuracy.
-- [ ] Check parent-facing clarity.
-- [ ] Check urgent-care / emergency wording if present.
-- [ ] Check home-care advice.
-- [ ] Check first-aid wording if present.
-- [ ] Check medication/dosing wording if present.
-- [ ] Check age-specific wording.
-- [ ] Check diagnostic wording if present.
-- [ ] Check disclaimer and non-substitution wording.
-- [ ] Check references and source age.
-- [ ] Check whether any content should be deferred or rewritten before review approval.
+- [ ] Parent-facing clarity.
+- [ ] Non-judgemental language.
+- [ ] Safety and safeguarding wording.
+- [ ] Urgent-help wording.
+- [ ] School liaison wording where relevant.
+- [ ] No overmedicalisation.
+- [ ] No unsupported diagnostic criteria.
+- [ ] No treatment algorithm.
+- [ ] No medication or crisis-management advice beyond source-supported parent guidance.
+- [ ] References and source age.
+- [ ] Disclaimer and non-substitution wording.
 
-Additional Batch 12 checks:
+Specific Batch 12 checks:
 
-- [ ] Confirm seizure, first-aid, urgent-care, and emergency wording does not imply home triage when urgent assessment is needed.
-- [ ] Confirm adolescent safety and mental-health resources provide supportive parent guidance without replacing crisis services, safeguarding pathways, or clinician assessment.
-- [ ] Confirm infant/newborn resources are explicit about fever, poor feeding, breathing difficulty, lethargy, and urgent review boundaries where relevant.
-- [ ] Confirm travel-health wording does not introduce unverified vaccine schedules, medication advice, or destination-specific rules.
+- [ ] Adolescent Mental Health Warning Signs: self-harm/suicide wording, urgent support wording, parent communication tone.
+- [ ] Anxiety in Children: school anxiety, gradual support, when professional help is needed, avoid false reassurance.
+- [ ] Body Image Concerns in Teenagers: eating disorder warning signs, non-shaming language, professional help triggers.
+- [ ] Bullying and Cyberbullying: safeguarding, school escalation, online safety, urgent mental health risk wording.
+- [ ] Exam Stress and Performance Pressure: sleep, routines, distress warning signs, avoiding pressure language.
+- [ ] School Refusal and School Avoidance: school partnership, anxiety/bullying differential, attendance support, urgent risk wording.
+- [ ] Talking to Teenagers About Safety, Boundaries and Consent: consent wording, safeguarding, trusted adults, online safety.
+- [ ] Vaping, Tobacco and Alcohol in Teenagers: non-punitive communication, substance risk, professional support, urgent situations.
+
+Do not add new public medical content during this planning stage. This is only a clinician-review checklist.
 
 ## Source Verification Needs
 
@@ -104,31 +95,27 @@ Do not invent or add clinical content during this planning stage. During clinici
 
 | Resource | Likely sources to verify |
 | --- | --- |
-| Febrile Seizures in Children | RCH Australia / Kids Health Info febrile convulsions guidance; NICE fever in under 5s and seizure guidance where appropriate; NHS febrile seizure guidance; AAP / HealthyChildren seizure and fever guidance; IAP / Indian paediatric sources where available. |
-| Adolescent Mental Health Warning Signs | RCH Australia adolescent mental-health resources where available; Raising Children Network adolescent mental-health guidance; NICE mental-health guidance where appropriate; NHS child and adolescent mental-health guidance; AAP / HealthyChildren adolescent mental-health resources; Indian mental-health or paediatric guidance where available. |
-| Anxiety in Children | RCH Australia / Kids Health Info anxiety or mental-health resources where available; Raising Children Network anxiety guidance; NICE anxiety or child mental-health guidance where appropriate; NHS anxiety guidance; AAP / HealthyChildren mental-health resources; Indian mental-health or paediatric sources where available. |
-| Bullying and Cyberbullying: Parent Guide | Raising Children Network bullying and cyberbullying guidance; AAP / HealthyChildren bullying and online safety resources; NHS child mental-health and safety guidance where appropriate; school-safety or child-protection guidance where relevant; Indian child-safety or cyber-safety sources where available. |
-| Child Travel Health | CDC travel health where relevant; WHO only where relevant; NHS travel health guidance where appropriate; RCH Australia / Kids Health Info where available; AAP / HealthyChildren travel guidance; IAP / Indian government travel, vaccine, food/water, and mosquito-borne disease sources where available. |
-| Nosebleeds in Children | RCH Australia / Kids Health Info nosebleeds guidance; NHS nosebleed first-aid guidance; AAP / HealthyChildren where appropriate; NICE where appropriate; Indian ENT/paediatric sources where available. |
-| Premature Baby Care at Home | RCH Australia / Kids Health Info premature baby and newborn care resources; Raising Children Network premature baby guidance; NHS premature baby care guidance; AAP / HealthyChildren premature infant resources; WHO newborn care where relevant; Indian neonatal or IAP sources where available. |
-| Red Flags: When to Seek Urgent Medical Care | RCH Australia / Kids Health Info emergency and illness guidance; NHS child illness urgent-warning resources; AAP / HealthyChildren emergency symptoms guidance; NICE fever and acute illness guidance where appropriate; Indian emergency care or paediatric sources where available. |
-| Safe Sleep for Infants | RCH Australia / Kids Health Info safe sleep guidance where available; Raising Children Network safe sleep guidance; NHS safer sleep guidance; AAP safe sleep recommendations; WHO only where relevant; Indian newborn/infant-care sources where available. |
-| School Refusal and School Avoidance | Raising Children Network school refusal guidance; RCH Australia mental-health or school resources where available; NICE child mental-health guidance where appropriate; NHS child mental-health and school avoidance resources; AAP / HealthyChildren school avoidance resources; Indian child mental-health sources where available. |
-| Talking to Teenagers About Safety, Boundaries and Consent | Raising Children Network adolescent safety and consent resources; AAP / HealthyChildren adolescent safety guidance; NHS safeguarding and sexual-health resources where appropriate; WHO adolescent health only where relevant; Indian child-protection, adolescent-health, and cyber-safety sources where available. |
-| Umbilical Cord Care | WHO newborn cord care guidance; UNICEF newborn hygiene guidance; National Health Mission / Indian newborn-care sources; RCH Australia / Kids Health Info newborn care guidance; NHS newborn cord care guidance where appropriate; AAP / HealthyChildren newborn care resources. |
+| Adolescent Mental Health Warning Signs | American Academy of Pediatrics / HealthyChildren adolescent mental-health resources; NICE mental health and safeguarding guidance where appropriate; NHS child and adolescent mental-health resources; Raising Children Network teen mental-health guidance; WHO adolescent health and mental-health resources; UNICEF adolescent wellbeing resources where relevant; Indian government or school safety resources where available. |
+| Anxiety in Children | American Academy of Pediatrics / HealthyChildren anxiety and mental-health guidance; NICE anxiety and child mental-health guidance where appropriate; NHS anxiety resources; Raising Children Network anxiety resources; WHO child and adolescent mental-health resources; Indian mental-health or school wellbeing resources where available. |
+| Body Image Concerns in Teenagers | American Academy of Pediatrics / HealthyChildren body image and eating-disorder guidance; NICE eating disorder and mental-health guidance where appropriate; NHS eating disorder and adolescent wellbeing resources; Raising Children Network teen wellbeing resources; WHO adolescent health resources; UNICEF adolescent wellbeing resources where relevant; Indian mental-health resources where available. |
+| Bullying and Cyberbullying: Parent Guide | American Academy of Pediatrics / HealthyChildren bullying guidance; NICE mental wellbeing and safeguarding guidance where appropriate; NHS child mental-health resources; Raising Children Network bullying resources; CDC bullying prevention and youth risk resources where relevant; UNICEF child protection resources; Indian school safety, cyber-safety, and child protection resources where relevant. |
+| Exam Stress and Performance Pressure | American Academy of Pediatrics / HealthyChildren school stress and adolescent wellbeing guidance; NHS stress and mental-health resources; Raising Children Network school stress resources; WHO adolescent mental-health resources; UNICEF adolescent wellbeing resources where relevant; Indian school wellbeing resources where available. |
+| School Refusal and School Avoidance | American Academy of Pediatrics / HealthyChildren school avoidance resources; NICE child mental-health guidance where appropriate; NHS child mental-health and school avoidance resources; Raising Children Network school refusal guidance; WHO adolescent mental-health resources; Indian school wellbeing resources where available. |
+| Talking to Teenagers About Safety, Boundaries and Consent | American Academy of Pediatrics / HealthyChildren adolescent safety guidance; NICE safeguarding guidance where appropriate; NHS safeguarding and adolescent wellbeing resources where appropriate; Raising Children Network teen safety resources; WHO adolescent health and violence prevention resources; UNICEF child protection and online safety resources; Indian child protection, school safety, and cyber-safety resources where relevant. |
+| Vaping, Tobacco and Alcohol in Teenagers | American Academy of Pediatrics / HealthyChildren substance-use guidance; NICE substance misuse and safeguarding guidance where appropriate; NHS vaping, tobacco, alcohol, and adolescent wellbeing resources; Raising Children Network adolescent risk resources; CDC youth tobacco and alcohol resources; WHO tobacco, alcohol, adolescent health, and mental-health resources; Indian government tobacco-control and public-health resources. |
 
 ## Safety Note
 
-Do not approve any guide that contains unverified dosages, red flags, contraindications, diagnostic criteria, treatment algorithms, exclusion rules, or infection-control advice.
+Do not approve any guide that contains unsupported suicide/self-harm advice, eating-disorder advice, safeguarding advice, substance-use advice, consent wording, school exclusion advice, medication advice, diagnostic criteria, or treatment algorithms.
 
-Batch 12 requires particular caution around seizure first aid, emergency warning signs, infant/newborn fever and breathing risk, adolescent mental-health/safety escalation, safeguarding language, travel vaccine or medication boundaries, and any wording that could be mistaken for diagnosis or triage.
+Batch 12 requires particular caution around crisis escalation, self-harm/suicide wording, eating-disorder warning signs, safeguarding language, online safety, substance-use advice, consent wording, and any school-support wording that could be mistaken for a formal treatment or legal pathway.
 
 ## Future Finalization Requirements
 
 After Dr. Murali signs off, each approved page should receive:
 
 - `medical_review_status: reviewed`
-- `status: published` if not already published
+- `status: published`
 - updated `last_reviewed` date
 - visible reviewed-footer if missing
 - Print button and QR block if missing
@@ -147,3 +134,33 @@ These actions require a separate, explicitly approved finalization workflow. The
 - No Related Guides added.
 - No reviewed-footer added.
 - No generated files committed.
+
+## Batch 12 Sign-Off Template
+
+Batch 12 clinician review sign-off
+
+Reviewed by: Dr. Murali Gopal
+Date:
+
+Resources reviewed:
+1. Adolescent Mental Health Warning Signs
+2. Anxiety in Children
+3. Body Image Concerns in Teenagers
+4. Bullying and Cyberbullying: Parent Guide
+5. Exam Stress and Performance Pressure
+6. School Refusal and School Avoidance
+7. Talking to Teenagers About Safety, Boundaries and Consent
+8. Vaping, Tobacco and Alcohol in Teenagers
+
+Clinical accuracy checked: Yes / No
+Source verification complete: Yes / No
+Content edits required: Yes / No
+Metadata edits required: Yes / No
+Approved for reviewed status: Yes / No
+Any page to defer: Yes / No
+
+Pages deferred, if any:
+-
+
+Notes:
+-
