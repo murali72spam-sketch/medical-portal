@@ -43,6 +43,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/covid-19-in-children.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/diphtheria.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/fever-in-children.html</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -61,8 +73,32 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/infectious-mononucleosis.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/14-measles-parent-guide.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/07-meningitis-parent-guide.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/03-middle-ear-infection-parent-guide.html</loc>
     <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/rickettsial-fever-scrub-typhus.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -81,6 +117,18 @@
   <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/05-tonsillitis-parent-guide.html</loc>
     <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/08-urinary-tract-infection-parent-guide.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/15-whooping-cough-parent-guide.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -471,6 +519,12 @@
   <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/01-croup-parent-guide.html</loc>
     <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/16-pneumonia-parent-guide.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
