@@ -85,6 +85,18 @@ const pageSlugs = [
   "vaccination-why-it-matters",
   "vaccine-myths-and-misconceptions",
   "vaccine-side-effects-and-aftercare",
+  "baby-crying-what-is-normal",
+  "colic-in-babies",
+  "infant-colic-parent-guide",
+  "reflux-in-children",
+  "constipation-in-children",
+  "gastroenteritis-diarrhoea",
+  "abdominal-pain-in-children",
+  "newborn-weight-loss-and-gain",
+  "formula-feeding-guidance",
+  "growth-faltering-poor-weight-gain",
+  "breastfeeding-basics-parent-guide",
+  "safe-food-water-and-deworming",
 ];
 
 async function generateQrCodes() {
