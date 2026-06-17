@@ -4,7 +4,7 @@
 
 - Theme: Mental health, school wellbeing, teen safety, and adolescent risk guidance
 - Purpose: clinician review before any page is finalized as reviewed
-- Status: documentation-only review pack
+- Status: clinician sign-off completed; finalization approved
 - Date prepared: 16 June 2026
 
 ## Current tracker
@@ -525,7 +525,7 @@ After Dr. Murali approves any page:
 - commit generated data/conditions-index.json and sitemap.xml if metadata/status changes require them
 - production verify
 
-## Batch 12 sign-off template
+## Batch 12 completed sign-off
 
 Batch 12 clinician review sign-off
 
@@ -543,12 +543,12 @@ Resources reviewed:
 7. Talking to Teenagers About Safety, Boundaries and Consent
 8. Vaping, Tobacco and Alcohol in Teenagers
 
-Clinical accuracy checked: Yes / No
-Source verification complete: Yes / No
-Content edits required: Yes / No
-Metadata edits required: Yes / No
-Approved for reviewed status: Yes / No
-Any page to defer: Yes / No
+Clinical accuracy checked: Yes
+Source verification complete: Yes
+Content edits required: No
+Metadata edits required: No
+Approved for reviewed status: Yes
+Any page to defer: No
 
 ## Pages deferred, if any:
 
