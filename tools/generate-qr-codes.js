@@ -106,6 +106,14 @@ const pageSlugs = [
   "growth-faltering-poor-weight-gain",
   "breastfeeding-basics-parent-guide",
   "safe-food-water-and-deworming",
+  "adolescent-mental-health-warning-signs",
+  "childhood-anxiety-parent-guide",
+  "teen-body-image-parent-guide",
+  "bullying-and-cyberbullying-parent-guide",
+  "exam-stress-parent-guide",
+  "school-refusal-parent-guide",
+  "talking-to-teens-about-safety-and-consent",
+  "teen-vaping-tobacco-alcohol-parent-guide",
 ];
 
 async function generateQrCodes() {

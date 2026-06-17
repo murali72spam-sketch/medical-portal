@@ -157,6 +157,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/adolescent-mental-health-warning-signs.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/childhood-anxiety-parent-guide.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/autism-early-concerns-parent-awareness-guide.html</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -177,6 +189,18 @@
   <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/bedwetting-nocturnal-enuresis-parent-guide.html</loc>
     <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/teen-body-image-parent-guide.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/bullying-and-cyberbullying-parent-guide.html</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -213,6 +237,12 @@
   <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/early-puberty-in-children.html</loc>
     <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/exam-stress-parent-guide.html</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -297,6 +327,12 @@
   <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/puberty-parent-guide.html</loc>
     <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/school-refusal-parent-guide.html</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -489,6 +525,18 @@
   <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/safe-food-water-and-deworming.html</loc>
     <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/talking-to-teens-about-safety-and-consent.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/teen-vaping-tobacco-alcohol-parent-guide.html</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
