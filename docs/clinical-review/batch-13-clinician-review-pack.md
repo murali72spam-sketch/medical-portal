@@ -4,7 +4,7 @@
 
 - Theme: Emergency, first-aid, newborn safety, travel safety, and supplement-safety parent guidance
 - Purpose: clinician review before any page is finalized as reviewed
-- Status: prepared for clinician review; sign-off pending
+- Status: clinician sign-off completed; finalization approved
 - Date prepared: 26 June 2026
 
 ## Current tracker
@@ -492,20 +492,16 @@ Resources reviewed:
 7. Child Travel Health
 8. Vitamins and Minerals
 
-Clinical accuracy checked: Yes / No
-Source verification complete: Yes / No
-Content edits required: Yes / No
-Metadata edits required: Yes / No
-Approved for reviewed status: Yes / No
-Any page to defer: Yes / No
+Clinical accuracy checked: Yes
+Source verification complete: Yes
+Content edits required: No
+Metadata edits required: No
+Approved for reviewed status: Yes
+Any page to defer: No
 
 ## Pages deferred, if any:
 
--
-
 ## Notes:
-
--
 
 ## Explicit non-actions in this PR
 
