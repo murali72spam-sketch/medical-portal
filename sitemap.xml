@@ -55,6 +55,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/10-febrile-seizures-parent-guide.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/fever-in-children.html</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -481,6 +487,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/vitamins-and-minerals-parent-guide.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/complementary-feeding-after-6-months.html</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -495,6 +507,12 @@
   <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/breastfeeding-basics-parent-guide.html</loc>
     <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/child-travel-health.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -523,14 +541,44 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/nosebleeds-in-children-parent-guide.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/premature-baby-care-at-home.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/red-flags-urgent-care.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/safe-food-water-and-deworming.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/safe-sleep-for-infants.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medical-portal-brown.vercel.app/html-conditions/talking-to-teens-about-safety-and-consent.html</loc>
     <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medical-portal-brown.vercel.app/html-conditions/umbilical-cord-care-parent-guide.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
