@@ -14,10 +14,17 @@ static assets, release notes, and validation workflows.
 - Keep the initial version static and read-only.
 - Do not collect patient-specific data.
 - Do not collect patient identifiers.
-- Do not add backend services, databases, logins, forms, appointment booking,
-  chat, analytics, or patient-data storage in the initial version.
+- Do not add backend services, databases, logins, patient-data forms, contact
+  forms for clinical communication, appointment forms, medical question forms,
+  appointment booking, chat, analytics, or patient-data storage in the initial
+  version.
 - Do not add features that require storing or transmitting private health
   information.
+- An optional external non-clinical website-feedback form may be linked only if
+  it is clearly labelled as website feedback only, warns users not to submit
+  patient or medical details, is not used for clinical communication, is covered
+  by the privacy policy's external-service explanation, and does not create
+  patient records in the static portal.
 
 ## 3. Medical content safety rules
 
@@ -91,10 +98,15 @@ static assets, release notes, and validation workflows.
 
 - Patient accounts or login.
 - Backend services or databases.
-- Forms that collect patient information.
+- Patient-data forms.
+- Contact forms for clinical communication.
+- Appointment forms.
+- Medical question forms.
 - Patient identifiers or patient-specific data collection.
 - Appointment booking.
 - Chat or messaging.
 - Analytics that track patient behavior.
 - Casual dosing calculators.
 - Unreviewed diagnostic or treatment tools.
+- Any website-feedback mechanism that asks for or stores patient records in the
+  static portal.

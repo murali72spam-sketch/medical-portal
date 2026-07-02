@@ -7,6 +7,10 @@
 - Deployment verified.
 - Local main clean.
 - Production checks passed.
+- Feedback privacy/governance hardening completed.
+- Clarified external website-feedback form boundaries.
+- No clinical guide content changed.
+- Validation passed.
 
 ## Future Entry Template
 
