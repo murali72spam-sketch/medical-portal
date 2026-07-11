@@ -2,7 +2,7 @@ const fs = require("node:fs/promises");
 const path = require("node:path");
 const QRCode = require("qrcode");
 
-const baseUrl = "https://medical-portal-brown.vercel.app/html-conditions/";
+const baseUrl = "https://www.drmuraligopal.com/html-conditions/";
 const pageSlugs = [
   "01-croup-parent-guide",
   "02-bronchiolitis-parent-guide",
