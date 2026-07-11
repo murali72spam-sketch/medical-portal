@@ -12,8 +12,8 @@
   <meta name="description" content="Parent guide to constipation in children, including symptoms, stool withholding, toilet routine, diet and fluid habits, medicine cautions, Bristol stool type guidance, and warning signs.">
   <meta name="keywords" content="constipation, hard stool, painful stool, stool withholding, soiling, encopresis, child constipation, bristol stool chart, parent guide">
   <meta name="audience" content="parents">
-  <meta name="last_reviewed" content="2026-05-20">
-  <meta name="medical_review_status" content="pending-clinician-review">
+  <meta name="last_reviewed" content="2026-06-16">
+  <meta name="medical_review_status" content="reviewed">
   <meta name="references" content="RCH Kids Health Info: Constipation; NICE CG99 Constipation in children and young people: diagnosis and management; American Academy of Pediatrics HealthyChildren constipation parent guidance; Raising Children Network constipation parent guidance">
   <meta name="featured" content="true">
   <meta name="status" content="published">
@@ -27,173 +27,34 @@
 
   <link rel="stylesheet" href="../style.css">
   <style>
-    .stool-guide {
-      display: grid;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .stool-group-label {
-      display: inline-flex;
-      align-items: center;
-      width: fit-content;
-      min-height: 2rem;
-      padding: 0.35rem 0.75rem;
-      border-radius: 999px;
-      background: #eef7f4;
-      color: #245a52;
-      font-weight: 700;
-      font-size: 0.9rem;
-    }
-
-    .stool-type-grid {
-      display: grid;
-      grid-template-columns: repeat(7, minmax(0, 1fr));
-      gap: 0.85rem;
-    }
-
-    .stool-card {
-      display: grid;
-      grid-template-rows: auto 5.5rem auto;
-      gap: 0.7rem;
-      min-height: 15rem;
-      padding: 0.85rem;
-      border: 1px solid rgba(36, 90, 82, 0.16);
-      border-radius: 8px;
-      background: #fffdf8;
+    .stool-chart-figure {
+      margin: 1.25rem 0;
+      padding: 1rem;
+      border: 1px solid rgba(15, 107, 120, 0.18);
+      border-radius: 12px;
+      background: #ffffff;
       break-inside: avoid;
     }
 
-    .stool-card strong {
-      color: #24443f;
-      line-height: 1.25;
-    }
-
-    .stool-card p {
-      margin: 0;
-      font-size: 0.92rem;
-      line-height: 1.45;
-    }
-
-    .stool-visual {
-      position: relative;
-      min-height: 5.5rem;
-      border-radius: 8px;
-      background: #f7efe2;
-      overflow: hidden;
-    }
-
-    .stool-visual span {
-      position: absolute;
+    .stool-chart-image {
       display: block;
-      background: #9a6a3a;
-      border: 2px solid rgba(86, 53, 24, 0.12);
-      box-shadow: inset 0 0.2rem 0.45rem rgba(255, 255, 255, 0.2);
+      width: 100%;
+      max-width: 680px;
+      height: auto;
+      margin: 0 auto;
     }
 
-    .stool-1 span {
-      width: 1.1rem;
-      height: 1rem;
-      border-radius: 50%;
-    }
-
-    .stool-1 span:nth-child(1) { left: 16%; top: 25%; }
-    .stool-1 span:nth-child(2) { left: 39%; top: 42%; }
-    .stool-1 span:nth-child(3) { left: 61%; top: 25%; }
-    .stool-1 span:nth-child(4) { left: 70%; top: 56%; }
-
-    .stool-2 span {
-      width: 1.35rem;
-      height: 1.2rem;
-      border-radius: 45% 55% 48% 52%;
-      top: 39%;
-    }
-
-    .stool-2 span:nth-child(1) { left: 15%; }
-    .stool-2 span:nth-child(2) { left: 33%; }
-    .stool-2 span:nth-child(3) { left: 51%; }
-    .stool-2 span:nth-child(4) { left: 69%; }
-
-    .stool-3 span,
-    .stool-4 span {
-      left: 13%;
-      top: 38%;
-      width: 74%;
-      height: 1.45rem;
-      border-radius: 999px;
-    }
-
-    .stool-3 span::after {
-      content: "";
-      position: absolute;
-      inset: 0.25rem 0.55rem;
-      background:
-        linear-gradient(100deg, transparent 0 16%, rgba(255, 255, 255, 0.35) 17% 20%, transparent 21% 45%, rgba(255, 255, 255, 0.28) 46% 49%, transparent 50%),
-        linear-gradient(80deg, transparent 0 62%, rgba(70, 43, 20, 0.22) 63% 66%, transparent 67%);
-      border-radius: inherit;
-    }
-
-    .stool-4 span {
-      background: #a97742;
-    }
-
-    .stool-5 span {
-      width: 1.35rem;
-      height: 1.05rem;
-      border-radius: 55% 45% 50% 50%;
-      top: 42%;
-    }
-
-    .stool-5 span:nth-child(1) { left: 20%; }
-    .stool-5 span:nth-child(2) { left: 43%; }
-    .stool-5 span:nth-child(3) { left: 66%; }
-
-    .stool-6 span {
-      width: 1.65rem;
-      height: 1.15rem;
-      border-radius: 45% 55% 40% 60%;
-      background: #b58551;
-      top: 40%;
-    }
-
-    .stool-6 span:nth-child(1) { left: 18%; transform: rotate(-8deg); }
-    .stool-6 span:nth-child(2) { left: 40%; transform: rotate(6deg); }
-    .stool-6 span:nth-child(3) { left: 62%; transform: rotate(-4deg); }
-
-    .stool-7 span {
-      left: 18%;
-      top: 36%;
-      width: 64%;
-      height: 1.8rem;
-      border-radius: 999px 999px 45% 45%;
-      background: #c99b62;
-      opacity: 0.9;
-    }
-
-    @media (max-width: 980px) {
-      .stool-type-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 560px) {
-      .stool-type-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .stool-card {
-        grid-template-rows: auto 4.75rem auto;
-        min-height: auto;
-      }
+    .stool-chart-figure figcaption {
+      margin-top: 0.75rem;
+      color: #23443f;
+      font-size: 0.95rem;
+      line-height: 1.45;
+      text-align: center;
     }
 
     @media print {
-      .stool-type-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .stool-card {
-        min-height: 12rem;
+      .stool-chart-figure {
+        border: 1px solid #999;
         background: #ffffff;
       }
     }
@@ -254,7 +115,7 @@
 
           <div class="resource-meta">
             <span class="badge badge-parent-guide">Parent Guide</span>
-            <span class="badge badge-draft">Draft</span>
+            <span class="badge badge-reviewed">Reviewed</span>
           </div>
 
           <div class="topic-hero-chips" aria-label="Quick parent information">
@@ -286,7 +147,7 @@
               MCR: 57489<br>
               MBBS, DCH(UK), MRCPCH(UK), FRCPCH(UK), CCT Paediatrics (UK),
               Fellow in Paediatric Pulmonology (Aus), Allergology (Ind)<br>
-              Last reviewed: 20 May 2026
+              Last reviewed: 16 June 2026
             </p>
           </div>
 
@@ -381,71 +242,17 @@
             <h2>Stool type guide for parents</h2>
             <p>This parent-friendly stool type guide can help you describe stool consistency to the doctor. It does not diagnose the cause of constipation or diarrhoea by itself.</p>
 
-            <div class="stool-guide" aria-label="Parent-friendly stool type guide">
-              <span class="stool-group-label">Constipation pattern</span>
-              <div class="stool-type-grid">
-                <div class="stool-card">
-                  <strong>Type 1</strong>
-                  <div class="stool-visual stool-1" aria-hidden="true">
-                    <span></span><span></span><span></span><span></span>
-                  </div>
-                  <p>Separate hard lumps. Often difficult or painful to pass.</p>
-                </div>
-
-                <div class="stool-card">
-                  <strong>Type 2</strong>
-                  <div class="stool-visual stool-2" aria-hidden="true">
-                    <span></span><span></span><span></span><span></span>
-                  </div>
-                  <p>Lumpy sausage-shaped stool. A constipation pattern.</p>
-                </div>
-
-                <div class="stool-card">
-                  <strong>Type 3</strong>
-                  <div class="stool-visual stool-3" aria-hidden="true">
-                    <span></span>
-                  </div>
-                  <p>Sausage-shaped stool with cracks. Usually acceptable if easy to pass.</p>
-                </div>
-
-                <div class="stool-card">
-                  <strong>Type 4</strong>
-                  <div class="stool-visual stool-4" aria-hidden="true">
-                    <span></span>
-                  </div>
-                  <p>Smooth soft sausage or snake-like stool. Usually ideal and easy to pass.</p>
-                </div>
-
-                <div class="stool-card">
-                  <strong>Type 5</strong>
-                  <div class="stool-visual stool-5" aria-hidden="true">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <p>Soft blobs with clear edges. May be loose.</p>
-                </div>
-
-                <div class="stool-card">
-                  <strong>Type 6</strong>
-                  <div class="stool-visual stool-6" aria-hidden="true">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <p>Mushy stool with ragged edges. Loose stool or diarrhoea pattern.</p>
-                </div>
-
-                <div class="stool-card">
-                  <strong>Type 7</strong>
-                  <div class="stool-visual stool-7" aria-hidden="true">
-                    <span></span>
-                  </div>
-                  <p>Watery stool with no solid pieces. Diarrhoea pattern.</p>
-                </div>
-              </div>
-
-              <div class="callout callout-note">
-                <strong>Quick grouping:</strong>
-                Types 1 and 2 suggest a constipation pattern. Types 3 and 4 are usual or easier stools. Types 5, 6, and 7 are looser stools and may suggest diarrhoea, depending on the child and situation.
-              </div>
-            </div>
+            <figure class="stool-chart-figure">
+              <img
+                src="../assets/condition-visuals/bristol-stool-chart.png"
+                alt="Bristol Stool Chart showing stool Types 1 to 7, from separate hard lumps to watery stool"
+                class="stool-chart-image"
+                loading="lazy"
+              >
+              <figcaption>
+                Bristol Stool Chart showing stool consistency types from Type 1 to Type 7.
+              </figcaption>
+            </figure>
           </section>
 
           <section>
@@ -497,7 +304,7 @@
           </section>
 
           <p class="text-small text-muted">
-            Last reviewed: 20 May 2026. Draft clinical content; clinician review recommended before distribution.
+            Last reviewed: 16 June 2026.
           </p>
 
           <div class="patient-education-copyright">
@@ -507,6 +314,38 @@
             </p>
             <div class="print-watermark" aria-hidden="true">&copy; Dr. Murali Gopal | For Patient Education Only</div>
           </div>
+          <section class="handout-tools" aria-label="Handout tools">
+            <button class="print-guide-button" type="button" onclick="window.print()">Print this guide</button>
+          </section>
+
+          <section class="related-guides" aria-labelledby="related-guides-title">
+            <h2 id="related-guides-title">Related guides</h2>
+            <ul>
+                      <li><a href="./abdominal-pain-in-children.html">Abdominal Pain in Children</a></li>
+                      <li><a href="./gastroenteritis-diarrhoea.html">Gastroenteritis / Diarrhoea in Children</a></li>
+                      <li><a href="./safe-food-water-and-deworming.html">Safe Food, Water and Deworming</a></li>
+                      <li><a href="./nutrition-1-to-2-years.html">Nutrition 1 to 2 Years</a></li>
+                      <li><a href="./picky-eating.html">Picky Eating in Children</a></li>
+            </ul>
+          </section>
+
+          <section class="reviewed-footer">
+            <h2>Medical review</h2>
+            <div class="reviewed-footer__grid">
+              <p><strong>Reviewed by</strong>Dr. Murali Gopal</p>
+              <p><strong>Last reviewed</strong>16 June 2026</p>
+              <p><strong>Medical review status</strong>Clinician reviewed</p>
+              <p class="reviewed-footer__references"><strong>References</strong>RCH Kids Health Info: Constipation; NICE CG99 Constipation in children and young people: diagnosis and management; American Academy of Pediatrics HealthyChildren constipation parent guidance; Raising Children Network constipation parent guidance</p>
+            </div>
+            <div class="reviewed-footer__qr">
+              <img src="../assets/qr/constipation-in-children.svg" alt="QR code to open the latest online version of Constipation in Children">
+              <div>
+                <p><strong>Scan to open the latest online version</strong></p>
+                <p class="reviewed-footer__qr-url">medical-portal-brown.vercel.app/html-conditions/constipation-in-children.html</p>
+              </div>
+            </div>
+            <p class="reviewed-footer__note">This parent guide is for general education only and does not replace consultation with your child&rsquo;s paediatrician. Please seek medical care urgently if your child appears seriously unwell, has breathing difficulty, poor feeding, dehydration, altered responsiveness, or if you are worried.</p>
+          </section>
         </article>
       </div>
     </section>
