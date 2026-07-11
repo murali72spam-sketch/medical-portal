@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SITE_URL = 'https://medical-portal-brown.vercel.app';
+const SITE_URL = 'https://www.drmuraligopal.com';
 const ROOT_DIR = path.join(__dirname, '..');
 const INDEX_PATH = path.join(ROOT_DIR, 'data', 'conditions-index.json');
 const OUTPUT_PATH = path.join(ROOT_DIR, 'sitemap.xml');

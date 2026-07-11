@@ -1,9 +1,9 @@
 const { test, expect } = require("@playwright/test");
 
 // Production QA should use the public production alias:
-// BASE_URL=https://medical-portal-brown.vercel.app npm run qa:batch10
+// BASE_URL=https://www.drmuraligopal.com npm run qa:batch10
 // Protected Vercel preview/deployment URLs can redirect to Vercel Authentication.
-const publicProductionUrl = "https://medical-portal-brown.vercel.app";
+const publicProductionUrl = "https://www.drmuraligopal.com";
 
 const batch10Resources = [
   {
