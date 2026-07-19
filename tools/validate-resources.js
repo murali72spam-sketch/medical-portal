@@ -58,6 +58,11 @@ const approvedReviewStatuses = [
   "needs-verification"
 ];
 
+function isPublicResource(metadata) {
+  return metadata.status === "published" &&
+    metadata.medical_review_status === "reviewed";
+}
+
 const clinicalTerms = [
   "mg",
   "mcg",
@@ -365,34 +370,11 @@ const resourcesByUrl = new Map(
   resourceIndex.map((resource) => [String(resource.url || "").trim(), resource])
 );
 const metadataByFile = new Map();
+const expectedPublicUrls = new Set();
 
 section("Resource/index checks");
 console.log(`Resource HTML files: ${htmlFiles.length}`);
 console.log(`Indexed resources: ${resourceIndex.length}`);
-
-if (htmlFiles.length !== resourceIndex.length) {
-  error(`Resource count mismatch: ${htmlFiles.length} HTML files vs ${resourceIndex.length} indexed resources.`);
-} else {
-  ok("Resource counts match.");
-}
-
-const expectedUrls = new Set(htmlFiles.map((fileName) => `html-conditions/${fileName}`));
-const indexedUrls = new Set(resourceIndex.map((resource) => String(resource.url || "").trim()));
-
-expectedUrls.forEach((url) => {
-  if (!indexedUrls.has(url)) error(`${url} is missing from data/conditions-index.json.`);
-});
-
-indexedUrls.forEach((url) => {
-  if (!url) {
-    error("An indexed resource has an empty url.");
-    return;
-  }
-
-  if (!expectedUrls.has(url)) {
-    error(`${url} is indexed but no matching file exists.`);
-  }
-});
 
 section("Metadata checks");
 htmlFiles.forEach((fileName) => {
@@ -400,6 +382,10 @@ htmlFiles.forEach((fileName) => {
   const html = readText(filePath);
   const metadata = extractMetadata(html);
   metadataByFile.set(fileName, metadata);
+
+  if (isPublicResource(metadata)) {
+    expectedPublicUrls.add(`html-conditions/${fileName}`);
+  }
 
   requiredMetaFields.forEach((field) => {
     const hasMetaTag = new RegExp(
@@ -449,6 +435,29 @@ htmlFiles.forEach((fileName) => {
     !/^[a-z0-9-]+$/.test(metadata.visual_context)
   ) {
     warn(`${fileName} uses unusual visual_context format: ${metadata.visual_context}. Use lowercase kebab-case such as mother-child-home-care.`);
+  }
+});
+
+const indexedUrls = new Set(resourceIndex.map((resource) => String(resource.url || "").trim()));
+
+if (expectedPublicUrls.size !== resourceIndex.length) {
+  error(`Resource count mismatch: ${expectedPublicUrls.size} public HTML files vs ${resourceIndex.length} indexed resources.`);
+} else {
+  ok("Public resource counts match.");
+}
+
+expectedPublicUrls.forEach((url) => {
+  if (!indexedUrls.has(url)) error(`${url} is missing from data/conditions-index.json.`);
+});
+
+indexedUrls.forEach((url) => {
+  if (!url) {
+    error("An indexed resource has an empty url.");
+    return;
+  }
+
+  if (!expectedPublicUrls.has(url)) {
+    error(`${url} is indexed but is not a published reviewed public resource.`);
   }
 });
 

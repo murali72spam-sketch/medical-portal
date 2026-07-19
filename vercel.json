@@ -1,5 +1,17 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/html-conditions/bedwetting-parent-guide.html",
+      "destination": "/html-conditions/bedwetting-nocturnal-enuresis-parent-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/html-conditions/temper-tantrums-parent-guide.html",
+      "destination": "/html-conditions/temper-tantrums-and-behaviour-regulation-parent-guide.html",
+      "permanent": true
+    }
+  ]
 }
