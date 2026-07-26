@@ -368,6 +368,7 @@ body.resource-page .site-header {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
+  min-width: 0;
   color: var(--color-ink);
   text-decoration: none;
 }
@@ -388,11 +389,13 @@ body.resource-page .site-header {
 .brand-copy {
   display: grid;
   gap: 0.05rem;
+  min-width: 0;
 }
 
 .brand-name {
   font-weight: 700;
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .brand-subtitle {
