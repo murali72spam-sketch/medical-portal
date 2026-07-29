@@ -115,6 +115,11 @@
     loadResources();
   });
 
+  window.addEventListener("pageshow", () => {
+    if (!document.querySelector("[data-resource-grid]")) return;
+    clearSearchAndFilters();
+  });
+
   function markResourcePage() {
     if (getMetaContent("resource_type")) {
       document.body.classList.add("resource-page");
