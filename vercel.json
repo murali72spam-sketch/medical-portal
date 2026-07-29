@@ -4,6 +4,11 @@
   "outputDirectory": ".",
   "redirects": [
     {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/html-conditions/bedwetting-parent-guide.html",
       "destination": "/html-conditions/bedwetting-nocturnal-enuresis-parent-guide.html",
       "permanent": true

@@ -10,6 +10,9 @@ const indexPath = path.join(projectRoot, "index.html");
 const stylePath = path.join(projectRoot, "style.css");
 const scriptPath = path.join(projectRoot, "script.js");
 const resourceIndexPath = path.join(projectRoot, "data", "conditions-index.json");
+const sitemapPath = path.join(projectRoot, "sitemap.xml");
+const vercelConfigPath = path.join(projectRoot, "vercel.json");
+const approvedSiteOrigin = "https://www.drmuraligopal.com";
 
 const requiredMetaFields = [
   "title",
@@ -223,6 +226,43 @@ function readResourceIndex() {
   }
 }
 
+function readSitemapUrls() {
+  if (!fileExists(sitemapPath)) {
+    error("sitemap.xml is missing.");
+    return [];
+  }
+
+  return [...readText(sitemapPath).matchAll(/<loc>([^<]+)<\/loc>/gi)]
+    .map((match) => decodeHtmlEntities(match[1].trim()));
+}
+
+function canonicalUrls(html) {
+  return [...html.matchAll(/<link\b[^>]*>/gi)]
+    .map((match) => match[0])
+    .filter((tag) => /\brel=["']canonical["']/i.test(tag))
+    .map((tag) => {
+      const href = tag.match(/\bhref=["']([^"']+)["']/i);
+      return href ? decodeHtmlEntities(href[1].trim()) : "";
+    });
+}
+
+function malformedHrefTags(html) {
+  return [...html.matchAll(/<[^>]*\bhref\s*=[^>]*>/gi)]
+    .map((match) => match[0])
+    .filter((tag) => {
+      const hrefTokens = [...tag.matchAll(/\bhref\s*=/gi)];
+      const validQuotedHrefAttributes = [
+        ...tag.matchAll(/\bhref\s*=\s*(?:"[^"]*"|'[^']*')(?=\s|\/?>)/gi)
+      ];
+      return hrefTokens.length !== 1 || validQuotedHrefAttributes.length !== 1;
+    });
+}
+
+function sitemapUrlToFile(url) {
+  const pathname = new URL(url).pathname;
+  return path.join(projectRoot, pathname === "/" ? "index.html" : pathname.replace(/^\//, ""));
+}
+
 function groupBy(items, keyName) {
   const groups = new Map();
   items.forEach((item) => {
@@ -366,11 +406,92 @@ printHeader();
 
 const htmlFiles = listHtmlFiles(htmlConditionsDir);
 const resourceIndex = readResourceIndex();
+const sitemapUrls = readSitemapUrls();
 const resourcesByUrl = new Map(
   resourceIndex.map((resource) => [String(resource.url || "").trim(), resource])
 );
 const metadataByFile = new Map();
 const expectedPublicUrls = new Set();
+
+section("Technical SEO checks");
+const duplicateSitemapUrls = [...new Set(
+  sitemapUrls.filter((url, index) => sitemapUrls.indexOf(url) !== index)
+)];
+if (duplicateSitemapUrls.length) {
+  duplicateSitemapUrls.forEach((url) => error(`Duplicate sitemap URL: ${url}.`));
+} else {
+  ok(`sitemap.xml contains ${sitemapUrls.length} unique URLs.`);
+}
+
+sitemapUrls.forEach((url) => {
+  if (!url.startsWith(`${approvedSiteOrigin}/`)) {
+    error(`Sitemap URL does not use the approved origin: ${url}.`);
+  }
+
+  const filePath = sitemapUrlToFile(url);
+  if (!fileExists(filePath)) {
+    error(`Sitemap URL has no deployed HTML file: ${url}.`);
+    return;
+  }
+
+  const canonicals = canonicalUrls(readText(filePath));
+  if (canonicals.length !== 1) {
+    error(`${relative(filePath)} has ${canonicals.length} canonical tags; expected exactly 1.`);
+  } else if (canonicals[0] !== url) {
+    error(`${relative(filePath)} canonical "${canonicals[0]}" does not exactly match "${url}".`);
+  } else if (!canonicals[0].startsWith(`${approvedSiteOrigin}/`)) {
+    error(`${relative(filePath)} canonical does not use the approved origin.`);
+  }
+});
+
+let redirects = [];
+if (!fileExists(vercelConfigPath)) {
+  error("vercel.json is missing.");
+} else {
+  try {
+    redirects = JSON.parse(readText(vercelConfigPath)).redirects || [];
+  } catch (parseError) {
+    error(`vercel.json could not be parsed: ${parseError.message}`);
+  }
+}
+
+const sitemapPaths = new Set(sitemapUrls.map((url) => new URL(url).pathname));
+const indexedPaths = new Set(
+  resourceIndex.map((resource) => `/${String(resource.url || "").replace(/^\//, "")}`)
+);
+const redirectSources = new Set(redirects.map((redirect) => redirect.source));
+redirects.forEach((redirect) => {
+  if (sitemapPaths.has(redirect.source)) {
+    error(`Redirect source appears in sitemap.xml: ${redirect.source}.`);
+  }
+  if (indexedPaths.has(redirect.source)) {
+    error(`Redirect source appears in data/conditions-index.json: ${redirect.source}.`);
+  }
+  if (redirectSources.has(redirect.destination)) {
+    error(`Redirect does not resolve in one hop: ${redirect.source} -> ${redirect.destination}.`);
+  }
+});
+
+const deployedHtmlFiles = [
+  indexPath,
+  path.join(projectRoot, "profile.html"),
+  path.join(projectRoot, "404.html"),
+  ...listHtmlFiles(htmlConditionsDir).map((fileName) => path.join(htmlConditionsDir, fileName)),
+  ...listHtmlFiles(legalDir).map((fileName) => path.join(legalDir, fileName))
+].filter(fileExists);
+
+deployedHtmlFiles.forEach((filePath) => {
+  const html = readText(filePath);
+  const malformedLinks = malformedHrefTags(html);
+  if (malformedLinks.length) {
+    error(`${relative(filePath)} contains ${malformedLinks.length} malformed href attribute(s).`);
+  }
+
+  const badLinks = [...html.matchAll(/\bhref=["']([^"']*index\.html(?:[#?][^"']*)?)["']/gi)];
+  if (badLinks.length) {
+    error(`${relative(filePath)} contains ${badLinks.length} public link(s) to index.html.`);
+  }
+});
 
 section("Resource/index checks");
 console.log(`Resource HTML files: ${htmlFiles.length}`);
@@ -385,6 +506,9 @@ htmlFiles.forEach((fileName) => {
 
   if (isPublicResource(metadata)) {
     expectedPublicUrls.add(`html-conditions/${fileName}`);
+    if (!readMetaContent(html, "author")) {
+      error(`${fileName} is published and reviewed but is missing author metadata.`);
+    }
   }
 
   requiredMetaFields.forEach((field) => {
