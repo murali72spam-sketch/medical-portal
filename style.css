@@ -1014,11 +1014,23 @@ button.button:disabled:hover {
   font-weight: 600;
 }
 
-.filter-button:hover,
-.filter-button.is-active {
+.filter-button:hover:not(:disabled):not(.is-active) {
   color: var(--color-primary-deep);
   border-color: var(--color-primary);
   background: var(--color-primary-soft);
+}
+
+.filter-button.is-active,
+.filter-button[aria-pressed="true"] {
+  color: #ffffff;
+  border-color: var(--color-primary);
+  background: var(--color-primary-deep);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22), var(--shadow-xs);
+}
+
+.filter-button:focus-visible {
+  outline: 3px solid rgba(45, 108, 223, 0.42);
+  outline-offset: 2px;
 }
 
 .subgroup-filter-row .filter-button {
