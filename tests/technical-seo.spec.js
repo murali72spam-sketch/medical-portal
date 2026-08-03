@@ -14,6 +14,29 @@ function publishedResourceCount() {
     .filter((resource) => resource.status === "published").length;
 }
 
+function rgbValues(color) {
+  const match = color.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
+  expect(match, `Expected rgb color, received ${color}`).not.toBeNull();
+  return match.slice(1, 4).map(Number);
+}
+
+function relativeLuminance(color) {
+  const values = rgbValues(color).map((value) => {
+    const channel = value / 255;
+    return channel <= 0.03928
+      ? channel / 12.92
+      : ((channel + 0.055) / 1.055) ** 2.4;
+  });
+
+  return values[0] * 0.2126 + values[1] * 0.7152 + values[2] * 0.0722;
+}
+
+function contrastRatio(foreground, background) {
+  const lighter = Math.max(relativeLuminance(foreground), relativeLuminance(background));
+  const darker = Math.min(relativeLuminance(foreground), relativeLuminance(background));
+  return (lighter + 0.05) / (darker + 0.05);
+}
+
 function sitemapUrls() {
   return [...read("sitemap.xml").matchAll(/<loc>([^<]+)<\/loc>/g)].map(
     (match) => match[1]
@@ -132,6 +155,55 @@ test.describe("Homepage filter-state regression", () => {
     );
     await expect(page.locator("[data-resource-count]")).toHaveText(
       expectedResourceCountLabel
+    );
+  });
+
+  test("selected resource filter chips use readable active styling", async ({ page }) => {
+    const chipStyles = (selector) =>
+      page.locator(selector).evaluate((element) => {
+        const styles = window.getComputedStyle(element);
+        return {
+          backgroundColor: styles.backgroundColor,
+          borderColor: styles.borderColor,
+          color: styles.color
+        };
+      });
+
+    const allFilter = page.locator('[data-category-filter="All"]');
+    const respiratory = page.locator('[data-category-filter="Respiratory"]');
+    const gastrointestinal = page.locator('[data-category-filter="Gastrointestinal"]');
+    const medication = page.locator('[data-category-filter="Medication Information"]');
+
+    await expect(allFilter).toHaveAttribute("aria-pressed", "true");
+    await expect(allFilter).toContainText(`(${expectedResourceCount})`);
+
+    const selectedAll = await chipStyles('[data-category-filter="All"]');
+    const unselectedRespiratory = await chipStyles('[data-category-filter="Respiratory"]');
+
+    expect(selectedAll.color).toBe("rgb(255, 255, 255)");
+    expect(contrastRatio(selectedAll.color, selectedAll.backgroundColor)).toBeGreaterThanOrEqual(4.5);
+    expect(selectedAll.backgroundColor).not.toBe(unselectedRespiratory.backgroundColor);
+    expect(selectedAll.borderColor).not.toBe(unselectedRespiratory.borderColor);
+
+    await respiratory.click();
+    await expect(respiratory).toHaveAttribute("aria-pressed", "true");
+    await expect(gastrointestinal).toHaveAttribute("aria-pressed", "false");
+
+    const selectedRespiratory = await chipStyles('[data-category-filter="Respiratory"]');
+    const unselectedGastrointestinal = await chipStyles('[data-category-filter="Gastrointestinal"]');
+
+    expect(selectedRespiratory.color).toBe("rgb(255, 255, 255)");
+    expect(
+      contrastRatio(selectedRespiratory.color, selectedRespiratory.backgroundColor)
+    ).toBeGreaterThanOrEqual(4.5);
+    expect(selectedRespiratory.backgroundColor).not.toBe(
+      unselectedGastrointestinal.backgroundColor
+    );
+
+    await expect(medication).toBeDisabled();
+    await expect(medication).toHaveAttribute("aria-pressed", "false");
+    expect((await chipStyles('[data-category-filter="Medication Information"]')).backgroundColor).not.toBe(
+      selectedRespiratory.backgroundColor
     );
   });
 
