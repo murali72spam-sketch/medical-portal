@@ -7,12 +7,7 @@ const browserChannel =
 module.exports = defineConfig({
   testDir: "./tests",
   timeout: 30000,
-  webServer: {
-    command: "node node_modules/http-server/bin/http-server . -p 4173 -c-1 --silent",
-    url: "http://127.0.0.1:4173",
-    reuseExistingServer: true,
-    timeout: 30000
-  },
+  globalSetup: "./tools/playwright-global-setup.js",
   use: {
     baseURL: process.env.BASE_URL || "http://127.0.0.1:4173",
     browserName: "chromium",

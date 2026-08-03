@@ -456,6 +456,21 @@
     "url": "html-conditions/constipation-in-children.html"
   },
   {
+    "title": "Dehydration in Babies and Children",
+    "slug": "dehydration-in-babies-and-children-parent-guide",
+    "category": "Gastrointestinal",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to dehydration in babies and children, including common causes, early and worsening signs, safe fluid principles, infant cautions, and urgent warning signs.",
+    "keywords": "dehydration children, dehydration baby, reduced urine, dry mouth, no tears, vomiting diarrhoea dehydration, oral rehydration solution, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-08-03",
+    "medical_review_status": "reviewed",
+    "references": "National Health Mission FIMNCI Chart Booklet English 2023; National Health Mission IMNCI Chart Booklet Medical Officer 2023; National Health Mission Management of Sick Infant/Child 2 months to 5 years, part of the NHM IMNCI 2023 training package; Indian Academy of Pediatrics Standard Treatment Guidelines 20 Acute Watery Diarrhea 2022; World Health Organization Guideline on management of pneumonia and diarrhoea in children up to 10 years of age 2024; Royal Children",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/dehydration-in-babies-and-children-parent-guide.html"
+  },
+  {
     "title": "Gastroenteritis / Diarrhoea in Children",
     "slug": "gastroenteritis-diarrhoea",
     "category": "Gastrointestinal",
@@ -1876,6 +1891,21 @@
     "hero_alt": "Indian mother helping her child use an inhaler with spacer at home",
     "visual_context": "inhaler-spacer-home-care",
     "url": "html-conditions/asthma-in-children.html"
+  },
+  {
+    "title": "Breathing Difficulty in Children",
+    "slug": "breathing-difficulty-in-children-parent-guide",
+    "category": "Respiratory",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to breathing difficulty in children, including what parents may notice, broad possible causes, safe immediate steps, urgent warning signs, and when to seek medical care.",
+    "keywords": "breathing difficulty children, child breathing fast, noisy breathing, chest indrawing, wheeze, stridor, urgent breathing signs, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-08-03",
+    "medical_review_status": "reviewed",
+    "references": "National Health Mission FIMNCI Chart Booklet English 2023; National Health Mission IMNCI Chart Booklet Medical Officer 2023; Indian Academy of Pediatrics Standard Treatment Guidelines 10 Croup in Children 2022; Indian Academy of Pediatrics Standard Treatment Guidelines 11 Community-Acquired Pneumonia 2022; Indian Academy of Pediatrics Standard Treatment Guidelines 27 Bronchiolitis 2022; Indian Academy of Pediatrics Standard Treatment Guidelines 35 Bronchial Asthma 2022; World Health Organization Guideline on management of pneumonia and diarrhoea in children up to 10 years of age 2024; Royal Children",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/breathing-difficulty-in-children-parent-guide.html"
   },
   {
     "title": "Bronchiolitis in Infants",
