@@ -8,36 +8,48 @@ const publicProductionUrl = "https://www.drmuraligopal.com";
 const batch10Resources = [
   {
     title: "Normal Newborn Care",
+    indexTitle: "Normal Newborn Care",
+    heading: "Normal Newborn Care",
     path: "/html-conditions/normal-newborn-care-parent-guide.html",
     indexedUrl: "html-conditions/normal-newborn-care-parent-guide.html",
     image: "normal-newborn-care.png"
   },
   {
-    title: "Newborn Danger Signs: When to Seek Urgent Help | Dr Murali Gopal",
+    title: "Newborn Danger Signs",
+    indexTitle: "Newborn Danger Signs: When to Seek Urgent Help | Dr Murali Gopal",
+    heading: "Newborn Danger Signs",
     path: "/html-conditions/neonatal-danger-signs-parent-guide.html",
     indexedUrl: "html-conditions/neonatal-danger-signs-parent-guide.html",
     image: "neonatal-danger-signs.png"
   },
   {
     title: "Umbilical Cord Care",
+    indexTitle: "Umbilical Cord Care",
+    heading: "Umbilical Cord Care",
     path: "/html-conditions/umbilical-cord-care-parent-guide.html",
     indexedUrl: "html-conditions/umbilical-cord-care-parent-guide.html",
     image: "umbilical-cord-care.png"
   },
   {
     title: "Newborn Jaundice",
+    indexTitle: "Newborn Jaundice: When to Seek Medical Help | Dr Murali Gopal",
+    heading: "Newborn Jaundice: A Parent Guide",
     path: "/html-conditions/newborn-jaundice-parent-guide.html",
     indexedUrl: "html-conditions/newborn-jaundice-parent-guide.html",
     image: "newborn-jaundice.png"
   },
   {
     title: "Breastfeeding Basics",
+    indexTitle: "Breastfeeding Basics",
+    heading: "Breastfeeding Basics",
     path: "/html-conditions/breastfeeding-basics-parent-guide.html",
     indexedUrl: "html-conditions/breastfeeding-basics-parent-guide.html",
     image: "breastfeeding-basics.png"
   },
   {
     title: "Infant Colic",
+    indexTitle: "Infant Colic",
+    heading: "Infant Colic",
     path: "/html-conditions/infant-colic-parent-guide.html",
     indexedUrl: "html-conditions/infant-colic-parent-guide.html",
     image: "infant-colic.png"
@@ -146,8 +158,8 @@ test.describe("Batch 10 newborn and infant care automated QA", () => {
     expect(Array.isArray(resources)).toBeTruthy();
 
     for (const expected of batch10Resources) {
-      const sameTitle = resources.filter((resource) => resource.title === expected.title);
-      expect(sameTitle, `${expected.title} should appear exactly once in index`).toHaveLength(1);
+      const sameTitle = resources.filter((resource) => resource.title === expected.indexTitle);
+      expect(sameTitle, `${expected.indexTitle} should appear exactly once in index`).toHaveLength(1);
 
       const resource = sameTitle[0];
 
@@ -176,7 +188,7 @@ test.describe("Batch 10 newborn and infant care automated QA", () => {
 
       expect(response?.ok(), `${resource.title} should load from the configured public site`).toBeTruthy();
 
-      await expect(page.getByRole("heading", { name: resource.title, level: 1 })).toBeVisible();
+      await expect(page.getByRole("heading", { name: resource.heading, level: 1 })).toBeVisible();
 
       await expect(page.getByRole("heading", { name: /medical disclaimer/i })).toBeVisible();
       await expect(page.getByRole("heading", { name: /references/i })).toBeVisible();
