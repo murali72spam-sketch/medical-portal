@@ -852,11 +852,11 @@
     "url": "html-conditions/menstrual-health-parent-guide.html"
   },
   {
-    "title": "Newborn Weight Loss and Gain",
+    "title": "Newborn Weight Loss & Gain: What Is Normal? | Dr Murali Gopal",
     "slug": "newborn-weight-loss-and-gain",
     "category": "Growth & Development",
     "resource_type": "parent-guide",
-    "description": "Parent guide to newborn weight checks, feeding and urine clues, jaundice concerns, and when poor gain needs review.",
+    "description": "Learn how clinicians assess newborn weight loss and gain, feeding and wet-nappy clues, and when poor feeding, dehydration or jaundice needs medical review.",
     "keywords": "newborn weight loss, newborn weight gain, baby weight check, poor feeding, jaundice, parent guide",
     "audience": "parents",
     "last_reviewed": "2026-06-16",
@@ -1368,11 +1368,11 @@
     "url": "html-conditions/complementary-feeding-after-6-months.html"
   },
   {
-    "title": "Baby Crying: What is Normal?",
+    "title": "Baby Crying: What Is Normal? | Dr Murali Gopal",
     "slug": "baby-crying-what-is-normal",
     "category": "Parent Education",
     "resource_type": "parent-guide",
-    "description": "Parent guide to normal baby crying, safe soothing, caregiver coping, and warning signs that need medical review.",
+    "description": "Learn why babies cry, what may be normal, safe ways to soothe your baby, and warning signs that need prompt medical review.",
     "keywords": "baby crying, newborn crying, unsettled baby, infant cues, safe soothing, parent guide",
     "audience": "parents",
     "last_reviewed": "2026-06-16",
@@ -1430,6 +1430,21 @@
     "featured": false,
     "status": "published",
     "url": "html-conditions/burns-and-scalds-in-children-parent-guide.html"
+  },
+  {
+    "title": "Child Car Seats and Safe Travel",
+    "slug": "child-car-seat-safety-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to choosing and using child restraints, including rear-facing seats, harnesses, booster seats, installation, and safer travel.",
+    "keywords": "child car seat safety India, child restraint, rear-facing car seat, booster seat, seat belt fit, safe travel, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-09-09",
+    "medical_review_status": "reviewed",
+    "references": "National Highway Traffic Safety Administration. Car Seats and Booster Seats guidance; National Highway Traffic Safety Administration. Car Seat Use After a Crash; American Academy of Pediatrics, HealthyChildren.org. Car seat safety information for families; World Health Organization. Road traffic injury prevention resources",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/child-car-seat-safety-parent-guide.html"
   },
   {
     "title": "Child First Aid Basics",
@@ -1506,6 +1521,21 @@
     "status": "published",
     "visual_context": "dog-bite-animal-bite-wound-care-rabies-caution",
     "url": "html-conditions/dog-bite-animal-bite-care-parent-guide.html"
+  },
+  {
+    "title": "Drowning Prevention and Water Safety for Children",
+    "slug": "drowning-prevention-water-safety-parent-guide",
+    "category": "Parent Education",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to reducing drowning risk around baths, buckets, tanks, pools, beaches, boats, floods, and other water hazards.",
+    "keywords": "drowning prevention children, water safety, bath safety, bucket safety, pool safety, lifejacket, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-09-09",
+    "medical_review_status": "reviewed",
+    "references": "World Health Organization. Drowning fact sheet, updated 1 May 2026; World Health Organization. Guideline on drowning prevention through provision of day-care and basic swimming and water safety skills, 2021; World Health Organization. Technical package for drowning prevention, 2026",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/drowning-prevention-water-safety-parent-guide.html"
   },
   {
     "title": "Foreign Body in Ear, Nose, or Eye",
@@ -1618,11 +1648,11 @@
     "url": "html-conditions/mosquito-bite-prevention.html"
   },
   {
-    "title": "Newborn Danger Signs",
+    "title": "Newborn Danger Signs: When to Seek Urgent Help | Dr Murali Gopal",
     "slug": "neonatal-danger-signs-parent-guide",
     "category": "Parent Education",
     "resource_type": "parent-guide",
-    "description": "Parent guide to newborn danger signs, including poor feeding, breathing difficulty, temperature concerns, lethargy, seizures, bluish colour, jaundice, reduced urine, vomiting, and urgent review.",
+    "description": "Learn important newborn danger signs involving feeding, breathing, temperature, alertness, colour and jaundice, and when urgent medical review is needed.",
     "keywords": "newborn danger signs, neonatal danger signs, poor feeding newborn, newborn breathing difficulty, newborn fever, newborn urgent care, Indian parents",
     "audience": "parents",
     "last_reviewed": "2026-07-02",
@@ -1636,11 +1666,11 @@
     "url": "html-conditions/neonatal-danger-signs-parent-guide.html"
   },
   {
-    "title": "Newborn Jaundice",
+    "title": "Newborn Jaundice: When to Seek Medical Help | Dr Murali Gopal",
     "slug": "newborn-jaundice-parent-guide",
     "category": "Parent Education",
     "resource_type": "parent-guide",
-    "description": "Parent guide to newborn jaundice, including common jaundice, feeding support, monitoring, early review signs, and urgent warning signs.",
+    "description": "Learn about jaundice in newborn babies, feeding and monitoring, warning signs, and when your newborn needs prompt or urgent medical attention.",
     "keywords": "newborn jaundice, neonatal jaundice, yellow baby, sleepy newborn, poor feeding jaundice, bilirubin, Indian parents",
     "audience": "parents",
     "last_reviewed": "2026-07-02",
@@ -1893,11 +1923,11 @@
     "url": "html-conditions/asthma-in-children.html"
   },
   {
-    "title": "Breathing Difficulty in Children",
+    "title": "Breathing Difficulty in Children: Warning Signs | Dr Murali Gopal",
     "slug": "breathing-difficulty-in-children-parent-guide",
     "category": "Respiratory",
     "resource_type": "parent-guide",
-    "description": "Parent guide to breathing difficulty in children, including what parents may notice, broad possible causes, safe immediate steps, urgent warning signs, and when to seek medical care.",
+    "description": "Learn what breathing difficulty can look like in children, including fast, noisy or harder breathing, warning signs, and when to seek urgent medical care.",
     "keywords": "breathing difficulty children, child breathing fast, noisy breathing, chest indrawing, wheeze, stridor, urgent breathing signs, parent guide",
     "audience": "parents",
     "last_reviewed": "2026-08-03",
@@ -1996,6 +2026,21 @@
     "hero_alt": "Indian parent supporting a child with cough and fever in a calm home setting",
     "visual_context": "cough-fever-breathing-monitoring",
     "url": "html-conditions/16-pneumonia-parent-guide.html"
+  },
+  {
+    "title": "Using an Inhaler with a Spacer in Children",
+    "slug": "inhaler-spacer-technique-children-parent-guide",
+    "category": "Respiratory",
+    "resource_type": "parent-guide",
+    "description": "Parent guide to using a pressurised metered-dose inhaler with a spacer, including mask or mouthpiece technique, cleaning, and common mistakes.",
+    "keywords": "child inhaler spacer technique, pMDI spacer, spacer with mask, asthma inhaler child, inhaler cleaning, parent guide",
+    "audience": "parents",
+    "last_reviewed": "2026-09-09",
+    "medical_review_status": "reviewed",
+    "references": "Global Initiative for Asthma. Global Strategy for Asthma Management and Prevention, 2026; NICE. Asthma: diagnosis, monitoring and chronic asthma management, NG245; Great Ormond Street Hospital for Children. How to help your child use an inhaler; NHS. How and when to use salbutamol inhalers",
+    "featured": false,
+    "status": "published",
+    "url": "html-conditions/inhaler-spacer-technique-children-parent-guide.html"
   },
   {
     "title": "Acne in Teenagers",
