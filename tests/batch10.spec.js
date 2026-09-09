@@ -13,7 +13,7 @@ const batch10Resources = [
     image: "normal-newborn-care.png"
   },
   {
-    title: "Newborn Danger Signs",
+    title: "Newborn Danger Signs: When to Seek Urgent Help | Dr Murali Gopal",
     path: "/html-conditions/neonatal-danger-signs-parent-guide.html",
     indexedUrl: "html-conditions/neonatal-danger-signs-parent-guide.html",
     image: "neonatal-danger-signs.png"
